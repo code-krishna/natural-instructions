@@ -1,0 +1,429 @@
+{
+   "Contributor": [
+        "Vamsi Krishna Pendyala"
+    ],
+    "Source": [
+        "tram-benchmark"
+    ],
+    "URL": [
+        "https://github.com/EternityYW/TRAM-Benchmark/blob/main/datasets/arithmetic.zip"
+    ],
+    "Categories": [
+        "Arithmetic",
+        "Hour Adjustment (24h)",
+        "Application",
+        "Date Computation",
+        "Month Shift",
+        "Time Computation",
+        "Time Zone Conversion",
+        "Week Identification",
+        "Year Shift"
+    ],
+    "Reasoning": [
+        "Logical",
+        "Deductive"
+    ],
+    "Definition": [
+        "The task involves solving real-world reasoning problems that require temporal calculations and logical reasoning based on age or duration. Specifically, the model should handle situations where the input provides two time-related values (such as age in years and months) and asks for the difference between them. The goal is to compute the elapsed time or duration, often involving subtraction of time values in a human-readable format, such as years and months. The task also includes dealing with edge cases where months and years need to be properly calculated, ensuring that calculations account for varying lengths of time units."
+    ],
+    "Input language": [
+        "English"
+    ],
+    "Output language": [
+        "English"
+    ],
+    "Instruction language": [
+        "English"
+    ],
+    "Positive Examples": [
+        {
+            "input": "If a girl was 3 years 0 month old when she joined school and now she is 10 years 2 months old, for how long has she been in school?",
+            "output": [
+                "7 years 2 months"
+            ],
+            "explanation": "The girl has been in school for the difference between 10 years 2 months and 3 years 0 month, which is 7 years 2 months."
+        },
+        {
+            "input": "If a flight takes off at 2 PM and the duration of the flight is 2 hours, at what time will it land?",
+            "output": [
+                "4:00 PM"
+            ],
+            "explanation": "Adding 2 hours to 2 PM results in 4:00 PM."
+        },
+        {
+            "input": "A transportation operates with a constant speed of 658 km/h. How long will it take to travel a distance of 1743 kilometers in minutes?",
+            "output": [
+                "159"
+            ],
+            "explanation": "At a constant speed of 658 km/h, it will take 159 minutes to travel 1743 km."
+        },
+        {
+            "input": "If a bus leaves at 11:15 AM and travels for 3 hours and 25 minutes, what time will it reach its destination?",
+            "output": [
+                "2:40 PM"
+            ],
+            "explanation": "Adding 3 hours 25 minutes to 11:15 AM results in 2:40 PM."
+        },
+        {
+            "input": "A person walks for 1 hour and 45 minutes at a speed of 5 km/h. How far will they have walked?",
+            "output": [
+                "8.75 km"
+            ],
+            "explanation": "At a speed of 5 km/h, walking for 1 hour and 45 minutes covers a distance of 8.75 km."
+        }
+    ],
+    "Negative Examples": [
+        {
+            "input": "If a flight takes off at 2 PM and the duration of the flight is 2 hours, at what time will it land?",
+            "output": [
+                "5:00 PM"
+            ],
+            "explanation": "This is incorrect because adding 2 hours to 2 PM gives 4:00 PM, not 5:00 PM."
+        },
+        {
+            "input": "A transportation operates with a constant speed of 658 km/h. How long will it take to travel a distance of 1743 kilometers in minutes?",
+            "output": [
+                "3 hours"
+            ],
+            "explanation": "This is incorrect because the correct time in minutes is 159, not 3 hours."
+        },
+        {
+            "input": "If a bus leaves at 12:00 PM and travels for 2 hours, at what time will it reach its destination?",
+            "output": [
+                "13:30 PM"
+            ],
+            "explanation": "This is incorrect because the correct time should be 2:00 PM, not 13:30 PM."
+        },
+        {
+            "input": "A person travels 10 km in 30 minutes. How long will it take them to travel 100 km?",
+            "output": [
+                "3 hours"
+            ],
+            "explanation": "This is incorrect. If they are traveling 10 km in 30 minutes, it will take them 3 hours to travel 60 km, not 100 km."
+        },
+        {
+            "input": "If a plane takes off at 5 PM and flies for 4 hours, at what time will it land?",
+            "output": [
+                "10:00 AM"
+            ],
+            "explanation": "This is incorrect because adding 4 hours to 5 PM should result in 9 PM, not 10 AM."
+        }
+    ],
+    "Instances": [
+        {
+            "id": "task001-85468f90497542cda1d5040e6f90b5b4",
+            "input": "If a girl was 3 years 0 month old when she joined school and now she is 10 years 2 months old, for how long has she been in school?",
+            "output": [
+                "7 years 2 months"
+            ]
+        },
+        {
+            "id": "task001-dd166f6d917d484fa89a064499fcbd4c",
+            "input": "If a flight takes off at 2 PM and the duration of the flight is 2 hours, at what time will it land?",
+            "output": [
+                "4:00 PM"
+            ]
+        },
+        {
+            "id": "task001-8d7abed804c7478eaebd7c589ba2c747",
+            "input": "A transportation operates with a constant speed of 658 km/h. How long will it take to travel a distance of 1743 kilometers in minutes?",
+            "output": [
+                "159"
+            ]
+        },
+        {
+            "id": "task001-e978c2a9651b4a018979e38e930068e0",
+            "input": "If a man walks at a speed of 12 km/hr and after every km, he takes a rest for 3 minutes, how many minutes will it take he to cover 7 km?",
+            "output": [
+                "53"
+            ]
+        },
+        {
+            "id": "task001-6c4d2128e9c04c15bbf12fb7364c452e",
+            "input": "If a girl takes a leave of 27 days starting from Thursday, 03 August, on which day may the leave end?",
+            "output": [
+                "Wednesday, 30 August 2023"
+            ]
+        },
+        {
+            "id": "task001-d247b2a12ab14bf6a58b8ec334ec11de",
+            "input": "If you add 331 days to the date 06-08-2023, what will be the new date?",
+            "output": [
+                "5/4/2024"
+            ]
+        },
+        {
+            "id": "task001-7ae6ca16b54f43c9bfc328d28bc3a03b",
+            "input": "If you subtract 294 days to the date 03-12-1212, what will be the new date?",
+            "output": [
+                "05-23-1211"
+            ]
+        },
+        {
+            "id": "task001-31906bf6e85344d3bbcedb49f4110aa6",
+            "input": "If you add 7 months and 28 days to the date 04-07-1990, what will be the new date?",
+            "output": [
+                "12/5/1990"
+            ]
+        },
+        {
+            "id": "task001-7341a2337a484c00808c159c4f7349d3",
+            "input": "If you add 8 weeks and 4 days to the date 02-19-1923, what will be the new date?",
+            "output": [
+                "4/20/1923"
+            ]
+        },
+        {
+            "id": "task001-0deb3fe2016d4cd1982fc85dcd77e4f8",
+            "input": "If you add 6 months and 8 days to the date 09-27-1690, what will be the new date?",
+            "output": [
+                "04-04-1691"
+            ]
+        },
+        {
+            "id": "task001-1573441a57c04364a2afe7bda399defd",
+            "input": "What is 12:52 PM − 08:15?",
+            "output": [
+                "4:37 AM"
+            ]
+        },
+        {
+            "id": "task001-cb9b4e3643a44f68a003c94395e76ab3",
+            "input": "What is 04:21 PM + 08:35?",
+            "output": [
+                "12:56 AM"
+            ]
+        },
+        {
+            "id": "task001-ba58ec59be6243a8808e56117c170a0b",
+            "input": "What is 07:07 PM − 08:11?",
+            "output": [
+                "10:56 AM"
+            ]
+        },
+        {
+            "id": "task001-999d7efb97eb4774ae8593d729bf634a",
+            "input": "What is 03:29 AM + 05:42?",
+            "output": [
+                "9:11 AM"
+            ]
+        },
+        {
+            "id": "task001-7df806700e1549e9a8203248eda1df40",
+            "input": "What is 01:38 PM + 04:51?",
+            "output": [
+                "6:29 PM"
+            ]
+        },
+        {
+            "id": "task001-4458df4e63034f0e895ea8343a7fc90b",
+            "input": "What is 14:14 + 18:43?",
+            "output": [
+                "8:57"
+            ]
+        },
+        {
+            "id": "task001-e10abe88e72b4af6b2ca768fe31c12f7",
+            "input": "What is 11:54 - 10:18?",
+            "output": [
+                "1:36"
+            ]
+        },
+        {
+            "id": "task001-97b066f71274416b8e3c3e69c9f681e1",
+            "input": "What is 00:06 - 19:49?",
+            "output": [
+                "4:17"
+            ]
+        },
+        {
+            "id": "task001-41dc232c272341f0bcc3e637dffec627",
+            "input": "What is 06:49 - 00:40?",
+            "output": [
+                "6:09"
+            ]
+        },
+        {
+            "id": "task001-67a37377b1fa47c082434ecbabc7c180",
+            "input": "What is 04:48 + 23:14?",
+            "output": [
+                "4:02"
+            ]
+        },
+        {
+            "id": "task001-e5d7c838022741578ab00ffd98deaff3",
+            "input": "Which month was 5 months before February?",
+            "output": [
+                "September"
+            ]
+        },
+        {
+            "id": "task001-c0b755cf2f1b43b2a9059e717f1e42df",
+            "input": "Which month comes 2 months after November?",
+            "output": [
+                "January"
+            ]
+        },
+        {
+            "id": "task001-143efca4f0d54ad390febac75ce7810b",
+            "input": "Which month was 5 months before March?",
+            "output": [
+                "October"
+            ]
+        },
+        {
+            "id": "task001-79b64c6c086c4256ad3a3f853b8ac226",
+            "input": "Which month comes 3 months after May?",
+            "output": [
+                "August"
+            ]
+        },
+        {
+            "id": "task001-70615c0a2bf940bf840f273bc6fcbb76",
+            "input": "Which month comes 1 months after June?",
+            "output": [
+                "July"
+            ]
+        },
+        {
+            "id": "task001-4d8322a620ef4bc5a549c8dccb42c63a",
+            "input": "Subtract 17 minutes 0 seconds from 3 hours 34 minutes.",
+            "output": [
+                "197 minutes 0 seconds"
+            ]
+        },
+        {
+            "id": "task001-04cb9fbbfc674eca996e7b267b132090",
+            "input": "Convert 453 minutes into hours.",
+            "output": [
+                "7.55"
+            ]
+        },
+        {
+            "id": "task001-41cedc2e670d47edb1a3d50533cb5d1a",
+            "input": "Convert 30 minutes into hours.",
+            "output": [
+                "0.5"
+            ]
+        },
+        {
+            "id": "task001-5771c4d088034b31a9381436b3ed307b",
+            "input": "Add 6 minutes 58 seconds and 55 minutes 22 seconds.",
+            "output": [
+                "62 minutes 20 seconds"
+            ]
+        },
+        {
+            "id": "task001-7c60be1fa6cb4b16a7b84246d714b97c",
+            "input": "Subtract 9 minutes 45 seconds from 2 hours 29 minutes.",
+            "output": [
+                "139 minutes 15 seconds"
+            ]
+        },
+        {
+            "id": "task001-ada52ff022514deea1c4c8468c8ee33d",
+            "input": "If it's 03 AM on April 3, 1775 in US/Pacific, what's the date and time in UTC?",
+            "output": [
+                "10 AM on April 3, 1775"
+            ]
+        },
+        {
+            "id": "task001-bce423c5178646208a783218e8c1248a",
+            "input": "If it's 04 AM on August 3, 1809 in US/Mountain, what's the date and time in Europe/London?",
+            "output": [
+                "10 AM on August 3, 1809"
+            ]
+        },
+        {
+            "id": "task001-f0e1ef652e47432a931fd73da90caa04",
+            "input": "If it's 10 PM on August 19, 1263 in Asia/Shanghai, what's the date and time in Asia/Tokyo?",
+            "output": [
+                "11 PM on August 19, 1263"
+            ]
+        },
+        {
+            "id": "task001-096f67de51c4423491e5e6b687657e1a",
+            "input": "If it's 07 AM on April 3, 1456 in UTC, what's the date and time in Asia/Tokyo?",
+            "output": [
+                "04 PM on April 3, 1456"
+            ]
+        },
+        {
+            "id": "task001-40710c9a41004f6b8d421a4a84231236",
+            "input": "If it's 06 AM on June 16, 1929 in US/Eastern, what's the date and time in Europe/Paris?",
+            "output": [
+                "11 AM on June 16, 1929"
+            ]
+        },
+        {
+            "id": "task001-21569499946242b7b6ac77b6760a89ee",
+            "input": "In which week of year 1288 does the date 07-04-1288 occur?",
+            "output": [
+                "Week 27"
+            ]
+        },
+        {
+            "id": "task001-3e30a07ff1db445ca27510e9724e3d87",
+            "input": "In which week of year 1399 does the date 03-31-1399 occur?",
+            "output": [
+                "Week 13"
+            ]
+        },
+        {
+            "id": "task001-5b60dc756bee437e93f5af9f6432b987",
+            "input": "In which week of year 1599 does the date 08-15-1599 occur?",
+            "output": [
+                "Week 32"
+            ]
+        },
+        {
+            "id": "task001-f3918bc8cff3485489f72bdc31c41a40",
+            "input": "In which week of year 2015 does the date 12-16-2015 occur?",
+            "output": [
+                "Week 51"
+            ]
+        },
+        {
+            "id": "task001-b99f39bf94544df8b4fb19906a2f3c33",
+            "input": "In which week of year 1446 does the date 01-21-1446 occur?",
+            "output": [
+                "Week 4"
+            ]
+        },
+        {
+            "id": "task001-b95075799d7144efaaaa119c9d66a5d7",
+            "input": "Which year comes 6 years after 1512?",
+            "output": [
+                "1518"
+            ]
+        },
+        {
+            "id": "task001-171f6d61222548059d1ddf000d06a230",
+            "input": "Which year was 15 years before 1879?",
+            "output": [
+                "1864"
+            ]
+        },
+        {
+            "id": "task001-832458c3956d495994ffeacd2ab05e35",
+            "input": "Which year comes 1 years after 1225?",
+            "output": [
+                "1226"
+            ]
+        },
+        {
+            "id": "task001-007327bc955442fb91b393d52163edbb",
+            "input": "Which year comes 3 years after 1456?",
+            "output": [
+                "1459"
+            ]
+        },
+        {
+            "id": "task001-90a0cb2c6aee439494cf44cf4ed9e336",
+            "input": "Which year was 16 years before 1828?",
+            "output": [
+                "1812"
+            ]
+        }
+    ]
+}
