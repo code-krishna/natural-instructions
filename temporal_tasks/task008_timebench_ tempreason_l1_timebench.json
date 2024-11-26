@@ -1,0 +1,4564 @@
+{
+    "Contributors": [
+        "Pranav Mittal"
+    ],
+    "Source": [
+        "tempReason"
+    ],
+    "URL": [
+        "https://github.com/zchuz/TimeBench/blob/main/TimeBench-subset-7553/TempReason/tempreason_l1_timebench.jsonl"
+    ],
+    "Categories": [
+        "Answer Generation"
+    ],
+    "Reasoning": [
+        "Temporal Reasoning"
+    ],
+    "Definition": [
+        "In this task, you need to determine the resulting time after adding or subtracting a specified duration from a given date. The input includes a question that specifies a start date and a time duration to be added or subtracted. The output should be the resulting date, formatted as 'Month, Year.' If the calculation is not possible due to insufficient context or invalid inputs, return 'unanswerable.' Ensure your response is accurate, precise, and directly answers the question without unnecessary details."
+    ],
+    "Input_language": [
+        "English"
+    ],
+    "Output_language": [
+        "English"
+    ],
+    "Instruction_language": [
+        "English"
+    ],
+    "Domains": [
+        "Date Arithmetic",
+        "Historical Timelines",
+        "Temporal Reasoning",
+        "Time Calculation",
+        "Calendar Operations"
+    ],
+    "Positive Examples": [
+        {
+            "input": "Question: What is the time 1 year and 11 month before Sep, 1173",
+            "output": "Oct, 1171",
+            "explanation": "The date 1 year and 11 months before September 1173 is calculated by subtracting 1 year to reach September 1172, then subtracting 11 months to arrive at October 1171."
+        },
+
+
+        {
+            "input": "Question: What is the time 1 year and 1 month before Dec, 1727",
+            "output": "Nov, 1726",
+            "explanation": "The date 1 year and 1 month before December 1727 is calculated by subtracting 1 year to reach December 1726, then subtracting 1 month to arrive at November 1726."
+        }
+    ],
+    "Negative Examples": [
+        {
+            "input": "What is the time 2 year and 9 month after Mar, 1353",
+            "output": "Dec, 1350",
+            "explanation": "The date 2 years and 9 months after March 1353 is calculated by adding 2 years to reach March 1355, then adding 9 months to arrive at December 1355 and not 1350. Hence this is negative example."
+        },
+        {
+            "input": "What is the time 3 year and 4 month after Jul, 1592",
+            "output": "Nov, 1590",
+            "explanation": "The date 3 years and 4 months after July 1592 is calculated by adding 3 years to reach July 1595, then adding 4 months to arrive at November 1595 and not 1590. Hence this is negative example."
+        }
+    ],
+    "Instances": [
+        {
+            "id": "task005-0f0dc6164a14455583e18de5dd60c27c",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 11 month before Sep, 1104",
+            "output": [
+                [
+                    "Oct, 1096"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2c41b33340c148009ccc49278727d0dd",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 10 month before Nov, 1700",
+            "output": [
+                [
+                    "Jan, 1694"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8d87815b45434b949410432f4b6a119d",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 9 month before Sep, 1475",
+            "output": [
+                [
+                    "Dec, 1464"
+                ]
+            ]
+        },
+        {
+            "id": "task005-756147f4ea1f4266bdc6862ae2c67398",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 6 month before Jan, 1596",
+            "output": [
+                [
+                    "Jul, 1590"
+                ]
+            ]
+        },
+        {
+            "id": "task005-47fc6878141440feb9091ce13b4c315c",
+            "input": "Sentence:  \nQuestion: What is the time 4 year after Jan, 1762",
+            "output": [
+                [
+                    "Jan, 1766"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a63d87d5569744e9955896394bd948b7",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 7 month after Jan, 2006",
+            "output": [
+                [
+                    "Aug, 2014"
+                ]
+            ]
+        },
+        {
+            "id": "task005-3c16b13706f9464495cd627469e5c09e",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 9 month after Jul, 1637",
+            "output": [
+                [
+                    "Apr, 1648"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1a4a8b933187432a88501fb59c03bb42",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 1 month after May, 1926",
+            "output": [
+                [
+                    "Jun, 1935"
+                ]
+            ]
+        },
+        {
+            "id": "task005-caf264b7ed874c4b8ad8fd12bea170a4",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 8 month before May, 1784",
+            "output": [
+                [
+                    "Sep, 1774"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a00b5e7010e7481c94697906520ead23",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 12 month after Aug, 1013",
+            "output": [
+                [
+                    "Aug, 1018"
+                ]
+            ]
+        },
+        {
+            "id": "task005-03cd1e051c7644eda83a7d4d92855c12",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 3 month before Jun, 1790",
+            "output": [
+                [
+                    "Mar, 1783"
+                ]
+            ]
+        },
+        {
+            "id": "task005-80494a221f464e71b4cdd8b18b551cac",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 6 month after Oct, 1765",
+            "output": [
+                [
+                    "Apr, 1776"
+                ]
+            ]
+        },
+        {
+            "id": "task005-783f7bd945db470ab77f8360db5baefc",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 6 month after Nov, 1982",
+            "output": [
+                [
+                    "May, 1989"
+                ]
+            ]
+        },
+        {
+            "id": "task005-51f33369b0e84a169c1114f4f889cc04",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 3 month before Dec, 1783",
+            "output": [
+                [
+                    "Sep, 1777"
+                ]
+            ]
+        },
+        {
+            "id": "task005-27817bd07f9f4fbb99922c88bf2f5ccd",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 3 month before Jul, 1302",
+            "output": [
+                [
+                    "Apr, 1297"
+                ]
+            ]
+        },
+        {
+            "id": "task005-bc78a15b512b4575a81b2bbb3ac6359e",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 2 month before Mar, 1227",
+            "output": [
+                [
+                    "Jan, 1220"
+                ]
+            ]
+        },
+        {
+            "id": "task005-03cac287809e42c59c4a8a01cf9bdec4",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 12 month after May, 1742",
+            "output": [
+                [
+                    "May, 1747"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c2a624edc70c43f5b8ad880e1b5cdc90",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 7 month after Apr, 1719",
+            "output": [
+                [
+                    "Nov, 1729"
+                ]
+            ]
+        },
+        {
+            "id": "task005-21baebdc9a2a4508b27f275669c2017d",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 4 month before Mar, 1755",
+            "output": [
+                [
+                    "Nov, 1752"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1c4da855167b417a8d4c12f8ef95356f",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 12 month before Aug, 1600",
+            "output": [
+                [
+                    "Aug, 1594"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4720cabf802e45c295de5d85dbbbedf2",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 11 month before Feb, 1440",
+            "output": [
+                [
+                    "Mar, 1438"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d01d2a00de594805a509632e3473f727",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 6 month after Oct, 1742",
+            "output": [
+                [
+                    "Apr, 1753"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7c20133bc5f944ea81715ef70f6c31c9",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 6 month before Nov, 1088",
+            "output": [
+                [
+                    "May, 1087"
+                ]
+            ]
+        },
+        {
+            "id": "task005-120d7aadeb0e4f41ae4eb25099dabd22",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 5 month before May, 1846",
+            "output": [
+                [
+                    "Dec, 1838"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0b61367ec2a54251acc46e8734cd15fe",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 6 month before Nov, 1472",
+            "output": [
+                [
+                    "May, 1471"
+                ]
+            ]
+        },
+        {
+            "id": "task005-62c78f2fbc2e4ba48c210f403d838af4",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 5 month before Dec, 1406",
+            "output": [
+                [
+                    "Jul, 1405"
+                ]
+            ]
+        },
+        {
+            "id": "task005-19f011b6e0204392b6e266faa7dc264f",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 11 month after Feb, 1810",
+            "output": [
+                [
+                    "Jan, 1816"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f1979a05f9084a8a9e05908126f946ef",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 9 month before Dec, 1954",
+            "output": [
+                [
+                    "Mar, 1946"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a3b907224005435a9fb05b295f1693a5",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 7 month before Nov, 1652",
+            "output": [
+                [
+                    "Apr, 1646"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f482994ccdfd48639da2d8141a995d38",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 1 month after Feb, 1553",
+            "output": [
+                [
+                    "Mar, 1561"
+                ]
+            ]
+        },
+        {
+            "id": "task005-85cf602049f449e58fa85af25e9687cb",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 3 month before May, 1255",
+            "output": [
+                [
+                    "Feb, 1254"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d070a8f99cad470a8cb54f8bd857ef6a",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 4 month after Sep, 1544",
+            "output": [
+                [
+                    "Jan, 1546"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6004963d88c94a479e9f317687049e71",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 7 month after Sep, 1552",
+            "output": [
+                [
+                    "Apr, 1559"
+                ]
+            ]
+        },
+        {
+            "id": "task005-dc8f22d38f6f450da25701fc62770ff9",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 4 month before Nov, 1675",
+            "output": [
+                [
+                    "Jul, 1666"
+                ]
+            ]
+        },
+        {
+            "id": "task005-ddbdb3b9a27246c69cc437825ce49bb4",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 6 month before Dec, 1912",
+            "output": [
+                [
+                    "Jun, 1908"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e3386bf01cf348cd88309faf71267c38",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 10 month after May, 1785",
+            "output": [
+                [
+                    "Mar, 1790"
+                ]
+            ]
+        },
+        {
+            "id": "task005-872236fc17704954951638da3b74a044",
+            "input": "Sentence:  \nQuestion: What is the time 4 month after Dec, 1481",
+            "output": [
+                [
+                    "Apr, 1482"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4d6ffad1b8a04854a923fab042aae4c9",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 11 month before Feb, 1204",
+            "output": [
+                [
+                    "Mar, 1200"
+                ]
+            ]
+        },
+        {
+            "id": "task005-01b50fc82af946c08b5992ff802d2e6c",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 12 month before Sep, 1235",
+            "output": [
+                [
+                    "Sep, 1224"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e374972617da4d56bd8ffc29ff6944c6",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 10 month before Oct, 1005",
+            "output": [
+                [
+                    "Dec, 1001"
+                ]
+            ]
+        },
+        {
+            "id": "task005-28de2f694d4142908ff1ba3f6fb35232",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 9 month after May, 1821",
+            "output": [
+                [
+                    "Feb, 1823"
+                ]
+            ]
+        },
+        {
+            "id": "task005-22a6e3a38fb24ae582422d839a465309",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 4 month before Jul, 1805",
+            "output": [
+                [
+                    "Mar, 1803"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5a3eec41a8f7475b9662c751d2ad8c40",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 1 month after May, 1286",
+            "output": [
+                [
+                    "Jun, 1288"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4baf1bb073cd49e09c1026d254943bc9",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 2 month after Jan, 1249",
+            "output": [
+                [
+                    "Mar, 1254"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8e4d32fea0774951b4ae73cd8fd69cb3",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 1 month after Jan, 1948",
+            "output": [
+                [
+                    "Feb, 1957"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c91cac5233f64973b1a8a74a327eab55",
+            "input": "Sentence:  \nQuestion: What is the time 10 month after May, 1182",
+            "output": [
+                [
+                    "Mar, 1183"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e2a3935a06844c51abf796bcab8b013d",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 7 month before Oct, 1815",
+            "output": [
+                [
+                    "Mar, 1806"
+                ]
+            ]
+        },
+        {
+            "id": "task005-ae9bc62eb44d4babbfddb091466b4e6f",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 5 month before Dec, 1975",
+            "output": [
+                [
+                    "Jul, 1972"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8055824c45db437b88fe094d4bfed467",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 6 month before Sep, 1883",
+            "output": [
+                [
+                    "Mar, 1879"
+                ]
+            ]
+        },
+        {
+            "id": "task005-132da445e7f14fd7a7169f266df743f9",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 3 month after Apr, 1921",
+            "output": [
+                [
+                    "Jul, 1923"
+                ]
+            ]
+        },
+        {
+            "id": "task005-410f9ae98669487bac1aefc8a9d651ff",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 1 month before Aug, 1622",
+            "output": [
+                [
+                    "Jul, 1621"
+                ]
+            ]
+        },
+        {
+            "id": "task005-294056740705485da6ece459fed1a461",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 6 month before Mar, 2015",
+            "output": [
+                [
+                    "Sep, 2004"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4eb530f816bb4a7fa6072db05c1294aa",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 3 month before Dec, 1843",
+            "output": [
+                [
+                    "Sep, 1836"
+                ]
+            ]
+        },
+        {
+            "id": "task005-cf2b9e1192c4465db3184a7330bf08dc",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 7 month before Jan, 1831",
+            "output": [
+                [
+                    "Jun, 1823"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2a138119c6f741e1bd14c4196fb48a6b",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 2 month before Mar, 1535",
+            "output": [
+                [
+                    "Jan, 1528"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b891dcb677f049ed818545f20a50279b",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 1 month after Jan, 1363",
+            "output": [
+                [
+                    "Feb, 1372"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f83a3983b13d4dea84728c693801d5ff",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 1 month before Aug, 1825",
+            "output": [
+                [
+                    "Jul, 1819"
+                ]
+            ]
+        },
+        {
+            "id": "task005-dec6af76026344dda9bf3df98099b1b9",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 10 month before Jul, 1607",
+            "output": [
+                [
+                    "Sep, 1600"
+                ]
+            ]
+        },
+        {
+            "id": "task005-ed094aa5da1d4cff8e8339319e284368",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 2 month before Oct, 2017",
+            "output": [
+                [
+                    "Aug, 2007"
+                ]
+            ]
+        },
+        {
+            "id": "task005-001ba4b8195e47518195e30bab6a2c69",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 8 month before Oct, 1394",
+            "output": [
+                [
+                    "Feb, 1387"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8df5e1a3972944948d67eaf1194526e1",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 8 month after Oct, 1466",
+            "output": [
+                [
+                    "Jun, 1473"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b38c1bbd474244f988bea5f0e5ff9f83",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 3 month before Mar, 1113",
+            "output": [
+                [
+                    "Dec, 1110"
+                ]
+            ]
+        },
+        {
+            "id": "task005-46d728cde03d425fb4f15de952b044c3",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 1 month before Mar, 1505",
+            "output": [
+                [
+                    "Feb, 1503"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5420985102d3472391e48ea010716644",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 5 month before Apr, 1410",
+            "output": [
+                [
+                    "Nov, 1403"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2f8b6dc4893a424a92ca10c23dc5edb6",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 1 month after Aug, 1908",
+            "output": [
+                [
+                    "Sep, 1918"
+                ]
+            ]
+        },
+        {
+            "id": "task005-07247360330c4d3484a953e22b82768d",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 9 month after Jan, 1643",
+            "output": [
+                [
+                    "Oct, 1647"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1c99563fb7cf48e29fc0a471dc197cc9",
+            "input": "Sentence:  \nQuestion: What is the time 10 months before Oct, 1323",
+            "output": [
+                [
+                    "Dec, 1322"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6281cf0716b44eb1957dc363f69fdfba",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 4 month before Oct, 1748",
+            "output": [
+                [
+                    "Jun, 1744"
+                ]
+            ]
+        },
+        {
+            "id": "task005-123c129b392546b98b632d4e46f9bfd7",
+            "input": "Sentence:  \nQuestion: What is the time 2 years before Jan, 1040",
+            "output": [
+                [
+                    "Jan, 1038"
+                ]
+            ]
+        },
+        {
+            "id": "task005-977f649f812b4287b5bbeaa077c1a65e",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 6 month after Aug, 1039",
+            "output": [
+                [
+                    "Feb, 1042"
+                ]
+            ]
+        },
+        {
+            "id": "task005-90cb1557aeaf47c0af1d4d394c63b38b",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 4 month after Jun, 1027",
+            "output": [
+                [
+                    "Oct, 1034"
+                ]
+            ]
+        },
+        {
+            "id": "task005-99021b2315084c708c94b2bd5aefc6d4",
+            "input": "Sentence:  \nQuestion: What is the time 1 year after Feb, 1736",
+            "output": [
+                [
+                    "Feb, 1737"
+                ]
+            ]
+        },
+        {
+            "id": "task005-331b9bc34667457e92eb0ca481d3c6da",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 7 month after Feb, 1770",
+            "output": [
+                [
+                    "Sep, 1776"
+                ]
+            ]
+        },
+        {
+            "id": "task005-bb7de8ad43e541729376964044dc908c",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 4 month before Jan, 1591",
+            "output": [
+                [
+                    "Sep, 1583"
+                ]
+            ]
+        },
+        {
+            "id": "task005-cd236a7e052245a4a63e9a8f4f5918d9",
+            "input": "Sentence:  \nQuestion: What is the time 9 years before Mar, 1905",
+            "output": [
+                [
+                    "Mar, 1896"
+                ]
+            ]
+        },
+        {
+            "id": "task005-79138a0b4471439792df92b0372e5e23",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 10 month after Nov, 1656",
+            "output": [
+                [
+                    "Sep, 1664"
+                ]
+            ]
+        },
+        {
+            "id": "task005-70f88e28b2ed448a877437666cb9a2cf",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 2 month before Dec, 1263",
+            "output": [
+                [
+                    "Oct, 1253"
+                ]
+            ]
+        },
+        {
+            "id": "task005-ea92b326eb47430e8fec8b33aa82d40c",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 5 month after May, 1850",
+            "output": [
+                [
+                    "Oct, 1860"
+                ]
+            ]
+        },
+        {
+            "id": "task005-da4280b7a42f483480fd108c2a0a485b",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 6 month after Apr, 1810",
+            "output": [
+                [
+                    "Oct, 1811"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d0ef510a92154826a30c6e23378bd92a",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 5 month before Aug, 1030",
+            "output": [
+                [
+                    "Mar, 1020"
+                ]
+            ]
+        },
+        {
+            "id": "task005-76aadb18395f4ba2929a6a8a02e0219c",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 8 month after Aug, 1618",
+            "output": [
+                [
+                    "Apr, 1628"
+                ]
+            ]
+        },
+        {
+            "id": "task005-3df8dfd999d64fbeb8c2d96f4f22daa0",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 2 month before Apr, 1626",
+            "output": [
+                [
+                    "Feb, 1620"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6481a0aca5cc4564a80de14fba8721ce",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 11 month after Apr, 1820",
+            "output": [
+                [
+                    "Mar, 1824"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5bb489136b5449b8b17ae040c83e739e",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 7 month before Aug, 1176",
+            "output": [
+                [
+                    "Jan, 1167"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b25e1576b46e4d9ba765f9a6607b90d3",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 12 month before Sep, 1245",
+            "output": [
+                [
+                    "Sep, 1235"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a219cacc505a443187637992873b6a33",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 6 month after Aug, 1979",
+            "output": [
+                [
+                    "Feb, 1983"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b29b7824d09f45c8b4e2991ada6d9f38",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 5 month after Dec, 1202",
+            "output": [
+                [
+                    "May, 1204"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a1b9ee6f3acf4bcc9dec521feb1d4199",
+            "input": "Sentence:  \nQuestion: What is the time 2 year after Mar, 1689",
+            "output": [
+                [
+                    "Mar, 1691"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e9eba14a80b74afeb18123de095947d8",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 8 month before Oct, 1925",
+            "output": [
+                [
+                    "Feb, 1919"
+                ]
+            ]
+        },
+        {
+            "id": "task005-26ae4067bc53420dba30dbdbb649d03d",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 7 month before Jan, 1493",
+            "output": [
+                [
+                    "Jun, 1486"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b62965c96e5c450f821072d0d865af83",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 10 month before Oct, 1347",
+            "output": [
+                [
+                    "Dec, 1343"
+                ]
+            ]
+        },
+        {
+            "id": "task005-55b3e462e42a47aba6c1c1f49de08869",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 5 month after Apr, 1547",
+            "output": [
+                [
+                    "Sep, 1556"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e881d2b012e446dfa1d751145c0e50dd",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 2 month after Oct, 1622",
+            "output": [
+                [
+                    "Dec, 1625"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9d0d709587634a369d9426686564f733",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 10 month after Feb, 1932",
+            "output": [
+                [
+                    "Dec, 1942"
+                ]
+            ]
+        },
+        {
+            "id": "task005-fbe1ca7f0e534eb2bb385a30957f5b54",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 8 month before Apr, 1396",
+            "output": [
+                [
+                    "Aug, 1386"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b2354439e7bd430197afbdc3906bee18",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 9 month before Aug, 1467",
+            "output": [
+                [
+                    "Nov, 1458"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b1a26a41ae72420d87277f1667eb0542",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 10 month after Oct, 1160",
+            "output": [
+                [
+                    "Aug, 1166"
+                ]
+            ]
+        },
+        {
+            "id": "task005-48c9dd540c9c4a98b82fcee630b477f7",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 9 month after Jul, 1403",
+            "output": [
+                [
+                    "Apr, 1413"
+                ]
+            ]
+        },
+        {
+            "id": "task005-af138d76dc99432d879af852e6f98dc6",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 5 month after Jun, 1802",
+            "output": [
+                [
+                    "Nov, 1805"
+                ]
+            ]
+        },
+        {
+            "id": "task005-23461decd91b49edb7fb942e8030f584",
+            "input": "Sentence:  \nQuestion: What is the time 5 month after Apr, 1492",
+            "output": [
+                [
+                    "Sep, 1492"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f10eefedf2b84a3284f7c33d9864c90f",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 12 month before Jan, 1348",
+            "output": [
+                [
+                    "Jan, 1338"
+                ]
+            ]
+        },
+        {
+            "id": "task005-3e2ca84eb2934b52a1fe6864ba5f2601",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 9 month after Oct, 1598",
+            "output": [
+                [
+                    "Jul, 1607"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f7a09b3780994c66aad5a520124584fd",
+            "input": "Sentence:  \nQuestion: What is the time 11 month after Mar, 1922",
+            "output": [
+                [
+                    "Feb, 1923"
+                ]
+            ]
+        },
+        {
+            "id": "task005-bbb6b81986c74213a7dd989ae5138584",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 8 month before Aug, 1537",
+            "output": [
+                [
+                    "Dec, 1529"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e883b92c15bb43c5ad88f3b9e55aed80",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 11 month before Jul, 1752",
+            "output": [
+                [
+                    "Aug, 1747"
+                ]
+            ]
+        },
+        {
+            "id": "task005-41f3cd2026ce4169b3aec740d2bb2314",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 12 month before Aug, 1655",
+            "output": [
+                [
+                    "Aug, 1650"
+                ]
+            ]
+        },
+        {
+            "id": "task005-84b1e8b9fdd14ab4a22a7dfab355f1f4",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 2 month after Mar, 1425",
+            "output": [
+                [
+                    "May, 1431"
+                ]
+            ]
+        },
+        {
+            "id": "task005-599c4172c09a40f288ff7d5fbc0cea92",
+            "input": "Sentence:  \nQuestion: What is the time 2 years before Nov, 1049",
+            "output": [
+                [
+                    "Nov, 1047"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e870a8939b324660b821f8c43f9fbed0",
+            "input": "Sentence:  \nQuestion: What is the time 8 month after Aug, 1169",
+            "output": [
+                [
+                    "Apr, 1170"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7dab4aaa5b7249939b743fc33b39ad7b",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 11 month before Sep, 1173",
+            "output": [
+                [
+                    "Oct, 1171"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9e511785730e4b0f87095623404cf4f1",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 10 month before Feb, 1759",
+            "output": [
+                [
+                    "Apr, 1750"
+                ]
+            ]
+        },
+        {
+            "id": "task005-803205c02069440596746570bc2b88fb",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 12 month after May, 1559",
+            "output": [
+                [
+                    "May, 1567"
+                ]
+            ]
+        },
+        {
+            "id": "task005-bc2993d668924b628bc4c3a50ffa7c7e",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 1 month before Dec, 1727",
+            "output": [
+                [
+                    "Nov, 1726"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8446c425d7444b8983b6b3e76e366497",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 7 month before Dec, 1506",
+            "output": [
+                [
+                    "May, 1503"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d4263f085d544d02b3a1aabb946ad6d8",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 10 month before Jan, 1133",
+            "output": [
+                [
+                    "Mar, 1124"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4cdc8986bbfc41809fc173bffe825675",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 9 month after Mar, 1353",
+            "output": [
+                [
+                    "Dec, 1355"
+                ]
+            ]
+        },
+        {
+            "id": "task005-980f59d66ce24479a3a4875299fc9d1b",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 1 month before Oct, 1014",
+            "output": [
+                [
+                    "Sep, 1005"
+                ]
+            ]
+        },
+        {
+            "id": "task005-37be15bb46024957b454a49414f9e8fa",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 3 month before Feb, 1332",
+            "output": [
+                [
+                    "Nov, 1323"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7bc1a82075654067ade773ac81315757",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 7 month before Sep, 1112",
+            "output": [
+                [
+                    "Feb, 1103"
+                ]
+            ]
+        },
+        {
+            "id": "task005-326d9bec2b034c7e9a68453cb7778260",
+            "input": "Sentence:  \nQuestion: What is the time 5 year after Aug, 1040",
+            "output": [
+                [
+                    "Aug, 1045"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c9b11194a97b4296b383cb9e9d3544f1",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 4 month after Jul, 1592",
+            "output": [
+                [
+                    "Nov, 1595"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c68c71d125c04927ae3290fa11052b8d",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 2 month before Aug, 1743",
+            "output": [
+                [
+                    "Jun, 1733"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a665ee26aa80418f8ecf3de382ddb856",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 7 month after Oct, 1426",
+            "output": [
+                [
+                    "May, 1430"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1551022d980f4900ad492d1af840912c",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 7 month before Aug, 1831",
+            "output": [
+                [
+                    "Jan, 1829"
+                ]
+            ]
+        },
+        {
+            "id": "task005-110cfd2af510428c94031cf6c04db346",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 2 month after Jun, 1578",
+            "output": [
+                [
+                    "Aug, 1582"
+                ]
+            ]
+        },
+        {
+            "id": "task005-302c23da9a7049c69be30515133c3bdc",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 7 month after Jun, 1444",
+            "output": [
+                [
+                    "Jan, 1452"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8615c627516b4530b0de28c40f8eb4a2",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 7 month before Apr, 1805",
+            "output": [
+                [
+                    "Sep, 1795"
+                ]
+            ]
+        },
+        {
+            "id": "task005-94306683b5694667a193d625e30f34e6",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 7 month after May, 1616",
+            "output": [
+                [
+                    "Dec, 1618"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4dbd42935f404ea28bc5dc5e6f6337a8",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 10 month before Apr, 1482",
+            "output": [
+                [
+                    "Jun, 1475"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7b0a33f0cfc542e0ab3ec7d81b72f474",
+            "input": "Sentence:  \nQuestion: What is the time 8 months before Sep, 1498",
+            "output": [
+                [
+                    "Jan, 1498"
+                ]
+            ]
+        },
+        {
+            "id": "task005-afae30601c07489e8e37f861ff9359f8",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 1 month after Aug, 1869",
+            "output": [
+                [
+                    "Sep, 1876"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0f05ce0d8ee24ee6a8e3a317b427fcbf",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 5 month before Mar, 2014",
+            "output": [
+                [
+                    "Oct, 2004"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9ee00d1b38bc47bfaf18d6f6497b56f0",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 11 month before Aug, 1674",
+            "output": [
+                [
+                    "Sep, 1664"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d1f6bc0ef27242c58e297dd0f52f60d7",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 9 month before Jul, 1632",
+            "output": [
+                [
+                    "Oct, 1622"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9280e9164d4d4691aed4933a0a88b0a2",
+            "input": "Sentence:  \nQuestion: What is the time 6 months before Jun, 1110",
+            "output": [
+                [
+                    "Dec, 1109"
+                ]
+            ]
+        },
+        {
+            "id": "task005-51312daeccc649c8b64b48db06c630c6",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 9 month after May, 1630",
+            "output": [
+                [
+                    "Feb, 1636"
+                ]
+            ]
+        },
+        {
+            "id": "task005-05e81ede321a49cf9a12692359c26fa8",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 7 month after Jan, 1106",
+            "output": [
+                [
+                    "Aug, 1109"
+                ]
+            ]
+        },
+        {
+            "id": "task005-aad6c862a9cf4df4b9e16978cb6a4dd0",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 2 month before Mar, 1916",
+            "output": [
+                [
+                    "Jan, 1912"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c9f6d4654dac4ba6a1ebced8ee28ce2a",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 4 month before Oct, 1007",
+            "output": [
+                [
+                    "Jun, 1005"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d0dd86ca6778489582670e5b343087e8",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 3 month before Jan, 1363",
+            "output": [
+                [
+                    "Oct, 1357"
+                ]
+            ]
+        },
+        {
+            "id": "task005-453b8a6f883c4703870bc08499e4a31a",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 2 month after Oct, 1086",
+            "output": [
+                [
+                    "Dec, 1095"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a6993a3bfbea4859b674540232ca62a8",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 4 month after Aug, 1249",
+            "output": [
+                [
+                    "Dec, 1255"
+                ]
+            ]
+        },
+        {
+            "id": "task005-cbcf9e8d7fb644ab92a4137241c84d32",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 2 month after Sep, 1802",
+            "output": [
+                [
+                    "Nov, 1812"
+                ]
+            ]
+        },
+        {
+            "id": "task005-bdeda4fa950142ba9031249c97d5daa3",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 9 month before Aug, 1931",
+            "output": [
+                [
+                    "Nov, 1928"
+                ]
+            ]
+        },
+        {
+            "id": "task005-597a483481b64ac3acf6cc9f80a14bb9",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 4 month before Jul, 1746",
+            "output": [
+                [
+                    "Mar, 1737"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0a25ca0e880f46ef86a9a7de1bfdbe46",
+            "input": "Sentence:  \nQuestion: What is the time 12 months before Mar, 1563",
+            "output": [
+                [
+                    "Mar, 1562"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a2184a119a4b44bca863e2fac1651954",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 3 month before Mar, 1987",
+            "output": [
+                [
+                    "Dec, 1982"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4294765ee50f426f8bc96a839fa89da9",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 1 month after May, 1876",
+            "output": [
+                [
+                    "Jun, 1877"
+                ]
+            ]
+        },
+        {
+            "id": "task005-58aad06ff8324aa2b03f52d2859235de",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 6 month after Nov, 1679",
+            "output": [
+                [
+                    "May, 1683"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e43210d166cb40fcb3a3743078f3651d",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 3 month before Oct, 1072",
+            "output": [
+                [
+                    "Jul, 1068"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e758299f43b249d0a4702d5736fa4c75",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 3 month before Jul, 1220",
+            "output": [
+                [
+                    "Apr, 1217"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1085a02e3b3347e3bab3ddbe557a7bf1",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 2 month before Jul, 1088",
+            "output": [
+                [
+                    "May, 1084"
+                ]
+            ]
+        },
+        {
+            "id": "task005-346efa777c424f259af9ddbf71b5d1f6",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 6 month after Mar, 1844",
+            "output": [
+                [
+                    "Sep, 1851"
+                ]
+            ]
+        },
+        {
+            "id": "task005-aed60e243f1546919f543971c7f7b041",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 9 month after Apr, 1158",
+            "output": [
+                [
+                    "Jan, 1168"
+                ]
+            ]
+        },
+        {
+            "id": "task005-aef32a279af2460ba194c05aa3c527a1",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 10 month after Mar, 1905",
+            "output": [
+                [
+                    "Jan, 1915"
+                ]
+            ]
+        },
+        {
+            "id": "task005-85d4f477ed6c4150a9baf2d2f7b77d4f",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 3 month after Dec, 1475",
+            "output": [
+                [
+                    "Mar, 1485"
+                ]
+            ]
+        },
+        {
+            "id": "task005-58ea4b17b9cb4800a935cae80defef2a",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 1 month before May, 1935",
+            "output": [
+                [
+                    "Apr, 1934"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2b6d4e32d2c84a818e4eb02811ad8f23",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 7 month before Jul, 1899",
+            "output": [
+                [
+                    "Dec, 1896"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f779d714a9fd4bb6a67df8a2b049e6a2",
+            "input": "Sentence:  \nQuestion: What is the time 2 year after Dec, 1375",
+            "output": [
+                [
+                    "Dec, 1377"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c6c42be892354ae6a368b6769d8c851b",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 11 month before Nov, 1576",
+            "output": [
+                [
+                    "Dec, 1569"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9f600795423148fcb637b39e7fb1b95c",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 1 month after May, 1204",
+            "output": [
+                [
+                    "Jun, 1206"
+                ]
+            ]
+        },
+        {
+            "id": "task005-617437c47b954bee80a1464ea683245d",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 6 month before Apr, 1780",
+            "output": [
+                [
+                    "Oct, 1775"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e3ce19fab2ff42baac97f30df812d6e8",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 12 month after Sep, 1410",
+            "output": [
+                [
+                    "Sep, 1421"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8b967def60374488b8331c51bd86e99d",
+            "input": "Sentence:  \nQuestion: What is the time 4 months before Jul, 1562",
+            "output": [
+                [
+                    "Mar, 1562"
+                ]
+            ]
+        },
+        {
+            "id": "task005-27a451aafd744e338aab2d3ae3243bac",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 8 month before Jan, 1765",
+            "output": [
+                [
+                    "May, 1755"
+                ]
+            ]
+        },
+        {
+            "id": "task005-563091cac8c949b5ad3bf6b2336eddc9",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 8 month before Sep, 1560",
+            "output": [
+                [
+                    "Jan, 1558"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b50dda80053947639a25b7ed7fdc53b3",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 11 month after Jan, 1286",
+            "output": [
+                [
+                    "Dec, 1294"
+                ]
+            ]
+        },
+        {
+            "id": "task005-79dc9fb89f89434ab143d57cc2d616c7",
+            "input": "Sentence:  \nQuestion: What is the time 6 month after Aug, 1763",
+            "output": [
+                [
+                    "Feb, 1764"
+                ]
+            ]
+        },
+        {
+            "id": "task005-47b751162d824c1eb0f80139b50a1577",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 6 month after Jan, 1744",
+            "output": [
+                [
+                    "Jul, 1751"
+                ]
+            ]
+        },
+        {
+            "id": "task005-00f78d16c13846068b0faa18ffbd3962",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 3 month after Oct, 1700",
+            "output": [
+                [
+                    "Jan, 1707"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8e9d12267182404e9df21fdbe54cc28f",
+            "input": "Sentence:  \nQuestion: What is the time 4 months before Jan, 1503",
+            "output": [
+                [
+                    "Sep, 1502"
+                ]
+            ]
+        },
+        {
+            "id": "task005-da3063f92b074715bfcec31efacf854f",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 10 month before Nov, 1327",
+            "output": [
+                [
+                    "Jan, 1322"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7d71d99e59c44e57a084cf040a27f03b",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 10 month after Jun, 1070",
+            "output": [
+                [
+                    "Apr, 1075"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e147540f1cb24acb806c53d79a2cde23",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 5 month before Jan, 1219",
+            "output": [
+                [
+                    "Aug, 1213"
+                ]
+            ]
+        },
+        {
+            "id": "task005-918bb7bb37d14f889a6959db11b4a8dc",
+            "input": "Sentence:  \nQuestion: What is the time 3 years before Jul, 1987",
+            "output": [
+                [
+                    "Jul, 1984"
+                ]
+            ]
+        },
+        {
+            "id": "task005-94016d3f6b58470bbf584107cd853ee9",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 12 month after Jul, 1459",
+            "output": [
+                [
+                    "Jul, 1468"
+                ]
+            ]
+        },
+        {
+            "id": "task005-78e7e7acd7ab4bf68fbca1154eedb8df",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 8 month before Sep, 1350",
+            "output": [
+                [
+                    "Jan, 1344"
+                ]
+            ]
+        },
+        {
+            "id": "task005-51ad3a35b3b54393b37d43c8f5be93ad",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 11 month after May, 1912",
+            "output": [
+                [
+                    "Apr, 1916"
+                ]
+            ]
+        },
+        {
+            "id": "task005-457786e786de4efda42d3efc36515c1c",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 10 month before Mar, 1515",
+            "output": [
+                [
+                    "May, 1510"
+                ]
+            ]
+        },
+        {
+            "id": "task005-95988866a81a46f5bf4a3fe325e01f6e",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 4 month after Oct, 1074",
+            "output": [
+                [
+                    "Feb, 1085"
+                ]
+            ]
+        },
+        {
+            "id": "task005-fc0c9226668949c18e3b0700c6bd2366",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 5 month after May, 1225",
+            "output": [
+                [
+                    "Oct, 1232"
+                ]
+            ]
+        },
+        {
+            "id": "task005-ef55d75ce2244fa7b54194d161b16490",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 5 month after Jan, 1511",
+            "output": [
+                [
+                    "Jun, 1515"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e6226afa82e64f26bc51bed7cd20ff95",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 2 month before Mar, 1331",
+            "output": [
+                [
+                    "Jan, 1328"
+                ]
+            ]
+        },
+        {
+            "id": "task005-818ad0a5637d458491643c7ad1768fd3",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 6 month before May, 1772",
+            "output": [
+                [
+                    "Nov, 1770"
+                ]
+            ]
+        },
+        {
+            "id": "task005-aed30862ddc64dc79b106e3cc83261f0",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 2 month before Sep, 1876",
+            "output": [
+                [
+                    "Jul, 1867"
+                ]
+            ]
+        },
+        {
+            "id": "task005-499079ef50a84d12bece8473c9da3a8c",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 12 month before Jul, 1350",
+            "output": [
+                [
+                    "Jul, 1348"
+                ]
+            ]
+        },
+        {
+            "id": "task005-835e0e3c566a42cd8f728cbbdfe19a22",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 9 month before Oct, 1599",
+            "output": [
+                [
+                    "Jan, 1591"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2abe971f717c4c269d32ef694817bf28",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 9 month before May, 1661",
+            "output": [
+                [
+                    "Aug, 1651"
+                ]
+            ]
+        },
+        {
+            "id": "task005-eb817d8e3b6e4ab7885a86afc3ba5f2b",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 11 month before Mar, 1078",
+            "output": [
+                [
+                    "Apr, 1067"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9499302db1c94b3bb0cf39e2d344a269",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 9 month after Aug, 1570",
+            "output": [
+                [
+                    "May, 1579"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f399e2fa2fc449cc8cf830cfd9345dd3",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 6 month after Dec, 1533",
+            "output": [
+                [
+                    "Jun, 1541"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1286a3ffb6f346c4b3b596b58d02c70c",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 11 month after Apr, 1458",
+            "output": [
+                [
+                    "Mar, 1461"
+                ]
+            ]
+        },
+        {
+            "id": "task005-09631cd1f29d41818119ef990abc03a5",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 6 month before Jan, 1740",
+            "output": [
+                [
+                    "Jul, 1734"
+                ]
+            ]
+        },
+        {
+            "id": "task005-22190a828a724f5c9c51aac2b027800f",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 8 month after Mar, 1274",
+            "output": [
+                [
+                    "Nov, 1280"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7041c2b474a34d68961f0c695b0b1343",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 8 month before Jan, 1926",
+            "output": [
+                [
+                    "May, 1922"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f05a7ff4ecf84b8aae0cb5cdee65cc43",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 2 month before Apr, 1831",
+            "output": [
+                [
+                    "Feb, 1824"
+                ]
+            ]
+        },
+        {
+            "id": "task005-176fa633df594d1fa15287eaa1d58275",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 7 month after Nov, 1192",
+            "output": [
+                [
+                    "Jun, 1199"
+                ]
+            ]
+        },
+        {
+            "id": "task005-db7e529c2eeb465889eb2d7255bb7cc3",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 4 month before Sep, 1375",
+            "output": [
+                [
+                    "May, 1366"
+                ]
+            ]
+        },
+        {
+            "id": "task005-52e9013b4a084145874d9b15642c5b74",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 3 month after May, 1431",
+            "output": [
+                [
+                    "Aug, 1441"
+                ]
+            ]
+        },
+        {
+            "id": "task005-56a3b6d1388c43d1b659f9718314a1d9",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 10 month before May, 1067",
+            "output": [
+                [
+                    "Jul, 1060"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4d6973d898c04b7f8c390be7793cbb8c",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 10 month before Feb, 1066",
+            "output": [
+                [
+                    "Apr, 1063"
+                ]
+            ]
+        },
+        {
+            "id": "task005-3ba9bb7559ab476ea51e8c4b2555241b",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 5 month after Apr, 1162",
+            "output": [
+                [
+                    "Sep, 1163"
+                ]
+            ]
+        },
+        {
+            "id": "task005-842c5a02e4ec423a8684454dd3eb28c8",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 11 month before Mar, 1414",
+            "output": [
+                [
+                    "Apr, 1409"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c545d0872b8c46229dfb5dc20e4d5bb5",
+            "input": "Sentence:  \nQuestion: What is the time 1 month after Feb, 1589",
+            "output": [
+                [
+                    "Mar, 1589"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6ee460fc1a934094a776b33d0776ed61",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 1 month before Feb, 1812",
+            "output": [
+                [
+                    "Jan, 1805"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d850f8f2a1104c4cae010157fbed0336",
+            "input": "Sentence:  \nQuestion: What is the time 5 years before Jul, 1925",
+            "output": [
+                [
+                    "Jul, 1920"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d5880336a716444f9637518f3bbf62aa",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 6 month before Sep, 1880",
+            "output": [
+                [
+                    "Mar, 1875"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d06737d9d092467ab16fa8026fe99102",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 4 month after Jul, 1073",
+            "output": [
+                [
+                    "Nov, 1082"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7dc5f6e7b65a444c9d6769f301ed2404",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 12 month after Mar, 1738",
+            "output": [
+                [
+                    "Mar, 1749"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6780fcdf004d49d487c4576f70b30ded",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 4 month after Jul, 1734",
+            "output": [
+                [
+                    "Nov, 1738"
+                ]
+            ]
+        },
+        {
+            "id": "task005-3348e96f05b6456aab170131133d21d5",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 7 month after Feb, 1229",
+            "output": [
+                [
+                    "Sep, 1233"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2910d36434c44df09abb621e9339365d",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 10 month after Jun, 1758",
+            "output": [
+                [
+                    "Apr, 1767"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d1dd8747a0b24ef68a5c95b15000fb86",
+            "input": "Sentence:  \nQuestion: What is the time 6 months before Aug, 1755",
+            "output": [
+                [
+                    "Feb, 1755"
+                ]
+            ]
+        },
+        {
+            "id": "task005-bf81b9dd03574b8986c4112b5183fff0",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 4 month before Jul, 1196",
+            "output": [
+                [
+                    "Mar, 1194"
+                ]
+            ]
+        },
+        {
+            "id": "task005-96650453a03947438b5f7a1b3e4a984c",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 10 month before Jan, 1333",
+            "output": [
+                [
+                    "Mar, 1328"
+                ]
+            ]
+        },
+        {
+            "id": "task005-695286bd6aea4c7f95de0a37277d879a",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 6 month before Jun, 1783",
+            "output": [
+                [
+                    "Dec, 1781"
+                ]
+            ]
+        },
+        {
+            "id": "task005-56d0a0f8ea694d658e839eb3f0f80797",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 3 month after Mar, 1374",
+            "output": [
+                [
+                    "Jun, 1380"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0a49eb4663a144d2a2b4dc1f417e0d37",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 7 month before Sep, 1927",
+            "output": [
+                [
+                    "Feb, 1921"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a50a46c053354bbca075dd31aa19756d",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 11 month before Aug, 1932",
+            "output": [
+                [
+                    "Sep, 1926"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2b7c10e4ac914c7cabc9a93c129ee999",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 7 month after Nov, 1433",
+            "output": [
+                [
+                    "Jun, 1437"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7ab87306e36b4804aec3996b7427f49c",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 7 month before Sep, 1921",
+            "output": [
+                [
+                    "Feb, 1920"
+                ]
+            ]
+        },
+        {
+            "id": "task005-153eb45d6c864a169baeade534db8d5c",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 3 month before May, 1239",
+            "output": [
+                [
+                    "Feb, 1236"
+                ]
+            ]
+        },
+        {
+            "id": "task005-63b220536d66499db0a69ff87015b411",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 11 month before Sep, 1781",
+            "output": [
+                [
+                    "Oct, 1774"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e6db39e0d47e4b88b42d987810ba8e55",
+            "input": "Sentence:  \nQuestion: What is the time 9 months before Aug, 1820",
+            "output": [
+                [
+                    "Nov, 1819"
+                ]
+            ]
+        },
+        {
+            "id": "task005-ea5dcec03c2f415780dc8b64b39f34da",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 4 month before Mar, 1369",
+            "output": [
+                [
+                    "Nov, 1365"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e76e3954c2064f2899bc2800ee51a9ce",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 4 month after Jun, 1497",
+            "output": [
+                [
+                    "Oct, 1505"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9212a217354140b8a0399792d38c95bf",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 7 month before Oct, 2000",
+            "output": [
+                [
+                    "Mar, 1993"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b1bc4bd626274687b90c8905283c0a72",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 12 month after Jan, 1751",
+            "output": [
+                [
+                    "Jan, 1757"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b2e650864ff2426dae8834c737e87b50",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 10 month before May, 1986",
+            "output": [
+                [
+                    "Jul, 1977"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6530426e93a649d486f31395b563c015",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 10 month after Jun, 1357",
+            "output": [
+                [
+                    "Apr, 1362"
+                ]
+            ]
+        },
+        {
+            "id": "task005-cbd416a4cd6448c98080a1c02f0c6525",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 9 month after Dec, 1650",
+            "output": [
+                [
+                    "Sep, 1656"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7e3dfb20b52e40fdb93446bd76ae9672",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 4 month after Jul, 1960",
+            "output": [
+                [
+                    "Nov, 1970"
+                ]
+            ]
+        },
+        {
+            "id": "task005-638127e3a5f54624800c89a05cd6cd6d",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 7 month before Sep, 1105",
+            "output": [
+                [
+                    "Feb, 1102"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7e17102fbdfc40ada259f5ff6e4c1ee3",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 2 month after Aug, 1623",
+            "output": [
+                [
+                    "Oct, 1630"
+                ]
+            ]
+        },
+        {
+            "id": "task005-22c4677bd55341d881a0dfb4fb3489c9",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 4 month before Mar, 1501",
+            "output": [
+                [
+                    "Nov, 1491"
+                ]
+            ]
+        },
+        {
+            "id": "task005-fad29404e60b4e949046403db1e3b61c",
+            "input": "Sentence:  \nQuestion: What is the time 11 month after Jan, 1882",
+            "output": [
+                [
+                    "Dec, 1882"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7056a72826724d808524e63ec7a17ee4",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 11 month after Jun, 1455",
+            "output": [
+                [
+                    "May, 1460"
+                ]
+            ]
+        },
+        {
+            "id": "task005-48726ef26dad45c49603880a52193290",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 3 month after Feb, 1361",
+            "output": [
+                [
+                    "May, 1363"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b4be16dd6e4d4c38b47c4de634f8f190",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 9 month after Mar, 1337",
+            "output": [
+                [
+                    "Dec, 1345"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f9fe9cc06f524c758647e33d70fed527",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 3 month after Dec, 1512",
+            "output": [
+                [
+                    "Mar, 1522"
+                ]
+            ]
+        },
+        {
+            "id": "task005-013fd45ba13f4fe88326f4d6addb44dd",
+            "input": "Sentence:  \nQuestion: What is the time 11 months before Jul, 1469",
+            "output": [
+                [
+                    "Aug, 1468"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8952272047474179ad03d908c300d803",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 7 month after Mar, 1318",
+            "output": [
+                [
+                    "Oct, 1324"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0da6c24d93dc4c3f9f4e3494d8197e82",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 3 month before Mar, 1308",
+            "output": [
+                [
+                    "Dec, 1305"
+                ]
+            ]
+        },
+        {
+            "id": "task005-afb3b00ad9114f8193731decfa2121c7",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 9 month before Feb, 1314",
+            "output": [
+                [
+                    "May, 1305"
+                ]
+            ]
+        },
+        {
+            "id": "task005-70c09c73156641de897ba4cff15f8f32",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 11 month after Sep, 1243",
+            "output": [
+                [
+                    "Aug, 1251"
+                ]
+            ]
+        },
+        {
+            "id": "task005-34e0eae14909448eab95fb5ac30598d9",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 10 month after Dec, 1354",
+            "output": [
+                [
+                    "Oct, 1360"
+                ]
+            ]
+        },
+        {
+            "id": "task005-76564670c06b4416ab18ce94c0951273",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 8 month before Jun, 1859",
+            "output": [
+                [
+                    "Oct, 1856"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9d16c12c5d9e4d1d8c399cb4ef62fe45",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 1 month after Sep, 1073",
+            "output": [
+                [
+                    "Oct, 1080"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b975acb3efcb4a5fb20fbda21bc60b79",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 11 month before Apr, 1281",
+            "output": [
+                [
+                    "May, 1278"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e36a387e506142e084b7b57aa1f96a41",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 1 month after Feb, 1174",
+            "output": [
+                [
+                    "Mar, 1184"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8089316764d34d32bfbf22c76426c598",
+            "input": "Sentence:  \nQuestion: What is the time 7 years before May, 1005",
+            "output": [
+                [
+                    "May, 998"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c3ff04cf0feb446ea87bb207a061b461",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 12 month before Jan, 1375",
+            "output": [
+                [
+                    "Jan, 1372"
+                ]
+            ]
+        },
+        {
+            "id": "task005-dca8f622e60d4cb38fa8032ace20dac8",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 12 month after May, 1198",
+            "output": [
+                [
+                    "May, 1204"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e85f6e8a2a01444694f8f0c9b1212f67",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 8 month before Dec, 1361",
+            "output": [
+                [
+                    "Apr, 1359"
+                ]
+            ]
+        },
+        {
+            "id": "task005-71d48ad3fbd9444dbba40eb990e12887",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 12 month before May, 1277",
+            "output": [
+                [
+                    "May, 1266"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e0d5954839f84901af2ab34db985395f",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 2 month before Jan, 1636",
+            "output": [
+                [
+                    "Nov, 1634"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e99709a2f43048289ce9d8c747473650",
+            "input": "Sentence:  \nQuestion: What is the time 12 month after Oct, 1623",
+            "output": [
+                [
+                    "Oct, 1624"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6091c64a2ca74117abbecb310c38fcde",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 1 month before Jul, 1992",
+            "output": [
+                [
+                    "Jun, 1991"
+                ]
+            ]
+        },
+        {
+            "id": "task005-777a30dfe0184dc38a0c005473453039",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 5 month after Apr, 1636",
+            "output": [
+                [
+                    "Sep, 1640"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b285b36ed4824014b81c237ff74c38cf",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 2 month after Feb, 1872",
+            "output": [
+                [
+                    "Apr, 1878"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9eb0c9ac8b2f4b45b0661ae393f7c50a",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 2 month before Sep, 1791",
+            "output": [
+                [
+                    "Jul, 1788"
+                ]
+            ]
+        },
+        {
+            "id": "task005-764ebf62bc0f4733ade3baebb43122e6",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 10 month before Jul, 1069",
+            "output": [
+                [
+                    "Sep, 1060"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1507b6786b6240ffa893cd9f0c2ccec8",
+            "input": "Sentence:  \nQuestion: What is the time 5 month after Sep, 1559",
+            "output": [
+                [
+                    "Feb, 1560"
+                ]
+            ]
+        },
+        {
+            "id": "task005-70d5f22c4351449a8f8a282ef149109c",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 7 month before Feb, 1342",
+            "output": [
+                [
+                    "Jul, 1337"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0b46d45cf77542059ee8f632e1249af6",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 1 month before Aug, 2009",
+            "output": [
+                [
+                    "Jul, 2007"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c61096883ddc4c27a484dbe07a17eaec",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 12 month after Dec, 1280",
+            "output": [
+                [
+                    "Dec, 1290"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c4bd58dc955d48f98a9d10a9fb93bb1f",
+            "input": "Sentence:  \nQuestion: What is the time 12 months before Jun, 1022",
+            "output": [
+                [
+                    "Jun, 1021"
+                ]
+            ]
+        },
+        {
+            "id": "task005-832f07d0235348369eb891f1659065fb",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 11 month after Apr, 1236",
+            "output": [
+                [
+                    "Mar, 1244"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f112043117814e86961203d50c8b2680",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 12 month after Sep, 1331",
+            "output": [
+                [
+                    "Sep, 1339"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2e06230924ea450abc8564f5994ab275",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 2 month before Feb, 1554",
+            "output": [
+                [
+                    "Dec, 1551"
+                ]
+            ]
+        },
+        {
+            "id": "task005-ea231226acb84549a20f700666e617b1",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 4 month before Oct, 1834",
+            "output": [
+                [
+                    "Jun, 1830"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c326069463144e989ee7a385420c3328",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 6 month after Aug, 1668",
+            "output": [
+                [
+                    "Feb, 1679"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d5afe7015d1f4113924e7133e2c9582f",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 10 month before Dec, 2003",
+            "output": [
+                [
+                    "Feb, 1997"
+                ]
+            ]
+        },
+        {
+            "id": "task005-bbe93f31e43f416b96cf027cf3f21728",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 8 month before Oct, 1379",
+            "output": [
+                [
+                    "Feb, 1373"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2d3daf0daea74333a9729d7a612d344e",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 4 month after Dec, 1576",
+            "output": [
+                [
+                    "Apr, 1584"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9928dd0f799f4a8d9e54a9dcdc98e3c1",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 1 month after Jan, 1998",
+            "output": [
+                [
+                    "Feb, 1999"
+                ]
+            ]
+        },
+        {
+            "id": "task005-00d771206dcb47089e666a88b73f2576",
+            "input": "Sentence:  \nQuestion: What is the time 5 month after Aug, 1779",
+            "output": [
+                [
+                    "Jan, 1780"
+                ]
+            ]
+        },
+        {
+            "id": "task005-02d693641525497ab1b4544d5a3dda20",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 1 month before Mar, 1295",
+            "output": [
+                [
+                    "Feb, 1285"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c03efd30a8dd46d99277e94cfd08fa5f",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 1 month after Nov, 1159",
+            "output": [
+                [
+                    "Dec, 1169"
+                ]
+            ]
+        },
+        {
+            "id": "task005-41e357292f3c4ad3936a59d717fc7815",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 9 month after Feb, 1034",
+            "output": [
+                [
+                    "Nov, 1038"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4fef456b61cd4a2fbc168edc6e20760f",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 5 month after Sep, 1058",
+            "output": [
+                [
+                    "Feb, 1065"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a469260fb9d0446c93f47f442eeced68",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 7 month before Jun, 1460",
+            "output": [
+                [
+                    "Nov, 1458"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0ddfc5396b2041f6b64eec89f1b2e3c4",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 9 month before Apr, 1929",
+            "output": [
+                [
+                    "Jul, 1926"
+                ]
+            ]
+        },
+        {
+            "id": "task005-ab9b0199c763490cb7c5a6abe1308956",
+            "input": "Sentence:  \nQuestion: What is the time 11 months before Sep, 1671",
+            "output": [
+                [
+                    "Oct, 1670"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c37dbce37d1644f1951640cefecdfb2c",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 1 month before Aug, 1405",
+            "output": [
+                [
+                    "Jul, 1398"
+                ]
+            ]
+        },
+        {
+            "id": "task005-82e994a92a31442caeceec47dc7d0d61",
+            "input": "Sentence:  \nQuestion: What is the time 9 years before Jul, 1582",
+            "output": [
+                [
+                    "Jul, 1573"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e5d05cb3b5d24fc3a62914bf9698e50e",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 10 month after Mar, 1231",
+            "output": [
+                [
+                    "Jan, 1234"
+                ]
+            ]
+        },
+        {
+            "id": "task005-fdec1abf54984d47bd7aba50a19a6f53",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 5 month after Apr, 1393",
+            "output": [
+                [
+                    "Sep, 1394"
+                ]
+            ]
+        },
+        {
+            "id": "task005-23663bf127c54f7ca27e15895ed0eb73",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 4 month after May, 1613",
+            "output": [
+                [
+                    "Sep, 1616"
+                ]
+            ]
+        },
+        {
+            "id": "task005-477d5e2dd0f54e3ab5df15e2790c8c7b",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 11 month after Feb, 1371",
+            "output": [
+                [
+                    "Jan, 1379"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6d698f21385b40c28dc0e810dcd7bcde",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 2 month before Aug, 1805",
+            "output": [
+                [
+                    "Jun, 1804"
+                ]
+            ]
+        },
+        {
+            "id": "task005-62040eedf74a4bad9fc26d563483bfd9",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 2 month after Jan, 1774",
+            "output": [
+                [
+                    "Mar, 1775"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a6825c49e911414f8d70226bea57c5ea",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 5 month after Oct, 1990",
+            "output": [
+                [
+                    "Mar, 1998"
+                ]
+            ]
+        },
+        {
+            "id": "task005-75bec2990a934b6893fb71426a4b8d46",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 1 month after Oct, 1550",
+            "output": [
+                [
+                    "Nov, 1558"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4aacefa2957a4e91b717def84456fa90",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 12 month before Jun, 1550",
+            "output": [
+                [
+                    "Jun, 1544"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8abc1c250c3e44b5943f80786d00bdc5",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 4 month before Jan, 1829",
+            "output": [
+                [
+                    "Sep, 1827"
+                ]
+            ]
+        },
+        {
+            "id": "task005-04843e3cb1044c5b8d292d3b2e140000",
+            "input": "Sentence:  \nQuestion: What is the time 6 years before Oct, 1105",
+            "output": [
+                [
+                    "Oct, 1099"
+                ]
+            ]
+        },
+        {
+            "id": "task005-17e959ada24e46e9af40489f41584ab0",
+            "input": "Sentence:  \nQuestion: What is the time 11 month after Mar, 1955",
+            "output": [
+                [
+                    "Feb, 1956"
+                ]
+            ]
+        },
+        {
+            "id": "task005-652887af06644eb59994c1cc33ff2e69",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 5 month after Dec, 1566",
+            "output": [
+                [
+                    "May, 1574"
+                ]
+            ]
+        },
+        {
+            "id": "task005-3f050aca99df4246a9973245b56d765b",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 8 month before Mar, 1201",
+            "output": [
+                [
+                    "Jul, 1197"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d33a8f72093544cb93f38c9787852c2b",
+            "input": "Sentence:  \nQuestion: What is the time 10 month after Feb, 1869",
+            "output": [
+                [
+                    "Dec, 1869"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2fb45fa5cdfe407e886886199e981718",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 12 month before Aug, 1679",
+            "output": [
+                [
+                    "Aug, 1674"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9ecafa1ce7b848489a040f13cc1cbbac",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 10 month after Feb, 1542",
+            "output": [
+                [
+                    "Dec, 1548"
+                ]
+            ]
+        },
+        {
+            "id": "task005-bfdf96787b904731a646217cffe0217e",
+            "input": "Sentence:  \nQuestion: What is the time 1 year before Aug, 1223",
+            "output": [
+                [
+                    "Aug, 1222"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d8b8fa5e89ef4614a923c262eec59bb5",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 8 month before Dec, 1236",
+            "output": [
+                [
+                    "Apr, 1234"
+                ]
+            ]
+        },
+        {
+            "id": "task005-fa0c3fbb14ee4d66a4a5a0d008257785",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 8 month before Sep, 1407",
+            "output": [
+                [
+                    "Jan, 1404"
+                ]
+            ]
+        },
+        {
+            "id": "task005-781585e702c44c8f86827dedcb211a12",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 9 month before May, 1789",
+            "output": [
+                [
+                    "Aug, 1786"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9e7302b8cdd6474fbe30b81fb4d59e55",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 4 month after Nov, 1475",
+            "output": [
+                [
+                    "Mar, 1481"
+                ]
+            ]
+        },
+        {
+            "id": "task005-34696df6b8864270bfe13aa413e6c1ba",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 1 month after May, 1111",
+            "output": [
+                [
+                    "Jun, 1112"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4c2717cb1f3d40b59b208c292d1a543e",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 1 month after Oct, 1510",
+            "output": [
+                [
+                    "Nov, 1519"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a361e8387b6b42d1b2dc8e8db4d4ffc0",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 9 month before Oct, 1939",
+            "output": [
+                [
+                    "Jan, 1933"
+                ]
+            ]
+        },
+        {
+            "id": "task005-78f3da7973024c88b6ba644a5c8e962d",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 6 month after Nov, 1076",
+            "output": [
+                [
+                    "May, 1082"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c3e5dc31ee9a439bb42c5f4dd7cea2c4",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 6 month after Aug, 1031",
+            "output": [
+                [
+                    "Feb, 1042"
+                ]
+            ]
+        },
+        {
+            "id": "task005-78f89236e7b940f9b48c43e8955c773f",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 9 month before May, 1930",
+            "output": [
+                [
+                    "Aug, 1926"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4d53908c7c05476596e0798796814bd5",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 6 month before Nov, 1239",
+            "output": [
+                [
+                    "May, 1230"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2ab6c3afaefd464f914d37c2a55e71d0",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 12 month before Jul, 1742",
+            "output": [
+                [
+                    "Jul, 1731"
+                ]
+            ]
+        },
+        {
+            "id": "task005-bc1a6af839c2424380549cab4ac15cf8",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 3 month before Mar, 1890",
+            "output": [
+                [
+                    "Dec, 1886"
+                ]
+            ]
+        },
+        {
+            "id": "task005-83ddf4094f9d46c08d06d155b8c67d67",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 2 month after Aug, 1314",
+            "output": [
+                [
+                    "Oct, 1319"
+                ]
+            ]
+        },
+        {
+            "id": "task005-756f241d6900450182de60ad981c7a25",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 4 month before Mar, 1387",
+            "output": [
+                [
+                    "Nov, 1380"
+                ]
+            ]
+        },
+        {
+            "id": "task005-248da13f8bba44eda742605caec23fa4",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 1 month before Dec, 1946",
+            "output": [
+                [
+                    "Nov, 1938"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b6c14196fe01453f8e429b8b84f77f24",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 2 month after Nov, 1110",
+            "output": [
+                [
+                    "Jan, 1120"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2db772efba56408ab1d760737bf3c7db",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 10 month after Aug, 1217",
+            "output": [
+                [
+                    "Jun, 1222"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a4ececa073e246bf967f5f583bccf6af",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 11 month after Oct, 1067",
+            "output": [
+                [
+                    "Sep, 1070"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4ee95f0fe3244204a6372eeb5af33352",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 2 month before May, 1875",
+            "output": [
+                [
+                    "Mar, 1866"
+                ]
+            ]
+        },
+        {
+            "id": "task005-155db6b0b8864ff6bd6cbb09e416bb7c",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 4 month before Dec, 1016",
+            "output": [
+                [
+                    "Aug, 1011"
+                ]
+            ]
+        },
+        {
+            "id": "task005-630ac0db35254054b031e60c761d4a25",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 8 month before Jul, 1428",
+            "output": [
+                [
+                    "Nov, 1418"
+                ]
+            ]
+        },
+        {
+            "id": "task005-100627884ed84e4590438f6a481fefc9",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 10 month after Aug, 1139",
+            "output": [
+                [
+                    "Jun, 1149"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f481b69e04a94032af8d4aa77fba030c",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 11 month after Jan, 1687",
+            "output": [
+                [
+                    "Dec, 1697"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d9fea6acbee94b93bee11454d65915db",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 6 month after Jan, 1464",
+            "output": [
+                [
+                    "Jul, 1472"
+                ]
+            ]
+        },
+        {
+            "id": "task005-592bec241cfe48c2beacfe36bb10c1fe",
+            "input": "Sentence:  \nQuestion: What is the time 6 years before May, 1869",
+            "output": [
+                [
+                    "May, 1863"
+                ]
+            ]
+        },
+        {
+            "id": "task005-34a2c13e401548299476d02cf738b249",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 9 month before Jun, 1363",
+            "output": [
+                [
+                    "Sep, 1359"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7fa79d60e85d475fbba1abfaefae0837",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 3 month after Apr, 1464",
+            "output": [
+                [
+                    "Jul, 1467"
+                ]
+            ]
+        },
+        {
+            "id": "task005-13e7f62e655f436cb5f5377128a03e46",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 5 month after Dec, 1951",
+            "output": [
+                [
+                    "May, 1959"
+                ]
+            ]
+        },
+        {
+            "id": "task005-52f8d6b10c9e4f3e8a568da4773397f4",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 9 month before Jun, 1163",
+            "output": [
+                [
+                    "Sep, 1152"
+                ]
+            ]
+        },
+        {
+            "id": "task005-76b1f5f6cbe44ff9a953142ecffa6631",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 9 month after Jan, 1851",
+            "output": [
+                [
+                    "Oct, 1861"
+                ]
+            ]
+        },
+        {
+            "id": "task005-948631be62f047ad8e6a18ba580e7d01",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 5 month after Jan, 1517",
+            "output": [
+                [
+                    "Jun, 1525"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7d721d6b906547b38764edffa73e503f",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 7 month after Jun, 1708",
+            "output": [
+                [
+                    "Jan, 1710"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e2500e0c0cd14e2ea134d553e4226e0c",
+            "input": "Sentence:  \nQuestion: What is the time 2 month after Jan, 1869",
+            "output": [
+                [
+                    "Mar, 1869"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f0fe5ea030a5495787c8b5b035d84afc",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 7 month before Aug, 1303",
+            "output": [
+                [
+                    "Jan, 1302"
+                ]
+            ]
+        },
+        {
+            "id": "task005-352b2dd63f74449ab0b2c2d1f8127a53",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 7 month before Sep, 1346",
+            "output": [
+                [
+                    "Feb, 1336"
+                ]
+            ]
+        },
+        {
+            "id": "task005-69e30dc67d164d1b86ae47d7e5e8d9b8",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 8 month after Jun, 1404",
+            "output": [
+                [
+                    "Feb, 1408"
+                ]
+            ]
+        },
+        {
+            "id": "task005-edafb582975740ae80fd1f0bd3643391",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 7 month after Apr, 1115",
+            "output": [
+                [
+                    "Nov, 1123"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a63df2693265465e916d09f8da0a23df",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 6 month before Apr, 1157",
+            "output": [
+                [
+                    "Oct, 1153"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4f66dd25fc334b4e9f616cf9032b9138",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 9 month before Jan, 1253",
+            "output": [
+                [
+                    "Apr, 1245"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4c7d58d73292485684c1bc60fbbf53eb",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 4 month after Aug, 1227",
+            "output": [
+                [
+                    "Dec, 1231"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1df975047cec4523bfb3452eb39eb86c",
+            "input": "Sentence:  \nQuestion: What is the time 6 month after Jan, 1170",
+            "output": [
+                [
+                    "Jul, 1170"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f22754385f80433a8fa066249b382158",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 2 month before Mar, 2019",
+            "output": [
+                [
+                    "Jan, 2015"
+                ]
+            ]
+        },
+        {
+            "id": "task005-170d4faed5094ceeb84c1161786cbd6b",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 3 month before Feb, 1926",
+            "output": [
+                [
+                    "Nov, 1915"
+                ]
+            ]
+        },
+        {
+            "id": "task005-21bebde4cb28405b81b57260328e97e0",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 5 month before Nov, 1474",
+            "output": [
+                [
+                    "Jun, 1470"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7ab441c51c1e47238d4d8f853f87753c",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 5 month after Jun, 1223",
+            "output": [
+                [
+                    "Nov, 1231"
+                ]
+            ]
+        },
+        {
+            "id": "task005-3a14702e62a2446fa3e9b242f273d236",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 1 month after Apr, 1312",
+            "output": [
+                [
+                    "May, 1316"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1c450000c315497486926585a0a6c17c",
+            "input": "Sentence:  \nQuestion: What is the time 9 month after May, 1021",
+            "output": [
+                [
+                    "Feb, 1022"
+                ]
+            ]
+        },
+        {
+            "id": "task005-de7b49efa9544bb083e66d1e13061822",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 1 month after May, 1352",
+            "output": [
+                [
+                    "Jun, 1359"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4429411143f349629d7d1ea5adc90d0f",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 9 month after Jan, 1360",
+            "output": [
+                [
+                    "Oct, 1362"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e309b130551540a78078f9d60cdd8fa6",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 3 month after Oct, 1903",
+            "output": [
+                [
+                    "Jan, 1906"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9441f5eef32f42f38534751c2489e90d",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 1 month after Nov, 1953",
+            "output": [
+                [
+                    "Dec, 1954"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2e95f5b39dbb4d59b41cf2514d6160fd",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 7 month before Jul, 1941",
+            "output": [
+                [
+                    "Dec, 1936"
+                ]
+            ]
+        },
+        {
+            "id": "task005-307d88a0d5c04111a482c5e24abaca41",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 6 month after Feb, 1925",
+            "output": [
+                [
+                    "Aug, 1928"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f0aa1d76fbd048ac9e6ff7cb2d0c6a77",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 8 month before Nov, 1211",
+            "output": [
+                [
+                    "Mar, 1205"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c0210e8900604e3f837a834c8e730222",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 8 month before Dec, 1840",
+            "output": [
+                [
+                    "Apr, 1839"
+                ]
+            ]
+        },
+        {
+            "id": "task005-869dda34f6314955b710cacf0fc5dcd8",
+            "input": "Sentence:  \nQuestion: What is the time 2 year after Nov, 1044",
+            "output": [
+                [
+                    "Nov, 1046"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4fd76eabd9604dffbaa7a20dd06572f0",
+            "input": "Sentence:  \nQuestion: What is the time 10 years before Aug, 1814",
+            "output": [
+                [
+                    "Aug, 1804"
+                ]
+            ]
+        },
+        {
+            "id": "task005-220df71f80244875b0998859c007098d",
+            "input": "Sentence:  \nQuestion: What is the time 12 months before Dec, 1904",
+            "output": [
+                [
+                    "Dec, 1903"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8f07666beb2b46f1a8d7fb4d2e2cd042",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 6 month before Nov, 1629",
+            "output": [
+                [
+                    "May, 1619"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e5cf9230e10e4030876918cb45daf10c",
+            "input": "Sentence:  \nQuestion: What is the time 1 year after Jun, 1588",
+            "output": [
+                [
+                    "Jun, 1589"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7798dd019ca14b09af093e2eb9898621",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 6 month before Jul, 1317",
+            "output": [
+                [
+                    "Jan, 1308"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5aed1e30b017415cad3554956dfeb749",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 5 month after Dec, 1677",
+            "output": [
+                [
+                    "May, 1684"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1dbcc35abc1542b2ac682444b43bd3ea",
+            "input": "Sentence:  \nQuestion: What is the time 12 months before Oct, 1976",
+            "output": [
+                [
+                    "Oct, 1975"
+                ]
+            ]
+        },
+        {
+            "id": "task005-52ff1ea4f21f474cac14b66b2b6eceab",
+            "input": "Sentence:  \nQuestion: What is the time 5 months before Nov, 1946",
+            "output": [
+                [
+                    "Jun, 1946"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e36e7eafa4734ba19ffda96379c8694a",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 11 month after May, 1231",
+            "output": [
+                [
+                    "Apr, 1235"
+                ]
+            ]
+        },
+        {
+            "id": "task005-68fbc1d7946546c3a6ea80a3ccc2e7a6",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 5 month before Feb, 1687",
+            "output": [
+                [
+                    "Sep, 1681"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6804af688c1641e8949534d00b2bb360",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 11 month after Jun, 1572",
+            "output": [
+                [
+                    "May, 1574"
+                ]
+            ]
+        },
+        {
+            "id": "task005-16077d683c8c410fa25303c55d9f94a9",
+            "input": "Sentence:  \nQuestion: What is the time 3 months before Apr, 1334",
+            "output": [
+                [
+                    "Jan, 1334"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a824c5671e394cf6bf4e12602fb6d452",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 8 month after Aug, 1943",
+            "output": [
+                [
+                    "Apr, 1949"
+                ]
+            ]
+        },
+        {
+            "id": "task005-bcffc33c12894739828742e2db50e876",
+            "input": "Sentence:  \nQuestion: What is the time 8 month after Nov, 1828",
+            "output": [
+                [
+                    "Jul, 1829"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5fa29d90f30c4e4e8431c8f9144b2ac0",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 6 month after Nov, 1360",
+            "output": [
+                [
+                    "May, 1369"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6a091a3f7a83462da92baf1ca9ceca46",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 3 month after Mar, 1038",
+            "output": [
+                [
+                    "Jun, 1045"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a393a00933084a7ea397df8b6b0274c6",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 4 month after Oct, 1951",
+            "output": [
+                [
+                    "Feb, 1958"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4f3271bc76ab4c69bd4a8d7cbc26a4e5",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 2 month after Jul, 1325",
+            "output": [
+                [
+                    "Sep, 1333"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9dbd63b81cb242cfbe72e820605f5499",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 5 month after May, 1214",
+            "output": [
+                [
+                    "Oct, 1218"
+                ]
+            ]
+        },
+        {
+            "id": "task005-3caa89a1e8284b2ab2d8b9666230221c",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 6 month before Sep, 1828",
+            "output": [
+                [
+                    "Mar, 1824"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2c5e95b44af342de938ab9153c19970d",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 11 month after Apr, 1303",
+            "output": [
+                [
+                    "Mar, 1308"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2a0213b8d21d431aae81bc0c5d8664a5",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 2 month after Oct, 1065",
+            "output": [
+                [
+                    "Dec, 1075"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8b9a616e1cb641a9b13e4fb665236188",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 12 month after May, 1130",
+            "output": [
+                [
+                    "May, 1139"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0042f3ad0e43413887c235b609f76e48",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 11 month before Nov, 1970",
+            "output": [
+                [
+                    "Dec, 1965"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e7b279d69e1e41c4a1e687bab1c1809b",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 10 month after Nov, 1685",
+            "output": [
+                [
+                    "Sep, 1691"
+                ]
+            ]
+        },
+        {
+            "id": "task005-523d7b725bf04d2780d11ccaa0d619c1",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 4 month before Nov, 1347",
+            "output": [
+                [
+                    "Jul, 1343"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2418e44c43054f98bd9c923cdcdb90da",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 10 month before Oct, 1337",
+            "output": [
+                [
+                    "Dec, 1335"
+                ]
+            ]
+        },
+        {
+            "id": "task005-3ab3cd94c9824f149c24c06f90cdc606",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 5 month before May, 1549",
+            "output": [
+                [
+                    "Dec, 1546"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a452cb15715e4006bcd21bbd808a3358",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 4 month before Aug, 1587",
+            "output": [
+                [
+                    "Apr, 1577"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2491e2f7f7984860b802426803ba0b01",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 6 month after Jan, 1142",
+            "output": [
+                [
+                    "Jul, 1149"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6ddd06b6f60f46879743e4690a7efb2a",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 6 month before Mar, 1860",
+            "output": [
+                [
+                    "Sep, 1853"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8ad95caeb97f49809770ab170dc97b89",
+            "input": "Sentence:  \nQuestion: What is the time 10 months before Feb, 1031",
+            "output": [
+                [
+                    "Apr, 1030"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c11c4c89a20e44ddb6a7868f52a59d53",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 2 month before Nov, 1825",
+            "output": [
+                [
+                    "Sep, 1822"
+                ]
+            ]
+        },
+        {
+            "id": "task005-ed487d8bf6e54cd0b71766130e04c023",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 11 month before Oct, 1866",
+            "output": [
+                [
+                    "Nov, 1860"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4f293db6d63e46969a52849a0c20de43",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 9 month after Oct, 1535",
+            "output": [
+                [
+                    "Jul, 1545"
+                ]
+            ]
+        },
+        {
+            "id": "task005-dd657ffad46d463d9af23beb709cb1b9",
+            "input": "Sentence:  \nQuestion: What is the time 6 months before Sep, 1055",
+            "output": [
+                [
+                    "Mar, 1055"
+                ]
+            ]
+        },
+        {
+            "id": "task005-61546832e2384c55b0d172ac527e263c",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 1 month before Feb, 1078",
+            "output": [
+                [
+                    "Jan, 1075"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4164cd7ca45d4f6ab55ab46260a7cf39",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 2 month after Apr, 1431",
+            "output": [
+                [
+                    "Jun, 1441"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5ff4ec9705494513bd47822e14315531",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 5 month after Apr, 1381",
+            "output": [
+                [
+                    "Sep, 1390"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b433f3ac34074251870f81b2de9a4923",
+            "input": "Sentence:  \nQuestion: What is the time 3 years before Aug, 1319",
+            "output": [
+                [
+                    "Aug, 1316"
+                ]
+            ]
+        },
+        {
+            "id": "task005-318e6e1bd4d24bd0b40f9387facd04ac",
+            "input": "Sentence:  \nQuestion: What is the time 4 month after Jul, 1396",
+            "output": [
+                [
+                    "Nov, 1396"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f0d65a642e3a4c6c9047377c299b135f",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 7 month after Apr, 1077",
+            "output": [
+                [
+                    "Nov, 1084"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7437637295e94a6faa1c46b3f43d0cf1",
+            "input": "Sentence:  \nQuestion: What is the time 6 months before Oct, 1920",
+            "output": [
+                [
+                    "Apr, 1920"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9f58a78e8c2041cc84aa2083a7d8023a",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 5 month after Nov, 1077",
+            "output": [
+                [
+                    "Apr, 1079"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6f7aeb124065446897524bc1070c5595",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 8 month after Sep, 1926",
+            "output": [
+                [
+                    "May, 1937"
+                ]
+            ]
+        },
+        {
+            "id": "task005-763ee5657fdc4a47960a30b666f31671",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 1 month before Dec, 1082",
+            "output": [
+                [
+                    "Nov, 1080"
+                ]
+            ]
+        },
+        {
+            "id": "task005-857dd0af528443988c2361511c8524d1",
+            "input": "Sentence:  \nQuestion: What is the time 1 year after Oct, 1506",
+            "output": [
+                [
+                    "Oct, 1507"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c7c146439baf438abe7ea4633c7a58fe",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 9 month after Dec, 1011",
+            "output": [
+                [
+                    "Sep, 1017"
+                ]
+            ]
+        },
+        {
+            "id": "task005-cc2d8ccf0c3b4c3880ee709b6b06f051",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 8 month before Sep, 1229",
+            "output": [
+                [
+                    "Jan, 1223"
+                ]
+            ]
+        },
+        {
+            "id": "task005-124942f71d81462d991dad0ed1dc9366",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 4 month before May, 1544",
+            "output": [
+                [
+                    "Jan, 1541"
+                ]
+            ]
+        },
+        {
+            "id": "task005-cf5b3c2c12314f2abfa95e6b402e22d4",
+            "input": "Sentence:  \nQuestion: What is the time 7 months before Dec, 1276",
+            "output": [
+                [
+                    "May, 1276"
+                ]
+            ]
+        },
+        {
+            "id": "task005-be6fc259bb5946a4a22a90d3b7dee94b",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 1 month after Dec, 1365",
+            "output": [
+                [
+                    "Jan, 1375"
+                ]
+            ]
+        },
+        {
+            "id": "task005-146173014eff48f3ae5432b6b38992d3",
+            "input": "Sentence:  \nQuestion: What is the time 8 month after Oct, 1552",
+            "output": [
+                [
+                    "Jun, 1553"
+                ]
+            ]
+        },
+        {
+            "id": "task005-18494b6d6ea648abb13f0e5673215234",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 3 month before Oct, 1329",
+            "output": [
+                [
+                    "Jul, 1328"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2c5005e24cbd4abdab2cfeeb4f95ab73",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 8 month after Feb, 1107",
+            "output": [
+                [
+                    "Oct, 1113"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5d8857632c794a6092566cc1fffdd49a",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 1 month before Aug, 1064",
+            "output": [
+                [
+                    "Jul, 1057"
+                ]
+            ]
+        },
+        {
+            "id": "task005-20567827c9264c56bfc766cc7c40d46c",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 12 month before Nov, 1596",
+            "output": [
+                [
+                    "Nov, 1594"
+                ]
+            ]
+        },
+        {
+            "id": "task005-09fd7c8a652a47b2a202c6fd971c32a5",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 2 month after Apr, 1430",
+            "output": [
+                [
+                    "Jun, 1438"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9aca3fa99cb3404fb7c137c45e72cf98",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 4 month before May, 1532",
+            "output": [
+                [
+                    "Jan, 1523"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5254baa532f64d059433bff714d0e97e",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 12 month before Dec, 1536",
+            "output": [
+                [
+                    "Dec, 1532"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4b22811376774b019c5992a37d3c9829",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 9 month after Sep, 1475",
+            "output": [
+                [
+                    "Jun, 1480"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5e48a0d23d974e018802ee3112b58772",
+            "input": "Sentence:  \nQuestion: What is the time 12 months before Mar, 1822",
+            "output": [
+                [
+                    "Mar, 1821"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6e074b7573a44f5a9bde03c010172074",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 9 month after May, 1301",
+            "output": [
+                [
+                    "Feb, 1307"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6439f34cc0824e05a539fb042e913419",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 5 month after Nov, 1394",
+            "output": [
+                [
+                    "Apr, 1404"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7b9c33c427f84c80a94f8dd8e16f7ecd",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 2 month after Jul, 1307",
+            "output": [
+                [
+                    "Sep, 1316"
+                ]
+            ]
+        },
+        {
+            "id": "task005-012eac1079bf4adf991700b9e2f14ba0",
+            "input": "Sentence:  \nQuestion: What is the time 3 months before Oct, 1478",
+            "output": [
+                [
+                    "Jul, 1478"
+                ]
+            ]
+        },
+        {
+            "id": "task005-1adc700352664ea081d6f2aa4d259d14",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 5 month after Sep, 1749",
+            "output": [
+                [
+                    "Feb, 1758"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0ce0ea9a909d458799b5e5a5ad3e57bb",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 2 month after Jun, 1875",
+            "output": [
+                [
+                    "Aug, 1878"
+                ]
+            ]
+        },
+        {
+            "id": "task005-cbb96cb69a7e40abb3d1173d3c054ca8",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 6 month before Oct, 1728",
+            "output": [
+                [
+                    "Apr, 1719"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2b71acaf3f904ef6925b537e80ef5161",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 11 month before May, 1729",
+            "output": [
+                [
+                    "Jun, 1722"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a709cc251ee84a67b38f9d2e7a040f6f",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 9 month before Jul, 1175",
+            "output": [
+                [
+                    "Oct, 1167"
+                ]
+            ]
+        },
+        {
+            "id": "task005-10e2c46807c24d87a22b307905863cbd",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 5 month before Dec, 1920",
+            "output": [
+                [
+                    "Jul, 1915"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0cbe772875b449388558cfd68e778565",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 11 month before Dec, 1944",
+            "output": [
+                [
+                    "Jan, 1935"
+                ]
+            ]
+        },
+        {
+            "id": "task005-16fbd02cd6ef4cd29925e88e7fe3c84f",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 6 month after Aug, 1714",
+            "output": [
+                [
+                    "Feb, 1720"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b586686102d14435b191982d85fb33f9",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 9 month before Aug, 1431",
+            "output": [
+                [
+                    "Nov, 1423"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b952139588d847dfb670fdfa4ce6a3ee",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 3 month before Jan, 1914",
+            "output": [
+                [
+                    "Oct, 1909"
+                ]
+            ]
+        },
+        {
+            "id": "task005-afa0f8f0d12d4ee49835efb084431259",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 10 month before Oct, 1901",
+            "output": [
+                [
+                    "Dec, 1895"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7f40a1f83b9745b4999b4349f7b22ece",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 8 month before Feb, 1786",
+            "output": [
+                [
+                    "Jun, 1775"
+                ]
+            ]
+        },
+        {
+            "id": "task005-57f4a2f7cfaa48d091ea684aa69c976d",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 11 month after Oct, 1230",
+            "output": [
+                [
+                    "Sep, 1237"
+                ]
+            ]
+        },
+        {
+            "id": "task005-61b9f59bd410438abfd6b60b3ebafdd4",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 8 month after Apr, 1865",
+            "output": [
+                [
+                    "Dec, 1871"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0cb9ad588831491599e651c57d686971",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 7 month after Oct, 1061",
+            "output": [
+                [
+                    "May, 1063"
+                ]
+            ]
+        },
+        {
+            "id": "task005-7917e3a8234043dfab180e6bd2a7e198",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 2 month before Oct, 1255",
+            "output": [
+                [
+                    "Aug, 1248"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e4e1c0fb6c714c529051c4594c773e9f",
+            "input": "Sentence:  \nQuestion: What is the time 1 month after Sep, 1392",
+            "output": [
+                [
+                    "Oct, 1392"
+                ]
+            ]
+        },
+        {
+            "id": "task005-50850b606237477c84fe67c9d01e7b4d",
+            "input": "Sentence:  \nQuestion: What is the time 4 years before Apr, 1999",
+            "output": [
+                [
+                    "Apr, 1995"
+                ]
+            ]
+        },
+        {
+            "id": "task005-95fc7427fe7a4146a4d674fa86b99fda",
+            "input": "Sentence:  \nQuestion: What is the time 9 months before Oct, 1332",
+            "output": [
+                [
+                    "Jan, 1332"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5c2f341ca7114177a9c98dc08d45a657",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 9 month after Jul, 1630",
+            "output": [
+                [
+                    "Apr, 1635"
+                ]
+            ]
+        },
+        {
+            "id": "task005-9f42296847104ce8be35010f6ae3e347",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 7 month before Dec, 1243",
+            "output": [
+                [
+                    "May, 1238"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6094afba753f4b5f95c241a2dc251b5d",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 11 month after Aug, 1352",
+            "output": [
+                [
+                    "Jul, 1360"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8e56592aa7904c28bed12a5f2234903a",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 8 month before Dec, 1166",
+            "output": [
+                [
+                    "Apr, 1163"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6b53ba4004164795adec79df940c5628",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 4 month before Nov, 1622",
+            "output": [
+                [
+                    "Jul, 1616"
+                ]
+            ]
+        },
+        {
+            "id": "task005-f4796021c9f34fe8a612c55a80dd466c",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 2 month after Feb, 1183",
+            "output": [
+                [
+                    "Apr, 1188"
+                ]
+            ]
+        },
+        {
+            "id": "task005-87700ea12040473cab3fdb292bf3fd8b",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 4 month after Oct, 1591",
+            "output": [
+                [
+                    "Feb, 1595"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4e3af20bd6774581bcf756991b744a8e",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 3 month after Aug, 1021",
+            "output": [
+                [
+                    "Nov, 1030"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5f8754fafe5f40f3bd2c56b3bc10287f",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 8 month after Feb, 1971",
+            "output": [
+                [
+                    "Oct, 1975"
+                ]
+            ]
+        },
+        {
+            "id": "task005-24e28bb768ce4751bb5ff9032604f19e",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 8 month after Oct, 1823",
+            "output": [
+                [
+                    "Jun, 1831"
+                ]
+            ]
+        },
+        {
+            "id": "task005-d84b2913070f45a891d5a0bad1f78dd7",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 2 month after Dec, 1844",
+            "output": [
+                [
+                    "Feb, 1848"
+                ]
+            ]
+        },
+        {
+            "id": "task005-cd22cb20019b4758b307027811ce1aea",
+            "input": "Sentence:  \nQuestion: What is the time 7 month after Mar, 1721",
+            "output": [
+                [
+                    "Oct, 1721"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0640244598c14f9c88d3451af4022ea3",
+            "input": "Sentence:  \nQuestion: What is the time 5 year after Jun, 1633",
+            "output": [
+                [
+                    "Jun, 1638"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b61d8d22e1574967a2b492e42e407e3f",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 11 month before Oct, 1118",
+            "output": [
+                [
+                    "Nov, 1111"
+                ]
+            ]
+        },
+        {
+            "id": "task005-972df101929e4d77aa9ef6a2b32283d4",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 6 month before Sep, 1283",
+            "output": [
+                [
+                    "Mar, 1274"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e077095b1892478ab0c64d70c1babfc5",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 12 month after Apr, 1909",
+            "output": [
+                [
+                    "Apr, 1919"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2dc1de2877bf415abb88ea2bee6a18df",
+            "input": "Sentence:  \nQuestion: What is the time 10 month after Nov, 1819",
+            "output": [
+                [
+                    "Sep, 1820"
+                ]
+            ]
+        },
+        {
+            "id": "task005-487a83d5a7bf4e9e8b6463661fabdd73",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 5 month after Jan, 1127",
+            "output": [
+                [
+                    "Jun, 1133"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5c434ef8a6014edba226d6091bb48507",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 5 month before Oct, 1931",
+            "output": [
+                [
+                    "May, 1928"
+                ]
+            ]
+        },
+        {
+            "id": "task005-67c3647e16954120984e9e51595ad937",
+            "input": "Sentence:  \nQuestion: What is the time 9 years before Aug, 1337",
+            "output": [
+                [
+                    "Aug, 1328"
+                ]
+            ]
+        },
+        {
+            "id": "task005-caa9311f305a470fa1d3406d4b30b37e",
+            "input": "Sentence:  \nQuestion: What is the time 10 year and 1 month after Jan, 1466",
+            "output": [
+                [
+                    "Feb, 1476"
+                ]
+            ]
+        },
+        {
+            "id": "task005-32b0f4c9c27445d5921a2f3c09eabfb4",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 11 month after Dec, 1033",
+            "output": [
+                [
+                    "Nov, 1035"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b360c3d39e4b4464a12e3f9b63136cd1",
+            "input": "Sentence:  \nQuestion: What is the time 4 year and 3 month before Apr, 1127",
+            "output": [
+                [
+                    "Jan, 1123"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b80ed3b95c7d490a885cc9086bf2ccef",
+            "input": "Sentence:  \nQuestion: What is the time 4 month after Feb, 1743",
+            "output": [
+                [
+                    "Jun, 1743"
+                ]
+            ]
+        },
+        {
+            "id": "task005-20f3f0da6a2b4330a7a3cb1d51e2e5b7",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 4 month after Apr, 1416",
+            "output": [
+                [
+                    "Aug, 1417"
+                ]
+            ]
+        },
+        {
+            "id": "task005-8a98cb2b0ed44d10b8a28c58e5303a3a",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 10 month after Jun, 1696",
+            "output": [
+                [
+                    "Apr, 1703"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0a9db49230fa4255916755f49681c692",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 10 month before Jul, 1848",
+            "output": [
+                [
+                    "Sep, 1841"
+                ]
+            ]
+        },
+        {
+            "id": "task005-091ad08f24bc44abaa9847c9f2ac1375",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 1 month before Aug, 1101",
+            "output": [
+                [
+                    "Jul, 1093"
+                ]
+            ]
+        },
+        {
+            "id": "task005-4f87068b6da24af7ae2df12eca580820",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 11 month before Nov, 1197",
+            "output": [
+                [
+                    "Dec, 1190"
+                ]
+            ]
+        },
+        {
+            "id": "task005-e694aa326df246bc83a33da48c13f064",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 8 month before Aug, 1126",
+            "output": [
+                [
+                    "Dec, 1118"
+                ]
+            ]
+        },
+        {
+            "id": "task005-97aaa5a021584052a8b84fb86f4c3902",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 12 month after Mar, 1265",
+            "output": [
+                [
+                    "Mar, 1275"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0e911f9462364d27b93f970523e3e788",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 12 month after Apr, 1090",
+            "output": [
+                [
+                    "Apr, 1096"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6bf4fa47203545d38f1e64f6729083c7",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 12 month after Jul, 1014",
+            "output": [
+                [
+                    "Jul, 1024"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b688989dd1be44b7965ed2c44a1b2930",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 3 month after Nov, 1143",
+            "output": [
+                [
+                    "Feb, 1145"
+                ]
+            ]
+        },
+        {
+            "id": "task005-18d8e822bd194c5ab76c9de4a469dc97",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 3 month before Jan, 1578",
+            "output": [
+                [
+                    "Oct, 1569"
+                ]
+            ]
+        },
+        {
+            "id": "task005-500f7c1f485f41729432f302514df39f",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 3 month before Aug, 1308",
+            "output": [
+                [
+                    "May, 1300"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a3147427f8c44c67a6546daed7c0330f",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 3 month after Jul, 1396",
+            "output": [
+                [
+                    "Oct, 1401"
+                ]
+            ]
+        },
+        {
+            "id": "task005-336f6aaf956b44efa476bc91c1609e96",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 9 month after Nov, 1515",
+            "output": [
+                [
+                    "Aug, 1523"
+                ]
+            ]
+        },
+        {
+            "id": "task005-551cf73e73c8471c9793854d4ce1d719",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 10 month before Mar, 1753",
+            "output": [
+                [
+                    "May, 1749"
+                ]
+            ]
+        },
+        {
+            "id": "task005-92c1789772ff4f20a36c86955d472a2d",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 11 month after May, 1298",
+            "output": [
+                [
+                    "Apr, 1308"
+                ]
+            ]
+        },
+        {
+            "id": "task005-62fde94f32d342a5a55fd9e391ec4759",
+            "input": "Sentence:  \nQuestion: What is the time 5 year and 8 month before Feb, 1185",
+            "output": [
+                [
+                    "Jun, 1179"
+                ]
+            ]
+        },
+        {
+            "id": "task005-981ca50f7e924fe0a71df460a3f2c72c",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 4 month after Sep, 1920",
+            "output": [
+                [
+                    "Jan, 1930"
+                ]
+            ]
+        },
+        {
+            "id": "task005-68b9777575514566bb8912b6a6a990b9",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 3 month after Mar, 1993",
+            "output": [
+                [
+                    "Jun, 2001"
+                ]
+            ]
+        },
+        {
+            "id": "task005-cddc9b0a402841e595fe94beb5d54baf",
+            "input": "Sentence:  \nQuestion: What is the time 8 year and 7 month before Jun, 1949",
+            "output": [
+                [
+                    "Nov, 1940"
+                ]
+            ]
+        },
+        {
+            "id": "task005-b5ecbd34dcf442b08f1e5fa586435559",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 3 month before Oct, 1526",
+            "output": [
+                [
+                    "Jul, 1520"
+                ]
+            ]
+        },
+        {
+            "id": "task005-3701610f88ea47b99b12d600fb5e5543",
+            "input": "Sentence:  \nQuestion: What is the time 3 years before Mar, 1515",
+            "output": [
+                [
+                    "Mar, 1512"
+                ]
+            ]
+        },
+        {
+            "id": "task005-5d0391b65a904bca9f989abdf5a42beb",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 3 month before May, 1414",
+            "output": [
+                [
+                    "Feb, 1411"
+                ]
+            ]
+        },
+        {
+            "id": "task005-2fe63fcc5ecf440ebdc3059180755103",
+            "input": "Sentence:  \nQuestion: What is the time 7 year and 2 month before Feb, 1880",
+            "output": [
+                [
+                    "Dec, 1872"
+                ]
+            ]
+        },
+        {
+            "id": "task005-42c7fbaf20e74d51935d122893f73f67",
+            "input": "Sentence:  \nQuestion: What is the time 9 year and 5 month before Mar, 1254",
+            "output": [
+                [
+                    "Oct, 1244"
+                ]
+            ]
+        },
+        {
+            "id": "task005-c1aa9095feed4f1fba538572ee94c7b0",
+            "input": "Sentence:  \nQuestion: What is the time 1 year and 8 month before Jun, 1928",
+            "output": [
+                [
+                    "Oct, 1926"
+                ]
+            ]
+        },
+        {
+            "id": "task005-a3b946fbed2e4e0a9f16e56873b9f3f4",
+            "input": "Sentence:  \nQuestion: What is the time 3 year and 3 month before Nov, 1798",
+            "output": [
+                [
+                    "Aug, 1795"
+                ]
+            ]
+        },
+        {
+            "id": "task005-12413dcbdd974380bee757493de4c871",
+            "input": "Sentence:  \nQuestion: What is the time 9 months before Aug, 1835",
+            "output": [
+                [
+                    "Nov, 1834"
+                ]
+            ]
+        },
+        {
+            "id": "task005-0feb4466b2404b92979178ec223dae2d",
+            "input": "Sentence:  \nQuestion: What is the time 2 year and 3 month after Sep, 1586",
+            "output": [
+                [
+                    "Dec, 1588"
+                ]
+            ]
+        },
+        {
+            "id": "task005-6d2996f728f345d5a8f541285cac49a0",
+            "input": "Sentence:  \nQuestion: What is the time 6 year and 1 month after Dec, 1057",
+            "output": [
+                [
+                    "Jan, 1064"
+                ]
+            ]
+        }
+    ]          
+}
