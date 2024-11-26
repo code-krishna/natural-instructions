@@ -9,6 +9,7 @@
         "https://github.com/EternityYW/TRAM-Benchmark/blob/main/datasets/arithmetic.zip"
     ],
     "Categories": [
+        "Arithmetic",
         "Hour Adjustment (24h)"
     ],
     "Reasoning": [
