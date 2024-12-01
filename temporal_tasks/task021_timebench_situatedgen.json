@@ -1,0 +1,863 @@
+{
+    "Contributors": [
+        "Het Patel"
+    ],
+    "Source": [
+        "SituatedGen"
+    ],
+    "URL": [
+        "https://github.com/zchuz/TimeBench/blob/main/TimeBench-subset-7553/SituatedGen/situatedgen_timebench.jsonl"
+    ],
+    "Categories": [
+        "Question Answering"
+    ],
+    "Reasoning": [
+        "Time Duration"
+    ],
+    "Definition": [
+        "In this task, we ask to create sentences which best describe the context and the keywords positioning."
+    ],
+    "Input_language": [
+        "English"
+    ],
+    "Output_language": [
+        "English"
+    ],
+    "Instruction_language": [
+        "English"
+    ],
+    "Domains": [
+        "Anonymous"
+    ],
+    "Positive Examples": [
+        {
+            "input": "Keywords: : [\"approximately 365 days\", \"axis\", \"every 24 hours\", \"sun\", \"Earth\", \"Earth\"] \nStatement: \"Earth revolves around the sun approximately 365 days. Earth rotates on its axis once every 24 hours.\" \nids: [\"arc::Easy::Test::101\", \"arc::Easy::Test::110\"] \nKeywords_pos: [0, 1, 1, 0, 1, 0]",
+            "output": "\"Earth revolves around the sun approximately 365 days.\", \"Earth rotates on its axis once every 24 hours.\"",
+            "explanation": "The keywords are consistent with the statement."
+        },
+        {
+            "input": "Keywords: [\"England\", \"Italy\", \"France\", \"Charles the Bald\", \"the 9th century\", \"David Cameron\", \"government\"] \nStatement: \"Charles the Bald ruled over France and Italy during the 9th century. David Cameron ruled the government in England.\" \nids: [\"creak::dev::83\", \"creak::dev::641\"] \nKeywords_pos: [1, 0, 0, 0, 0, 1, 1]",
+            "output": "\"Charles the Bald ruled over France and Italy during the 9th century.\", \"David Cameron ruled the government in England.\"",
+            "explanation": "The keywords are consistent with the statement."
+        }
+    ],
+    "Negative Examples": [
+        {
+            "input": "Keywords: [\"axis\", \"one day\", \"one month\", \"Earth\", \"Moon\"] \nStatement: \"Earth rotates on its axis once in one day. It takes one month for the Moon to rotate on its axis.\" \nids: [\"arc::Challenge::Train::981\", \"arc::Easy::Train::1742\"] \nKeywords_pos: [0, 0, 1, 0, 1]",
+            "output": "\"Moon rotates on its axis once in one day.\", \"It takes one month for the Earth to rotate on its axis.\"",
+            "explanation": "The keywords are not consistent with the statement."
+        },
+        {
+            "input": "Keywords: [\"Prejudice\", \"Jane Austen\", \"Bingen\", \"Hildegard\", \"Music\", \"Pride\", \"the first half of the 19th century\", \"hundreds of years ago\"] \nStatement: \"Jane Austen wrote Pride and Prejudice in the first half of the 19th century. Music by Hildegard of Bingen was written hundreds of years ago.\" \nids: [\"creak::train::249\", \"creak::train::1560\"] \nKeywords_pos: [0, 0, 1, 1, 1, 0, 0, 1]",
+            "output": "\"Music by Hildegard of Bingen was written in the first half of the 19th century.\", \"Jane Austen wrote Pride and Prejudice  hundreds of years ago.\"",
+            "explanation": "The keywords are not consistent with the statement."
+        }
+    ],
+    "Instances": [
+        {
+            "id": "task021-43164dec696a4181b732f506f0d6acaf",
+            "input": "Keywords: : ['approximately 365 days', 'axis', 'every 24 hours', 'sun', 'Earth', 'Earth'] \nStatement: \"Earth revolves around the sun approximately 365 days. Earth rotates on its axis once every 24 hours.\" \nids: ['arc::Easy::Test::101', 'arc::Easy::Test::110'] \nKeywords_pos: [0, 1, 1, 0, 1, 0]",
+            "output": [
+                "\"Earth revolves around the sun approximately 365 days.\", \"Earth rotates on its axis once every 24 hours.\""
+            ]
+        },
+        {
+            "id": "task021-715344919ef14709ba2896435426f130",
+            "input": "Keywords: : ['England', 'Italy', 'France', 'Charles the Bald', 'the 9th century', 'David Cameron', 'government'] \nStatement: \"Charles the Bald ruled over France and Italy during the 9th century. David Cameron ruled the government in England.\" \nids: ['creak::dev::83', 'creak::dev::641'] \nKeywords_pos: [1, 0, 0, 0, 0, 1, 1]",
+            "output": [
+                "\"Charles the Bald ruled over France and Italy during the 9th century.\", \"David Cameron ruled the government in England.\""
+            ]
+        },
+        {
+            "id": "task021-38f5a96a58444b5f8b5c2297629f5f74",
+            "input": "Keywords: : ['axis', 'one day', 'one month', 'Earth', 'Moon'] \nStatement: \"Earth rotates on its axis once in one day. It takes one month for the Moon to rotate on its axis.\" \nids: ['arc::Challenge::Train::981', 'arc::Easy::Train::1742'] \nKeywords_pos: [0, 0, 1, 0, 1]",
+            "output": [
+                "\"Earth rotates on its axis once in one day.\", \"It takes one month for the Moon to rotate on its axis.\""
+            ]
+        },
+        {
+            "id": "task021-5dd9db6619864f2781103b372144d840",
+            "input": "Keywords: : ['Prejudice', 'Jane Austen', 'Bingen', 'Hildegard', 'Music', 'Pride', 'the first half of the 19th century', 'hundreds of years ago'] \nStatement: \"Jane Austen wrote Pride and Prejudice in the first half of the 19th century. Music by Hildegard of Bingen was written hundreds of years ago.\" \nids: ['creak::train::249', 'creak::train::1560'] \nKeywords_pos: [0, 0, 1, 1, 1, 0, 0, 1]",
+            "output": [
+                "\"Jane Austen wrote Pride and Prejudice in the first half of the 19th century.\", \"Music by Hildegard of Bingen was written hundreds of years ago.\""
+            ]
+        },
+        {
+            "id": "task021-8bb598be659147afa7659b3249ea9fad",
+            "input": "Keywords: : ['sun', 'Earth', 'one', 'Earth', 'revolution', '8.3 minutes', 'Sun', 'about a year', 'sunlight'] \nStatement: \"Earth takes about a year to make one revolution around the Sun. Sunlight takes 8.3 minutes to reach Earth from the sun.\" \nids: ['arc::Challenge::Dev::251', 'openbookqa::Additional/crowdsourced-facts.txt::4393'] \nKeywords_pos: [1, 0, 0, 1, 0, 1, 0, 0, 1]",
+            "output": [
+                "\"Earth takes about a year to make one revolution around the Sun.\", \"Sunlight takes 8.3 minutes to reach Earth from the sun.\""
+            ]
+        },
+        {
+            "id": "task021-7de26da616c7439e9579929fa5f3698d",
+            "input": "Keywords: : ['day', '24 hours', '365 days', 'one year'] \nStatement: \"One day is equal to 24 hours. One year is equal to 365 days.\" \nids: ['openbookqa::Main/openbook.txt::915', 'openbookqa::Main/openbook.txt::916'] \nKeywords_pos: [0, 0, 1, 1]",
+            "output": [
+                "\"One day is equal to 24 hours.\", \"One year is equal to 365 days.\""
+            ]
+        },
+        {
+            "id": "task021-1e310685735745b88d345349d6738ca8",
+            "input": "Keywords: : ['September', 'Christmas', 'the month of August', 'place', 'place', 'the end of the year'] \nStatement: \"September takes place after the month of August. Christmas takes place in the end of the year.\" \nids: ['creak::train::4686', 'creak::train::10071'] \nKeywords_pos: [0, 1, 0, 1, 0, 1]",
+            "output": [
+                "\"September takes place after the month of August.\", \"Christmas takes place in the end of the year.\""
+            ]
+        },
+        {
+            "id": "task021-efb4a8955b7a42c49b528cd19feb92aa",
+            "input": "Keywords: : ['the Middle Ages', 'Tale', 'Dante Alighieri', 'book', 'William Shakespeare', '1623', 'Winter'] \nStatement: \"Dante Alighieri wrote a notable book in the Middle Ages. William Shakespeare originally published The Winter's Tale in 1623.\" \nids: ['creak::train::5136', 'creak::train::6621'] \nKeywords_pos: [0, 1, 0, 0, 1, 1, 1]",
+            "output": [
+                "\"Dante Alighieri wrote a notable book in the Middle Ages.\", \"William Shakespeare originally published The Winter's Tale in 1623.\""
+            ]
+        },
+        {
+            "id": "task021-7f37d046575e4ac8bcb75e393580019f",
+            "input": "Keywords: : ['up to 20 years', '6 to 10 years', 'captivity', 'Crows', 'six to seven years', 'world', 'wild', 'parts', 'Mongooses', 'wild'] \nStatement: \"Crows are found throughout many parts of the world and in the wild they live for six to seven years. Mongooses live from 6 to 10 years in the wild and up to 20 years in captivity.\" \nids: ['arc::Easy::Train::1476', 'creak::train::9753'] \nKeywords_pos: [1, 1, 1, 0, 0, 0, 0, 0, 1, 1]",
+            "output": [
+                "\"Crows are found throughout many parts of the world and in the wild they live for six to seven years.\", \"Mongooses live from 6 to 10 years in the wild and up to 20 years in captivity.\""
+            ]
+        },
+        {
+            "id": "task021-8a568d0af353474699b5783f8d34c3f2",
+            "input": "Keywords: : ['the Mughal Empire', 'Enver', 'the 16th and early 17th centuries', 'Hoxha', 'Great', 'the 20th century', 'Akbar', 'Albania'] \nStatement: \"Enver Hoxha ruled over Albania during the 20th century. Akbar the Great reigned the Mughal Empire in the 16th and early 17th centuries.\" \nids: ['creak::train::2341', 'creak::train::8738'] \nKeywords_pos: [1, 0, 1, 0, 1, 0, 1, 0]",
+            "output": [
+                "\"Enver Hoxha ruled over Albania during the 20th century.\", \"Akbar the Great reigned the Mughal Empire in the 16th and early 17th centuries.\""
+            ]
+        },
+        {
+            "id": "task021-69bc534b2d6d41f8b685cd9bbc1d2103",
+            "input": "Keywords: : ['death', 'the year 1793', 'Louis XVI', 'Guillotine', 'diabetes', '2003', 'Johnny Cash'] \nStatement: \"Louis XVI died by Guillotine in the year 1793. Johnny Cash died in 2003 and the death was related to diabetes.\" \nids: ['creak::train::2121', 'creak::train::3843'] \nKeywords_pos: [1, 0, 0, 0, 1, 1, 1]",
+            "output": [
+                "\"Louis XVI died by Guillotine in the year 1793.\", \"Johnny Cash died in 2003 and the death was related to diabetes.\""
+            ]
+        },
+        {
+            "id": "task021-2c3c9fd5d6354d12b24e4156e5daa445",
+            "input": "Keywords: : ['Wettin', 'House', 'Germany', 'territories', 'the Mughal Empire', 'Great', 'the 16th and early 17th centuries', 'Akbar'] \nStatement: \"The House of Wettin once ruled territories in Germany. Akbar the Great reigned the Mughal Empire in the 16th and early 17th centuries.\" \nids: ['creak::train::7221', 'creak::train::8738'] \nKeywords_pos: [0, 0, 0, 0, 1, 1, 1, 1]",
+            "output": [
+                "\"The House of Wettin once ruled territories in Germany.\", \"Akbar the Great reigned the Mughal Empire in the 16th and early 17th centuries.\""
+            ]
+        },
+        {
+            "id": "task021-0c09617ccae34cc5ba7d9c654daf5237",
+            "input": "Keywords: : ['Paul', 'Akbar', 'Emperor', 'the 16th and early 17th centuries', 'Great', 'history', 'Russia', 'the Mughal Empire'] \nStatement: \"In history, Paul I of Russia reigned as the Emperor of Russia. Akbar the Great reigned the Mughal Empire in the 16th and early 17th centuries.\" \nids: ['creak::train::6900', 'creak::train::8738'] \nKeywords_pos: [0, 1, 0, 1, 1, 0, 0, 1]",
+            "output": [
+                "\"In history, Paul I of Russia reigned as the Emperor of Russia.\", \"Akbar the Great reigned the Mughal Empire in the 16th and early 17th centuries.\""
+            ]
+        },
+        {
+            "id": "task021-bed19cc7503647448a97e8237389ca8f",
+            "input": "Keywords: : ['365 days', 'Moon', 'Sun', 'orbit', 'one', 'about 27 Earth days', 'Earth', 'Earth'] \nStatement: \"It takes the Moon about 27 Earth days to travel around Earth. It takes 365 days for Earth to complete one orbit around the Sun.\" \nids: ['arc::Easy::Train::1440', 'arc::Easy::Test::2285'] \nKeywords_pos: [1, 0, 1, 1, 1, 0, 0, 1]",
+            "output": [
+                "\"It takes the Moon about 27 Earth days to travel around Earth.\", \"It takes 365 days for Earth to complete one orbit around the Sun.\""
+            ]
+        },
+        {
+            "id": "task021-41f6f2568f03449bbfdd5c9b7ed4911a",
+            "input": "Keywords: : ['Stanford University', 'city', 'Leland', '1885', 'Campbell', 'Benjamin Campbell', 'California', 'Jane Stanford'] \nStatement: \"Benjamin Campbell founded the city of Campbell, California. Leland and Jane Stanford founded Stanford University in 1885.\" \nids: ['creak::train::3350', 'creak::train::6210'] \nKeywords_pos: [1, 0, 1, 1, 0, 0, 0, 1]",
+            "output": [
+                "\"Benjamin Campbell founded the city of Campbell, California.\", \"Leland and Jane Stanford founded Stanford University in 1885.\""
+            ]
+        },
+        {
+            "id": "task021-e59c4ebe9806408fbe68cee25f712337",
+            "input": "Keywords: : ['2004', 'Jim Webb', 'president', 'John Kerry', '2020', 'President'] \nStatement: \"John Kerry ran for President in 2004. Jim Webb ran for president in 2020.\" \nids: ['creak::train::8491', 'creak::dev::143'] \nKeywords_pos: [0, 1, 1, 0, 1, 0]",
+            "output": [
+                "\"John Kerry ran for President in 2004.\", \"Jim Webb ran for president in 2020.\""
+            ]
+        },
+        {
+            "id": "task021-b7cefce656cb43ebac0c66db13798bc6",
+            "input": "Keywords: : ['one', 'Moon', 'revolution', 'Sun', 'light', 'Earth', 'about 30 days', 'Earth', 'about 4 years', 'star'] \nStatement: \"It takes about 30 days for the Moon to complete one revolution around Earth. It takes about 4 years for light from the nearest star other than the Sun to reach Earth.\" \nids: ['arc::Challenge::Dev::65', 'arc::Easy::Test::1972'] \nKeywords_pos: [0, 0, 0, 1, 1, 1, 0, 0, 1, 1]",
+            "output": [
+                "\"It takes about 30 days for the Moon to complete one revolution around Earth.\", \"It takes about 4 years for light from the nearest star other than the Sun to reach Earth.\""
+            ]
+        },
+        {
+            "id": "task021-3200986b73b4483491a153ab0a4df05c",
+            "input": "Keywords: : ['Guillotine', 'Louis XVI', 'the 21st century', 'Robin Williams', 'the year 1793', 'suicide'] \nStatement: \"Louis XVI died by Guillotine in the year 1793. Robin Williams died by suicide in the 21st century.\" \nids: ['creak::train::2121', 'creak::train::8626'] \nKeywords_pos: [0, 0, 1, 1, 0, 1]",
+            "output": [
+                "\"Louis XVI died by Guillotine in the year 1793.\", \"Robin Williams died by suicide in the 21st century.\""
+            ]
+        },
+        {
+            "id": "task021-8e14d47a86e3446aa2ed4efdeaf25a8f",
+            "input": "Keywords: : ['place', '500', 'Christmas', 'Daytona', 'the end of the year', 'place', 'February'] \nStatement: \"Christmas takes place in the end of the year. The Daytona 500 typically takes place in February.\" \nids: ['creak::train::10071', 'creak::dev::302'] \nKeywords_pos: [0, 1, 0, 1, 0, 1, 1]",
+            "output": [
+                "\"Christmas takes place in the end of the year.\", \"The Daytona 500 typically takes place in February.\""
+            ]
+        },
+        {
+            "id": "task021-5995c06db178448a990f8ca7ec596a7d",
+            "input": "Keywords: : ['2004', '2016', 'President', 'Howard Dean', 'Jeb Bush', 'president'] \nStatement: \"Jeb Bush ran for President in 2016. Howard Dean ran for president in 2004.\" \nids: ['creak::train::1842', 'creak::train::5258'] \nKeywords_pos: [1, 0, 0, 1, 0, 1]",
+            "output": [
+                "\"Jeb Bush ran for President in 2016.\", \"Howard Dean ran for president in 2004.\""
+            ]
+        },
+        {
+            "id": "task021-245d0972338645ea9a14a634dd204362",
+            "input": "Keywords: : ['Amy Winehouse', 'Ceau\u0219escu', 'execution', 'Nicolae', 'Christmas Day', '2011'] \nStatement: \"Nicolae Ceau\u0219escu died on Christmas Day due to execution. Amy Winehouse passed away in 2011.\" \nids: ['creak::train::5950', 'creak::train::8054'] \nKeywords_pos: [1, 0, 0, 0, 0, 1]",
+            "output": [
+                "\"Nicolae Ceau\u0219escu died on Christmas Day due to execution.\", \"Amy Winehouse passed away in 2011.\""
+            ]
+        },
+        {
+            "id": "task021-4272a013beab47a7b71e856361b6939c",
+            "input": "Keywords: : ['Prejudice', 'Dante Alighieri', 'Jane Austen', 'the first half of the 19th century', 'the Middle Ages', 'Pride', 'book'] \nStatement: \"Jane Austen wrote Pride and Prejudice in the first half of the 19th century. Dante Alighieri wrote a notable book in the Middle Ages.\" \nids: ['creak::train::249', 'creak::train::5136'] \nKeywords_pos: [0, 1, 0, 0, 1, 0, 1]",
+            "output": [
+                "\"Jane Austen wrote Pride and Prejudice in the first half of the 19th century.\", \"Dante Alighieri wrote a notable book in the Middle Ages.\""
+            ]
+        },
+        {
+            "id": "task021-179f214de94f426ea28d8ccdffb0ad1e",
+            "input": "Keywords: : ['The Cuban Missile Crisis', 'Daytona', 'place', '500', '1962', 'place', 'February'] \nStatement: \"The Cuban Missile Crisis took place in 1962. The Daytona 500 typically takes place in February.\" \nids: ['creak::train::5312', 'creak::dev::302'] \nKeywords_pos: [0, 1, 0, 1, 0, 1, 1]",
+            "output": [
+                "\"The Cuban Missile Crisis took place in 1962.\", \"The Daytona 500 typically takes place in February.\""
+            ]
+        },
+        {
+            "id": "task021-37ec75e26e604f8683655d855c0fc31c",
+            "input": "Keywords: : ['Chevrolet', 'behemoth', 'today', 'Corvette', '1950', 'Bowling Green', 'the United States Numbered Highway System', 'Kentucky'] \nStatement: \"In the 1950's the United States Numbered Highway System started being built into the behemoth it is today. They currently build the Chevrolet Corvette in Bowling Green, Kentucky.\" \nids: ['creak::train::3789', 'creak::train::9277'] \nKeywords_pos: [1, 0, 0, 1, 0, 1, 0, 1]",
+            "output": [
+                "\"In the 1950's the United States Numbered Highway System started being built into the behemoth it is today.\", \"They currently build the Chevrolet Corvette in Bowling Green, Kentucky.\""
+            ]
+        },
+        {
+            "id": "task021-3ebe36c0b1bb4850a7be19f87feab4be",
+            "input": "Keywords: : ['Howard Dean', '2004', '2008', 'president', 'President', 'Ron Paul'] \nStatement: \"Howard Dean ran for President in 2004. Ron Paul ran for president in 2008.\" \nids: ['creak::train::7583', 'creak::dev::1242'] \nKeywords_pos: [0, 0, 1, 1, 0, 1]",
+            "output": [
+                "\"Howard Dean ran for President in 2004.\", \"Ron Paul ran for president in 2008.\""
+            ]
+        },
+        {
+            "id": "task021-9b2e0ab5db244c50a7a9a6ebdd345fd9",
+            "input": "Keywords: : ['John Kerry', '2008', 'president', '2004', 'President', 'Ron Paul'] \nStatement: \"John Kerry ran for President in 2004. Ron Paul ran for president in 2008.\" \nids: ['creak::train::8491', 'creak::dev::1242'] \nKeywords_pos: [0, 1, 1, 0, 0, 1]",
+            "output": [
+                "\"John Kerry ran for President in 2004.\", \"Ron Paul ran for president in 2008.\""
+            ]
+        },
+        {
+            "id": "task021-222bfd0f13d544d5905f1e94bf32a8ae",
+            "input": "Keywords: : ['president', 'Ron Paul', 'President', '2008', 'Jeb Bush', '2016'] \nStatement: \"Jeb Bush ran for President in 2016. Ron Paul ran for president in 2008.\" \nids: ['creak::train::1842', 'creak::dev::1242'] \nKeywords_pos: [1, 1, 0, 1, 0, 0]",
+            "output": [
+                "\"Jeb Bush ran for President in 2016.\", \"Ron Paul ran for president in 2008.\""
+            ]
+        },
+        {
+            "id": "task021-2e47d6e9bb9a4a6e8053e9988d2726d2",
+            "input": "Keywords: : ['election', 'republican', 'President', 'United States', '2000', 'George W. Bush', 'election', '1980'] \nStatement: \"The 1980 was presidential election won by a republican. President George W. Bush won the 2000 United States presidential election.\" \nids: ['strategyqa::train_filtered::2132', 'creak::train::7506'] \nKeywords_pos: [1, 0, 1, 1, 1, 1, 0, 0]",
+            "output": [
+                "\"The 1980 was presidential election won by a republican.\", \"President George W. Bush won the 2000 United States presidential election.\""
+            ]
+        },
+        {
+            "id": "task021-8b41ca1c21e8431a868a012342e64ac5",
+            "input": "Keywords: : ['weasel', 'Michigan', 'city', 'Pakistan', 'the olden days', 'American', 'capital', 'Karachi'] \nStatement: \"An American weasel might live in Michigan. In the olden days, one could live in a capital city in Pakistan named Karachi.\" \nids: ['commonsenseqa::train::7981', 'creak::train::771'] \nKeywords_pos: [0, 0, 1, 1, 1, 0, 1, 1]",
+            "output": [
+                "\"An American weasel might live in Michigan.\", \"In the olden days, one could live in a capital city in Pakistan named Karachi.\""
+            ]
+        },
+        {
+            "id": "task021-eb8c26e8700745849b14c55a3c078ba4",
+            "input": "Keywords: : ['Louis XVI', 'execution', 'Guillotine', 'the year 1793', 'Christmas Day', 'Nicolae', 'Ceau\u0219escu'] \nStatement: \"Louis XVI died by Guillotine in the year 1793. Nicolae Ceau\u0219escu died on Christmas Day due to execution.\" \nids: ['creak::train::2121', 'creak::train::5950'] \nKeywords_pos: [0, 1, 0, 0, 1, 1, 1]",
+            "output": [
+                "\"Louis XVI died by Guillotine in the year 1793.\", \"Nicolae Ceau\u0219escu died on Christmas Day due to execution.\""
+            ]
+        },
+        {
+            "id": "task021-4002279b2a0044368596d61ac33ffa14",
+            "input": "Keywords: : ['death', 'Johnny Cash', '2003', 'execution', 'Nicolae', 'Christmas Day', 'diabetes', 'Ceau\u0219escu'] \nStatement: \"Johnny Cash died in 2003 and the death was related to diabetes. Nicolae Ceau\u0219escu died on Christmas Day due to execution.\" \nids: ['creak::train::3843', 'creak::train::5950'] \nKeywords_pos: [0, 0, 0, 1, 1, 1, 0, 1]",
+            "output": [
+                "\"Johnny Cash died in 2003 and the death was related to diabetes.\", \"Nicolae Ceau\u0219escu died on Christmas Day due to execution.\""
+            ]
+        },
+        {
+            "id": "task021-cfb0a8251d6b464d95d258137571a507",
+            "input": "Keywords: : ['monarch', 'Denmark', 'IV', 'over 50 years', 'Elizabeth II', 'several decades', 'Christian'] \nStatement: \"Elizabeth II reigned for over 50 years. Christian IV of Denmark reigned as a monarch for several decades.\" \nids: ['creak::train::2192', 'creak::train::3508'] \nKeywords_pos: [1, 1, 1, 0, 0, 1, 1]",
+            "output": [
+                "\"Elizabeth II reigned for over 50 years.\", \"Christian IV of Denmark reigned as a monarch for several decades.\""
+            ]
+        },
+        {
+            "id": "task021-704323a2b8a24228be4d548cbc7a3393",
+            "input": "Keywords: : ['Albania', 'Hoxha', 'several decades', 'the 20th century', 'IV', 'Denmark', 'Christian', 'Enver', 'monarch'] \nStatement: \"Enver Hoxha ruled over Albania during the 20th century. Christian IV of Denmark reigned as a monarch for several decades.\" \nids: ['creak::train::2341', 'creak::train::3508'] \nKeywords_pos: [0, 0, 1, 0, 1, 1, 1, 0, 1]",
+            "output": [
+                "\"Enver Hoxha ruled over Albania during the 20th century.\", \"Christian IV of Denmark reigned as a monarch for several decades.\""
+            ]
+        },
+        {
+            "id": "task021-c084c20f5157471997f2dfa4697ea9f6",
+            "input": "Keywords: : ['The Cuban Missile Crisis', 'Japan', 'Nagano', 'Winter Olympics', 'place', '1962', 'place', '1998'] \nStatement: \"The Cuban Missile Crisis took place in 1962. 1998 Winter Olympics took place in Nagano Japan.\" \nids: ['creak::train::5312', 'creak::train::6645'] \nKeywords_pos: [0, 1, 1, 1, 1, 0, 0, 1]",
+            "output": [
+                "\"The Cuban Missile Crisis took place in 1962.\", \"1998 Winter Olympics took place in Nagano Japan.\""
+            ]
+        },
+        {
+            "id": "task021-6780ff311afd4e82938bfa50b4b67d4b",
+            "input": "Keywords: : ['name', 'Duke University', '1924', 'Trinity College', 'logo', 'Oracle', 'the 1990s', 'acquisition', 'Sun Microsystems'] \nStatement: \"Sun Microsystems used its original logo from the 1990s until acquisition by Oracle. Trinity College was the original name of Duke University before being renamed in 1924.\" \nids: ['creak::train::2263', 'creak::train::7675'] \nKeywords_pos: [1, 1, 1, 1, 0, 0, 0, 0, 0]",
+            "output": [
+                "\"Sun Microsystems used its original logo from the 1990s until acquisition by Oracle.\", \"Trinity College was the original name of Duke University before being renamed in 1924.\""
+            ]
+        },
+        {
+            "id": "task021-2530920643274df7b2ef1b81ad417ef4",
+            "input": "Keywords: : ['the years 1985 and 1955', 'Christmas', 'place', 'Future', 'place', 'the end of the year'] \nStatement: \"Back to the Future 1 takes place in the years 1985 and 1955. Christmas takes place in the end of the year.\" \nids: ['creak::train::1997', 'creak::train::10071'] \nKeywords_pos: [0, 1, 0, 0, 1, 1]",
+            "output": [
+                "\"Back to the Future 1 takes place in the years 1985 and 1955.\", \"Christmas takes place in the end of the year.\""
+            ]
+        },
+        {
+            "id": "task021-97b311c607824667a003514e8e01a2fc",
+            "input": "Keywords: : ['MythBusters', 'air', 'The Colbert Report', 'about 9 years', '18 seasons'] \nStatement: \"MythBusters ran on air for 18 seasons. The Colbert Report ran for about 9 years.\" \nids: ['creak::train::4355', 'creak::train::6825'] \nKeywords_pos: [0, 0, 1, 1, 0]",
+            "output": [
+                "\"MythBusters ran on air for 18 seasons.\", \"The Colbert Report ran for about 9 years.\""
+            ]
+        },
+        {
+            "id": "task021-a9adfd377c3445ee9d5f0f9131f49ae3",
+            "input": "Keywords: : ['1980', 'election', '1984', 'Walter Mondale', 'United States', 'election', 'Ronald Reagan', 'republican'] \nStatement: \"The 1980 was presidential election won by a republican. Walter Mondale competed against Ronald Reagan in the 1984 United States presidential election.\" \nids: ['strategyqa::train_filtered::2132', 'creak::dev::1271'] \nKeywords_pos: [0, 0, 1, 1, 1, 1, 1, 0]",
+            "output": [
+                "\"The 1980 was presidential election won by a republican.\", \"Walter Mondale competed against Ronald Reagan in the 1984 United States presidential election.\""
+            ]
+        },
+        {
+            "id": "task021-c74acfdbb90941c3a2d4570eed4e3ac9",
+            "input": "Keywords: : ['United States', 'Ronald Reagan', 'race', 'president', '1984', 'Walter Mondale', 'election', '2020', 'Michael Bloomberg'] \nStatement: \"Michael Bloomberg ran for president in the 2020 presidential race. Walter Mondale competed against Ronald Reagan in the 1984 United States presidential election.\" \nids: ['creak::train::3733', 'creak::dev::1271'] \nKeywords_pos: [1, 1, 0, 0, 1, 1, 1, 0, 0]",
+            "output": [
+                "\"Michael Bloomberg ran for president in the 2020 presidential race.\", \"Walter Mondale competed against Ronald Reagan in the 1984 United States presidential election.\""
+            ]
+        },
+        {
+            "id": "task021-332a4495118248dbba170a78ba97cfce",
+            "input": "Keywords: : ['president', '2008', 'president', 'Jim Webb', 'Ron Paul', '2020'] \nStatement: \"Jim Webb ran for president in 2020. Ron Paul ran for president in 2008.\" \nids: ['creak::dev::143', 'creak::dev::1242'] \nKeywords_pos: [0, 1, 1, 0, 1, 0]",
+            "output": [
+                "\"Jim Webb ran for president in 2020.\", \"Ron Paul ran for president in 2008.\""
+            ]
+        },
+        {
+            "id": "task021-6259126f1fdf45328bbda701ab9c667c",
+            "input": "Keywords: : ['city', 'Tenochtitlan', 'area', 'People', 'modern-day', 'California', 'Mexico', 'People', 'Hollywood'] \nStatement: \"People founded the city of Hollywood in California. People founded Tenochtitlan in the area of modern-day Mexico.\" \nids: ['creak::train::5059', 'creak::train::8118'] \nKeywords_pos: [0, 1, 1, 0, 1, 0, 1, 1, 0]",
+            "output": [
+                "\"People founded the city of Hollywood in California.\", \"People founded Tenochtitlan in the area of modern-day Mexico.\""
+            ]
+        },
+        {
+            "id": "task021-c5d56f6cc2884935bfeadc9d78a29f33",
+            "input": "Keywords: : ['seven', 'Earth', 'time', 'axis', 'Moon', 'one week', 'axis', 'a lunar month', 'times'] \nStatement: \"It takes for Earth to rotate on its axis seven times one week. The Moon rotates on its axis during a lunar month one time.\" \nids: ['arc::Challenge::Train::45', 'arc::Easy::Train::765'] \nKeywords_pos: [0, 0, 1, 1, 1, 0, 0, 1, 0]",
+            "output": [
+                "\"It takes for Earth to rotate on its axis seven times one week.\", \"The Moon rotates on its axis during a lunar month one time.\""
+            ]
+        },
+        {
+            "id": "task021-f37b986a3b934ed5aefca9a9fff1d8c1",
+            "input": "Keywords: : ['Tenochtitlan', '1885', 'Jane Stanford', 'Stanford University', 'modern-day', 'Mexico', 'area', 'Leland', 'People'] \nStatement: \"Leland and Jane Stanford founded Stanford University in 1885. People founded Tenochtitlan in the area of modern-day Mexico.\" \nids: ['creak::train::6210', 'creak::train::8118'] \nKeywords_pos: [1, 0, 0, 0, 1, 1, 1, 0, 1]",
+            "output": [
+                "\"Leland and Jane Stanford founded Stanford University in 1885.\", \"People founded Tenochtitlan in the area of modern-day Mexico.\""
+            ]
+        },
+        {
+            "id": "task021-f68fb9b8fbb14b969ec20777db80dd3a",
+            "input": "Keywords: : ['one month', 'Moon', 'Earth', 'axis', 'every 24 hours'] \nStatement: \"It takes one month for the Moon to rotate on its axis. Earth rotates on its axis once every 24 hours.\" \nids: ['arc::Easy::Train::1742', 'arc::Easy::Test::110'] \nKeywords_pos: [0, 0, 1, 1, 1]",
+            "output": [
+                "\"It takes one month for the Moon to rotate on its axis.\", \"Earth rotates on its axis once every 24 hours.\""
+            ]
+        },
+        {
+            "id": "task021-6c5b59bba9124330a7d89581fb486c81",
+            "input": "Keywords: : ['today', 'behemoth', 'Boston', 'the United States Numbered Highway System', 'Alexander Graham Bell', '1950', 'telephone'] \nStatement: \"The telephone was invented in Boston by Alexander Graham Bell. In the 1950's the United States Numbered Highway System started being built into the behemoth it is today.\" \nids: ['arc::Easy::Train::598', 'creak::train::3789'] \nKeywords_pos: [1, 1, 0, 1, 0, 1, 0]",
+            "output": [
+                "\"The telephone was invented in Boston by Alexander Graham Bell.\", \"In the 1950's the United States Numbered Highway System started being built into the behemoth it is today.\""
+            ]
+        },
+        {
+            "id": "task021-bb9df2e617044bcca3ee29055946ccc7",
+            "input": "Keywords: : ['Sun', 'approximately one year', 'Moon', 'one', 'Earth', 'Earth', 'about 30 days', 'revolution', 'orbit'] \nStatement: \"It takes about 30 days for the Moon to complete one revolution around Earth. Earth takes approximately one year to complete its orbit around the Sun.\" \nids: ['arc::Challenge::Dev::65', 'arc::Easy::Train::2132'] \nKeywords_pos: [1, 1, 0, 0, 0, 1, 0, 0, 1]",
+            "output": [
+                "\"It takes about 30 days for the Moon to complete one revolution around Earth.\", \"Earth takes approximately one year to complete its orbit around the Sun.\""
+            ]
+        },
+        {
+            "id": "task021-033c4a4d954f4fb2a5c096eef326f257",
+            "input": "Keywords: : ['Enver', 'the 20th century', 'Hoxha', 'territories', 'Albania', 'Wettin', 'House', 'Germany'] \nStatement: \"Enver Hoxha ruled over Albania during the 20th century. The House of Wettin once ruled territories in Germany.\" \nids: ['creak::train::2341', 'creak::train::7221'] \nKeywords_pos: [0, 0, 0, 1, 0, 1, 1, 1]",
+            "output": [
+                "\"Enver Hoxha ruled over Albania during the 20th century.\", \"The House of Wettin once ruled territories in Germany.\""
+            ]
+        },
+        {
+            "id": "task021-34daec5c46c24205bacbd286c0f940f9",
+            "input": "Keywords: : ['1917', 'president', 'The Russian Revolution', 'Howard Dean', 'place', '2004'] \nStatement: \"Howard Dean ran for president in 2004. The Russian Revolution took place in 1917.\" \nids: ['creak::train::5258', 'creak::dev::20'] \nKeywords_pos: [1, 0, 1, 0, 1, 0]",
+            "output": [
+                "\"Howard Dean ran for president in 2004.\", \"The Russian Revolution took place in 1917.\""
+            ]
+        },
+        {
+            "id": "task021-85d3388c9f434f94ab405419491948a7",
+            "input": "Keywords: : ['law', 'the mid-1970s', '1983', 'Carrie', 'first', 'the Catholic Church', 'canon', 'book', 'Code', 'Stephen King'] \nStatement: \"Stephen King published his first book, Carrie, in the mid-1970s. In 1983, the Catholic Church published a Code of canon law.\" \nids: ['creak::train::4250', 'creak::dev::73'] \nKeywords_pos: [1, 0, 1, 0, 0, 1, 1, 0, 1, 0]",
+            "output": [
+                "\"Stephen King published his first book, Carrie, in the mid-1970s.\", \"In 1983, the Catholic Church published a Code of canon law.\""
+            ]
+        },
+        {
+            "id": "task021-12f5bea0b8f24660833ead1345952a2e",
+            "input": "Keywords: : ['1983', 'Code', 'the Catholic Church', 'Tale', '1623', 'Winter', 'canon', 'law', 'William Shakespeare'] \nStatement: \"William Shakespeare originally published The Winter's Tale in 1623. In 1983, the Catholic Church published a Code of canon law.\" \nids: ['creak::train::6621', 'creak::dev::73'] \nKeywords_pos: [1, 1, 1, 0, 0, 0, 1, 1, 0]",
+            "output": [
+                "\"William Shakespeare originally published The Winter's Tale in 1623.\", \"In 1983, the Catholic Church published a Code of canon law.\""
+            ]
+        },
+        {
+            "id": "task021-15945726d1644c71ba617634fade696d",
+            "input": "Keywords: : ['election', 'Michael Bloomberg', 'race', '2020', '1980', 'president', 'republican'] \nStatement: \"The 1980 was presidential election won by a republican. Michael Bloomberg ran for president in the 2020 presidential race.\" \nids: ['strategyqa::train_filtered::2132', 'creak::train::3733'] \nKeywords_pos: [0, 1, 1, 1, 0, 1, 0]",
+            "output": [
+                "\"The 1980 was presidential election won by a republican.\", \"Michael Bloomberg ran for president in the 2020 presidential race.\""
+            ]
+        },
+        {
+            "id": "task021-52170a74951f481ebd81b16769fdcb81",
+            "input": "Keywords: : ['the 16th and early 17th centuries', 'the Mughal Empire', 'time', 'Great', 'China', 'dynasty', 'Yuan', 'Akbar'] \nStatement: \"The Yuan dynasty ruled in China for some time. Akbar the Great reigned the Mughal Empire in the 16th and early 17th centuries.\" \nids: ['creak::train::3583', 'creak::train::8738'] \nKeywords_pos: [1, 1, 0, 1, 0, 0, 0, 1]",
+            "output": [
+                "\"The Yuan dynasty ruled in China for some time.\", \"Akbar the Great reigned the Mughal Empire in the 16th and early 17th centuries.\""
+            ]
+        },
+        {
+            "id": "task021-aed5388e55e74d199b54568883471128",
+            "input": "Keywords: : ['Louis XVI', 'Holly', 'the late 1950s', 'Guillotine', 'plane', 'the year 1793', 'Buddy', 'crash'] \nStatement: \"Louis XVI died by Guillotine in the year 1793. Buddy Holly ' died in a plane crash in the late 1950s.\" \nids: ['creak::train::2121', 'creak::train::5404'] \nKeywords_pos: [0, 1, 1, 0, 1, 0, 1, 1]",
+            "output": [
+                "\"Louis XVI died by Guillotine in the year 1793.\", \"Buddy Holly ' died in a plane crash in the late 1950s.\""
+            ]
+        },
+        {
+            "id": "task021-bffeaf4902a341a7b972d4cdc1d03dd8",
+            "input": "Keywords: : ['24 hours', 'axis', 'one month', 'Earth', 'Moon'] \nStatement: \"It takes one month for the Moon to rotate on its axis. Earth rotating on its axis takes 24 hours.\" \nids: ['arc::Easy::Train::1742', 'arc::Easy::Train::1856'] \nKeywords_pos: [1, 1, 0, 1, 0]",
+            "output": [
+                "\"It takes one month for the Moon to rotate on its axis.\", \"Earth rotating on its axis takes 24 hours.\""
+            ]
+        },
+        {
+            "id": "task021-23747b49081b495687c51e42dce79b10",
+            "input": "Keywords: : ['the 20th century', 'Hoxha', 'Albania', 'The Babylonian Empire', 'Enver', 'Mesopotamia'] \nStatement: \"Enver Hoxha ruled over Albania during the 20th century. The Babylonian Empire ruled over Mesopotamia.\" \nids: ['creak::train::2341', 'creak::train::4562'] \nKeywords_pos: [0, 0, 0, 1, 0, 1]",
+            "output": [
+                "\"Enver Hoxha ruled over Albania during the 20th century.\", \"The Babylonian Empire ruled over Mesopotamia.\""
+            ]
+        },
+        {
+            "id": "task021-6aa73baeae1448fcac4c3a442cacac01",
+            "input": "Keywords: : ['Stanford University', '1885', 'University of New Brunswick', '1780', 'Jane Stanford', 'Canada', 'universities', 'Leland'] \nStatement: \"Leland and Jane Stanford founded Stanford University in 1885. University of New Brunswick founded in 1780 is one of the oldest universities in Canada.\" \nids: ['creak::train::6210', 'creak::train::8928'] \nKeywords_pos: [0, 0, 1, 1, 0, 1, 1, 0]",
+            "output": [
+                "\"Leland and Jane Stanford founded Stanford University in 1885.\", \"University of New Brunswick founded in 1780 is one of the oldest universities in Canada.\""
+            ]
+        },
+        {
+            "id": "task021-4c59d1cb9a5a4e91893b3f25acdfc3d7",
+            "input": "Keywords: : ['fossils', 'world', 'Crows', 'parts', 'rocks', 'ground', 'six to seven years', 'dinosaurs', 'millions of years ago', 'wild'] \nStatement: \"Crows are found throughout many parts of the world and in the wild they live for six to seven years. The fossils of dinosaurs that lived millions of years ago can be found in rocks in the ground.\" \nids: ['arc::Easy::Train::1476', 'arc::Easy::Test::380'] \nKeywords_pos: [1, 0, 0, 0, 1, 1, 0, 1, 1, 0]",
+            "output": [
+                "\"Crows are found throughout many parts of the world and in the wild they live for six to seven years.\", \"The fossils of dinosaurs that lived millions of years ago can be found in rocks in the ground.\""
+            ]
+        },
+        {
+            "id": "task021-380ae5ff653041d0be1132e3fe48ab7a",
+            "input": "Keywords: : ['the Laotian Civil War', 'people', 'death', 'Johnny Cash', '2003', 'diabetes'] \nStatement: \"Many people died during the Laotian Civil War. Johnny Cash died in 2003 and the death was related to diabetes.\" \nids: ['creak::train::2970', 'creak::train::3843'] \nKeywords_pos: [0, 0, 1, 1, 1, 1]",
+            "output": [
+                "\"Many people died during the Laotian Civil War.\", \"Johnny Cash died in 2003 and the death was related to diabetes.\""
+            ]
+        },
+        {
+            "id": "task021-33055591879c457f8fb3340eae16cf3e",
+            "input": "Keywords: : ['2016', 'Jeb Bush', 'President', 'the United States', 'President', '2004', 'Howard Dean'] \nStatement: \"Howard Dean ran for President in 2004. In 2016 Jeb Bush ran for President of the United States.\" \nids: ['creak::train::7583', 'creak::train::5891'] \nKeywords_pos: [1, 1, 1, 1, 0, 0, 0]",
+            "output": [
+                "\"Howard Dean ran for President in 2004.\", \"In 2016 Jeb Bush ran for President of the United States.\""
+            ]
+        },
+        {
+            "id": "task021-842ba8f7771248d091e024f9209f8958",
+            "input": "Keywords: : ['Jeb Bush', 'Jim Webb', '2020', 'President', 'president', 'the United States', '2016'] \nStatement: \"Jim Webb ran for president in 2020. In 2016 Jeb Bush ran for President of the United States.\" \nids: ['creak::dev::143', 'creak::train::5891'] \nKeywords_pos: [1, 0, 0, 1, 0, 1, 1]",
+            "output": [
+                "\"Jim Webb ran for president in 2020.\", \"In 2016 Jeb Bush ran for President of the United States.\""
+            ]
+        },
+        {
+            "id": "task021-9a94fe791785456793bbd2f277108046",
+            "input": "Keywords: : ['Jeb Bush', '2008', 'the United States', 'president', '2016', 'President', 'Ron Paul'] \nStatement: \"Ron Paul ran for president in 2008. In 2016 Jeb Bush ran for President of the United States.\" \nids: ['creak::dev::1242', 'creak::train::5891'] \nKeywords_pos: [1, 0, 1, 0, 1, 1, 0]",
+            "output": [
+                "\"Ron Paul ran for president in 2008.\", \"In 2016 Jeb Bush ran for President of the United States.\""
+            ]
+        },
+        {
+            "id": "task021-1ccde7d30f33401e995aac3aae0edae7",
+            "input": "Keywords: : ['President', 'president', 'the United States', 'Jeb Bush', 'Howard Dean', '2004', '2016'] \nStatement: \"Howard Dean ran for president in 2004. In 2016 Jeb Bush ran for President of the United States.\" \nids: ['creak::train::5258', 'creak::train::5891'] \nKeywords_pos: [1, 0, 1, 1, 0, 0, 1]",
+            "output": [
+                "\"Howard Dean ran for president in 2004.\", \"In 2016 Jeb Bush ran for President of the United States.\""
+            ]
+        },
+        {
+            "id": "task021-f3db31cca5d94df58325ed1f2ab67e69",
+            "input": "Keywords: : ['2004', 'Jeb Bush', 'President', 'John Kerry', 'the United States', '2016', 'President'] \nStatement: \"John Kerry ran for President in 2004. In 2016 Jeb Bush ran for President of the United States.\" \nids: ['creak::train::8491', 'creak::train::5891'] \nKeywords_pos: [0, 1, 0, 0, 1, 1, 1]",
+            "output": [
+                "\"John Kerry ran for President in 2004.\", \"In 2016 Jeb Bush ran for President of the United States.\""
+            ]
+        },
+        {
+            "id": "task021-b93e26fdec6d449aae58f4d8343d6a66",
+            "input": "Keywords: : ['soldiers', 'World War II', 'the year 1793', 'Louis XVI', 'Millions', 'Soviets', 'Guillotine', 'Wehrmacht'] \nStatement: \"Louis XVI died by Guillotine in the year 1793. Millions of Wehrmacht soldiers died fighting the Soviets during World War II.\" \nids: ['creak::train::2121', 'creak::train::7251'] \nKeywords_pos: [1, 1, 0, 0, 1, 1, 0, 1]",
+            "output": [
+                "\"Louis XVI died by Guillotine in the year 1793.\", \"Millions of Wehrmacht soldiers died fighting the Soviets during World War II.\""
+            ]
+        },
+        {
+            "id": "task021-a1f76c3de4ee44b28a55eec3d7a62a3a",
+            "input": "Keywords: : ['The Human Genome Project', 'events', 'one day', 'the year 2000', 'Ulysses', '10 years', 'course', 'place'] \nStatement: \"The main events of Ulysses take place over the course of one day. The Human Genome Project took over 10 years to complete and was done in the year 2000.\" \nids: ['creak::train::2357', 'creak::train::7780'] \nKeywords_pos: [1, 0, 0, 1, 0, 1, 0, 0]",
+            "output": [
+                "\"The main events of Ulysses take place over the course of one day.\", \"The Human Genome Project took over 10 years to complete and was done in the year 2000.\""
+            ]
+        },
+        {
+            "id": "task021-43cc501886a14551b16962a7a6ad4b4d",
+            "input": "Keywords: : ['book', 'the Catholic Church', '1983', 'canon', 'the Middle Ages', 'law', 'Dante Alighieri', 'Code'] \nStatement: \"Dante Alighieri wrote a notable book in the Middle Ages. In 1983, the Catholic Church published a Code of canon law.\" \nids: ['creak::train::5136', 'creak::dev::73'] \nKeywords_pos: [0, 1, 1, 1, 0, 1, 0, 1]",
+            "output": [
+                "\"Dante Alighieri wrote a notable book in the Middle Ages.\", \"In 1983, the Catholic Church published a Code of canon law.\""
+            ]
+        },
+        {
+            "id": "task021-bb11c7e3ac4b4a00b41ce29902c5a74c",
+            "input": "Keywords: : ['Music', 'Winter', '1623', 'Hildegard', 'Bingen', 'Tale', 'William Shakespeare', 'hundreds of years ago'] \nStatement: \"Music by Hildegard of Bingen was written hundreds of years ago. William Shakespeare originally published The Winter's Tale in 1623.\" \nids: ['creak::train::1560', 'creak::train::6621'] \nKeywords_pos: [0, 1, 1, 0, 0, 1, 1, 0]",
+            "output": [
+                "\"Music by Hildegard of Bingen was written hundreds of years ago.\", \"William Shakespeare originally published The Winter's Tale in 1623.\""
+            ]
+        },
+        {
+            "id": "task021-36dbac9a0cd94bb7bb2f6e85cda014a4",
+            "input": "Keywords: : ['wars', 'the past 30 years', 'World War II', 'Poland', 'the Persian Gulf', 'two', 'The Polish Armed Forces'] \nStatement: \"There have been two wars fought in the Persian Gulf in the past 30 years. The Polish Armed Forces fought for Poland in World War II..\" \nids: ['creak::train::7468', 'creak::dev::919'] \nKeywords_pos: [0, 0, 1, 1, 0, 0, 1]",
+            "output": [
+                "\"There have been two wars fought in the Persian Gulf in the past 30 years.\", \"The Polish Armed Forces fought for Poland in World War II..\""
+            ]
+        },
+        {
+            "id": "task021-12aa54a329544309afb4d23462377234",
+            "input": "Keywords: : ['Chappaqua', 'states', '1794 to 1907', 'Cherokee', 'tribes', 'the United States', 'New York', 'Horace Greeley'] \nStatement: \"Cherokee tribes lived in the southern states of the United States from 1794 to 1907. Horace Greeley lived in Chappaqua, New York.\" \nids: ['creak::train::8287', 'creak::dev::842'] \nKeywords_pos: [1, 0, 0, 0, 0, 0, 1, 1]",
+            "output": [
+                "\"Cherokee tribes lived in the southern states of the United States from 1794 to 1907.\", \"Horace Greeley lived in Chappaqua, New York.\""
+            ]
+        },
+        {
+            "id": "task021-edd6c78d0f514e1d897ceb4936e7249a",
+            "input": "Keywords: : ['California', '1885', 'Stanford University', 'state', 'Leland', 'DC Comics', 'Jane Stanford'] \nStatement: \"DC Comics started in the state of California. Leland and Jane Stanford founded Stanford University in 1885.\" \nids: ['creak::train::5563', 'creak::train::6210'] \nKeywords_pos: [0, 1, 1, 0, 1, 0, 1]",
+            "output": [
+                "\"DC Comics started in the state of California.\", \"Leland and Jane Stanford founded Stanford University in 1885.\""
+            ]
+        },
+        {
+            "id": "task021-4f95cfce4a9947f899d5f1ad18a2d25d",
+            "input": "Keywords: : ['first', '1780', 'Canada', 'universities', 'Kentuckey', 'University of New Brunswick', 'Danville', 'Kentucky', 'courthouse'] \nStatement: \"The first courthouse in Kentuckey was founded in Danville, Kentucky. University of New Brunswick founded in 1780 is one of the oldest universities in Canada.\" \nids: ['creak::train::8578', 'creak::train::8928'] \nKeywords_pos: [0, 1, 1, 1, 0, 1, 0, 0, 0]",
+            "output": [
+                "\"The first courthouse in Kentuckey was founded in Danville, Kentucky.\", \"University of New Brunswick founded in 1780 is one of the oldest universities in Canada.\""
+            ]
+        },
+        {
+            "id": "task021-4d9df08e4dfe4d43aa60667b0da1fb1f",
+            "input": "Keywords: : ['several decades', 'Christian', 'dynasty', 'Qin', 'China', 'Denmark', 'monarch', 'IV'] \nStatement: \"Christian IV of Denmark reigned as a monarch for several decades. The Qin dynasty reigned in China.\" \nids: ['creak::train::3508', 'creak::train::6866'] \nKeywords_pos: [0, 0, 1, 1, 1, 0, 0, 0]",
+            "output": [
+                "\"Christian IV of Denmark reigned as a monarch for several decades.\", \"The Qin dynasty reigned in China.\""
+            ]
+        },
+        {
+            "id": "task021-919c94aa6516403ea1abb37a3401f516",
+            "input": "Keywords: : ['California', 'Benjamin Campbell', '1780', 'University of New Brunswick', 'universities', 'Canada', 'city', 'Campbell'] \nStatement: \"Benjamin Campbell founded the city of Campbell, California. University of New Brunswick founded in 1780 is one of the oldest universities in Canada.\" \nids: ['creak::train::3350', 'creak::train::8928'] \nKeywords_pos: [0, 0, 1, 1, 1, 1, 0, 0]",
+            "output": [
+                "\"Benjamin Campbell founded the city of Campbell, California.\", \"University of New Brunswick founded in 1780 is one of the oldest universities in Canada.\""
+            ]
+        },
+        {
+            "id": "task021-0367141c8bdf40718704e6bfa4a5a246",
+            "input": "Keywords: : ['soldiers', 'Millions', 'death', 'Soviets', 'World War II', 'Johnny Cash', 'diabetes', 'Wehrmacht', '2003'] \nStatement: \"Johnny Cash died in 2003 and the death was related to diabetes. Millions of Wehrmacht soldiers died fighting the Soviets during World War II.\" \nids: ['creak::train::3843', 'creak::train::7251'] \nKeywords_pos: [1, 1, 0, 1, 1, 0, 0, 1, 0]",
+            "output": [
+                "\"Johnny Cash died in 2003 and the death was related to diabetes.\", \"Millions of Wehrmacht soldiers died fighting the Soviets during World War II.\""
+            ]
+        },
+        {
+            "id": "task021-1841675c3d3c493bbeab9705fe999e75",
+            "input": "Keywords: : ['show', 'Jeb Bush', '2016', 'President', 'Jack Benny', 'CBS', '1949'] \nStatement: \"Jeb Bush ran for President in 2016. Jack Benny ran his show in 1949 on CBS.\" \nids: ['creak::train::1842', 'creak::train::7646'] \nKeywords_pos: [1, 0, 0, 0, 1, 1, 1]",
+            "output": [
+                "\"Jeb Bush ran for President in 2016.\", \"Jack Benny ran his show in 1949 on CBS.\""
+            ]
+        },
+        {
+            "id": "task021-00df0e4c5a3c4196a5ff541122a96d59",
+            "input": "Keywords: : ['sunlight', '8.3 minutes', 'approximately one year', 'Earth', 'sun', 'Sun', 'orbit', 'Earth'] \nStatement: \"Earth takes approximately one year to complete its orbit around the Sun. Sunlight takes 8.3 minutes to reach Earth from the sun.\" \nids: ['arc::Easy::Train::2132', 'openbookqa::Additional/crowdsourced-facts.txt::4393'] \nKeywords_pos: [1, 1, 0, 1, 1, 0, 0, 0]",
+            "output": [
+                "\"Earth takes approximately one year to complete its orbit around the Sun.\", \"Sunlight takes 8.3 minutes to reach Earth from the sun.\""
+            ]
+        },
+        {
+            "id": "task021-d1de0b8cfe4b453b8a3a5ab795bb15d4",
+            "input": "Keywords: : ['Enver', 'the 20th century', 'Yuan', 'Hoxha', 'China', 'dynasty', 'time', 'Albania'] \nStatement: \"Enver Hoxha ruled over Albania during the 20th century. The Yuan dynasty ruled in China for some time.\" \nids: ['creak::train::2341', 'creak::train::3583'] \nKeywords_pos: [0, 0, 1, 0, 1, 1, 1, 0]",
+            "output": [
+                "\"Enver Hoxha ruled over Albania during the 20th century.\", \"The Yuan dynasty ruled in China for some time.\""
+            ]
+        },
+        {
+            "id": "task021-cad9b5a686e44725857c1fdcb5f7cffa",
+            "input": "Keywords: : ['captivity', 'Shetland', 'wild', '6 to 10 years', 'Mongooses', 'the ninth century', 'up to 20 years', 'People'] \nStatement: \"People lived in Shetland before the ninth century. Mongooses live from 6 to 10 years in the wild and up to 20 years in captivity.\" \nids: ['creak::train::1353', 'creak::train::9753'] \nKeywords_pos: [1, 0, 1, 1, 1, 0, 1, 0]",
+            "output": [
+                "\"People lived in Shetland before the ninth century.\", \"Mongooses live from 6 to 10 years in the wild and up to 20 years in captivity.\""
+            ]
+        },
+        {
+            "id": "task021-46ab7a57ade54cf1872930e4ca09a771",
+            "input": "Keywords: : ['Sun', 'detroit', 'each day', 'east', 'west', 'hospital', 'tower', 'the United States', 'Sears'] \nStatement: \"In the United States, each day the Sun appears to rise in the east and set in the west. The hospital next to the Sears tower is in detroit.\" \nids: ['arc::Easy::Test::914', 'commonsenseqa::train::9058'] \nKeywords_pos: [0, 1, 0, 0, 0, 1, 1, 0, 1]",
+            "output": [
+                "\"In the United States, each day the Sun appears to rise in the east and set in the west.\", \"The hospital next to the Sears tower is in detroit.\""
+            ]
+        },
+        {
+            "id": "task021-fa4f56c9da9e4baa9c15b279884ce8c0",
+            "input": "Keywords: : ['over a hundred years', '2004', 'Pravda', 'president', 'Howard Dean'] \nStatement: \"Howard Dean ran for president in 2004. Pravda ran for over a hundred years.\" \nids: ['creak::train::5258', 'creak::train::7100'] \nKeywords_pos: [1, 0, 1, 0, 0]",
+            "output": [
+                "\"Howard Dean ran for president in 2004.\", \"Pravda ran for over a hundred years.\""
+            ]
+        },
+        {
+            "id": "task021-315459cc81654e8a92d135848682dc50",
+            "input": "Keywords: : ['2004', 'Howard Dean', 'over a hundred years', 'Pravda', 'President'] \nStatement: \"Howard Dean ran for President in 2004. Pravda ran for over a hundred years.\" \nids: ['creak::train::7583', 'creak::train::7100'] \nKeywords_pos: [0, 0, 1, 1, 0]",
+            "output": [
+                "\"Howard Dean ran for President in 2004.\", \"Pravda ran for over a hundred years.\""
+            ]
+        },
+        {
+            "id": "task021-96a6008be07945ceb14d526adfa12ade",
+            "input": "Keywords: : ['air', 'Pravda', 'MythBusters', '18 seasons', 'over a hundred years'] \nStatement: \"MythBusters ran on air for 18 seasons. Pravda ran for over a hundred years.\" \nids: ['creak::train::4355', 'creak::train::7100'] \nKeywords_pos: [0, 1, 0, 0, 1]",
+            "output": [
+                "\"MythBusters ran on air for 18 seasons.\", \"Pravda ran for over a hundred years.\""
+            ]
+        },
+        {
+            "id": "task021-ab2a944438ca473996640c4a97a86faa",
+            "input": "Keywords: : ['2004', 'celebrations', 'Howard Dean', 'December 31st', 'President', \"New Year's Eve\"] \nStatement: \"Howard Dean ran for President in 2004. New Year's Eve celebrations run on December 31st.\" \nids: ['creak::train::7583', 'creak::train::3656'] \nKeywords_pos: [0, 1, 0, 1, 0, 1]",
+            "output": [
+                "\"Howard Dean ran for President in 2004.\", \"New Year's Eve celebrations run on December 31st.\""
+            ]
+        },
+        {
+            "id": "task021-80460143e0eb46688e9141dc3583296b",
+            "input": "Keywords: : ['Howard Dean', 'president', '2004', 'celebrations', \"New Year's Eve\", 'December 31st'] \nStatement: \"Howard Dean ran for president in 2004. New Year's Eve celebrations run on December 31st.\" \nids: ['creak::train::5258', 'creak::train::3656'] \nKeywords_pos: [0, 0, 0, 1, 1, 1]",
+            "output": [
+                "\"Howard Dean ran for president in 2004.\", \"New Year's Eve celebrations run on December 31st.\""
+            ]
+        },
+        {
+            "id": "task021-4b3795ce24a1458f92e5fe697b81c663",
+            "input": "Keywords: : ['Rome', 'Seattle', 'stadium', 'spears', 'Pittsburgh', 'Super Bowl XL', 'February 5th, 2006', 'men'] \nStatement: \"There is a stadium where men once fought with spears in Rome. Seattle and Pittsburgh battled each other in Super Bowl XL on February 5th, 2006.\" \nids: ['commonsenseqa::train::4966', 'creak::train::164'] \nKeywords_pos: [0, 1, 0, 0, 1, 1, 1, 0]",
+            "output": [
+                "\"There is a stadium where men once fought with spears in Rome.\", \"Seattle and Pittsburgh battled each other in Super Bowl XL on February 5th, 2006.\""
+            ]
+        },
+        {
+            "id": "task021-65267707f598436999c66c084e80535d",
+            "input": "Keywords: : ['Earth', 'axis', '24 hours', 'about one year', 'Sun', 'Earth'] \nStatement: \"Earth rotating on its axis takes 24 hours. Earth revolving completely around the Sun takes about one year to complete.\" \nids: ['arc::Easy::Train::1856', 'arc::Easy::Test::1670'] \nKeywords_pos: [1, 0, 0, 1, 1, 0]",
+            "output": [
+                "\"Earth rotating on its axis takes 24 hours.\", \"Earth revolving completely around the Sun takes about one year to complete.\""
+            ]
+        },
+        {
+            "id": "task021-6380d83fa8a2420194bd91631cca321b",
+            "input": "Keywords: : ['Earth', 'about one year', 'Earth', 'about 30 days', 'one', 'revolution', 'Moon', 'Sun'] \nStatement: \"It takes about 30 days for the Moon to complete one revolution around Earth. Earth revolving completely around the Sun takes about one year to complete.\" \nids: ['arc::Challenge::Dev::65', 'arc::Easy::Test::1670'] \nKeywords_pos: [0, 1, 1, 0, 0, 0, 0, 1]",
+            "output": [
+                "\"It takes about 30 days for the Moon to complete one revolution around Earth.\", \"Earth revolving completely around the Sun takes about one year to complete.\""
+            ]
+        },
+        {
+            "id": "task021-603fa4c5e4234042924000afc856ab3d",
+            "input": "Keywords: : ['Rotation', '1 day', 'Earth', 'canyon', 'forming', 'period', 'millions of years', 'axis'] \nStatement: \"A Rotation of the Earth on Earth 's axis takes 1 day A canyon forming occurs over a period of millions of years.\" \nids: ['openbookqa::Main/openbook.txt::84', 'openbookqa::Main/openbook.txt::104'] \nKeywords_pos: [0, 0, 0, 1, 1, 1, 1, 0]",
+            "output": [
+                "\"A Rotation of the Earth on Earth 's axis takes 1 day\", \"A canyon forming occurs over a period of millions of years\""
+            ]
+        },
+        {
+            "id": "task021-02de5c8434ec4c3d8765eb66f50641bb",
+            "input": "Keywords: : ['1998', 'Nagano', 'Christmas', 'place', 'the end of the year', 'place', 'Winter Olympics', 'Japan'] \nStatement: \"1998 Winter Olympics took place in Nagano Japan. Christmas takes place in the end of the year.\" \nids: ['creak::train::6645', 'creak::train::10071'] \nKeywords_pos: [0, 0, 1, 1, 1, 0, 0, 0]",
+            "output": [
+                "\"1998 Winter Olympics took place in Nagano Japan.\", \"Christmas takes place in the end of the year.\""
+            ]
+        },
+        {
+            "id": "task021-865657fe8785478cb47a30b7567e0839",
+            "input": "Keywords: : ['Lama', 'tribes', 'Cherokee', 'states', '1794 to 1907', 'the United States', 'India', 'Dalai'] \nStatement: \"The Dalai Lama lives in India. Cherokee tribes lived in the southern states of the United States from 1794 to 1907.\" \nids: ['creak::train::1619', 'creak::train::8287'] \nKeywords_pos: [0, 1, 1, 1, 1, 1, 0, 0]",
+            "output": [
+                "\"The Dalai Lama lives in India.\", \"Cherokee tribes lived in the southern states of the United States from 1794 to 1907.\""
+            ]
+        },
+        {
+            "id": "task021-e7dbcbf88cac4d23bb2ddfe29cf2cd3f",
+            "input": "Keywords: : ['Thomas Carlyle', 'People', 'one', 'time', 'Shetland', 'London', 'the ninth century'] \nStatement: \"People lived in Shetland before the ninth century. Thomas Carlyle lived in London at one time.\" \nids: ['creak::train::1353', 'creak::train::8844'] \nKeywords_pos: [1, 0, 1, 1, 0, 1, 0]",
+            "output": [
+                "\"People lived in Shetland before the ninth century.\", \"Thomas Carlyle lived in London at one time.\""
+            ]
+        },
+        {
+            "id": "task021-416a8dae9df549f78b67b46068cef31c",
+            "input": "Keywords: : ['the ninth century', 'millions of years ago', 'People', 'ground', 'dinosaurs', 'Shetland', 'fossils', 'rocks'] \nStatement: \"The fossils of dinosaurs that lived millions of years ago can be found in rocks in the ground. People lived in Shetland before the ninth century.\" \nids: ['arc::Easy::Test::380', 'creak::train::1353'] \nKeywords_pos: [1, 0, 1, 0, 0, 1, 0, 0]",
+            "output": [
+                "\"The fossils of dinosaurs that lived millions of years ago can be found in rocks in the ground.\", \"People lived in Shetland before the ninth century.\""
+            ]
+        },
+        {
+            "id": "task021-adb2fcc1fffd4e6db0df91812e856711",
+            "input": "Keywords: : ['Louis XVI', 'Ashkenazi', 'Jews', 'Holocaust', 'Guillotine', 'the year 1793'] \nStatement: \"Louis XVI died by Guillotine in the year 1793. Ashkenazi Jews died in the Holocaust.\" \nids: ['creak::train::2121', 'creak::train::3443'] \nKeywords_pos: [0, 1, 1, 1, 0, 0]",
+            "output": [
+                "\"Louis XVI died by Guillotine in the year 1793.\", \"Ashkenazi Jews died in the Holocaust.\""
+            ]
+        },
+        {
+            "id": "task021-950fc0773260418781d476e47702938c",
+            "input": "Keywords: : ['president', 'Christmas', '2004', 'Howard Dean', 'place', 'the end of the year'] \nStatement: \"Howard Dean ran for president in 2004. Christmas takes place in the end of the year.\" \nids: ['creak::train::5258', 'creak::train::10071'] \nKeywords_pos: [0, 1, 0, 0, 1, 1]",
+            "output": [
+                "\"Howard Dean ran for president in 2004.\", \"Christmas takes place in the end of the year.\""
+            ]
+        },
+        {
+            "id": "task021-c825a6eeca194b409a1e0a1e795c475d",
+            "input": "Keywords: : ['2004', 'the end of the year', 'place', 'Howard Dean', 'President', 'Christmas'] \nStatement: \"Howard Dean ran for President in 2004. Christmas takes place in the end of the year.\" \nids: ['creak::train::7583', 'creak::train::10071'] \nKeywords_pos: [0, 1, 1, 0, 0, 1]",
+            "output": [
+                "\"Howard Dean ran for President in 2004.\", \"Christmas takes place in the end of the year.\""
+            ]
+        },
+        {
+            "id": "task021-0e2a19f5939148ce92cffe1cd2224ea8",
+            "input": "Keywords: : ['Wehrmacht', 'suicide', 'World War II', 'Robin Williams', 'Soviets', 'the 21st century', 'Millions', 'soldiers'] \nStatement: \"Robin Williams died by suicide in the 21st century. Millions of Wehrmacht soldiers died fighting the Soviets during World War II.\" \nids: ['creak::train::8626', 'creak::train::7251'] \nKeywords_pos: [1, 0, 1, 0, 1, 0, 1, 1]",
+            "output": [
+                "\"Robin Williams died by suicide in the 21st century.\", \"Millions of Wehrmacht soldiers died fighting the Soviets during World War II.\""
+            ]
+        },
+        {
+            "id": "task021-4991c36228414a4d89a160213ebe8387",
+            "input": "Keywords: : ['Seattle', 'two', 'the Persian Gulf', 'the past 30 years', 'February 5th, 2006', 'Super Bowl XL', 'wars', 'Pittsburgh'] \nStatement: \"Seattle and Pittsburgh battled each other in Super Bowl XL on February 5th, 2006. There have been two wars fought in the Persian Gulf in the past 30 years.\" \nids: ['creak::train::164', 'creak::train::7468'] \nKeywords_pos: [0, 1, 1, 1, 0, 0, 1, 0]",
+            "output": [
+                "\"Seattle and Pittsburgh battled each other in Super Bowl XL on February 5th, 2006.\", \"There have been two wars fought in the Persian Gulf in the past 30 years.\""
+            ]
+        },
+        {
+            "id": "task021-bfffc730ba6d411aa852877493a579ff",
+            "input": "Keywords: : ['states', 'Arkansas', 'tribes', '1794 to 1907', 'baby', 'Cherokee', 'Johnny Cash', 'the United States'] \nStatement: \"Johnny Cash lived in Arkansas as a baby. Cherokee tribes lived in the southern states of the United States from 1794 to 1907.\" \nids: ['creak::train::911', 'creak::train::8287'] \nKeywords_pos: [1, 0, 1, 1, 0, 1, 0, 1]",
+            "output": [
+                "\"Johnny Cash lived in Arkansas as a baby.\", \"Cherokee tribes lived in the southern states of the United States from 1794 to 1907.\""
+            ]
+        },
+        {
+            "id": "task021-c73217fbdb4a4772a062d574e16e9ea1",
+            "input": "Keywords: : ['Leland', 'Jane Stanford', 'Danville', 'Kentuckey', 'Stanford University', 'Kentucky', 'courthouse', '1885', 'first'] \nStatement: \"Leland and Jane Stanford founded Stanford University in 1885. The first courthouse in Kentuckey was founded in Danville, Kentucky.\" \nids: ['creak::train::6210', 'creak::train::8578'] \nKeywords_pos: [0, 0, 1, 1, 0, 1, 1, 0, 1]",
+            "output": [
+                "\"Leland and Jane Stanford founded Stanford University in 1885.\", \"The first courthouse in Kentuckey was founded in Danville, Kentucky.\""
+            ]
+        },
+        {
+            "id": "task021-a9485367e646481e80b38f22f0d76ea8",
+            "input": "Keywords: : ['carrier', 'the Vietnam war', 'the cold war era', 'the Persian Gulf', 'wars', 'the past 30 years', 'two', 'USS Kitty Hawk', 'aircraft'] \nStatement: \"USS Kitty Hawk fought in the Vietnam war as an aircraft carrier of the cold war era. There have been two wars fought in the Persian Gulf in the past 30 years.\" \nids: ['creak::train::4009', 'creak::train::7468'] \nKeywords_pos: [0, 0, 0, 1, 1, 1, 1, 0, 0]",
+            "output": [
+                "\"USS Kitty Hawk fought in the Vietnam war as an aircraft carrier of the cold war era.\", \"There have been two wars fought in the Persian Gulf in the past 30 years.\""
+            ]
+        },
+        {
+            "id": "task021-11028af618bc4284a35b1df44d175d1c",
+            "input": "Keywords: : ['Jane Stanford', 'People', 'California', '1885', 'Hollywood', 'Leland', 'Stanford University', 'city'] \nStatement: \"People founded the city of Hollywood in California. Leland and Jane Stanford founded Stanford University in 1885.\" \nids: ['creak::train::5059', 'creak::train::6210'] \nKeywords_pos: [1, 0, 0, 1, 0, 1, 1, 0]",
+            "output": [
+                "\"People founded the city of Hollywood in California.\", \"Leland and Jane Stanford founded Stanford University in 1885.\""
+            ]
+        },
+        {
+            "id": "task021-667a57656052427084e1b2b301e4d265",
+            "input": "Keywords: : ['Duke University', '1885', 'People', 'United States', 'Leland', 'Stanford University', 'Jane Stanford'] \nStatement: \"People founded Duke University in the southern United States. Leland and Jane Stanford founded Stanford University in 1885.\" \nids: ['creak::train::76', 'creak::train::6210'] \nKeywords_pos: [0, 1, 0, 0, 1, 1, 1]",
+            "output": [
+                "\"People founded Duke University in the southern United States.\", \"Leland and Jane Stanford founded Stanford University in 1885.\""
+            ]
+        },
+        {
+            "id": "task021-d5868da86ece49ccae0863b6d2f4b540",
+            "input": "Keywords: : ['President', '1794 to 1907', 'Cherokee', 'the United States', 'India', 'states', 'tribes', 'india'] \nStatement: \"Cherokee tribes lived in the southern states of the United States from 1794 to 1907. The President of India lives in india.\" \nids: ['creak::train::8287', 'creak::dev::412'] \nKeywords_pos: [1, 0, 0, 0, 1, 0, 0, 1]",
+            "output": [
+                "\"Cherokee tribes lived in the southern states of the United States from 1794 to 1907.\", \"The President of India lives in india.\""
+            ]
+        },
+        {
+            "id": "task021-a38060086457411e8d97613d208437da",
+            "input": "Keywords: : ['Miz', 'several years', 'Athletes', 'nude', 'the Ancient Olympic Games', 'WWE'] \nStatement: \"The Miz competed in the WWE for several years. Athletes who competed in the Ancient Olympic Games did so predominately in the nude.\" \nids: ['creak::train::3218', 'creak::train::4619'] \nKeywords_pos: [0, 0, 1, 1, 1, 0]",
+            "output": [
+                "\"The Miz competed in the WWE for several years.\", \"Athletes who competed in the Ancient Olympic Games did so predominately in the nude.\""
+            ]
+        },
+        {
+            "id": "task021-a45f1bbdd794404aa403a07fa1e413e3",
+            "input": "Keywords: : ['sun', 'sixteen hours', 'havana', 'hilux', 'Earth', 'toyota', 'sunlight', 'nyc in', '8.3 minutes'] \nStatement: \"Sunlight takes 8.3 minutes to reach Earth from the sun. A toyota hilux can get to havana from nyc in sixteen hours.\" \nids: ['openbookqa::Additional/crowdsourced-facts.txt::4393', 'strategyqa::train_filtered::103'] \nKeywords_pos: [0, 1, 1, 1, 0, 1, 0, 1, 0]",
+            "output": [
+                "\"Sunlight takes 8.3 minutes to reach Earth from the sun.\", \"A toyota hilux can get to havana from nyc in sixteen hours.\""
+            ]
+        },
+        {
+            "id": "task021-cec3f4d9687744779d8c2020cf23268a",
+            "input": "Keywords: : ['People', 'Hollywood', '1780', 'Canada', 'California', 'city', 'universities', 'University of New Brunswick'] \nStatement: \"People founded the city of Hollywood in California. University of New Brunswick founded in 1780 is one of the oldest universities in Canada.\" \nids: ['creak::train::5059', 'creak::train::8928'] \nKeywords_pos: [0, 0, 1, 1, 0, 0, 1, 1]",
+            "output": [
+                "\"People founded the city of Hollywood in California.\", \"University of New Brunswick founded in 1780 is one of the oldest universities in Canada.\""
+            ]
+        },
+        {
+            "id": "task021-f3c584b6d73a4483bcd319c5b8dd0558",
+            "input": "Keywords: : ['universities', 'Mexico', '1780', 'Canada', 'University of New Brunswick', 'Tenochtitlan', 'modern-day', 'area', 'People'] \nStatement: \"People founded Tenochtitlan in the area of modern-day Mexico. University of New Brunswick founded in 1780 is one of the oldest universities in Canada.\" \nids: ['creak::train::8118', 'creak::train::8928'] \nKeywords_pos: [1, 0, 1, 1, 1, 0, 0, 0, 0]",
+            "output": [
+                "\"People founded Tenochtitlan in the area of modern-day Mexico.\", \"University of New Brunswick founded in 1780 is one of the oldest universities in Canada.\""
+            ]
+        },
+        {
+            "id": "task021-e2129ff0eb6f419c93265b0487b37f01",
+            "input": "Keywords: : ['two', '2018', '1936', 'rewards', 'Nazi Germany', 'Martha Nussbaum', 'Summer Olympics'] \nStatement: \"1936 Summer Olympics held in Nazi Germany. Martha Nussbaum holds two rewards as of 2018.\" \nids: ['creak::train::2332', 'creak::train::7337'] \nKeywords_pos: [1, 1, 0, 1, 0, 1, 0]",
+            "output": [
+                "\"1936 Summer Olympics held in Nazi Germany.\", \"Martha Nussbaum holds two rewards as of 2018.\""
+            ]
+        },
+        {
+            "id": "task021-d2e02089d6d34e5ab48824e0b64c3990",
+            "input": "Keywords: : ['Daytona', 'February', 'third', 'the twelve months in the year, March', 'place', 'place', '500'] \nStatement: \"Of the twelve months in the year, March takes place third. The Daytona 500 typically takes place in February.\" \nids: ['creak::dev::91', 'creak::dev::302'] \nKeywords_pos: [1, 1, 0, 0, 1, 0, 1]",
+            "output": [
+                "\"Of the twelve months in the year, March takes place third.\", \"The Daytona 500 typically takes place in February.\""
+            ]
+        },
+        {
+            "id": "task021-116bb936867e4a6880d73669e9349afe",
+            "input": "Keywords: : ['the United States', '1794 to 1907', 'states', 'London', 'tribes', 'time', 'Thomas Carlyle', 'one', 'Cherokee'] \nStatement: \"Cherokee tribes lived in the southern states of the United States from 1794 to 1907. Thomas Carlyle lived in London at one time.\" \nids: ['creak::train::8287', 'creak::train::8844'] \nKeywords_pos: [0, 0, 0, 1, 0, 1, 1, 1, 0]",
+            "output": [
+                "\"Cherokee tribes lived in the southern states of the United States from 1794 to 1907.\", \"Thomas Carlyle lived in London at one time.\""
+            ]
+        },
+        {
+            "id": "task021-bb2cf68ec73e4ff086cf4986c049801c",
+            "input": "Keywords: : ['the United States', 'Cherokee', 'Andy', 'tribes', 'winter', 'states', 'hemisphere', 'August', '1794 to 1907'] \nStatement: \"Andy lives in the southern hemisphere and experiences winter in August. Cherokee tribes lived in the southern states of the United States from 1794 to 1907.\" \nids: ['arc::Challenge::Train::765', 'creak::train::8287'] \nKeywords_pos: [1, 1, 0, 1, 0, 1, 0, 0, 1]",
+            "output": [
+                "\"Andy lives in the southern hemisphere and experiences winter in August.\", \"Cherokee tribes lived in the southern states of the United States from 1794 to 1907.\""
+            ]
+        },
+        {
+            "id": "task021-d408ebe9172e49d6987db4bf7ccc92ab",
+            "input": "Keywords: : ['law', 'Code', 'Hildegard', 'Bingen', 'Music', '1983', 'the Catholic Church', 'hundreds of years ago', 'canon'] \nStatement: \"Music by Hildegard of Bingen was written hundreds of years ago. In 1983, the Catholic Church published a Code of canon law.\" \nids: ['creak::train::1560', 'creak::dev::73'] \nKeywords_pos: [1, 1, 0, 0, 0, 1, 1, 0, 1]",
+            "output": [
+                "\"Music by Hildegard of Bingen was written hundreds of years ago.\", \"In 1983, the Catholic Church published a Code of canon law.\""
+            ]
+        },
+        {
+            "id": "task021-24028eb508f54302bdb07f735b26ff99",
+            "input": "Keywords: : ['Poland', 'Super Bowl XL', 'February 5th, 2006', 'Pittsburgh', 'World War II', 'The Polish Armed Forces', 'Seattle'] \nStatement: \"Seattle and Pittsburgh battled each other in Super Bowl XL on February 5th, 2006. The Polish Armed Forces fought for Poland in World War II..\" \nids: ['creak::train::164', 'creak::dev::919'] \nKeywords_pos: [1, 0, 0, 0, 1, 1, 0]",
+            "output": [
+                "\"Seattle and Pittsburgh battled each other in Super Bowl XL on February 5th, 2006.\", \"The Polish Armed Forces fought for Poland in World War II..\""
+            ]
+        },
+        {
+            "id": "task021-f3bcd8cf88b24f9ab68328baa0114084",
+            "input": "Keywords: : ['30 days', 'orbit', 'Earth', 'approximately one year', 'Sun', 'moon', 'planet'] \nStatement: \"Earth takes approximately one year to complete its orbit around the Sun. It takes 30 days for the moon to go around our planet.\" \nids: ['arc::Easy::Train::2132', 'openbookqa::Additional/crowdsourced-facts.txt::476'] \nKeywords_pos: [1, 0, 0, 0, 0, 1, 1]",
+            "output": [
+                "\"Earth takes approximately one year to complete its orbit around the Sun.\", \"It takes 30 days for the moon to go around our planet.\""
+            ]
+        },
+        {
+            "id": "task021-2cb8c4c2a1814d9093d19533bf366401",
+            "input": "Keywords: : ['Jane Stanford', '1885', 'Leland', 'Stanford University', 'Italy', 'country', 'Solo'] \nStatement: \"Solo started in the country of Italy. Leland and Jane Stanford founded Stanford University in 1885.\" \nids: ['creak::train::2969', 'creak::train::6210'] \nKeywords_pos: [1, 1, 1, 1, 0, 0, 0]",
+            "output": [
+                "\"Solo started in the country of Italy.\", \"Leland and Jane Stanford founded Stanford University in 1885.\""
+            ]
+        }
+    ]
+}
