@@ -1,0 +1,3568 @@
+{
+    "Contributors": [
+        "Het Patel"
+    ],
+    "Source": [
+        "TimeX-NLI"
+    ],
+    "URL": [
+        "https://github.com/zchuz/TimeBench/blob/main/TimeBench-subset-7553/TimeX-NLI/timexnli_cs3_timebench.jsonl"
+    ],
+    "Categories": [
+        "Question Answering"
+    ],
+    "Reasoning": [
+        "TimeX-NLI"
+    ],
+    "Definition": [
+        "In this task, you will be given with a premise and a hypothesis. Your goal is to determine whether the premise is consistant with the hypothesis or not. If the premise is consistent with the hypothesis then answer \"Entailment\" and if the premise is not consistent with the hypothesis then answer \"Contradiction\" and if there is insufficient information to make a decision then answer \"Neutral\"."
+    ],
+    "Input_language": [
+        "English"
+    ],
+    "Output_language": [
+        "English"
+    ],
+    "Instruction_language": [
+        "English"
+    ],
+    "Domains": [
+        "Anonymous"
+    ],
+    "Positive Examples": [
+        {
+            "input": "Premise: The startup will receive funding in 2 years. \nHypothesis: The startup will receive funding after 3 months.",
+            "output": "Entailment",
+            "explanation": "This premise is consistant with the hypothesis because 3 months is less than 2 years."  
+        },
+        {
+            "input": "Premise: Before 8 years, Lindsey will pay off her loans. \nHypothesis: After 149 months, Lindsey will pay off her loans.",
+            "output": "Contradiction",
+            "explanation": "This premise is not consistant with the hypothesis because 149 months is more than 8 years."
+        },
+        {
+            "input": "Premise: Before 4 months, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister before 45 days.",
+            "output": "Neutral",
+            "explanation": "There is insufficient information to make a decision."
+        }
+    ],
+    "Negative Examples": [
+        {
+            "input": "Premise: I will graduate before 5 months. \nHypothesis: I will graduate before 197 days.",
+            "output": "Contradiction",
+            "explanation": "The premise is consistant with the hypothesis because the 197 days is more then 5 months whihc will be 150 days."
+        },
+        {
+            "input": "Premise: The grocery store will close in 7 days. \nHypothesis: Before 166 hours, the grocery store will close.",
+            "output": "Neutral",
+            "explanation": "The premise is not consistant with the hypothesis because 166 hours is less than 7 days."
+        },
+        {
+            "input": "Premise: The government will issue new labor policies after 5 years. \nHypothesis: Before 105 months, the government will issue new labor policies.",
+            "output": "Entailment",
+            "explanation": "There is insufficient information to make a decision."
+        }
+    ],
+    "Instances": [
+        {
+            "id": "task017-487e9400ce984c2fb8553a5f03397a92",
+            "input": "Premise: Before 4 months, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister before 45 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-7c8f79c156c549108ccce54afcc23340",
+            "input": "Premise: Before 8 years, Lindsey will pay off her loans. \nHypothesis: After 149 months, Lindsey will pay off her loans.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-1e0ea41991444b86ab6019a6a7d181f0",
+            "input": "Premise: The startup will receive funding in 2 years. \nHypothesis: The startup will receive funding after 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-f37dfd09fb994b9782e562f2136cad9a",
+            "input": "Premise: I will graduate before 5 months. \nHypothesis: I will graduate before 197 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-b6d9552c1c3e4c6e933363994a986cb6",
+            "input": "Premise: The grocery store will close in 7 days. \nHypothesis: Before 166 hours, the grocery store will close.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-80023bb4d3524a40bec465dab5e2d7aa",
+            "input": "Premise: The government will issue new labor policies after 5 years. \nHypothesis: Before 105 months, the government will issue new labor policies.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-f34d52ea63db4b4483ae628a79ae9e88",
+            "input": "Premise: Before 9 days, Robin will visit her parents. \nHypothesis: After 148 hours, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-0fb3cb2be9ff4cca89e49da8d8543798",
+            "input": "Premise: After 10 hours, the train from Seattle will depart. \nHypothesis: The train from Seattle will depart after 598 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-3f017f0b4a864361bd663e5318f243d4",
+            "input": "Premise: In 3 hours, the grocery store will close. \nHypothesis: After 9 minutess, the grocery store will close.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-483c0685ad1f4d388f027019bb55f7c7",
+            "input": "Premise: Pixar will release an animated film in 8 years. \nHypothesis: Pixar will release an animated film before 126 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e853a707ddb84b8eac6a1470dafb263b",
+            "input": "Premise: The government will issue new labor policies after 9 months. \nHypothesis: After 299 days, the government will issue new labor policies.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-ab36343fa33e42a19fccab1c65180bd9",
+            "input": "Premise: The government will issue new labor policies before 3 days. \nHypothesis: The government will issue new labor policies before 2 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b4a8f061112f456ca691927d9931a050",
+            "input": "Premise: Before 9 months, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies before 156 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-18f114742ec647659be8d1d53e9720e9",
+            "input": "Premise: The startup will receive funding in 9 months. \nHypothesis: The startup will receive funding before 418 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e90dfa6e5bf14ba0a415a661ef4a4d4c",
+            "input": "Premise: In 8 days, the grocery store will close. \nHypothesis: The grocery store will close after 290 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-8a2a6c3479344357bab42d012c56340f",
+            "input": "Premise: Before 8 hours, the court case will begin. \nHypothesis: The court case will begin before 772 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-d6033a52a5a74e41a909add17a111431",
+            "input": "Premise: They will become the top football team after 10 months. \nHypothesis: Before 313 days, they will become the top football team.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-1d90cf819940497b89ff59da89885b15",
+            "input": "Premise: I will submit my PhD dissertation in 7 days. \nHypothesis: Before 126 hours, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ad1d3c1f08e34d89af7b02c26d9cdb13",
+            "input": "Premise: After 7 months, I will submit my PhD dissertation. \nHypothesis: I will submit my PhD dissertation before 280 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-60a5a5c897df4aa8947d1b57dd009047",
+            "input": "Premise: In 6 years, Pixar will release an animated film. \nHypothesis: Before 130 months, Pixar will release an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-2e34766340a947a5806319bc9dd2c4a4",
+            "input": "Premise: In 10 years, the government will issue new labor policies. \nHypothesis: Before 105 months, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-c870f6b7a9c94285bf5a2dc5ae433453",
+            "input": "Premise: The train from Seattle will depart in 4 hours. \nHypothesis: Before 126 minutess, the train from Seattle will depart.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-531b443ccd8e4e0899d1928bdd6123de",
+            "input": "Premise: In 5 months, I will start my bachelors. \nHypothesis: I will start my bachelors before 79 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-8f13b97eeba6424f94108e6cb20dd8b4",
+            "input": "Premise: The storm will begin before 1 day. \nHypothesis: Before 9 hours, the storm will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-48632d546cd545dd8faf09741fb33139",
+            "input": "Premise: Before 5 months, I will submit my PhD dissertation. \nHypothesis: Before 205 days, I will submit my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-9ece6c65329443e891e6d5a4ba79c172",
+            "input": "Premise: After 10 years, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies after 90 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-1d1d0e6b3cb146c3953a4cbd8382c3b2",
+            "input": "Premise: After 8 months, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister after 92 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-d98498c288604e8a9b3bd0b71326e115",
+            "input": "Premise: After 2 hours, the match between India and Australia will begin. \nHypothesis: After 363 minutess, the match between India and Australia will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-f3bdc016ec244dfa9ecd7495f2f04d21",
+            "input": "Premise: The government will issue new labor policies in 8 months. \nHypothesis: The government will issue new labor policies before 273 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-9e90ba7e300046098fd2204ecb5a8992",
+            "input": "Premise: In 5 years, Lindsey will pay off her loans. \nHypothesis: After 12 months, Lindsey will pay off her loans.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-df4a65284ae44d9e9e64bd8fbf193772",
+            "input": "Premise: Before 8 months, I will graduate. \nHypothesis: After 97 days, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-70903af7bcd7431ab2336f779b367bb4",
+            "input": "Premise: In 2 days, the startup will receive funding. \nHypothesis: Before 160 hours, the startup will receive funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-3f1213e418d74cadb5e98c274ab53302",
+            "input": "Premise: Before 7 months, I will graduate. \nHypothesis: I will graduate before 271 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-4b6da27045e846eaa62d94921a94c81e",
+            "input": "Premise: I will start my bachelors after 2 years. \nHypothesis: Before 33 months, I will start my bachelors.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-ad22443af6d5457f92f6ad62bdcabbc3",
+            "input": "Premise: In 2 days, the grocery store will close. \nHypothesis: Before 100 hours, the grocery store will close.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-5c7d3fa8d9dc4af48317f2be29dc12ca",
+            "input": "Premise: Before 8 days, the grocery store will close. \nHypothesis: After 268 hours, the grocery store will close.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-a01eafbf152c451dbb50d9ba0afa6d52",
+            "input": "Premise: Pixar will release an animated film in 8 years. \nHypothesis: Before 40 months, Pixar will release an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-5fb3837b0daf4f128e7a0e477a0892e2",
+            "input": "Premise: Before 8 years, I will graduate. \nHypothesis: I will graduate before 49 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d0872f57dcb1408099005600f8bceb18",
+            "input": "Premise: In 5 months, I will submit my PhD dissertation. \nHypothesis: I will submit my PhD dissertation before 195 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-5f20e6835c5249f5a9a157173a52ef03",
+            "input": "Premise: In 6 months, I will start my bachelors. \nHypothesis: I will start my bachelors before 273 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-95c59a7d5fa64cc2b41cc2a87803a2d1",
+            "input": "Premise: I will start my bachelors in 9 months. \nHypothesis: I will start my bachelors before 276 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-601a61fa3ede4df5bff65a7ec90971d9",
+            "input": "Premise: After 1 year, Lindsey will pay off her loans. \nHypothesis: After 3 months, Lindsey will pay off her loans.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-d647f34a8b304fc8910042887a7bb7f7",
+            "input": "Premise: The train from Seattle will depart in 6 hours. \nHypothesis: After 87 minutess, the train from Seattle will depart.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-752312b1c15f400b9958bd4d4b4f2552",
+            "input": "Premise: Before 6 years, I will graduate. \nHypothesis: After 67 months, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-49904047fd26469e893229cc0822af1a",
+            "input": "Premise: I will submit my PhD dissertation in 7 years. \nHypothesis: I will submit my PhD dissertation after 82 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-a62b494cbdf14ff6bf08042a8bb1a181",
+            "input": "Premise: Before 9 days, the storm will begin. \nHypothesis: The storm will begin after 292 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-da2e5001cede48d3aa8029ca63102605",
+            "input": "Premise: Pixar will release an animated film before 7 months. \nHypothesis: Pixar will release an animated film after 308 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-9be54c966aea4247859cdb3aae542aa4",
+            "input": "Premise: The storm will begin in 10 days. \nHypothesis: The storm will begin before 208 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-3002bcd7c7ed4051ba854449996e8665",
+            "input": "Premise: In 1 month, the startup will receive funding. \nHypothesis: The startup will receive funding after 149 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-3ec7b34beaa44b64bde691469584dd6d",
+            "input": "Premise: In 3 months, they will become the top football team. \nHypothesis: They will become the top football team after 169 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-c3bbce0eb58245bb95341ddd03182a43",
+            "input": "Premise: Before 6 years, they will become the top football team. \nHypothesis: Before 39 months, they will become the top football team.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-8d38e71d30024970b5226976e899ed9d",
+            "input": "Premise: After 3 months, the court case will begin. \nHypothesis: The court case will begin before 121 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-df8f983b95b14c46b9ad3a2297a13628",
+            "input": "Premise: Robin will visit her parents in 10 months. \nHypothesis: Before 314 days, Robin will visit her parents.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-ee3a93f4b9dc48b7b79d82dbc18070b1",
+            "input": "Premise: He will be sworn in as the Prime Minister in 1 hour. \nHypothesis: After 45 minutess, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-983b8f445c7c45b692dae35b31a0cd21",
+            "input": "Premise: After 3 hours, the train from Seattle will depart. \nHypothesis: Before 274 minutess, the train from Seattle will depart.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-6c20867e20d24c0ca415882fc1e6af74",
+            "input": "Premise: Before 9 years, Lindsey will pay off her loans. \nHypothesis: Lindsey will pay off her loans before 122 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-b6f991664948499bb6aa4c78b4b11c08",
+            "input": "Premise: In 2 years, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies before 49 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-6fbd17e60c2a44feacb735a13604707d",
+            "input": "Premise: I will submit my PhD dissertation before 9 days. \nHypothesis: After 97 hours, I will submit my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-da98b2e4f1164cb79facfeb7cb2a9394",
+            "input": "Premise: They will become the top football team before 7 years. \nHypothesis: After 122 months, they will become the top football team.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-a934d48deec44795b45b484a7246f13b",
+            "input": "Premise: After 6 years, I will graduate. \nHypothesis: I will graduate before 33 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-67387eb2764c45dbba2cfe0257871ef5",
+            "input": "Premise: Pixar will release an animated film after 5 years. \nHypothesis: Pixar will release an animated film after 77 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-3b7a2f656c3f4b77935fc93a41226e00",
+            "input": "Premise: Before 3 days, the grocery store will close. \nHypothesis: The grocery store will close after 54 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-58dee99f36344d34a290e11c40cfaa30",
+            "input": "Premise: The startup will receive funding after 8 days. \nHypothesis: Before 102 hours, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ed3afa52f7154b9da97c9c06b5e54fa2",
+            "input": "Premise: Pixar will release an animated film in 10 years. \nHypothesis: Pixar will release an animated film before 168 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-c9efa23a39ae4fbfac6d3b49c5dcf776",
+            "input": "Premise: In 1 year, Pixar will release an animated film. \nHypothesis: After 17 months, Pixar will release an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-f332211ff23c4615af4c02dc6f880bbe",
+            "input": "Premise: I will submit my PhD dissertation in 9 months. \nHypothesis: After 368 days, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-75ea3dd4da4846e9a1b6a8c18cd4868c",
+            "input": "Premise: He will be sworn in as the Prime Minister before 2 months. \nHypothesis: He will be sworn in as the Prime Minister before 79 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-c8b253169e3f4010b3b00d975f719ec8",
+            "input": "Premise: The government will issue new labor policies before 5 days. \nHypothesis: After 237 hours, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-e5537f6f4b814b82b79f55d25f3f92fc",
+            "input": "Premise: In 8 days, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies after 152 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-6fffd85c5347421896d8079347926768",
+            "input": "Premise: He will be sworn in as the Prime Minister in 2 months. \nHypothesis: Before 206 days, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-4bea5f8aebef4357953474ac7fbd6f69",
+            "input": "Premise: After 8 days, the storm will begin. \nHypothesis: After 90 hours, the storm will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-08b75e8822ee49d783dbe828f10ab743",
+            "input": "Premise: The court case will begin after 5 hours. \nHypothesis: After 508 minutess, the court case will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-33ebdfaa414a40b29e3cb34d1ed10d0f",
+            "input": "Premise: The grocery store will close after 6 hours. \nHypothesis: The grocery store will close after 489 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d6f1ce2b97e84696add3ab9179118094",
+            "input": "Premise: I will graduate in 1 month. \nHypothesis: I will graduate before 13 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-209c9e379c1d4b13909b21b35a1f4b09",
+            "input": "Premise: After 3 months, I will start my bachelors. \nHypothesis: I will start my bachelors after 171 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-ee9247d48bb24c85bf482c18338da3af",
+            "input": "Premise: The grocery store will close in 8 hours. \nHypothesis: The grocery store will close after 498 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-3d5eb8c9add5464a90a3df5652be5f31",
+            "input": "Premise: I will submit my PhD dissertation in 8 months. \nHypothesis: I will submit my PhD dissertation before 131 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-5d5842685b5b4a298f7be0c3cdaf94e9",
+            "input": "Premise: In 9 days, the storm will begin. \nHypothesis: The storm will begin before 133 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-752c34450d5a45a695d996b1c9b993eb",
+            "input": "Premise: After 7 days, the startup will receive funding. \nHypothesis: Before 108 hours, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-b792be986cdb4df19b86a40281c70d39",
+            "input": "Premise: The storm will begin after 10 days. \nHypothesis: The storm will begin before 123 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-8dbddac914ce43e595e2ff6d0449ca8a",
+            "input": "Premise: The court case will begin before 1 month. \nHypothesis: Before 120 days, the court case will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-562ebceaf5fb4d09813b656c5c198b8f",
+            "input": "Premise: Lindsey will pay off her loans before 2 years. \nHypothesis: After 25 months, Lindsey will pay off her loans.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-62001f5cead24196bfc4bb154de0914f",
+            "input": "Premise: After 8 years, Lindsey will pay off her loans. \nHypothesis: Before 125 months, Lindsey will pay off her loans.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-764e84f2f4de449a83027793db0d6e32",
+            "input": "Premise: After 8 days, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister after 107 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-c95764f2e6ca46bb868141f703e1abb3",
+            "input": "Premise: Before 9 days, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies before 162 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b6b8f405d86a4b93b563e1b5d361b18a",
+            "input": "Premise: After 9 years, Lindsey will pay off her loans. \nHypothesis: Lindsey will pay off her loans before 83 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-0b9331b74b8b4cb99bb9b9a1fb5b93b4",
+            "input": "Premise: In 3 months, he will be sworn in as the Prime Minister. \nHypothesis: Before 1 day, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-38743ade1f564c099d65f3ae08003889",
+            "input": "Premise: Before 8 days, the grocery store will close. \nHypothesis: The grocery store will close before 89 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-0d2a59beadc447408484907da57e110a",
+            "input": "Premise: The government will issue new labor policies in 3 days. \nHypothesis: The government will issue new labor policies before 84 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-574505b990874e5a8dc647a2b41a1e6e",
+            "input": "Premise: In 1 month, their tour of Europe will start. \nHypothesis: Before 21 days, their tour of Europe will start.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ad581b3e49ba4d4391da733d6eb06e3d",
+            "input": "Premise: In 7 years, Pixar will release an animated film. \nHypothesis: After 132 months, Pixar will release an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-6a1ae58af1cb445fad65cbda1724bfa4",
+            "input": "Premise: After 7 hours, the train from Seattle will depart. \nHypothesis: The train from Seattle will depart after 328 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-b32466316c694c8391833fb5f84e10d5",
+            "input": "Premise: Before 9 months, I will graduate. \nHypothesis: Before 374 days, I will graduate.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-b94cc0774178461cb19e5ffb404650d5",
+            "input": "Premise: After 9 days, the grocery store will close. \nHypothesis: After 220 hours, the grocery store will close.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-ebc0b2243dba4dca996ef28e23e27d3c",
+            "input": "Premise: Robin will visit her parents in 10 months. \nHypothesis: Robin will visit her parents before 183 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-cdbf0f6496ad40948ea225f6c3bef7ca",
+            "input": "Premise: After 6 days, the court case will begin. \nHypothesis: The court case will begin after 247 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-3e5910eab9384699a003866c13a8f12f",
+            "input": "Premise: The government will issue new labor policies after 8 days. \nHypothesis: The government will issue new labor policies after 308 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b367ade0c9554809ad7ced5cdb96da62",
+            "input": "Premise: I will submit my PhD dissertation after 8 years. \nHypothesis: After 144 months, I will submit my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-5b7f889be2664625b94325274db55c82",
+            "input": "Premise: The startup will receive funding after 3 years. \nHypothesis: The startup will receive funding before 7 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-54588687d7854793929edceec4c955b9",
+            "input": "Premise: In 5 days, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies after 160 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-f3032698b8c24f01b6dbe610de3453c2",
+            "input": "Premise: The startup will receive funding in 6 years. \nHypothesis: The startup will receive funding after 86 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-d638bfda704e4136bcaf89e1025be630",
+            "input": "Premise: Before 6 hours, the grocery store will close. \nHypothesis: After 561 minutess, the grocery store will close.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ac32d43eca5e42249f497e3df73431b6",
+            "input": "Premise: In 8 days, Robin will visit her parents. \nHypothesis: After 293 hours, Robin will visit her parents.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-65b07c2893cd481785061cdfc034396b",
+            "input": "Premise: The startup will receive funding in 2 years. \nHypothesis: The startup will receive funding before 12 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-f1978eed90c94f89bb6cfc1e469da090",
+            "input": "Premise: Before 5 months, their tour of Europe will start. \nHypothesis: After 289 days, their tour of Europe will start.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-15bd9de9eb754be5971d970bfde5adf2",
+            "input": "Premise: The grocery store will close before 3 hours. \nHypothesis: The grocery store will close before 389 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-64d23c7ba8134b39914f177bb06efe84",
+            "input": "Premise: In 5 days, the storm will begin. \nHypothesis: The storm will begin before 13 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-67186d6bc9114ca39c7cc345328a011a",
+            "input": "Premise: After 5 hours, the court case will begin. \nHypothesis: The court case will begin before 187 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-fbc1f4cecb4141149bf52882b41e5a3b",
+            "input": "Premise: In 10 months, they will become the top football team. \nHypothesis: They will become the top football team after 211 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-75b0c6ebaedc4e1d807f5d96105fee23",
+            "input": "Premise: Robin will visit her parents in 5 days. \nHypothesis: Robin will visit her parents before 219 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-6221cde98d2f4ff1bcab2f4aecd1082b",
+            "input": "Premise: The storm will begin before 1 day. \nHypothesis: The storm will begin after 18 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-20d04d89ae4543b0bfca94a0da8d9858",
+            "input": "Premise: I will graduate in 2 years. \nHypothesis: I will graduate after 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-dac8cbb683724c09a1433244cc2f9b37",
+            "input": "Premise: The match between India and Australia will begin in 8 hours. \nHypothesis: The match between India and Australia will begin after 262 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-f3160595675f4e3d88ab9933d3fe0cd1",
+            "input": "Premise: Robin will visit her parents after 6 months. \nHypothesis: Before 247 days, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-6e8c0c9e42f743d39d297e2151a90653",
+            "input": "Premise: Their tour of Europe will start after 5 months. \nHypothesis: Their tour of Europe will start before 203 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-ccfc3c4d5b5b453c873862be7ba90623",
+            "input": "Premise: They will become the top football team in 2 years. \nHypothesis: They will become the top football team after 30 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-4c8ae2fc190c4dbaa4c5c2813072dc6d",
+            "input": "Premise: After 3 months, their tour of Europe will start. \nHypothesis: Their tour of Europe will start after 49 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-1a36cb5c645b4de29998370b92a786ee",
+            "input": "Premise: I will start my bachelors after 3 months. \nHypothesis: I will start my bachelors before 4 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-dd553aba56874b5bb7df97300e85a799",
+            "input": "Premise: The train from Seattle will depart after 1 hour. \nHypothesis: After 360 minutess, the train from Seattle will depart.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-2c81b96251584cb788dc0a474685bacd",
+            "input": "Premise: I will submit my PhD dissertation after 7 years. \nHypothesis: After 100 months, I will submit my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-16e0a13b27a24410ae46f5974fa82f9a",
+            "input": "Premise: In 1 month, their tour of Europe will start. \nHypothesis: Their tour of Europe will start before 14 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-bb165c36e6c54e18a58824068fc8b6a8",
+            "input": "Premise: Before 1 day, the startup will receive funding. \nHypothesis: Before 10 hours, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-e66caca0fdea42298d36c594fdd23497",
+            "input": "Premise: The government will issue new labor policies in 4 months. \nHypothesis: After 160 days, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-b0463022234a476baf311c5173148a6c",
+            "input": "Premise: In 5 years, I will graduate. \nHypothesis: I will graduate before 119 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-0b2b3f255217459f80c9385dcb537a09",
+            "input": "Premise: In 6 hours, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister before 551 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-668f5f6535114593a3252fd20c451958",
+            "input": "Premise: I will submit my PhD dissertation after 4 days. \nHypothesis: After 64 hours, I will submit my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-abbda30e79a4417cbe86b6934d955a9e",
+            "input": "Premise: The startup will receive funding before 3 days. \nHypothesis: Before 49 hours, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-e614550c67e5446487092462a55aee23",
+            "input": "Premise: In 8 months, he will be sworn in as the Prime Minister. \nHypothesis: Before 264 days, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-fb89f7d8f3574007bd1378875d86eb17",
+            "input": "Premise: Before 8 months, I will submit my PhD dissertation. \nHypothesis: I will submit my PhD dissertation before 106 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-6a0a48f50f264933b5dd76e310332fe6",
+            "input": "Premise: After 2 days, the match between India and Australia will begin. \nHypothesis: Before 3 hours, the match between India and Australia will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-af7a28911eb9423b8c5691c81f45c956",
+            "input": "Premise: Lindsey will pay off her loans after 1 year. \nHypothesis: Before 15 months, Lindsey will pay off her loans.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-4103670810d3404d80abaa5dc4e9207d",
+            "input": "Premise: Before 10 hours, he will be sworn in as the Prime Minister. \nHypothesis: After 599 minutess, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-269659a0183e45f4ba1a1d6aa8c56cf8",
+            "input": "Premise: After 5 days, Robin will visit her parents. \nHypothesis: Robin will visit her parents before 172 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d59f845336b14c38a49835e9bbda5576",
+            "input": "Premise: In 3 days, the storm will begin. \nHypothesis: Before 51 hours, the storm will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ce860b6e0bc949ab9a1103c3f94217e0",
+            "input": "Premise: After 10 months, their tour of Europe will start. \nHypothesis: Before 283 days, their tour of Europe will start.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ef39fc6aac2d4ae38c6a05ce9d00cfc5",
+            "input": "Premise: After 1 day, the match between India and Australia will begin. \nHypothesis: The match between India and Australia will begin after 115 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-307b006ba57e4618bf83af0b0b8b6fbb",
+            "input": "Premise: The government will issue new labor policies in 8 years. \nHypothesis: After 75 months, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-40b5d4d86902426f8e396b53807c29c7",
+            "input": "Premise: Before 6 years, I will submit my PhD dissertation. \nHypothesis: I will submit my PhD dissertation after 129 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-32e7f5cd9b8d434c91d868f0dde3ca34",
+            "input": "Premise: In 4 months, the startup will receive funding. \nHypothesis: Before 32 days, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-6536cde633404a15a2c4c2cc035f2a27",
+            "input": "Premise: The government will issue new labor policies before 1 day. \nHypothesis: After 108 hours, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-31d5f84ac3024f0fb21039d0f759a186",
+            "input": "Premise: Before 5 hours, the match between India and Australia will begin. \nHypothesis: The match between India and Australia will begin after 567 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-d06f591b32474f81987714a51eea1378",
+            "input": "Premise: I will submit my PhD dissertation in 10 years. \nHypothesis: I will submit my PhD dissertation before 63 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-d4853b31008748a39ea405a991bb89f5",
+            "input": "Premise: After 1 day, I will submit my PhD dissertation. \nHypothesis: I will submit my PhD dissertation after 49 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-518597e1784d4c30b7d7539f177e4cde",
+            "input": "Premise: I will submit my PhD dissertation after 3 days. \nHypothesis: I will submit my PhD dissertation after 171 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-cdbbf02d0eea4b049590b904dd26b900",
+            "input": "Premise: After 1 year, Lindsey will pay off her loans. \nHypothesis: Before 15 months, Lindsey will pay off her loans.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d3b0a41570ca496eb45251f3d455cf5d",
+            "input": "Premise: After 3 months, the startup will receive funding. \nHypothesis: After 39 days, the startup will receive funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-9bb94b539cee4389a974ea97b8463207",
+            "input": "Premise: Before 1 day, I will submit my PhD dissertation. \nHypothesis: I will submit my PhD dissertation before 20 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-730e8817e4f34e0da45a5bfef76e3a43",
+            "input": "Premise: Pixar will release an animated film before 7 months. \nHypothesis: Before 202 days, Pixar will release an animated film.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-f4b4dadbeb8d4e7896cf89fab27ebb7b",
+            "input": "Premise: Before 9 days, he will be sworn in as the Prime Minister. \nHypothesis: After 267 hours, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-d41d24b5c107493fb7abafca1fe1c5f2",
+            "input": "Premise: After 3 hours, the court case will begin. \nHypothesis: The court case will begin after 83 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-d05727cca9d945c0999e800a94c0d9a6",
+            "input": "Premise: I will graduate in 6 years. \nHypothesis: I will graduate after 93 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-29c05e07e87f4c6abf8e1c81b1b44e49",
+            "input": "Premise: In 2 years, the startup will receive funding. \nHypothesis: The startup will receive funding before 13 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-f9b4e483911c4f868d7a61ac28112b85",
+            "input": "Premise: In 4 years, I will start my bachelors. \nHypothesis: Before 11 months, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-60227e751f1b4d44a44f4379acf02efc",
+            "input": "Premise: The startup will receive funding before 1 day. \nHypothesis: After 21 hours, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d0a21d071c944efdad72d34e24c42c83",
+            "input": "Premise: The startup will receive funding before 4 years. \nHypothesis: The startup will receive funding after 88 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-1c9d8aa82fac414db39f4f7b60c455d3",
+            "input": "Premise: He will be sworn in as the Prime Minister after 8 months. \nHypothesis: He will be sworn in as the Prime Minister after 267 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d6a56640d83344a1900f8810bafcb4a0",
+            "input": "Premise: Before 10 days, the court case will begin. \nHypothesis: Before 238 hours, the court case will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-e3b02a3a27624d1da35b987686dd784b",
+            "input": "Premise: Before 1 month, Pixar will release an animated film. \nHypothesis: Pixar will release an animated film before 21 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-a69392a90a144baa9c26a3924463bd94",
+            "input": "Premise: He will be sworn in as the Prime Minister after 6 days. \nHypothesis: He will be sworn in as the Prime Minister before 120 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-6355c844bcf441e49617b7b38cadabc4",
+            "input": "Premise: In 9 days, the grocery store will close. \nHypothesis: After 317 hours, the grocery store will close.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-45711977c51543be8dc43990e47e5c58",
+            "input": "Premise: I will submit my PhD dissertation after 9 months. \nHypothesis: I will submit my PhD dissertation before 215 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-7df700b0357742f6a6a7907aa2804948",
+            "input": "Premise: He will be sworn in as the Prime Minister in 6 hours. \nHypothesis: After 83 minutess, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-73fd4b26728542c384597d2a96f52046",
+            "input": "Premise: The storm will begin before 7 days. \nHypothesis: Before 224 hours, the storm will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-182e1ee7f19c4d27b2a291e51a5dfa68",
+            "input": "Premise: Before 10 months, their tour of Europe will start. \nHypothesis: After 165 days, their tour of Europe will start.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-4ccb75424a1641248454eb9c9bf14572",
+            "input": "Premise: In 9 years, I will submit my PhD dissertation. \nHypothesis: After 153 months, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-77aaceac7f5d4abf9c9f963bfdba8296",
+            "input": "Premise: Before 6 hours, the train from Seattle will depart. \nHypothesis: The train from Seattle will depart before 650 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-256c6aaa0bb04688b6d7f0118f56375a",
+            "input": "Premise: Pixar will release an animated film before 2 years. \nHypothesis: Pixar will release an animated film before 4 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b4cb97ee6dfa4656aff78b939c670ba8",
+            "input": "Premise: The match between India and Australia will begin before 5 days. \nHypothesis: Before 202 hours, the match between India and Australia will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e8c98d9a3ea1438cbe717fb8c558e4c6",
+            "input": "Premise: After 6 days, the storm will begin. \nHypothesis: After 53 hours, the storm will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-20539314a5514826b1ad2c725d42feef",
+            "input": "Premise: The government will issue new labor policies after 4 months. \nHypothesis: After 31 days, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-1d57a574d3a2469a972fabb593ff6b7d",
+            "input": "Premise: He will be sworn in as the Prime Minister after 8 hours. \nHypothesis: Before 185 minutess, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-62d7eb9ebfda420994c57a363360823f",
+            "input": "Premise: In 7 days, the match between India and Australia will begin. \nHypothesis: The match between India and Australia will begin before 125 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-3d30fca4fcf1436887bc48021b286d8d",
+            "input": "Premise: The match between India and Australia will begin after 1 day. \nHypothesis: The match between India and Australia will begin after 30 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-2460a77139754b9b9bfa3ec5d406000e",
+            "input": "Premise: In 8 days, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies before 119 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-a61bb8d35b444c648a4aa10b6f4f7a33",
+            "input": "Premise: I will submit my PhD dissertation after 10 days. \nHypothesis: After 248 hours, I will submit my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-c8d19dcb926e40248f2efeb38dbcd75e",
+            "input": "Premise: The court case will begin before 5 hours. \nHypothesis: The court case will begin after 301 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-f2b512f7ca0d4e04916ff7c37cef4d0d",
+            "input": "Premise: Before 6 days, Robin will visit her parents. \nHypothesis: Before 203 hours, Robin will visit her parents.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-314895c0cf9a4c7ca9f8088ab9a1f42e",
+            "input": "Premise: He will be sworn in as the Prime Minister after 8 months. \nHypothesis: He will be sworn in as the Prime Minister after 181 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-6bf300a655d34b9d8b44c1100a4c38f3",
+            "input": "Premise: Robin will visit her parents after 7 months. \nHypothesis: After 301 days, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-4484cf6773724ce2b91b9923d1635909",
+            "input": "Premise: Pixar will release an animated film after 6 years. \nHypothesis: Before 108 months, Pixar will release an animated film.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-14a1a3e4b2c944f0ad2f091ac8a0d525",
+            "input": "Premise: Before 6 months, the startup will receive funding. \nHypothesis: The startup will receive funding after 237 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-55cedc997ad849aea07039a59f0cc3d7",
+            "input": "Premise: After 10 years, I will start my bachelors. \nHypothesis: I will start my bachelors after 89 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-1ee494292bef4eb8b340390d874eba73",
+            "input": "Premise: The court case will begin in 10 hours. \nHypothesis: The court case will begin after 697 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-4292570b2f9a401ca065c282fb775518",
+            "input": "Premise: The grocery store will close after 6 hours. \nHypothesis: Before 340 minutess, the grocery store will close.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-55afee0824df45d3a3fa370a9a6896fe",
+            "input": "Premise: They will become the top football team after 2 years. \nHypothesis: They will become the top football team before 21 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-8ac3763ae3194be2bd2c24702d42b4e9",
+            "input": "Premise: He will be sworn in as the Prime Minister before 9 days. \nHypothesis: He will be sworn in as the Prime Minister before 126 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d75ca2610be4470796b694d27fa66e3e",
+            "input": "Premise: I will start my bachelors after 3 months. \nHypothesis: Before 137 days, I will start my bachelors.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-c5222a1e97d64d60b026f820549770c2",
+            "input": "Premise: Before 2 hours, the grocery store will close. \nHypothesis: After 144 minutess, the grocery store will close.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-3bccd27eb42e4696aa3816f6971c5e70",
+            "input": "Premise: The government will issue new labor policies after 9 months. \nHypothesis: The government will issue new labor policies before 398 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-36149b9e2f6f4702a07abf43dbecbdb6",
+            "input": "Premise: In 2 years, I will graduate. \nHypothesis: After 21 months, I will graduate.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-2cb781f6bb0a4c2a9894638c83e600b3",
+            "input": "Premise: The match between India and Australia will begin after 9 hours. \nHypothesis: The match between India and Australia will begin after 813 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-a1c2b02c6e274e22b8352c4966fbdbfe",
+            "input": "Premise: In 6 months, the court case will begin. \nHypothesis: After 115 days, the court case will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-cdd127988c1e4b72aa4cd4e0db422961",
+            "input": "Premise: In 5 months, the court case will begin. \nHypothesis: After 35 days, the court case will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e6b19e5906ba4b8bb030a214539b71a0",
+            "input": "Premise: After 3 months, I will submit my PhD dissertation. \nHypothesis: Before 155 days, I will submit my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-5fe28412f2714653a326b10d15000c2b",
+            "input": "Premise: In 8 months, I will start my bachelors. \nHypothesis: I will start my bachelors after 98 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-ecf1a29f973542fa941c0e13b90a4cb0",
+            "input": "Premise: The grocery store will close in 1 hour. \nHypothesis: Before 140 minutess, the grocery store will close.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-9f08839ede374504be3ad17748728126",
+            "input": "Premise: After 1 hour, the train from Seattle will depart. \nHypothesis: The train from Seattle will depart before 95 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-097817622c8a46eea2d22d63017129a9",
+            "input": "Premise: He will be sworn in as the Prime Minister in 1 hour. \nHypothesis: Before 127 minutess, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-a3936cb34ed54d34947ac4b2cf4fea38",
+            "input": "Premise: Before 3 days, he will be sworn in as the Prime Minister. \nHypothesis: Before 172 hours, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-f3389bfcd1d44ac0a0031c57e3887ae6",
+            "input": "Premise: After 5 hours, the train from Seattle will depart. \nHypothesis: After 387 minutess, the train from Seattle will depart.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-410a57a41f3c4da29657c1cedc96719b",
+            "input": "Premise: Before 6 months, I will graduate. \nHypothesis: I will graduate after 304 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-73d170aa68ab47d9a6b363b197957f62",
+            "input": "Premise: The government will issue new labor policies in 9 years. \nHypothesis: The government will issue new labor policies after 111 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-4c81ee706f864deda40e4ee031fe5010",
+            "input": "Premise: Before 6 months, Robin will visit her parents. \nHypothesis: Before 92 days, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b5a76769d1744161a8e7e2612db148dc",
+            "input": "Premise: In 7 days, the storm will begin. \nHypothesis: The storm will begin before 70 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-057b8a796d404efba40b8e2578df7f2e",
+            "input": "Premise: They will become the top football team in 6 months. \nHypothesis: They will become the top football team after 100 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-8d419d795c4349499d70f8c4bb01f008",
+            "input": "Premise: In 8 days, I will submit my PhD dissertation. \nHypothesis: I will submit my PhD dissertation before 296 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-2d88433b8df3473abf555d60a1173107",
+            "input": "Premise: In 8 days, the startup will receive funding. \nHypothesis: Before 120 hours, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-5d0d53a0df0b4edaadf646e8767778f3",
+            "input": "Premise: The grocery store will close before 8 days. \nHypothesis: After 161 hours, the grocery store will close.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-7aef2e335cf142b6a872c2e5bcd5c13f",
+            "input": "Premise: After 8 hours, the court case will begin. \nHypothesis: The court case will begin before 708 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-781a24bf220b4ffcaa91857414304f63",
+            "input": "Premise: The match between India and Australia will begin before 7 hours. \nHypothesis: Before 464 minutess, the match between India and Australia will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-44283231fcd84ccb87789c163d20c6e8",
+            "input": "Premise: The storm will begin before 8 days. \nHypothesis: The storm will begin before 84 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-728c9a9c47734328a862ef7dce3e98b3",
+            "input": "Premise: Before 10 days, the grocery store will close. \nHypothesis: The grocery store will close before 258 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e4615bbd721d4d6d881185bb26273cfc",
+            "input": "Premise: Before 10 years, I will graduate. \nHypothesis: I will graduate after 161 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-fb1b6444d82042d78fd43dfe6a0cce66",
+            "input": "Premise: The startup will receive funding in 3 months. \nHypothesis: The startup will receive funding before 242 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-7cb706b72db148bda9dc832db30e5b31",
+            "input": "Premise: The government will issue new labor policies after 6 years. \nHypothesis: After 54 months, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-8da7c328090d47f4a3afd8a74d19959a",
+            "input": "Premise: Before 4 hours, the match between India and Australia will begin. \nHypothesis: The match between India and Australia will begin before 127 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b041ac6406ab4953a74b18d05ed62217",
+            "input": "Premise: Pixar will release an animated film before 7 years. \nHypothesis: Pixar will release an animated film before 28 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-2f3a6d1a3639420fa3df463426340a33",
+            "input": "Premise: Before 8 days, the storm will begin. \nHypothesis: After 191 hours, the storm will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-1341b9659c69449b9e5c4cb8d94e2890",
+            "input": "Premise: After 8 hours, the match between India and Australia will begin. \nHypothesis: The match between India and Australia will begin after 578 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b6d27de8633c4cddb081d901eee2f2d4",
+            "input": "Premise: Before 8 hours, the court case will begin. \nHypothesis: Before 710 minutess, the court case will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-2a35cbbb55cb46dca5df0d27fea50b95",
+            "input": "Premise: After 10 months, I will start my bachelors. \nHypothesis: Before 399 days, I will start my bachelors.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b4dea6f1b0c14a15ba8e5ccbac36f48c",
+            "input": "Premise: In 7 days, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister after 96 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-7633f104395c423d8274985dfed9b4d8",
+            "input": "Premise: The startup will receive funding in 8 days. \nHypothesis: After 223 hours, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-4be27e20091443b89ea6db8770c2ba0d",
+            "input": "Premise: The train from Seattle will depart in 8 hours. \nHypothesis: After 208 minutess, the train from Seattle will depart.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-24326e29898e47b089f735a4d269f421",
+            "input": "Premise: Before 2 days, I will submit my PhD dissertation. \nHypothesis: After 161 hours, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-08cb953b07ed47d58f7735a9df471b0b",
+            "input": "Premise: Their tour of Europe will start after 9 months. \nHypothesis: Their tour of Europe will start before 296 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-2af3995d97534d67bcac4de299c1dd00",
+            "input": "Premise: I will graduate in 10 years. \nHypothesis: Before 136 months, I will graduate.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-f9acc2b4372242d5843eb97995ed401b",
+            "input": "Premise: The match between India and Australia will begin before 6 days. \nHypothesis: After 190 hours, the match between India and Australia will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-96d36a0405284bb8af1896f6ae151112",
+            "input": "Premise: Pixar will release an animated film after 8 years. \nHypothesis: Pixar will release an animated film after 50 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-d7da90f1c22b4653931fa31de13a75ae",
+            "input": "Premise: In 10 years, I will graduate. \nHypothesis: I will graduate after 99 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-aa2ed95936dc4727a0f347d34e00b7b9",
+            "input": "Premise: The match between India and Australia will begin in 9 hours. \nHypothesis: The match between India and Australia will begin after 707 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-134c5f35b4984ae98033de71ea25edc7",
+            "input": "Premise: In 4 hours, the court case will begin. \nHypothesis: After 374 minutess, the court case will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-30f802b1a03043c9a63c0ee23474d9b0",
+            "input": "Premise: Lindsey will pay off her loans in 4 years. \nHypothesis: Lindsey will pay off her loans after 62 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ca28ab8050bc4bdf95f81d29c5316b61",
+            "input": "Premise: He will be sworn in as the Prime Minister in 10 hours. \nHypothesis: He will be sworn in as the Prime Minister before 426 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-5259137a50c64253b7288649fd753bf2",
+            "input": "Premise: In 4 months, Pixar will release an animated film. \nHypothesis: Pixar will release an animated film before 196 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-2cc79b1c8bcc480980e79ea20fde5c5a",
+            "input": "Premise: Before 4 days, I will submit my PhD dissertation. \nHypothesis: After 72 hours, I will submit my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-64165191b0da4048a03afcbf6b55fd01",
+            "input": "Premise: After 8 hours, the match between India and Australia will begin. \nHypothesis: After 625 minutess, the match between India and Australia will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-581e083ac3464738922955c07c54450d",
+            "input": "Premise: The storm will begin after 8 days. \nHypothesis: The storm will begin after 275 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-1b6c670cf4234441af9c53a05a05332a",
+            "input": "Premise: They will become the top football team after 1 year. \nHypothesis: They will become the top football team before 36 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-904644ab930147e7887e9d28eb6f4307",
+            "input": "Premise: In 3 months, Robin will visit her parents. \nHypothesis: Robin will visit her parents after 110 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-9604ae5c57cd44faa3f875dafe183e7d",
+            "input": "Premise: After 4 months, I will submit my PhD dissertation. \nHypothesis: After 252 days, I will submit my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-e1b6b0a949f148f4b981b99ebd1c76c1",
+            "input": "Premise: I will graduate after 8 months. \nHypothesis: I will graduate before 386 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-07e38cffe946437f855c2f918fcbfd73",
+            "input": "Premise: I will submit my PhD dissertation in 6 months. \nHypothesis: After 293 days, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-de93c9b673684d7f9d4ea57c5e65b489",
+            "input": "Premise: Before 3 years, I will submit my PhD dissertation. \nHypothesis: After 37 months, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-8a3d2b55fd63465abaeb57eec53253ed",
+            "input": "Premise: Before 6 months, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies before 269 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-855b95256c58499294889c9cc4a12c6c",
+            "input": "Premise: The match between India and Australia will begin before 8 days. \nHypothesis: Before 255 hours, the match between India and Australia will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-38f2e4fe7a2b42a6a1fd32d0ba62ea98",
+            "input": "Premise: The grocery store will close before 5 days. \nHypothesis: After 172 hours, the grocery store will close.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-fef8d8c75e304368b7f0547e6dbc0364",
+            "input": "Premise: After 5 days, the grocery store will close. \nHypothesis: Before 155 hours, the grocery store will close.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-bd91cb9331c44eadbef71ce3f3036950",
+            "input": "Premise: Robin will visit her parents before 8 months. \nHypothesis: Before 197 days, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b0010ba1aa614768818e3596742c68a0",
+            "input": "Premise: After 8 days, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister after 310 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-2c1bd0eba4b840198a7103c964525a2d",
+            "input": "Premise: The government will issue new labor policies in 5 years. \nHypothesis: The government will issue new labor policies before 11 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-a2927c0f947540e09e85ea856cca93b5",
+            "input": "Premise: After 4 days, the match between India and Australia will begin. \nHypothesis: Before 93 hours, the match between India and Australia will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-63750b924c774aa085f23aab5c4a975e",
+            "input": "Premise: After 5 hours, the court case will begin. \nHypothesis: The court case will begin after 150 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-2179d90a1cef45d28a148c7a75542020",
+            "input": "Premise: The government will issue new labor policies before 10 years. \nHypothesis: Before 126 months, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e30d5f7822b64b3ca59411a54adb68b2",
+            "input": "Premise: The startup will receive funding in 4 days. \nHypothesis: Before 17 hours, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ab273252057d421386ad602a560aeb04",
+            "input": "Premise: Before 6 days, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister before 78 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-2cfb0c425ff843cfb873907360ae379e",
+            "input": "Premise: They will become the top football team in 9 years. \nHypothesis: After 51 months, they will become the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e356ab354ec041b1810e0b0625b2a228",
+            "input": "Premise: Lindsey will pay off her loans in 2 years. \nHypothesis: Lindsey will pay off her loans after 17 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e4a9c88d802d49b9bb94605bbea0c7ab",
+            "input": "Premise: Before 2 days, the startup will receive funding. \nHypothesis: After 21 hours, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-ac9c386ccce2405bb61f36ad4d0c2405",
+            "input": "Premise: The match between India and Australia will begin before 4 hours. \nHypothesis: After 126 minutess, the match between India and Australia will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-7b515fce86244fbf971341c7c3601ed4",
+            "input": "Premise: Robin will visit her parents after 1 day. \nHypothesis: Robin will visit her parents after 9 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-a1fc6da0924d40e0b7a8e8e797efedfe",
+            "input": "Premise: Before 5 hours, the train from Seattle will depart. \nHypothesis: Before 265 minutess, the train from Seattle will depart.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-83ff8d3fe2f0403a8ec4cf5cf3883b86",
+            "input": "Premise: After 2 days, Robin will visit her parents. \nHypothesis: Before 104 hours, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-7142e76f26d24ceb908d313e47e6b375",
+            "input": "Premise: Lindsey will pay off her loans before 3 years. \nHypothesis: After 28 months, Lindsey will pay off her loans.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-9c0b4c1418a349cfa12093f07ea9caaa",
+            "input": "Premise: I will start my bachelors before 10 years. \nHypothesis: Before 69 months, I will start my bachelors.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-354cb9ddd87a4a70872c660e679a9b15",
+            "input": "Premise: I will start my bachelors after 7 months. \nHypothesis: After 231 days, I will start my bachelors.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-152f1c04a5fe48e3be42726fd4a5dbac",
+            "input": "Premise: The grocery store will close after 3 days. \nHypothesis: The grocery store will close after 109 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b6790cc626064a0b9dc6870697ba3e8f",
+            "input": "Premise: The court case will begin after 4 months. \nHypothesis: After 237 days, the court case will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-1c34d6f2e57544488cbc4333c656389c",
+            "input": "Premise: He will be sworn in as the Prime Minister before 2 hours. \nHypothesis: Before 40 minutess, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-4aecdfb9b71f400aba6c5f662562a10e",
+            "input": "Premise: Before 10 years, Lindsey will pay off her loans. \nHypothesis: Lindsey will pay off her loans before 173 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-ba474e9abf814fd891347a418171dec1",
+            "input": "Premise: Before 5 hours, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister before 293 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-0414d56c075f4d32884479e61b4def32",
+            "input": "Premise: The startup will receive funding after 9 days. \nHypothesis: The startup will receive funding before 217 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-53698e5546fb446fa404b0f2ffb8ff8a",
+            "input": "Premise: After 4 years, the government will issue new labor policies. \nHypothesis: After 45 months, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-dd6856a1435145df9a5c03da9a2dbb52",
+            "input": "Premise: I will submit my PhD dissertation after 9 months. \nHypothesis: I will submit my PhD dissertation before 372 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-a002a23ba53c4f7fb801cf630416c5da",
+            "input": "Premise: After 3 years, Lindsey will pay off her loans. \nHypothesis: Lindsey will pay off her loans before 6 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-81658f21647d488ea5a9308797caaa96",
+            "input": "Premise: The storm will begin after 8 days. \nHypothesis: After 182 hours, the storm will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e89292e8d39c411f898e9f9169149273",
+            "input": "Premise: The match between India and Australia will begin in 2 days. \nHypothesis: After 14 hours, the match between India and Australia will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-1b922a0574f5406d8f1ff381e9f9f890",
+            "input": "Premise: In 5 months, their tour of Europe will start. \nHypothesis: Their tour of Europe will start before 57 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-51a1ff7b72f14cbe86ca700cd92326c5",
+            "input": "Premise: I will submit my PhD dissertation before 7 months. \nHypothesis: I will submit my PhD dissertation before 349 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e861eef304274b909ff41f60c1464877",
+            "input": "Premise: Robin will visit her parents after 8 days. \nHypothesis: After 308 hours, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-5d2bc51835474700954d49f0cd327a66",
+            "input": "Premise: After 1 day, the grocery store will close. \nHypothesis: After 13 hours, the grocery store will close.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-557d6c9550e84e9fab14f6e81f5e9acc",
+            "input": "Premise: The court case will begin in 4 months. \nHypothesis: Before 53 days, the court case will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-4357474fa3574631ad912c39104ce700",
+            "input": "Premise: The startup will receive funding before 9 days. \nHypothesis: Before 319 hours, the startup will receive funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-efece0d47f354db58183ad089778b41c",
+            "input": "Premise: They will become the top football team in 10 months. \nHypothesis: After 218 days, they will become the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-9eaf75e422a5408897171c85e43967a7",
+            "input": "Premise: They will become the top football team after 4 years. \nHypothesis: After 30 months, they will become the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-4df0c578661c4e6db2730485cf555f83",
+            "input": "Premise: He will be sworn in as the Prime Minister after 10 hours. \nHypothesis: Before 602 minutess, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-9cc98e728d2d4d8b847f1b70cea42394",
+            "input": "Premise: The storm will begin after 3 days. \nHypothesis: After 106 hours, the storm will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d1ae2e6afd554e1ea7f41cbed10039ca",
+            "input": "Premise: Before 6 months, I will start my bachelors. \nHypothesis: I will start my bachelors before 165 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-82ad504c967a49d5b664ff625840afe2",
+            "input": "Premise: Before 1 month, I will start my bachelors. \nHypothesis: After 155 days, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-1b838460bdd244b7952c9a0053f52fe9",
+            "input": "Premise: After 1 year, I will start my bachelors. \nHypothesis: I will start my bachelors before 11 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-4f793ef8dda84c90b585a29a88a42e21",
+            "input": "Premise: After 6 days, the court case will begin. \nHypothesis: The court case will begin before 111 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-032903361cc6411c8ca6f1d67bc81cd4",
+            "input": "Premise: I will submit my PhD dissertation before 3 months. \nHypothesis: I will submit my PhD dissertation before 63 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-e9345706e2704af78e323a7aad0668dd",
+            "input": "Premise: After 4 years, I will submit my PhD dissertation. \nHypothesis: After 40 months, I will submit my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-31402193a0e3471f96248d1c0d6fec5d",
+            "input": "Premise: After 2 years, I will graduate. \nHypothesis: After 3 months, I will graduate.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-666d9660a4e74a4982546b6c4e67fdee",
+            "input": "Premise: Pixar will release an animated film in 2 months. \nHypothesis: Pixar will release an animated film before 196 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-8e3925121d0e4ec29cfe265b78481dca",
+            "input": "Premise: I will submit my PhD dissertation after 2 months. \nHypothesis: I will submit my PhD dissertation after 185 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-1c5ef9b3f1da492e871a123d1dba2e0a",
+            "input": "Premise: The grocery store will close in 3 days. \nHypothesis: The grocery store will close after 154 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-86f759ff6bd74ea48f43e330b6a7e108",
+            "input": "Premise: In 5 days, the government will issue new labor policies. \nHypothesis: Before 127 hours, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-ad33e53d522e4a939702004c547c6812",
+            "input": "Premise: The grocery store will close in 3 days. \nHypothesis: The grocery store will close before 21 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-5a84815f9c3548edbbf927b845848e62",
+            "input": "Premise: The grocery store will close after 2 days. \nHypothesis: The grocery store will close after 96 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-1a3e4195f28f4e639c4e80267d417be0",
+            "input": "Premise: In 9 hours, the train from Seattle will depart. \nHypothesis: The train from Seattle will depart after 613 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-97df4f798c824b42971df12f00bb86a1",
+            "input": "Premise: In 1 day, the startup will receive funding. \nHypothesis: After 8 hours, the startup will receive funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-66ab31caa8f743a58ad5be1cb83a5cbc",
+            "input": "Premise: After 3 months, the startup will receive funding. \nHypothesis: The startup will receive funding before 236 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b1ab5b173dfb4dedba0d77c0a3e14fee",
+            "input": "Premise: After 4 days, the startup will receive funding. \nHypothesis: After 132 hours, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-48ed27aad83d4df0bb5497feb9066c39",
+            "input": "Premise: In 10 months, I will graduate. \nHypothesis: After 244 days, I will graduate.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-62b6acfb67d2456cbe89e366d177af8e",
+            "input": "Premise: Before 9 years, Pixar will release an animated film. \nHypothesis: Pixar will release an animated film after 86 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-2ad0f73e8f75479fa5cca9444d1c7a31",
+            "input": "Premise: The government will issue new labor policies after 5 years. \nHypothesis: The government will issue new labor policies after 95 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-ae5fc279b5ae48f18b43eaa53e980bea",
+            "input": "Premise: In 6 hours, the court case will begin. \nHypothesis: After 250 minutess, the court case will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-0a1e98573091496ca64e2711a8bfad09",
+            "input": "Premise: I will submit my PhD dissertation before 4 years. \nHypothesis: I will submit my PhD dissertation after 63 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-65052336d7e84d4394775041f1fd4ca5",
+            "input": "Premise: The government will issue new labor policies after 7 days. \nHypothesis: The government will issue new labor policies after 107 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-8b55ede4734d4fab8271198d2d3ad49a",
+            "input": "Premise: Before 8 years, they will become the top football team. \nHypothesis: They will become the top football team after 150 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-33adffaec15f43eebfcfee8c6f7e63d7",
+            "input": "Premise: I will start my bachelors in 1 year. \nHypothesis: I will start my bachelors after 11 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-a9d0c59bf2004f388467789fdc934e6c",
+            "input": "Premise: I will submit my PhD dissertation after 9 months. \nHypothesis: I will submit my PhD dissertation after 256 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-1801e1a871af48d2baba695086c240e9",
+            "input": "Premise: Before 6 hours, the match between India and Australia will begin. \nHypothesis: The match between India and Australia will begin after 136 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-c9e829f8b8e947e89c012bdd90598b89",
+            "input": "Premise: I will graduate after 7 months. \nHypothesis: I will graduate after 157 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-b4d3353d94074d7fae1917f304c7c6f6",
+            "input": "Premise: He will be sworn in as the Prime Minister after 1 day. \nHypothesis: He will be sworn in as the Prime Minister after 19 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-15ade5a2eb104603a9bf7ce15854d1d9",
+            "input": "Premise: In 9 years, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies before 113 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-58a07d45ee7546898cf1b197f2eb6ebc",
+            "input": "Premise: Before 10 months, the startup will receive funding. \nHypothesis: After 339 days, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-b2902b68c5c24fe1bb52800d6b63d1a1",
+            "input": "Premise: Lindsey will pay off her loans after 1 year. \nHypothesis: After 6 months, Lindsey will pay off her loans.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-d7aab4d807d04275a71499e55481dae8",
+            "input": "Premise: I will start my bachelors in 4 months. \nHypothesis: After 228 days, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-9a07cb826572431bb155cd7c3ac07d21",
+            "input": "Premise: Their tour of Europe will start before 8 months. \nHypothesis: Their tour of Europe will start before 302 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-81f6a193ca604e998ebce7bf9aa9944d",
+            "input": "Premise: The grocery store will close before 5 hours. \nHypothesis: The grocery store will close before 206 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-5227ecaf9b504f32ac495b27635f5468",
+            "input": "Premise: In 6 days, he will be sworn in as the Prime Minister. \nHypothesis: Before 101 hours, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-b7ba49c6058341cb9553f6df89b970fb",
+            "input": "Premise: Their tour of Europe will start before 1 month. \nHypothesis: After 17 days, their tour of Europe will start.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-2c0353dceeb049b7821abada16313e8e",
+            "input": "Premise: In 6 months, the court case will begin. \nHypothesis: The court case will begin after 316 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-6b4e85400926468ab4349c53cd033782",
+            "input": "Premise: The startup will receive funding in 3 years. \nHypothesis: The startup will receive funding before 30 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-3d6a16635e9b4991850b533757183f9f",
+            "input": "Premise: After 2 years, I will graduate. \nHypothesis: After 70 months, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-644c0d6bfda64e46ad708bb17e644dab",
+            "input": "Premise: Before 7 hours, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister before 214 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-002d46ee7cec43709da4852b3919bb1d",
+            "input": "Premise: They will become the top football team after 4 months. \nHypothesis: They will become the top football team before 38 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-85909dd7453a4263bbf65f746a951c32",
+            "input": "Premise: I will start my bachelors before 10 years. \nHypothesis: I will start my bachelors before 166 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-f8fbc3d91fbc42e59c1622ca22044fe2",
+            "input": "Premise: The grocery store will close after 7 hours. \nHypothesis: Before 461 minutess, the grocery store will close.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-aab8b800e2ae4a8b8a6b87bc598d5691",
+            "input": "Premise: The grocery store will close after 9 hours. \nHypothesis: The grocery store will close after 813 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-6bed48a0c1174ca184112e875f238947",
+            "input": "Premise: I will submit my PhD dissertation in 6 years. \nHypothesis: Before 54 months, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-c41145e9a196471a8531e133867bc95c",
+            "input": "Premise: After 6 days, the startup will receive funding. \nHypothesis: After 152 hours, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-14f28f5d4de2459f99862bd5ae62093e",
+            "input": "Premise: In 3 months, Pixar will release an animated film. \nHypothesis: After 42 days, Pixar will release an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-ecbad966635c47c781516be4cb0bac10",
+            "input": "Premise: Before 1 year, they will become the top football team. \nHypothesis: They will become the top football team before 28 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-07ca528bd1964384b0d81ef63b4a9003",
+            "input": "Premise: Before 10 years, I will graduate. \nHypothesis: After 75 months, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-a83927fb2551456da5f0a95f00bf1868",
+            "input": "Premise: Pixar will release an animated film before 10 years. \nHypothesis: Pixar will release an animated film after 159 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-4625226b5d0c4f2480436f404e9b68b4",
+            "input": "Premise: In 5 hours, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister before 278 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-9270c75715414896a77b8f0cb2a47169",
+            "input": "Premise: Robin will visit her parents in 10 days. \nHypothesis: Robin will visit her parents after 334 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-5a39f71ecda946648657c6bbd4262115",
+            "input": "Premise: They will become the top football team in 4 months. \nHypothesis: Before 36 days, they will become the top football team.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-2935a499fc9742baa8fab4fa887ce002",
+            "input": "Premise: In 2 years, I will graduate. \nHypothesis: I will graduate before 66 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-913396bb9b9949a3b80ee3b9e3237d02",
+            "input": "Premise: The startup will receive funding before 10 years. \nHypothesis: Before 112 months, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-fabdb71176c446e0855f548bdad67629",
+            "input": "Premise: Before 1 year, I will submit my PhD dissertation. \nHypothesis: Before 4 months, I will submit my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d45fb3b2a09c4ee186e75916cc012519",
+            "input": "Premise: I will graduate after 9 months. \nHypothesis: After 176 days, I will graduate.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-8dcef39928c4465fb1961a7e54466bd3",
+            "input": "Premise: Before 6 hours, he will be sworn in as the Prime Minister. \nHypothesis: Before 505 minutess, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-78b117437d6f4087880579605043eb29",
+            "input": "Premise: Before 7 hours, he will be sworn in as the Prime Minister. \nHypothesis: After 271 minutess, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-ed19d23851654c868a63cf4f0930b607",
+            "input": "Premise: The government will issue new labor policies after 2 years. \nHypothesis: The government will issue new labor policies before 3 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-c5271f7d113d45ea993e5a29a0ab8940",
+            "input": "Premise: I will start my bachelors in 10 years. \nHypothesis: After 100 months, I will start my bachelors.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e126c3822451414cb83c7ff76633607d",
+            "input": "Premise: After 2 months, their tour of Europe will start. \nHypothesis: After 56 days, their tour of Europe will start.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-f8539f2b165e4e62a13c6377eee068b3",
+            "input": "Premise: Before 9 hours, the train from Seattle will depart. \nHypothesis: After 632 minutess, the train from Seattle will depart.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-67386f7981294043b95a27ae35ec1f8d",
+            "input": "Premise: The storm will begin after 6 days. \nHypothesis: Before 166 hours, the storm will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-539b72d0c4b645e9aad9a8614e7fefaf",
+            "input": "Premise: After 7 days, the grocery store will close. \nHypothesis: The grocery store will close after 198 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-80817d0f2d4244eb935f2e82db193412",
+            "input": "Premise: The government will issue new labor policies before 3 days. \nHypothesis: The government will issue new labor policies before 117 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-7866438f2c6d4aa1bff75cd6840b440c",
+            "input": "Premise: After 6 years, they will become the top football team. \nHypothesis: They will become the top football team after 98 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-81d90b12e87e4b1a8a72014aff67f292",
+            "input": "Premise: The grocery store will close before 4 days. \nHypothesis: After 136 hours, the grocery store will close.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-1d082a4511804097964efdd10bcd9c7d",
+            "input": "Premise: In 10 months, Robin will visit her parents. \nHypothesis: Before 261 days, Robin will visit her parents.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-107b1d875eab40ea96ba159e66599034",
+            "input": "Premise: He will be sworn in as the Prime Minister in 1 hour. \nHypothesis: He will be sworn in as the Prime Minister before 327 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-1e2fccaf2bb84f7bb68333b944edbadf",
+            "input": "Premise: The government will issue new labor policies before 10 days. \nHypothesis: After 125 hours, the government will issue new labor policies.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-adfc7698c52d4428afcc2e5225efffef",
+            "input": "Premise: The court case will begin in 4 hours. \nHypothesis: After 84 minutess, the court case will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-f48f3e16f0444d258185222f4762137e",
+            "input": "Premise: I will submit my PhD dissertation in 9 days. \nHypothesis: I will submit my PhD dissertation after 228 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-b330643df1e3426fa2e81138b7041f4b",
+            "input": "Premise: The grocery store will close before 7 hours. \nHypothesis: The grocery store will close after 535 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ec20765ed0984bfc8264ac4a8eb0d5dd",
+            "input": "Premise: In 7 years, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies after 130 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-928a6075f5a148c39a44fbb4f7ec6ab5",
+            "input": "Premise: Before 10 days, Robin will visit her parents. \nHypothesis: Before 298 hours, Robin will visit her parents.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-da50574da18a41b484f37cfecfc153b0",
+            "input": "Premise: After 4 days, the government will issue new labor policies. \nHypothesis: Before 50 hours, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-5aa42bd2b19845ac86b0b1e1f5a37168",
+            "input": "Premise: Robin will visit her parents before 7 days. \nHypothesis: Before 270 hours, Robin will visit her parents.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-3f650f4f056c49dea2e3583bf5c757da",
+            "input": "Premise: Robin will visit her parents after 5 days. \nHypothesis: Robin will visit her parents before 105 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-10090ff158aa4c79af27f810e6208fa4",
+            "input": "Premise: He will be sworn in as the Prime Minister before 6 hours. \nHypothesis: Before 192 minutess, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-f4c6c38ebab84a03bd2c46feb0dc1a88",
+            "input": "Premise: After 2 months, their tour of Europe will start. \nHypothesis: Before 5 days, their tour of Europe will start.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-5aebac680ab44578b89eeda306817c63",
+            "input": "Premise: After 4 years, I will graduate. \nHypothesis: Before 86 months, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-88c9d489b2b1483f85de52e7b463e690",
+            "input": "Premise: After 7 days, the storm will begin. \nHypothesis: The storm will begin after 269 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-7672548010a44105be2795f5be752116",
+            "input": "Premise: After 9 years, the startup will receive funding. \nHypothesis: Before 76 months, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-d5db2af4ec0745dd8e1f8552d7f15c43",
+            "input": "Premise: In 7 months, I will submit my PhD dissertation. \nHypothesis: I will submit my PhD dissertation before 278 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-4ba344574e9b4d6c8c316023652577ec",
+            "input": "Premise: The court case will begin after 1 hour. \nHypothesis: The court case will begin before 36 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-05ccb75886d44bcc9f6dba665bee9a47",
+            "input": "Premise: In 10 hours, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister after 562 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-4babee56241b446cade578f66e07a8b9",
+            "input": "Premise: In 3 months, the government will issue new labor policies. \nHypothesis: After 141 days, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-2cfc7c2da776462a9e4aac31662ff716",
+            "input": "Premise: The startup will receive funding in 6 days. \nHypothesis: The startup will receive funding before 156 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-67c93724ec7c48088c0c3181718a2eaa",
+            "input": "Premise: Before 7 days, Robin will visit her parents. \nHypothesis: After 87 hours, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-4dbb2ea2b06248ee90074f0e8987c32e",
+            "input": "Premise: Their tour of Europe will start before 7 months. \nHypothesis: Before 94 days, their tour of Europe will start.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-f79fc7a01464446f898cb83693355a87",
+            "input": "Premise: After 8 hours, the court case will begin. \nHypothesis: Before 672 minutess, the court case will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-da867898ce1943eaa62815c82a199ea4",
+            "input": "Premise: I will submit my PhD dissertation in 8 years. \nHypothesis: I will submit my PhD dissertation before 113 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-a73759b5b19c4c79af5863d435d994a8",
+            "input": "Premise: In 1 month, they will become the top football team. \nHypothesis: They will become the top football team before 109 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-a3fa7ab3386147e295ea28cf4d364366",
+            "input": "Premise: After 8 hours, the grocery store will close. \nHypothesis: The grocery store will close before 206 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-6eeec46e3d3840b7afe106cf14e0c88a",
+            "input": "Premise: The grocery store will close after 5 days. \nHypothesis: The grocery store will close after 179 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-faf5683fb7fa4938a7f32ae2ae571d12",
+            "input": "Premise: I will start my bachelors in 6 months. \nHypothesis: Before 227 days, I will start my bachelors.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-1bde1b20fc784b9ab35e9ca8224a0d4f",
+            "input": "Premise: The storm will begin in 5 days. \nHypothesis: The storm will begin after 44 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-19e3e1590c024b2faf0cdac3926b90c3",
+            "input": "Premise: After 1 month, the startup will receive funding. \nHypothesis: Before 112 days, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d695aa9ae72c4595a1ecce24847d6ba9",
+            "input": "Premise: Before 3 hours, the train from Seattle will depart. \nHypothesis: The train from Seattle will depart after 110 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-dba194dd01a94ad8b6d3c53cde6fe6f5",
+            "input": "Premise: Their tour of Europe will start after 7 months. \nHypothesis: After 248 days, their tour of Europe will start.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d92f93ff5aae493295c73f783d707517",
+            "input": "Premise: In 1 year, Pixar will release an animated film. \nHypothesis: Before 6 months, Pixar will release an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-76800888346941cfa84b5b1946e3d2fc",
+            "input": "Premise: In 6 months, the court case will begin. \nHypothesis: Before 83 days, the court case will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-f227dd042bc24892bc4b186eb5bc7d33",
+            "input": "Premise: Pixar will release an animated film before 2 months. \nHypothesis: Before 167 days, Pixar will release an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-ca45784aa84e428a9f5eedefa8d8b1cf",
+            "input": "Premise: Before 10 months, they will become the top football team. \nHypothesis: Before 370 days, they will become the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-3e2f488e38044685858a974d03337e25",
+            "input": "Premise: He will be sworn in as the Prime Minister in 7 hours. \nHypothesis: He will be sworn in as the Prime Minister before 199 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-f3a54849b3b04cd6b94b417954d0fda3",
+            "input": "Premise: Before 3 hours, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister after 319 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-c4f3181c877c4b39950e8b22530d221a",
+            "input": "Premise: In 8 hours, the grocery store will close. \nHypothesis: Before 271 minutess, the grocery store will close.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-a77e2da80d5c45b986a01c36cbc3f54b",
+            "input": "Premise: Before 4 months, I will graduate. \nHypothesis: I will graduate before 1 day.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-b5c2973553544434a95aaaf6fee12855",
+            "input": "Premise: He will be sworn in as the Prime Minister in 8 months. \nHypothesis: After 109 days, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-dd37f45b56cc407189874d82a1f4b8ed",
+            "input": "Premise: Pixar will release an animated film in 5 months. \nHypothesis: After 173 days, Pixar will release an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-f00f2694fb4a4208a746cb54fbed2bbb",
+            "input": "Premise: After 2 months, he will be sworn in as the Prime Minister. \nHypothesis: After 112 days, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-f60f35c69f34446b8beaafcfffaa762b",
+            "input": "Premise: In 9 days, the court case will begin. \nHypothesis: The court case will begin after 152 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-6dd0deb2780942ecbbe22888d9e72f48",
+            "input": "Premise: He will be sworn in as the Prime Minister in 9 hours. \nHypothesis: He will be sworn in as the Prime Minister after 580 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-21ee4184ca1641939a47524329af506a",
+            "input": "Premise: Before 3 hours, the grocery store will close. \nHypothesis: The grocery store will close after 19 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-bc7acde34a184becb7dcdfa193143780",
+            "input": "Premise: The government will issue new labor policies in 8 months. \nHypothesis: The government will issue new labor policies after 394 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-329a8a87f87340b6a8cae48a3121b4e2",
+            "input": "Premise: In 4 months, the court case will begin. \nHypothesis: After 215 days, the court case will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-919c00a4471147f28909023a60181757",
+            "input": "Premise: The storm will begin before 5 days. \nHypothesis: The storm will begin before 31 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-bcd2b318556a4f63a42c3a40ca81b88d",
+            "input": "Premise: In 8 days, the government will issue new labor policies. \nHypothesis: After 234 hours, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-15747219108745a7b4ffb5113b13daa7",
+            "input": "Premise: After 2 days, the court case will begin. \nHypothesis: Before 128 hours, the court case will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-aac68485199343ca9a07c6a2336e993e",
+            "input": "Premise: In 6 hours, the match between India and Australia will begin. \nHypothesis: The match between India and Australia will begin after 327 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-eba0f82f51eb464c9c4ecbf141e67421",
+            "input": "Premise: I will graduate after 2 years. \nHypothesis: Before 4 months, I will graduate.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-c52daea140fa4600b58055ee546e6732",
+            "input": "Premise: I will start my bachelors after 2 years. \nHypothesis: I will start my bachelors before 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-193ca7d44fba427099714e28f4cf7762",
+            "input": "Premise: Before 2 years, the startup will receive funding. \nHypothesis: Before 3 months, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-466b20bb856e4f7b86b51d5666ccf5ab",
+            "input": "Premise: Before 5 hours, the train from Seattle will depart. \nHypothesis: After 475 minutess, the train from Seattle will depart.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-b769818cb7034d92944885bf3c889e71",
+            "input": "Premise: In 8 years, I will submit my PhD dissertation. \nHypothesis: I will submit my PhD dissertation after 138 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-1f7bf53948714ad6be40526b78e8f6b4",
+            "input": "Premise: Robin will visit her parents before 9 days. \nHypothesis: Robin will visit her parents before 142 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-7470d5bf35ed40a0938d3823746d58d6",
+            "input": "Premise: After 5 months, Pixar will release an animated film. \nHypothesis: Pixar will release an animated film after 217 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-2e7aafdddd80454f86f508fcd0f04bdb",
+            "input": "Premise: In 10 hours, the match between India and Australia will begin. \nHypothesis: Before 718 minutess, the match between India and Australia will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-7326da6a7a7a4869b85d2516396588d2",
+            "input": "Premise: In 7 days, the court case will begin. \nHypothesis: The court case will begin before 162 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-c1d63d480d7d4646b0d784fae25a1240",
+            "input": "Premise: In 10 months, I will graduate. \nHypothesis: After 332 days, I will graduate.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-c3e7db590aca44c68276469dbb27cd5b",
+            "input": "Premise: I will start my bachelors before 4 years. \nHypothesis: Before 85 months, I will start my bachelors.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-5e7b4b72d018432d8e58836f2bbb2e0c",
+            "input": "Premise: The court case will begin before 10 hours. \nHypothesis: Before 777 minutess, the court case will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-98ad77e200694898a2067383dae10360",
+            "input": "Premise: In 5 days, the startup will receive funding. \nHypothesis: Before 34 hours, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-6425de82055249348d1f336e7c014615",
+            "input": "Premise: In 1 month, they will become the top football team. \nHypothesis: After 81 days, they will become the top football team.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-2e2eb002f9244ab4b83aed0356219ba2",
+            "input": "Premise: Before 9 days, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister after 211 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-e74c5536b5d040419bfe434b5edbea27",
+            "input": "Premise: The court case will begin after 7 days. \nHypothesis: The court case will begin after 48 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-88b03f4be9b34bf68edfb43c7119aa79",
+            "input": "Premise: They will become the top football team in 8 months. \nHypothesis: They will become the top football team after 203 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-a25ffa92d93e43cf845059e5afa7b831",
+            "input": "Premise: After 7 hours, the court case will begin. \nHypothesis: The court case will begin after 157 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-d427159490394ca69b7f3a6530a2fbf0",
+            "input": "Premise: In 8 days, the government will issue new labor policies. \nHypothesis: Before 107 hours, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-de5f7e6de7da4ad6b14e0a97e20be690",
+            "input": "Premise: He will be sworn in as the Prime Minister before 9 months. \nHypothesis: After 247 days, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-98c5fe7f3c1e49e094c14199523bf273",
+            "input": "Premise: The grocery store will close after 9 days. \nHypothesis: After 247 hours, the grocery store will close.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-34c37b6101c1497ebed1307f61c41cbe",
+            "input": "Premise: After 1 hour, the match between India and Australia will begin. \nHypothesis: Before 27 minutess, the match between India and Australia will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-65f81e0dcd35493ebe2a258331d2a0ae",
+            "input": "Premise: In 5 years, Pixar will release an animated film. \nHypothesis: After 116 months, Pixar will release an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-e2b0bff5989e496082ae06b17dad06e9",
+            "input": "Premise: He will be sworn in as the Prime Minister after 2 days. \nHypothesis: He will be sworn in as the Prime Minister before 67 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-930f6a7c0a844badb4d5ff3df5b99852",
+            "input": "Premise: Pixar will release an animated film in 1 month. \nHypothesis: Pixar will release an animated film after 9 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-85dad248554d4cab9e39fecbae021643",
+            "input": "Premise: I will submit my PhD dissertation before 7 days. \nHypothesis: I will submit my PhD dissertation before 195 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-0e71132c5d23483bbab4a5461a77aed9",
+            "input": "Premise: The grocery store will close after 8 hours. \nHypothesis: The grocery store will close after 461 minutess.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-dd1dfc1177734409b2d7774e38a0d7be",
+            "input": "Premise: I will start my bachelors before 2 years. \nHypothesis: I will start my bachelors after 20 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-02bdb59e1e3e42d5acc73fd7f2814647",
+            "input": "Premise: Robin will visit her parents after 1 day. \nHypothesis: Before 124 hours, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-337ac4145f224d59b7969ba5c60cfec3",
+            "input": "Premise: In 10 months, Pixar will release an animated film. \nHypothesis: Pixar will release an animated film before 174 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-4e096853fa534f8c8b8a6838121decf9",
+            "input": "Premise: Before 6 years, Lindsey will pay off her loans. \nHypothesis: After 33 months, Lindsey will pay off her loans.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-da91ea1b41f3460398f6e33fae26210a",
+            "input": "Premise: Before 8 days, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister before 219 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-fa05c6e261f74bcb8a03ec9836b7a266",
+            "input": "Premise: In 5 years, I will start my bachelors. \nHypothesis: Before 41 months, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-2fc5fdff0f9344ffb1e9399cdb4ce7fc",
+            "input": "Premise: The startup will receive funding in 10 years. \nHypothesis: The startup will receive funding after 174 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-e38bcfbaf18548599c28a4522bdb216f",
+            "input": "Premise: After 4 months, they will become the top football team. \nHypothesis: They will become the top football team before 189 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-a888260ecd5340fda346ce1be69a96ce",
+            "input": "Premise: They will become the top football team before 4 months. \nHypothesis: Before 32 days, they will become the top football team.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-287221370ee947429688abcce55f73f1",
+            "input": "Premise: The court case will begin before 1 month. \nHypothesis: The court case will begin before 14 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-e56e828cfe6f45a0a41a154b42cabcb3",
+            "input": "Premise: The court case will begin before 5 days. \nHypothesis: The court case will begin before 97 hours.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-f9491031a7934f5c9846ab87275b217e",
+            "input": "Premise: Pixar will release an animated film before 10 months. \nHypothesis: Before 216 days, Pixar will release an animated film.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-4ac7ba94db3543dba757e0928e2ba0cf",
+            "input": "Premise: The grocery store will close before 1 hour. \nHypothesis: The grocery store will close after 116 minutess.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-7d615ee14963446a8f097f0f425db756",
+            "input": "Premise: In 6 days, he will be sworn in as the Prime Minister. \nHypothesis: He will be sworn in as the Prime Minister after 96 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-224e4dbad4384173912cfc6db9e9b497",
+            "input": "Premise: The match between India and Australia will begin after 5 hours. \nHypothesis: Before 461 minutess, the match between India and Australia will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-04cae948bd364a028170f797561e26e4",
+            "input": "Premise: The court case will begin after 7 months. \nHypothesis: The court case will begin after 349 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-e6c2d08d1c82467da5557e6abfc7297e",
+            "input": "Premise: After 4 days, the government will issue new labor policies. \nHypothesis: Before 195 hours, the government will issue new labor policies.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-5f05219209e549648ea4d392870ba39d",
+            "input": "Premise: I will submit my PhD dissertation before 4 months. \nHypothesis: After 38 days, I will submit my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-4f17465ad1b04619bf76fad6243bbf54",
+            "input": "Premise: The startup will receive funding before 7 days. \nHypothesis: Before 98 hours, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-66d6d1fb02bb473989d7857a9c999a9c",
+            "input": "Premise: After 2 months, the court case will begin. \nHypothesis: Before 140 days, the court case will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-8592db72c1b0413cb8bb27efae2c8b7c",
+            "input": "Premise: After 1 day, the storm will begin. \nHypothesis: Before 134 hours, the storm will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-d91ad05e1053469ea1a2f2514a9e5fbe",
+            "input": "Premise: Before 1 year, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies after 40 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-fc92593c4ae1494f92417354b04930af",
+            "input": "Premise: The court case will begin after 4 days. \nHypothesis: Before 104 hours, the court case will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-35fb2caa0d04472590e28399742a557e",
+            "input": "Premise: I will graduate in 3 years. \nHypothesis: I will graduate after 13 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-a9d565298d6a4184934c314eb2b48664",
+            "input": "Premise: In 2 months, he will be sworn in as the Prime Minister. \nHypothesis: After 81 days, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-6b1d9291c0a14c4eacb9c9a2942c1b3b",
+            "input": "Premise: Robin will visit her parents after 4 days. \nHypothesis: Robin will visit her parents before 86 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-6183de02553e48e294e7114468a48b00",
+            "input": "Premise: After 3 years, I will start my bachelors. \nHypothesis: I will start my bachelors before 41 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-2b6b284242f24539b8a6f1fa838e51c3",
+            "input": "Premise: In 1 month, the government will issue new labor policies. \nHypothesis: Before 8 days, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-11d581e36b8c4b86b05f4faa465f0deb",
+            "input": "Premise: In 7 months, the startup will receive funding. \nHypothesis: The startup will receive funding before 118 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-9950b81e3a104baa95f87d5471ff1674",
+            "input": "Premise: The government will issue new labor policies in 10 months. \nHypothesis: After 153 days, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-e1b5b935c0614a66bb0582effd4fbe1b",
+            "input": "Premise: After 8 days, he will be sworn in as the Prime Minister. \nHypothesis: Before 307 hours, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-fc489123d36e4e58a9155cceb0369fff",
+            "input": "Premise: After 9 days, the grocery store will close. \nHypothesis: The grocery store will close before 181 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-5d5c472478e4444594385ae15154f9be",
+            "input": "Premise: He will be sworn in as the Prime Minister after 3 hours. \nHypothesis: He will be sworn in as the Prime Minister after 379 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-c0e744978598441ba90e135b79e1a69b",
+            "input": "Premise: Lindsey will pay off her loans before 8 years. \nHypothesis: Lindsey will pay off her loans after 127 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-35248565e4dd4f9bb1afca509eab6f13",
+            "input": "Premise: I will start my bachelors in 8 months. \nHypothesis: I will start my bachelors before 197 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-f60339d724554a4997045ba9d7d23ec8",
+            "input": "Premise: In 6 years, I will submit my PhD dissertation. \nHypothesis: I will submit my PhD dissertation before 33 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-604f75d069ae445f9f33ce3c1bb1eac6",
+            "input": "Premise: They will become the top football team in 8 months. \nHypothesis: After 343 days, they will become the top football team.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-c973c48dc3ab40e2b30ee01763c9f1fd",
+            "input": "Premise: Before 1 month, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies after 109 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-3f306b4dd9c140a1a4e8923922d8239c",
+            "input": "Premise: I will submit my PhD dissertation before 4 months. \nHypothesis: I will submit my PhD dissertation after 113 days.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-c952bd010ebb4b9781fff25f9a32a27e",
+            "input": "Premise: They will become the top football team in 8 years. \nHypothesis: Before 76 months, they will become the top football team.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-b00afd003bcc42568b93e81dbe6cdb59",
+            "input": "Premise: The court case will begin before 9 months. \nHypothesis: The court case will begin after 418 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-135262f96c8f462089e7335a5064f4c4",
+            "input": "Premise: The government will issue new labor policies in 8 months. \nHypothesis: After 210 days, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-3cf0b78388e846778b5df60387240e9f",
+            "input": "Premise: The court case will begin in 3 days. \nHypothesis: Before 45 hours, the court case will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ac76455b577c43cc8bdd97cbd184034f",
+            "input": "Premise: Pixar will release an animated film after 8 years. \nHypothesis: Before 108 months, Pixar will release an animated film.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-7f70322878f4477baaffaea91be6feed",
+            "input": "Premise: The startup will receive funding before 10 days. \nHypothesis: After 205 hours, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-046e969dc9a743209dbfb0e9e921541e",
+            "input": "Premise: After 5 years, Pixar will release an animated film. \nHypothesis: After 37 months, Pixar will release an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-ed8dd56a28b74bb8a86325ff60f6f509",
+            "input": "Premise: In 9 years, they will become the top football team. \nHypothesis: They will become the top football team after 51 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-3713b60b04e24779857f1ecdb7de7150",
+            "input": "Premise: The train from Seattle will depart before 8 hours. \nHypothesis: Before 416 minutess, the train from Seattle will depart.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-3f7c29679b3b4ccc960d6dfc091e2174",
+            "input": "Premise: Pixar will release an animated film in 2 months. \nHypothesis: Pixar will release an animated film after 49 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-d9ba9fc41e994ca3942491050d420b03",
+            "input": "Premise: In 4 months, I will graduate. \nHypothesis: Before 85 days, I will graduate.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-128b8008943b4357be19cc8427d0a64a",
+            "input": "Premise: Before 1 year, they will become the top football team. \nHypothesis: After 5 months, they will become the top football team.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-a7dbed87b3124c5892c96305eec247a4",
+            "input": "Premise: He will be sworn in as the Prime Minister after 7 days. \nHypothesis: After 137 hours, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-12d150207f9547979098f157428f383c",
+            "input": "Premise: Pixar will release an animated film in 7 months. \nHypothesis: Pixar will release an animated film before 107 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-ee4063edda0842198a88447bad3f1c50",
+            "input": "Premise: He will be sworn in as the Prime Minister before 5 hours. \nHypothesis: He will be sworn in as the Prime Minister before 19 minutess.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-09d6fc769fe540d29f10f7b2bd34d43c",
+            "input": "Premise: Before 3 days, the storm will begin. \nHypothesis: Before 13 hours, the storm will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-a0f14ed71df2455ea46be1bff84bdd42",
+            "input": "Premise: Before 5 years, Lindsey will pay off her loans. \nHypothesis: Lindsey will pay off her loans before 113 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-9d96462e984742efa1d7bedcbb2dcf2e",
+            "input": "Premise: I will submit my PhD dissertation after 5 days. \nHypothesis: After 107 hours, I will submit my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-eb13643af1c34c40ad9fe1632981ac17",
+            "input": "Premise: I will graduate before 8 years. \nHypothesis: I will graduate after 61 months.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task017-f90076ee37684d218473534b5af0ba8d",
+            "input": "Premise: I will start my bachelors after 4 months. \nHypothesis: Before 49 days, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-7cce4863f53e4a39ba73d64bc9c3d94a",
+            "input": "Premise: In 2 years, Pixar will release an animated film. \nHypothesis: After 1 month, Pixar will release an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-92a336e71d524ee2ac044223baa6466d",
+            "input": "Premise: In 3 months, the startup will receive funding. \nHypothesis: After 161 days, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-2f60a314f7034257acdf4e5b075214fb",
+            "input": "Premise: He will be sworn in as the Prime Minister after 2 months. \nHypothesis: He will be sworn in as the Prime Minister after 7 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task017-dbc23f9fba7049adac9e969d76733795",
+            "input": "Premise: After 6 days, the government will issue new labor policies. \nHypothesis: The government will issue new labor policies before 122 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task017-c370077b113d45c6beefd4f01adc4518",
+            "input": "Premise: I will submit my PhD dissertation in 1 day. \nHypothesis: Before 13 hours, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3568 @@
+{
+    "Contributors": [
+        "Het Patel"
+    ],
+    "Source": [
+        "TimeX-NLI"
+    ],
+    "URL": [
+        "https://github.com/zchuz/TimeBench/blob/main/TimeBench-subset-7553/TimeX-NLI/timexnli_cs1_timebench.jsonl"
+    ],
+    "Categories": [
+        "Question Answering"
+    ],
+    "Reasoning": [
+        "Time Duration"
+    ],
+    "Definition": [
+        "In this task, you will be given with a premise and a hypothesis. Your goal is to determine whether the premise is consistant with the hypothesis or not. If the premise is consistent with the hypothesis then answer \"Entailment\" and if the premise is not consistent with the hypothesis then answer \"Contradiction\" and if there is insufficient information to make a decision then answer \"Neutral\"."
+    ],
+    "Input_language": [
+        "English"
+    ],
+    "Output_language": [
+        "English"
+    ],
+    "Instruction_language": [
+        "English"
+    ],
+    "Domains": [
+        "Anonymous"
+    ],
+    "Positive Examples": [
+        {
+            "input": "Premise: In Sep, he will be sworn in as the Prime Minister. \nHypothesis: Before October, he will be sworn in as the Prime Minister.",
+            "output": "Entailment",
+            "explanation": "The premise is consistent with the hypothesis because the Prime Minister will be sworn in before October."
+        },
+        {
+            "input": "Premise: Before June, Pixar released an animated film. \nHypothesis: After Sep, Pixar released an animated film.",
+            "output": "Contradiction",
+            "explanation": "The premise is not consistent with the hypothesis because Pixar released an animated film after Sep."
+        },
+        {
+            "input": "Premise: Before 8 PM, the startup received funding. \nHypothesis: Before 8 AM, the startup received funding.",
+            "output": "Neutral",
+            "explanation": "There is insufficient information to make a decision."
+        }
+    ],
+    "Negative Examples": [
+        {
+            "input": "Premise: The court case began in Jan. \nHypothesis: The court case began before February.",
+            "output": "Contradiction",
+            "explanation": "The premise is consistent with the hypothesis because January is before February."
+        },
+        {
+            "input": "Premise: The government issued new labor policies in Jun. \nHypothesis: The government issued new labor policies before Feb.",
+            "output": "Neutral",
+            "explanation": "This premise is not consistant with the hypothesis and we have sufficient information as June does not come before February."
+        },
+        {
+            "input": "Premise: I submitted my PhD dissertation before 18th. \nHypthosis: I submitted my PhD dissertation after 12th.",
+            "output": "Entailment",
+            "explanation": "There is not enought information to make a decision."
+        }
+    ],
+    "Instances": [
+        {
+            "id": "task015-eb09f52cec4b46c4b9bdb4f37f95773f",
+            "input": "Premise: In Sep, he will be sworn in as the Prime Minister. \nHypothesis: Before October, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b5a6369a91d6484e8b81eb7a26631920",
+            "input": "Premise: Before 8 PM, the startup received funding. \nHypothesis: Before 8 AM, the startup received funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-dec3fecaae774a0a9d70b147e2e5a4bb",
+            "input": "Premise: The court case began in Jan. \nHypothesis: The court case began before February.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-657d4036d7864be3b0b66b979e5e147f",
+            "input": "Premise: Before June, Pixar released an animated film. \nHypothesis: After Sep, Pixar released an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-7a6d4afc64a74868ba203e439b225712",
+            "input": "Premise: The government issued new labor policies in Jun. \nHypothesis: The government issued new labor policies before Feb.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-d60771c4ad6b4934a4425c37334efdfb",
+            "input": "Premise: At 19:00, the storm began. \nHypothesis: After 18:00, the storm began.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-920c4e067a8c43299fbe3cfc22799e66",
+            "input": "Premise: I submitted my PhD dissertation before 18th. \nHypothesis: I submitted my PhD dissertation after 12th.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-9b36fef98d75477a884ff21329ba4fad",
+            "input": "Premise: I graduated after November. \nHypothesis: I graduated after December.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-c25da62240d4416db10a599e9e5f3a2f",
+            "input": "Premise: Before 14th August 1912, Lindsey will pay off her loans. \nHypothesis: Before 2nd August 1909, Lindsey will pay off her loans.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-690405d967ce47268865eda52ad5f17c",
+            "input": "Premise: The court case will begin on Wednesday. \nHypothesis: The court case will begin before Saturday.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b6658caa6d504dc78dab37f3fc58d16b",
+            "input": "Premise: After 18th, the startup will receive funding. \nHypothesis: After 13th, the startup will receive funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-48e45ea53b9f4e07b0d5b835a55fbe9c",
+            "input": "Premise: At 13:00, I submitted my PhD dissertation. \nHypothesis: After 5 PM, I submitted my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-386ed7c6010b4837ab7e24a586886fff",
+            "input": "Premise: The startup will receive funding after 1957. \nHypothesis: The startup will receive funding before 1982.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-d3bd844fbd494dd8b63e5b5ce31fe3a9",
+            "input": "Premise: I will start my bachelors on 12th December 1977. \nHypothesis: I will start my bachelors after 23rd Dec 1962.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-4f5c8bf9ff18405f9c5c65866f80af54",
+            "input": "Premise: In October 1935, the government issued new labor policies. \nHypothesis: After November 1926, the government issued new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-aa27e443e6124cb6b3f9b89a69609299",
+            "input": "Premise: On 9th Jul 1987, Pixar will release an animated film. \nHypothesis: After 1st May 1938, Pixar will release an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-8f2229a769f44b65a229869a2bc5b391",
+            "input": "Premise: In February 1953, I will start my bachelors. \nHypothesis: After Oct 1938, I will start my bachelors.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-01bb6848b47346b9a067132280a43d11",
+            "input": "Premise: He was sworn in as the Prime Minister after Aug. \nHypothesis: He was sworn in as the Prime Minister after November.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-ca18f4e032384fcd95ee5c29bbe3f27c",
+            "input": "Premise: In Mar, their tour of Europe will start. \nHypothesis: Before March, their tour of Europe will start.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-342fe927f8ab4c75b38ac00e926bc4df",
+            "input": "Premise: The court case began in Aug. \nHypothesis: The court case began after Apr.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-eae053f20b424408882186bc0225474c",
+            "input": "Premise: On 23rd, they became the top football team. \nHypothesis: After 16th, they became the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-c85f717750614770916fa7c9d8c8bd36",
+            "input": "Premise: Before Sep 1999, I started my bachelors. \nHypothesis: After Oct 1927, I started my bachelors.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-c862898693544c19ab113d1b3a4a1232",
+            "input": "Premise: After 27th, the startup received funding. \nHypothesis: After 16th, the startup received funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-72d0da69bd9449439e735a57c052c1b7",
+            "input": "Premise: I will graduate in May 1955. \nHypothesis: I will graduate before November 1900.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-be5f260e76a745719c3d7e93b087fad6",
+            "input": "Premise: Before 21st, their tour of Europe will start. \nHypothesis: After 8th, their tour of Europe will start.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-bec0c7174a1143ce9cd4fe1456c3cedf",
+            "input": "Premise: I submitted my PhD dissertation after Wednesday. \nHypothesis: I submitted my PhD dissertation after Monday.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-26e6898560b04bf4aa1bc0af89abac71",
+            "input": "Premise: At 7 AM, the government issued new labor policies. \nHypothesis: Before 12 PM, the government issued new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-754f11fb83be4ec59811f39b9a37af94",
+            "input": "Premise: After 15th, the startup will receive funding. \nHypothesis: Before 22nd, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-bdbe2f39525343429a77097f5d0b2302",
+            "input": "Premise: Before Jun, I will graduate. \nHypothesis: Before Aug, I will graduate.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-ca36e1a7559d4db5bc5e58185d119dc2",
+            "input": "Premise: Robin visited her parents at 11 AM. \nHypothesis: Robin visited her parents after 19:00.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-3a191427ad834f538b201fd6700ee9b8",
+            "input": "Premise: Robin will visit her parents after 20:00. \nHypothesis: Robin will visit her parents after 8 PM.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-e72ded2522d24d30804334b933e5d6dc",
+            "input": "Premise: After Apr, I submitted my PhD dissertation. \nHypothesis: After August, I submitted my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-a4cc8c5ce66043229c46872f18e4035c",
+            "input": "Premise: They will become the top football team on 7th October 1970. \nHypothesis: They will become the top football team before 13th November 1959.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-a6853485d9b744b681e6829675aaf1a9",
+            "input": "Premise: He was sworn in as the Prime Minister before 13th Jul 1950. \nHypothesis: He was sworn in as the Prime Minister after 8th Oct 1947.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-ceb2312df4d84f71a327c5b18fb7f58a",
+            "input": "Premise: Before 12th Apr 1970, I will submit my PhD dissertation. \nHypothesis: After 5th November 1977, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-d56c52814a2040ad823eceb6b2b27fee",
+            "input": "Premise: Before 2nd Feb 1905, I will submit my PhD dissertation. \nHypothesis: After 4th September 1947, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-0ba7b0c5431a4db5aad7ee1d3777caf9",
+            "input": "Premise: The startup will receive funding in August 1900. \nHypothesis: The startup will receive funding before July 1923.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-75bc6568ec4e482a89d8250100c4647e",
+            "input": "Premise: On 20th Feb 1939, I will start my bachelors. \nHypothesis: Before 8th Mar 1900, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-77a39f6cfdd9485a900d1cfb9215553e",
+            "input": "Premise: After 13th February 1939, I graduated. \nHypothesis: After 17th March 1975, I graduated.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-78bad805513044c4ac7516d8e34cda7d",
+            "input": "Premise: I graduated on 2nd. \nHypothesis: I graduated before 13th.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-774eb870d7464e46afe017466e4a00d6",
+            "input": "Premise: I submitted my PhD dissertation after 11th. \nHypothesis: I submitted my PhD dissertation before 2nd.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-f01bf8a5835449e2ae02ed54df2aa3d7",
+            "input": "Premise: Lindsey will pay off her loans after Jun 1966. \nHypothesis: Lindsey will pay off her loans before Aug 1971.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-2de0b9b0fe7644eda213a706b0867f97",
+            "input": "Premise: Before Tuesday, the court case began. \nHypothesis: Before Sunday, the court case began.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-b4b6b11f7fe2437396f891ff8f83ab48",
+            "input": "Premise: Pixar released an animated film after 7th August 1983. \nHypothesis: Pixar released an animated film after 19th Oct 1923.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2516c95400ec46daa050584ad0041fb5",
+            "input": "Premise: Before Feb, the startup will receive funding. \nHypothesis: After Aug, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-64de898bb9c744f3a68fff5e330df6fa",
+            "input": "Premise: Before 2nd September 1915, the startup received funding. \nHypothesis: Before 11th November 1954, the startup received funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-83ae27e4095d4a7c98b1566e3fd11fb8",
+            "input": "Premise: In February 1918, Pixar will release an animated film. \nHypothesis: After May 1914, Pixar will release an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-520e1c8111f14ebcb91170c7ef1b21d9",
+            "input": "Premise: After Wednesday, he will be sworn in as the Prime Minister. \nHypothesis: After Monday, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-bdc28606c38b4ebd8dded3d922cbcb8a",
+            "input": "Premise: On 22nd Apr 1927, the startup received funding. \nHypothesis: After 9th Jun 1996, the startup received funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-72e7045ecaa54741986eef465e3ced1b",
+            "input": "Premise: After Monday, he will be sworn in as the Prime Minister. \nHypothesis: After Sunday, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-7b99cf09f6544301a1b598dc553de351",
+            "input": "Premise: Pixar released an animated film before January. \nHypothesis: Pixar released an animated film after April.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-1bf27869720a45849638f719e31ed331",
+            "input": "Premise: After 25th, the storm began. \nHypothesis: After 21st, the storm began.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d5d962bff7914361af35b7efedb40533",
+            "input": "Premise: On 28th May 1967, I graduated. \nHypothesis: Before 23rd October 1920, I graduated.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-799ea245ae3249c1bf7c4bbc9cc06b36",
+            "input": "Premise: I will submit my PhD dissertation in Jun 1924. \nHypothesis: I will submit my PhD dissertation after Oct 1940.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-4df049e82a0e4b6ea4aae6097f958247",
+            "input": "Premise: Before November 1967, I submitted my PhD dissertation. \nHypothesis: After October 1997, I submitted my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-d81d26b0d9124c5fa653602e1bf7a409",
+            "input": "Premise: In 1958, the government will issue new labor policies. \nHypothesis: After 1993, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-956f0134cf544f14b8aeae89a5d2e9b4",
+            "input": "Premise: On Tuesday, I submitted my PhD dissertation. \nHypothesis: After Thursday, I submitted my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-6e3075fbeaff4e208ed510ea7d33a606",
+            "input": "Premise: The startup received funding on 28th Feb 1902. \nHypothesis: The startup received funding before 22nd Feb 1941.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b6c55f61067444abac4fab4f4c24f840",
+            "input": "Premise: In Jun, Pixar released an animated film. \nHypothesis: Before Feb, Pixar released an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-ee4598e0d48149d0bebf74e385b9902d",
+            "input": "Premise: On Wednesday, he will be sworn in as the Prime Minister. \nHypothesis: Before Monday, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-dc007e7dea2e4ce8836d4d42e33f8f54",
+            "input": "Premise: They will become the top football team before 20th Jun 1908. \nHypothesis: They will become the top football team after 15th Dec 1963.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-f8ad323c8ce34660a116c2b6b8a98cb6",
+            "input": "Premise: Before 13:00, he will be sworn in as the Prime Minister. \nHypothesis: After 1 PM, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-df6c218cc6994929b360362ff68a4c89",
+            "input": "Premise: I will graduate on Wednesday. \nHypothesis: I will graduate after Sunday.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-83aae4a5da5b4a638a7702f24348f47b",
+            "input": "Premise: The court case will begin after 10:00. \nHypothesis: The court case will begin after 22:00.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-b7fc5387f8a748bea47579a7917dc613",
+            "input": "Premise: Before 1937, Pixar released an animated film. \nHypothesis: After 1912, Pixar released an animated film.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-8461dd9ebf514d379ef7316a18f8fa76",
+            "input": "Premise: The startup received funding after 08:00. \nHypothesis: The startup received funding before 02:00.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-00304baf27844960ab5b9e8b2d9ab233",
+            "input": "Premise: The government will issue new labor policies after 11th July 1932. \nHypothesis: The government will issue new labor policies before 4th Oct 1918.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-dbc30d29546b46b4a900cf56da608d8a",
+            "input": "Premise: The court case will begin in March. \nHypothesis: The court case will begin after Jul.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-95ae932d60ef47c48f71e83534fdc946",
+            "input": "Premise: Before 8th July 1968, Pixar will release an animated film. \nHypothesis: After 11th May 1911, Pixar will release an animated film.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-d687bd0a59ea4c009e1db2d8cb4b633e",
+            "input": "Premise: On 19th March 1984, he was sworn in as the Prime Minister. \nHypothesis: Before 18th October 1900, he was sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-6d5976102bb04b9a927f613acb8c48de",
+            "input": "Premise: I started my bachelors before September 1909. \nHypothesis: I started my bachelors after March 1961.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-8d85f80b81724d0db03cdb026078083b",
+            "input": "Premise: Pixar released an animated film on Sunday. \nHypothesis: Pixar released an animated film before Sunday.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-85d45d2af2984803a6d32193c38687f5",
+            "input": "Premise: The government issued new labor policies before 16th. \nHypothesis: The government issued new labor policies before 21st.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-fa0bc7f33ebb45b8b63e56106a23e1cb",
+            "input": "Premise: After 12 PM, the government will issue new labor policies. \nHypothesis: After 18:00, the government will issue new labor policies.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-8e0a7adb72f6424190a3bec233f14f0e",
+            "input": "Premise: On 9th, they will become the top football team. \nHypothesis: Before 18th, they will become the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-7a06fbfbcf374b5da2b38996a44a879e",
+            "input": "Premise: On 5th Oct 1909, Lindsey will pay off her loans. \nHypothesis: After 22nd January 1957, Lindsey will pay off her loans.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5e6e4e55f4bb4c86a52ca0345c871716",
+            "input": "Premise: The government issued new labor policies in May. \nHypothesis: The government issued new labor policies before July.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2f9a71207a2b4b91aff13c3fd0ef3a68",
+            "input": "Premise: The train from Seattle will depart before 09:00. \nHypothesis: The train from Seattle will depart before 20:00.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-6c427421bf2643d3a822c7651b30a27e",
+            "input": "Premise: I will start my bachelors before May 1970. \nHypothesis: I will start my bachelors before April 1927.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-f559269aca7748c7a33f2421245da388",
+            "input": "Premise: After 10:00, the grocery store closed. \nHypothesis: Before 1 PM, the grocery store closed.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-3e98d9e8e0874e5a8f463fabcc43659b",
+            "input": "Premise: They will become the top football team in August 1934. \nHypothesis: They will become the top football team after December 1972.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-fe26fc5cebd14ad0ac87dd15f41e75d3",
+            "input": "Premise: I will start my bachelors on 18th Jun 1968. \nHypothesis: I will start my bachelors before 11th May 1983.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b17b622f3a564ea0bdb19567b49e9536",
+            "input": "Premise: The grocery store will close after 12 AM. \nHypothesis: The grocery store will close before 01:00.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-54d76de81f4f4559b9f95c098fa8899d",
+            "input": "Premise: After May, their tour of Europe started. \nHypothesis: Before July, their tour of Europe started.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-8c59dd43bbdb4c5b89ee0bd7edc949ce",
+            "input": "Premise: In Apr, I will submit my PhD dissertation. \nHypothesis: After Aug, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-9e761df6fd9842778bf920d7a61bd8e1",
+            "input": "Premise: In Jan, I submitted my PhD dissertation. \nHypothesis: Before June, I submitted my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d54f25b406d1434696008f30dd274567",
+            "input": "Premise: I graduated on 20th February 1928. \nHypothesis: I graduated before 12th Sep 1914.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-b075f1616ccc48adad812620e7513a60",
+            "input": "Premise: The government will issue new labor policies before 23rd February 1926. \nHypothesis: The government will issue new labor policies before 24th April 1951.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-3a368f0b50c549f88a063fb8a71303c9",
+            "input": "Premise: In Dec 1944, the startup received funding. \nHypothesis: Before Mar 1932, the startup received funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5b6ce6682da14a47b78522b958813bdc",
+            "input": "Premise: He will be sworn in as the Prime Minister before 4 PM. \nHypothesis: He will be sworn in as the Prime Minister after 13:00.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-0c8876ba85a24b619a271202ba45c962",
+            "input": "Premise: I will graduate before January. \nHypothesis: I will graduate before Jul.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-8244efb5a4df4aa58347c72e26ce88ff",
+            "input": "Premise: I will submit my PhD dissertation in 1915. \nHypothesis: I will submit my PhD dissertation after 1961.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-1ed315e8d34d4f2081fecfa11385c37f",
+            "input": "Premise: Before Oct 1917, the startup will receive funding. \nHypothesis: Before May 1992, the startup will receive funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-eab30480d8534bb9a189d9a25e4d5d78",
+            "input": "Premise: The train from Seattle departed after 20:00. \nHypothesis: The train from Seattle departed before 13:00.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-bb376d4c5384410a94a29a7654a13444",
+            "input": "Premise: The grocery store closed before 6 AM. \nHypothesis: The grocery store closed before 00:00.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-96d8ebb4a2d24f3399c87fb58e17b91e",
+            "input": "Premise: In June, Lindsey will pay off her loans. \nHypothesis: After May, Lindsey will pay off her loans.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-53e71c598d0949d4a176d90bc9389dc4",
+            "input": "Premise: In June 1950, I submitted my PhD dissertation. \nHypothesis: After March 1985, I submitted my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-344fa59aab8c4ea4a860d8a3085a951b",
+            "input": "Premise: After January, the court case will begin. \nHypothesis: After March, the court case will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-87746d692767418388a5b89773c6cf78",
+            "input": "Premise: Lindsey will pay off her loans after Oct 1978. \nHypothesis: Lindsey will pay off her loans after Feb 1905.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-091d7b17741e4ec096fec83d74cf8586",
+            "input": "Premise: On Friday, the court case began. \nHypothesis: Before Tuesday, the court case began.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-384696e8ef8e4dc18ba4380b16ac977f",
+            "input": "Premise: Pixar released an animated film on 5th July 1950. \nHypothesis: Pixar released an animated film after 10th December 1933.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-713bfed2d476406b98a932971f8e28f5",
+            "input": "Premise: Before Dec 1946, Pixar released an animated film. \nHypothesis: After May 1910, Pixar released an animated film.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-fd723aadbb6942ee9a416b36bce32c9f",
+            "input": "Premise: The government will issue new labor policies at 9 PM. \nHypothesis: The government will issue new labor policies before 9 AM.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-9d8f886c9f1144499628249daa6bc74a",
+            "input": "Premise: Before October, the court case began. \nHypothesis: Before July, the court case began.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-5abf8871bdd043c284fe7772c64a43b7",
+            "input": "Premise: Before 10 AM, the match between India and Australia began. \nHypothesis: After 6 PM, the match between India and Australia began.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-9f866ba377ef43c4a92bb243ecaf059d",
+            "input": "Premise: Robin will visit her parents after 10:00. \nHypothesis: Robin will visit her parents before 07:00.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-3bd4d53221994c019c28b51b514fc4cd",
+            "input": "Premise: Before Jun, the startup received funding. \nHypothesis: After Aug, the startup received funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-0ff1dd4d8af54aeaabaa4d5f836f46e6",
+            "input": "Premise: Before 14th Oct 1918, Pixar will release an animated film. \nHypothesis: Before 25th July 1936, Pixar will release an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-088a566a04724ca0ac253eed9c9a2b1a",
+            "input": "Premise: I graduated in October. \nHypothesis: I graduated after July.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d2deb97c6c954b3784a896c951b3cfe0",
+            "input": "Premise: Lindsey paid off her loans after Nov. \nHypothesis: Lindsey paid off her loans after Jul.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-0801b5382fff4c53bfc6437dee51dc53",
+            "input": "Premise: After Jan 1989, Pixar will release an animated film. \nHypothesis: After January 1954, Pixar will release an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-80cb32c5a27c4831875c26602f842aab",
+            "input": "Premise: The government will issue new labor policies on 16th Apr 1924. \nHypothesis: The government will issue new labor policies before 1st Jul 1923.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-444b29b78af34c1b8102208cc88f8064",
+            "input": "Premise: In Aug 1970, the government will issue new labor policies. \nHypothesis: Before July 1967, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-228feb68ded041aea33a011386915ddc",
+            "input": "Premise: After 12th July 1998, the government issued new labor policies. \nHypothesis: After 23rd February 1965, the government issued new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-c614cff6f00840bfbd97b0dfdb9a4d65",
+            "input": "Premise: After 2nd Feb 1930, I will start my bachelors. \nHypothesis: Before 24th Jan 1927, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-3f187385d6e647c79da0df16ce9406a8",
+            "input": "Premise: The government will issue new labor policies after 1969. \nHypothesis: The government will issue new labor policies after 1953.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-8989d074fb4f4647bfd7c5bdf2270d77",
+            "input": "Premise: The match between India and Australia will begin at 3 PM. \nHypothesis: The match between India and Australia will begin before 19:00.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b7b3ddff26d041a4b794a4423f4ad32f",
+            "input": "Premise: Pixar released an animated film in February. \nHypothesis: Pixar released an animated film before June.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-c683cca72af44978ab4f552e59db7687",
+            "input": "Premise: I graduated on 2nd. \nHypothesis: I graduated after 1st.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-85f5ff321add4d82a45892dec8641e1f",
+            "input": "Premise: Lindsey paid off her loans before Jan 1977. \nHypothesis: Lindsey paid off her loans after April 1947.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-5f9e42554dd14583a8af10128fe39158",
+            "input": "Premise: On 6th August 1994, Lindsey paid off her loans. \nHypothesis: After 14th August 1938, Lindsey paid off her loans.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-ebf9ffe394e140f1ba0c941045d3733a",
+            "input": "Premise: Pixar will release an animated film in October 1954. \nHypothesis: Pixar will release an animated film after January 1903.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d27fdafa749149b5a747b8a7e7d1187a",
+            "input": "Premise: The startup will receive funding on 19th. \nHypothesis: The startup will receive funding before 12th.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-3f93eba8d62c431c991b09c9d96cc05f",
+            "input": "Premise: Before Feb 1998, they became the top football team. \nHypothesis: Before May 1916, they became the top football team.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-5d0d0100074a467d85b6e7abe8c5dfd9",
+            "input": "Premise: After 3 AM, the storm began. \nHypothesis: After 03:00, the storm began.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-64543ae342da4126912ba3c62b7cbb7b",
+            "input": "Premise: On 12th, the government will issue new labor policies. \nHypothesis: After 12th, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-400b8afee18e4caa9fa0070fa79718a8",
+            "input": "Premise: The startup will receive funding before 15:00. \nHypothesis: The startup will receive funding after 10:00.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-0506b28c7ac14cc0b73681a631a8363c",
+            "input": "Premise: At 06:00, the government issued new labor policies. \nHypothesis: After 3 AM, the government issued new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-480607ca6472408c88706abb874e2464",
+            "input": "Premise: They became the top football team after 28th Mar 1956. \nHypothesis: They became the top football team after 28th Jan 1992.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-ebcf84e7b17b4e909c2c56b9617c9e11",
+            "input": "Premise: In Nov 1954, Pixar released an animated film. \nHypothesis: After Mar 1966, Pixar released an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-2aa08208d63e4b1b8eed11bce6bd743c",
+            "input": "Premise: After Aug, I graduated. \nHypothesis: Before Dec, I graduated.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-03980e4731f24d3cae52aba7a39fa614",
+            "input": "Premise: On 9th July 1961, the government issued new labor policies. \nHypothesis: Before 1st December 1942, the government issued new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-df9b6d58f27c4ce0939fa6af30549d10",
+            "input": "Premise: Pixar will release an animated film after July. \nHypothesis: Pixar will release an animated film after March.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2e3e0e5f9e93483ab028ff645652d765",
+            "input": "Premise: After 1983, I will submit my PhD dissertation. \nHypothesis: After 1961, I will submit my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2c7ca0b47f9d4459adf6f4e7a7c498db",
+            "input": "Premise: I will start my bachelors before Sep. \nHypothesis: I will start my bachelors before May.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-85d9d7bd38a343b5beefd888861653d0",
+            "input": "Premise: Pixar released an animated film after 14th Jul 1996. \nHypothesis: Pixar released an animated film before 16th Aug 1908.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-b3ec597ee938472e9da17cc4dd2a8bd3",
+            "input": "Premise: They became the top football team in Aug 1981. \nHypothesis: They became the top football team before Sep 1900.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-802bed6dbb3045eab1d4cf503d22e164",
+            "input": "Premise: I started my bachelors on 23rd Dec 1949. \nHypothesis: I started my bachelors after 13th Jan 1924.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-9ff3ff07e4574f68a0bc287e464bf0ec",
+            "input": "Premise: In Jun 1969, I will start my bachelors. \nHypothesis: Before Oct 1903, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-e3395c84788b4514b8dc6ab76f647717",
+            "input": "Premise: In Mar, he was sworn in as the Prime Minister. \nHypothesis: After May, he was sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-be48d67c29ac4ed994d718baec9ce360",
+            "input": "Premise: Robin will visit her parents before Feb. \nHypothesis: Robin will visit her parents after May.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-b7884fc9d29f4ed1bf981d552992b1f8",
+            "input": "Premise: Before 27th, the government will issue new labor policies. \nHypothesis: Before 20th, the government will issue new labor policies.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-370d56b4559f44f0af4ca3cadd63d9ee",
+            "input": "Premise: On 15th Dec 1924, Pixar released an animated film. \nHypothesis: Before 24th Oct 1952, Pixar released an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-5aa232a37155463988a85308c319a127",
+            "input": "Premise: Before Thursday, I will graduate. \nHypothesis: After Wednesday, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-ba19874324374feda133214a3aeb4954",
+            "input": "Premise: At 06:00, the government issued new labor policies. \nHypothesis: After 02:00, the government issued new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d1e90d2cfd3d4f21bc60eea5f8a10a9b",
+            "input": "Premise: Their tour of Europe will start in November. \nHypothesis: Their tour of Europe will start before Sep.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5c157625b9c64bd5ab2081edda21a431",
+            "input": "Premise: Before 6th, they will become the top football team. \nHypothesis: After 16th, they will become the top football team.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-df7663a5aa1b497c90b9507f3d4006eb",
+            "input": "Premise: I graduated after 23rd. \nHypothesis: I graduated before 24th.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-d14b90db02934fe28377de3c35fb4306",
+            "input": "Premise: On 15th, their tour of Europe will start. \nHypothesis: After 17th, their tour of Europe will start.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-27d155b5a4294274b5bf7d421a64ff10",
+            "input": "Premise: At 6 AM, he was sworn in as the Prime Minister. \nHypothesis: After 3 AM, he was sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-c61c15009e1a4e8aaeb25210f856ced4",
+            "input": "Premise: The train from Seattle will depart at 12 PM. \nHypothesis: The train from Seattle will depart after 11 PM.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-16921776326e460198c997f84e396e7b",
+            "input": "Premise: Before 1949, I graduated. \nHypothesis: After 1930, I graduated.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-e223d636003343d6b227b78a763d5126",
+            "input": "Premise: In Oct, he was sworn in as the Prime Minister. \nHypothesis: After Dec, he was sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-24e7bfcc95a54af28186df0ee34c03d0",
+            "input": "Premise: After February 1965, I will start my bachelors. \nHypothesis: After Oct 1946, I will start my bachelors.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-cf4f91062ec74d89b4515849c8229d2c",
+            "input": "Premise: Pixar will release an animated film on 18th. \nHypothesis: Pixar will release an animated film after 10th.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-3200d30c1f4b4ecf93a6e146eb9320c6",
+            "input": "Premise: The startup received funding on 21st February 1928. \nHypothesis: The startup received funding before 15th May 1992.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2185629093ae4a61a8644f62e78160eb",
+            "input": "Premise: The government will issue new labor policies after Wednesday. \nHypothesis: The government will issue new labor policies before Monday.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5677df32d4a24a4990991f170a1f430c",
+            "input": "Premise: The court case will begin after September. \nHypothesis: The court case will begin before July.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-b556cd05efdb4508b87df806c6e37ab7",
+            "input": "Premise: In Feb, they will become the top football team. \nHypothesis: Before Jun, they will become the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-1beb24d1c256448f991d621069a1743f",
+            "input": "Premise: In June, their tour of Europe will start. \nHypothesis: After March, their tour of Europe will start.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-673501cd25f44cc3a1b0a484baeccb0d",
+            "input": "Premise: At 6 AM, the court case will begin. \nHypothesis: After 4 AM, the court case will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-fbf50f9d2ad24eef97ef1b0b4ea676ad",
+            "input": "Premise: On Sunday, the startup will receive funding. \nHypothesis: Before Sunday, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-45c2aadfc7e04c9ea57ccc5e82bdab76",
+            "input": "Premise: I submitted my PhD dissertation after January 1932. \nHypothesis: I submitted my PhD dissertation after Apr 1934.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-5ec2ca7f8df244519d7fdf7deab4d2a3",
+            "input": "Premise: Before 19th Sep 1971, I will graduate. \nHypothesis: Before 22nd Jul 1941, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-cd88b4aff7b94fe69769c90ee5c31f43",
+            "input": "Premise: On 11th Mar 1927, I submitted my PhD dissertation. \nHypothesis: Before 1st Feb 1982, I submitted my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-452ce78097f04d51a79391dad2cb559a",
+            "input": "Premise: After Jan 1992, I submitted my PhD dissertation. \nHypothesis: Before Jan 1918, I submitted my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-fe77a8b134a9498089df1452181f7726",
+            "input": "Premise: They will become the top football team in October 1934. \nHypothesis: They will become the top football team before January 1935.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-1dd51c9e872144ed872bc3de9f77b9f2",
+            "input": "Premise: I submitted my PhD dissertation on 14th. \nHypothesis: I submitted my PhD dissertation before 12th.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-067920d9526f428ab9fa2935b61d5e57",
+            "input": "Premise: On 14th, the grocery store closed. \nHypothesis: Before 11th, the grocery store closed.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-e5f49e4c16e44f7f9f100e286930b595",
+            "input": "Premise: Before 23rd April 1968, I will graduate. \nHypothesis: Before 8th January 1909, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-064fdc5d9b0a433c8cb0abd424c24bff",
+            "input": "Premise: The government issued new labor policies before Jul. \nHypothesis: The government issued new labor policies after Aug.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-4c8534f0162c467a97b007dc5320f664",
+            "input": "Premise: After 2 PM, he will be sworn in as the Prime Minister. \nHypothesis: After 8 PM, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-a91bed5a459741cfa0af5cff3b840c0e",
+            "input": "Premise: In Jul, Lindsey will pay off her loans. \nHypothesis: Before Jun, Lindsey will pay off her loans.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-3443755473fb4e4e8b0fce16c29508e0",
+            "input": "Premise: Before Wednesday, the grocery store closed. \nHypothesis: After Tuesday, the grocery store closed.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-e5eb9d1bf95d432e99730cedc7097fa6",
+            "input": "Premise: The train from Seattle will depart at 14:00. \nHypothesis: The train from Seattle will depart before 23:00.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-3099cf34a42f4bcc96163fdeeae210e1",
+            "input": "Premise: They will become the top football team before 1906. \nHypothesis: They will become the top football team after 1912.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-1543db1ab277449a9196527a9d39269f",
+            "input": "Premise: In Apr 1913, I will start my bachelors. \nHypothesis: Before Sep 1910, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-fdcb20ae22de418a8cb3fe423a75382b",
+            "input": "Premise: On Monday, the government issued new labor policies. \nHypothesis: Before Monday, the government issued new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-c9af5469777447058d28b2e97229eaad",
+            "input": "Premise: In December, the court case began. \nHypothesis: After Oct, the court case began.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-cf291a9517fd40d4adce7d965d8b1bd2",
+            "input": "Premise: I started my bachelors in 1983. \nHypothesis: I started my bachelors before 1906.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-48b49fa30c0a4dd49ebbeda6359365e4",
+            "input": "Premise: Before September, I graduated. \nHypothesis: After December, I graduated.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-89c5a1889f1140129c824b650bb0d6ce",
+            "input": "Premise: Before 00:00, the startup will receive funding. \nHypothesis: After 06:00, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-4752ed8530ec4ac1b408c939158dac55",
+            "input": "Premise: He will be sworn in as the Prime Minister in Mar. \nHypothesis: He will be sworn in as the Prime Minister after June.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-7aa4b8f7289e40fead1d6ad9282ea00d",
+            "input": "Premise: I started my bachelors before December. \nHypothesis: I started my bachelors after Sep.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-6dfadb59b2b84b21a90df354676ad5f4",
+            "input": "Premise: Their tour of Europe started after Jan. \nHypothesis: Their tour of Europe started before January.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-b6ed70556c754821bc86ec9e36f81802",
+            "input": "Premise: After 2nd, I will start my bachelors. \nHypothesis: Before 14th, I will start my bachelors.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-89616ca830044f69af3629e188e4f7a9",
+            "input": "Premise: Pixar released an animated film before January 1931. \nHypothesis: Pixar released an animated film before Jul 1985.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-c2c1abe3df3946f88827cda08e623e56",
+            "input": "Premise: I will graduate before Apr 1929. \nHypothesis: I will graduate before August 1960.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-8ecfaaa0b00d4d76b9a8295e80053f5b",
+            "input": "Premise: In 1946, he was sworn in as the Prime Minister. \nHypothesis: After 1923, he was sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-69d5a5150caf48b18d165576901b2efb",
+            "input": "Premise: After 10 PM, he was sworn in as the Prime Minister. \nHypothesis: After 5 PM, he was sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-e9d8a07c89c54a2da22cc3e14189ad7c",
+            "input": "Premise: The train from Seattle will depart at 3 PM. \nHypothesis: The train from Seattle will depart before 04:00.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-30c66c4cffbc4d3cb208dace41361765",
+            "input": "Premise: He will be sworn in as the Prime Minister before June. \nHypothesis: He will be sworn in as the Prime Minister after December.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-9671cb06f8974f8da7b0bf5bb821941b",
+            "input": "Premise: Pixar will release an animated film in May 1903. \nHypothesis: Pixar will release an animated film before March 1952.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-60d3538e8aea4b889c24e40da987f3e1",
+            "input": "Premise: After Sep, Robin will visit her parents. \nHypothesis: After October, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-466a1fd6f54146b1a071c05ef8d84b73",
+            "input": "Premise: Their tour of Europe will start before 11th. \nHypothesis: Their tour of Europe will start before 9th.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-9fb5cabb47144b1880433b82ca052e3c",
+            "input": "Premise: In Nov, Robin visited her parents. \nHypothesis: After Jul, Robin visited her parents.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2433867162db4af9bed8293a34aa2c8c",
+            "input": "Premise: I will submit my PhD dissertation at 20:00. \nHypothesis: I will submit my PhD dissertation after 17:00.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-af5dc67d2345443f90edd5446cb9dfd7",
+            "input": "Premise: The storm began after 6 AM. \nHypothesis: The storm began after 08:00.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-228758b618694b048d07aebe7771c3c2",
+            "input": "Premise: Pixar released an animated film on 17th January 1991. \nHypothesis: Pixar released an animated film before 3rd May 1958.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5e47240451bd434ea36326c1301ea5a8",
+            "input": "Premise: In 1983, the government will issue new labor policies. \nHypothesis: Before 1977, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-d14c9d4f7a9f4a8f81871d2b0b77e75c",
+            "input": "Premise: Pixar released an animated film on 13th March 1930. \nHypothesis: Pixar released an animated film after 6th April 1910.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-64031fd2651d4e20beb3ba6b80a116ee",
+            "input": "Premise: After 1964, they will become the top football team. \nHypothesis: Before 1979, they will become the top football team.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-1b7964646f2f42d5a1660eef31e63c95",
+            "input": "Premise: Before 13:00, he will be sworn in as the Prime Minister. \nHypothesis: After 16:00, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-4f24a7cf1c994ebda8e3fe34506df944",
+            "input": "Premise: The startup will receive funding before March. \nHypothesis: The startup will receive funding before April.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-7b8a1bd6658b4bd4aee8d0132d645d69",
+            "input": "Premise: Before Thursday, Pixar released an animated film. \nHypothesis: After Friday, Pixar released an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-b333b2c2a21443e3ae6cf932cbd25ba6",
+            "input": "Premise: He will be sworn in as the Prime Minister at 8 PM. \nHypothesis: He will be sworn in as the Prime Minister before 22:00.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d6f0c0d0112a4102833fa26bd8ce45f3",
+            "input": "Premise: After October 1935, the startup received funding. \nHypothesis: After Jan 1965, the startup received funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-27bb9e3bbe6c4a68ab4c4a4df8bb4ce0",
+            "input": "Premise: After Jul, the court case will begin. \nHypothesis: Before Nov, the court case will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-f3864033c18945f289279124f3febe8e",
+            "input": "Premise: Before 11 AM, the court case will begin. \nHypothesis: Before 12 PM, the court case will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-8981073881d3430fa363c3f98e3abf6a",
+            "input": "Premise: Lindsey will pay off her loans after 6th February 1915. \nHypothesis: Lindsey will pay off her loans before 10th October 1977.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-742a21a6fd7e43b1b547826c2e17caa5",
+            "input": "Premise: After Oct, Robin will visit her parents. \nHypothesis: Before Nov, Robin will visit her parents.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-c282e6089c5e4bdba3a75a1a61d81cc8",
+            "input": "Premise: Pixar will release an animated film after Jun 1975. \nHypothesis: Pixar will release an animated film after May 1908.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-7cdabc58741f4f5b81f42af0ef7a1d1b",
+            "input": "Premise: I started my bachelors before 1956. \nHypothesis: I started my bachelors after 1919.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-b7af742528f14c219a7a4bba2ec9b222",
+            "input": "Premise: In December 1947, the startup will receive funding. \nHypothesis: After January 1960, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-4398c6abfcfe41cb9042a8749d54eb51",
+            "input": "Premise: In March, I will start my bachelors. \nHypothesis: Before June, I will start my bachelors.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b8876c4287864480b39604800315db80",
+            "input": "Premise: Lindsey paid off her loans in Feb. \nHypothesis: Lindsey paid off her loans after April.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-7843786200a64509934395c231f24adb",
+            "input": "Premise: In Mar, I will submit my PhD dissertation. \nHypothesis: Before Jul, I will submit my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-256613497a6240e188fe15720c9c7eac",
+            "input": "Premise: The government will issue new labor policies after 1994. \nHypothesis: The government will issue new labor policies after 1949.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-beec4f70671a4e73b36a660bf1d0a624",
+            "input": "Premise: The court case began at 03:00. \nHypothesis: The court case began after 1 AM.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-5d84baa4469843a5b569a8856b6c2ef1",
+            "input": "Premise: The startup received funding in February. \nHypothesis: The startup received funding after June.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-3bdbc5957e7e46658f8e979d1f2530c1",
+            "input": "Premise: In Aug, Robin will visit her parents. \nHypothesis: After December, Robin will visit her parents.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-387940a3849e4134a30b416f37a67653",
+            "input": "Premise: The match between India and Australia began at 4 AM. \nHypothesis: The match between India and Australia began before 1 AM.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-c5e49038383440f4ba0ac1db6ad54613",
+            "input": "Premise: After Oct, he was sworn in as the Prime Minister. \nHypothesis: Before September, he was sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-d6bf91d8910848e391b3f22d6a691b54",
+            "input": "Premise: Before 26th, the court case will begin. \nHypothesis: After 24th, the court case will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-245a22a8061942428857beeeac5e4410",
+            "input": "Premise: The startup received funding on Thursday. \nHypothesis: The startup received funding before Saturday.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-fa903d437a0e43b68d276ed077b60cb3",
+            "input": "Premise: The match between India and Australia will begin after 08:00. \nHypothesis: The match between India and Australia will begin after 01:00.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-111ce3a2668745dc8fc06c9b4fcad15f",
+            "input": "Premise: The storm will begin after 2 AM. \nHypothesis: The storm will begin after 10 AM.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-55f9d1bd4e7b46258a51cb68887831d7",
+            "input": "Premise: On 5th May 1987, I will start my bachelors. \nHypothesis: Before 5th June 1973, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5b0b2aea0ef9430b946555247c345a36",
+            "input": "Premise: Pixar will release an animated film on Wednesday. \nHypothesis: Pixar will release an animated film before Sunday.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-b26c90804afb4db2b60148a8e7ac4c92",
+            "input": "Premise: The grocery store will close on 2nd. \nHypothesis: The grocery store will close before 3rd.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d913937b1d3a49b8858ae5deddb893d2",
+            "input": "Premise: At 13:00, the court case will begin. \nHypothesis: After 10:00, the court case will begin.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-ce38345f61e14e9c8d073f597be26272",
+            "input": "Premise: I will graduate in January 1985. \nHypothesis: I will graduate after February 1976.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-9293bd2645e0401a8016d27215d0a8f2",
+            "input": "Premise: Lindsey paid off her loans before May. \nHypothesis: Lindsey paid off her loans after Jun.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-12f32d38998f480ca276d6557a812b72",
+            "input": "Premise: After 15th Dec 1986, they will become the top football team. \nHypothesis: After 24th Jun 1972, they will become the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-fd7fbd7489fb4271a94071f1148c80ed",
+            "input": "Premise: Lindsey paid off her loans before May 1974. \nHypothesis: Lindsey paid off her loans after May 1984.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-a1b5d4f443874b23a36ca16530838f04",
+            "input": "Premise: I will start my bachelors before Thursday. \nHypothesis: I will start my bachelors after Saturday.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-20e36d2ba39f407e946aa9856c67789b",
+            "input": "Premise: After Oct, the startup will receive funding. \nHypothesis: Before Sep, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-6f7967a0be844fd89d26ef136de5d62e",
+            "input": "Premise: In Oct 1951, he was sworn in as the Prime Minister. \nHypothesis: Before Sep 1914, he was sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-af8124d24bc043788a88a4211b6cd7aa",
+            "input": "Premise: After 10th, I will graduate. \nHypothesis: After 4th, I will graduate.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d0d6efe69e77458588d16b02a6f78e61",
+            "input": "Premise: The startup will receive funding on 1st Aug 1997. \nHypothesis: The startup will receive funding before 10th May 1922.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-9fc7901aa4974e7cac7fcbddaa9efa0a",
+            "input": "Premise: The storm will begin before 9th. \nHypothesis: The storm will begin before 15th.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-6ee6ce61490b4ee183fd0dac68ab54c8",
+            "input": "Premise: Pixar will release an animated film after Apr 1925. \nHypothesis: Pixar will release an animated film before October 1936.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-ebdf98276a00406ebe5a183cda875edf",
+            "input": "Premise: After 3rd, the court case began. \nHypothesis: After 2nd, the court case began.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d50cf2293b9a4c9a9e105a99703bb934",
+            "input": "Premise: He will be sworn in as the Prime Minister before Feb. \nHypothesis: He will be sworn in as the Prime Minister after May.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-02f3eb96310544c3924435a2d0109f47",
+            "input": "Premise: Their tour of Europe will start before April. \nHypothesis: Their tour of Europe will start before October.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-316755363ad34feab386e455f413f3fa",
+            "input": "Premise: Lindsey will pay off her loans in Jun. \nHypothesis: Lindsey will pay off her loans before Apr.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-9a41e65fc831442ab61deea404cba9d8",
+            "input": "Premise: The government issued new labor policies after Sunday. \nHypothesis: The government issued new labor policies before Sunday.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-56dfffc7d048430488f18bc94b69fbab",
+            "input": "Premise: I will graduate on Sunday. \nHypothesis: I will graduate after Wednesday.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-9e4351725d6a4518b3ea8cdbccdf36c4",
+            "input": "Premise: Before 22nd January 1959, Lindsey will pay off her loans. \nHypothesis: Before 1st December 1994, Lindsey will pay off her loans.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-fe349b3b02ff49c98f1f1273d1a5f88e",
+            "input": "Premise: At 12 AM, the grocery store closed. \nHypothesis: After 8 AM, the grocery store closed.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-f8321d512b93457ebefad7753784e905",
+            "input": "Premise: The startup received funding after September. \nHypothesis: The startup received funding after August.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-7de42c5880214f1581e8a94bbe5821a9",
+            "input": "Premise: He was sworn in as the Prime Minister after Apr. \nHypothesis: He was sworn in as the Prime Minister after April.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-c138bf533b42408f80b320816fbfc5b0",
+            "input": "Premise: I submitted my PhD dissertation in March 1919. \nHypothesis: I submitted my PhD dissertation before Oct 1953.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2c39c2813f3b4214bf9e4281eb3994d7",
+            "input": "Premise: The startup received funding in Sep. \nHypothesis: The startup received funding before Nov.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-22d11b191da7456298ce743543e23a8c",
+            "input": "Premise: I will submit my PhD dissertation in 1997. \nHypothesis: I will submit my PhD dissertation before 1955.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-599d8fcc30bc4eef93c7b7fa381676fa",
+            "input": "Premise: I will graduate in May. \nHypothesis: I will graduate after Jun.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-26eb40f455ae402abc01a3c5c86a1157",
+            "input": "Premise: I will submit my PhD dissertation in October. \nHypothesis: I will submit my PhD dissertation before Apr.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-067f58098bc949d1b5db8589adb29c51",
+            "input": "Premise: In July 1935, I will graduate. \nHypothesis: After August 1917, I will graduate.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2ec5e49b11b2437e9df5e8df66d5c1ad",
+            "input": "Premise: On 15th May 1911, the government issued new labor policies. \nHypothesis: Before 21st February 1937, the government issued new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-f983c788129144dc9da1b8f41a704144",
+            "input": "Premise: Pixar will release an animated film in September. \nHypothesis: Pixar will release an animated film after March.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b463c88e591046fb99ebe25c2e2db29b",
+            "input": "Premise: Before September, he was sworn in as the Prime Minister. \nHypothesis: Before December, he was sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-9330c922ebb34d5fb8a15cd2004d995f",
+            "input": "Premise: Before December 1952, I graduated. \nHypothesis: After May 1901, I graduated.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-194a3587f4ac489a965edc3dcade2c21",
+            "input": "Premise: Pixar released an animated film after May. \nHypothesis: Pixar released an animated film before January.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-49e537c6fbe24e018f8c9e41d9ecc6a3",
+            "input": "Premise: In April 1945, the government issued new labor policies. \nHypothesis: After August 1932, the government issued new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-7eccafd61bda4b53a9f3bad1561157b8",
+            "input": "Premise: Robin will visit her parents after Tuesday. \nHypothesis: Robin will visit her parents after Thursday.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-11a0ccda99a74de6b0b9250cf3c493a2",
+            "input": "Premise: I will start my bachelors after May 1939. \nHypothesis: I will start my bachelors after January 1964.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-15a3f1736d394057af5a062db3791f5d",
+            "input": "Premise: I started my bachelors after July 1968. \nHypothesis: I started my bachelors before Nov 1910.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-83612f4e8ab345c5a387fce5ba2ef66f",
+            "input": "Premise: Robin visited her parents in April. \nHypothesis: Robin visited her parents before October.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-731aa6b9bc9b415bad81914e4f46c0d2",
+            "input": "Premise: On 15th, the storm will begin. \nHypothesis: After 20th, the storm will begin.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-70b52790c13e4b8f87298189faa17966",
+            "input": "Premise: I will submit my PhD dissertation after January 1967. \nHypothesis: I will submit my PhD dissertation before Feb 1965.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-581f8db89f2e43cc8f24659530c3ce82",
+            "input": "Premise: The government issued new labor policies on 17th May 1909. \nHypothesis: The government issued new labor policies before 20th Nov 1951.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-a28715abd4ad46f3b80742c7b58e04a7",
+            "input": "Premise: Before Apr 1964, I will graduate. \nHypothesis: After Mar 1926, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-e7a6fd94c1b5425ba213d703d1c8fc71",
+            "input": "Premise: The startup received funding after 1996. \nHypothesis: The startup received funding before 1920.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-4dd7f12673c240d5b0e1fb38ba2b834b",
+            "input": "Premise: Robin visited her parents before 22nd. \nHypothesis: Robin visited her parents before 15th.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-660e6d23284a425e9863bcc44b8fe8d4",
+            "input": "Premise: On 26th, I submitted my PhD dissertation. \nHypothesis: After 16th, I submitted my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-89f198a1326140c6bda11208cbc7d4c9",
+            "input": "Premise: They became the top football team after 9th October 1928. \nHypothesis: They became the top football team after 3rd June 1907.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-9ece3056b76c49098a9f696c2848fa70",
+            "input": "Premise: In December, he will be sworn in as the Prime Minister. \nHypothesis: Before June, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-fce6474aa3d843d0b39639c1f234638b",
+            "input": "Premise: The government will issue new labor policies at 5 PM. \nHypothesis: The government will issue new labor policies after 2 PM.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-83bc0bde4ee84669bfb6bbaf290d5f92",
+            "input": "Premise: The startup received funding before Feb 1919. \nHypothesis: The startup received funding before Dec 1965.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-00b03fe996f5416f859190e2bd033dbd",
+            "input": "Premise: I started my bachelors on 19th. \nHypothesis: I started my bachelors before 15th.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-857b91a232534b01bf8e7db8f8f3e5ee",
+            "input": "Premise: After Nov, the government issued new labor policies. \nHypothesis: After December, the government issued new labor policies.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-bc454695a29f4372b0c968c7bf4063e4",
+            "input": "Premise: Before Apr, the government will issue new labor policies. \nHypothesis: After Oct, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-742b55ec71de4f6daebda504a1b0c026",
+            "input": "Premise: In November, their tour of Europe started. \nHypothesis: Before July, their tour of Europe started.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-726f7b24a75e47b991d2c80c0e6d83a5",
+            "input": "Premise: In 1901, I will graduate. \nHypothesis: After 1911, I will graduate.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-d0c682cc6cf94866b0a5e060cb03c431",
+            "input": "Premise: On 15th, the match between India and Australia began. \nHypothesis: Before 14th, the match between India and Australia began.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-08b73564bd4b4c1e8a458856bbabc41c",
+            "input": "Premise: Before 23rd July 1916, the government will issue new labor policies. \nHypothesis: After 16th January 1939, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-1912dfba8b4e4e308c7ef3da7b4d1f54",
+            "input": "Premise: On 7th Jan 1910, Lindsey paid off her loans. \nHypothesis: After 16th Dec 1981, Lindsey paid off her loans.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-c31c3d4202fe437983206940a413f22d",
+            "input": "Premise: In Apr 2000, they will become the top football team. \nHypothesis: After Feb 1922, they will become the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-ce6b1bc993b0458e8fedc8f51399a087",
+            "input": "Premise: At 5 AM, I will submit my PhD dissertation. \nHypothesis: After 11 AM, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-49d76845d8ab436ca29809a4af300d52",
+            "input": "Premise: Pixar will release an animated film in June. \nHypothesis: Pixar will release an animated film before March.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-fd53787eabf246779ea0f5a8c9fb6de7",
+            "input": "Premise: The grocery store will close on 9th. \nHypothesis: The grocery store will close before 21st.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-1f7107e74e4e4034be1f8858b288136a",
+            "input": "Premise: I will submit my PhD dissertation in February. \nHypothesis: I will submit my PhD dissertation before June.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-c4713b89762d4c5884bd17997fe11dbb",
+            "input": "Premise: The government issued new labor policies in Feb 1993. \nHypothesis: The government issued new labor policies after Mar 1910.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-1f9c0337b3ed4852b9c8b07e5cbc0f2a",
+            "input": "Premise: Before March, their tour of Europe started. \nHypothesis: After May, their tour of Europe started.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-be266b9fd8fe4d6e8f358e83c5bfb9f5",
+            "input": "Premise: The startup received funding in Oct 1938. \nHypothesis: The startup received funding before Feb 1912.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-3604d67cb1044a73a397a9157ab6bed4",
+            "input": "Premise: Lindsey paid off her loans in May. \nHypothesis: Lindsey paid off her loans before Jul.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-1be257e7f8384706b4e25bd3de15ceab",
+            "input": "Premise: On 3rd, I will graduate. \nHypothesis: After 7th, I will graduate.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-429dca167dd04aa9a9d09eed346d6280",
+            "input": "Premise: I will graduate on 24th. \nHypothesis: I will graduate after 28th.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-35921006bb9b49e4bde761d79c3c72bd",
+            "input": "Premise: The train from Seattle will depart at 10 PM. \nHypothesis: The train from Seattle will depart after 2 PM.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-f017949ab1d74f6c99d3280387d680fa",
+            "input": "Premise: After 1984, the government will issue new labor policies. \nHypothesis: After 1939, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-8beaafeddc734545a4fd5a538bb8a734",
+            "input": "Premise: Before Monday, the startup received funding. \nHypothesis: After Wednesday, the startup received funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5ae01599708d4f0a9a565526d7db8b77",
+            "input": "Premise: The train from Seattle will depart after 7 AM. \nHypothesis: The train from Seattle will depart before 11:00.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-974bd365bd114af8be5532c854503cf5",
+            "input": "Premise: The government issued new labor policies before May 1916. \nHypothesis: The government issued new labor policies before November 1913.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-1933afca00ef454dad07ee47ab50b264",
+            "input": "Premise: I graduated after Sep. \nHypothesis: I graduated after Aug.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b9db03d37af84fde8eb629dfedafdabb",
+            "input": "Premise: The storm will begin after 23:00. \nHypothesis: The storm will begin after 4 PM.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2567a7b9df9b463fa7b153b98b7dafd0",
+            "input": "Premise: On 13th, Pixar will release an animated film. \nHypothesis: After 11th, Pixar will release an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-4f8b8f560c7b4ad1b57a2f0bd4870890",
+            "input": "Premise: Lindsey will pay off her loans before October. \nHypothesis: Lindsey will pay off her loans before May.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-e16dbc2f7e594d1e80f1e589a5b5d6c4",
+            "input": "Premise: After 5 AM, the startup will receive funding. \nHypothesis: Before 07:00, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-d50d676b2bd04e25812b0bdbde80c7b7",
+            "input": "Premise: After Wednesday, he will be sworn in as the Prime Minister. \nHypothesis: Before Sunday, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-58c53300b59b49a8860b88a05a5e1f2a",
+            "input": "Premise: In Jun, the government issued new labor policies. \nHypothesis: Before Feb, the government issued new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5e39d8336270491c8c93f0127c232b3b",
+            "input": "Premise: I graduated before 8th. \nHypothesis: I graduated after 19th.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-1099b0d1b1644f2d9673f8582e0c30d6",
+            "input": "Premise: Before Jun, their tour of Europe will start. \nHypothesis: After May, their tour of Europe will start.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-8415f472690a456ea93cfde2e603eb6a",
+            "input": "Premise: The startup will receive funding in September. \nHypothesis: The startup will receive funding before December.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-c82fec4dd18648cf878043871879278d",
+            "input": "Premise: The grocery store closed before 2nd. \nHypothesis: The grocery store closed after 16th.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-8732d1498ea54b3c951a3c40ffa01e78",
+            "input": "Premise: The startup will receive funding after Sunday. \nHypothesis: The startup will receive funding after Tuesday.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-7e34a39e0e7549d7ae1bd540b1146e00",
+            "input": "Premise: The storm will begin on Friday. \nHypothesis: The storm will begin after Thursday.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-dc054ce1ae384c58ab8c568c688a3507",
+            "input": "Premise: I will submit my PhD dissertation after Wednesday. \nHypothesis: I will submit my PhD dissertation after Saturday.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-df138ec6c44f49c8a2a82b1d3cc1f6a9",
+            "input": "Premise: After Sep 1980, they became the top football team. \nHypothesis: After January 1988, they became the top football team.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-1d37f23207f84a6095f6743cec86eb19",
+            "input": "Premise: Before Jun, I will start my bachelors. \nHypothesis: Before April, I will start my bachelors.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-9dce63ba60434fefbf30535a0cdf6533",
+            "input": "Premise: The grocery store closed on Wednesday. \nHypothesis: The grocery store closed before Thursday.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-956f8d6d62d54256b1c18cc824ee9865",
+            "input": "Premise: Their tour of Europe started on Wednesday. \nHypothesis: Their tour of Europe started before Thursday.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-fef459181c114f1f8fdaf28522d763ce",
+            "input": "Premise: They will become the top football team in 1957. \nHypothesis: They will become the top football team before 1945.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-1a737638c99642cba8dec225ea3afd64",
+            "input": "Premise: I will start my bachelors in April. \nHypothesis: I will start my bachelors after January.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-48804d22b6ae44389f446d0f752d7753",
+            "input": "Premise: I submitted my PhD dissertation after Friday. \nHypothesis: I submitted my PhD dissertation before Saturday.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-74206bb9ce1f47809fe7ed40eb92fcf2",
+            "input": "Premise: At 08:00, the grocery store closed. \nHypothesis: After 2 PM, the grocery store closed.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-9383da02bf474755b2bf91f97bcc4306",
+            "input": "Premise: On 6th March 1977, I will graduate. \nHypothesis: Before 26th July 1968, I will graduate.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-a8e6199f16534037a77efe64d4917579",
+            "input": "Premise: After 24th March 1917, the startup will receive funding. \nHypothesis: After 25th December 1931, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-26f7ded26f57484d91849c8ab8662282",
+            "input": "Premise: They became the top football team before August. \nHypothesis: They became the top football team after June.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-8178f73b0f7d47ad830c8331ad15af84",
+            "input": "Premise: The government will issue new labor policies after 24th December 1918. \nHypothesis: The government will issue new labor policies after 10th Oct 1948.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-3f7957969ed348d98c2ab59b7f5f1c9b",
+            "input": "Premise: Before 21st, the storm will begin. \nHypothesis: After 18th, the storm will begin.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-1d2a303db561425588b4fd4593a120da",
+            "input": "Premise: In December 1925, I will submit my PhD dissertation. \nHypothesis: After July 1933, I will submit my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-35d4903d1087497280c019ca31f2b458",
+            "input": "Premise: In Jun, Lindsey will pay off her loans. \nHypothesis: Before March, Lindsey will pay off her loans.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-de2a16209d144b1da1c3948f5c5baac5",
+            "input": "Premise: Robin visited her parents before Apr. \nHypothesis: Robin visited her parents after October.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-ea3bb19003f54cd998d8a68f5e56be3f",
+            "input": "Premise: The grocery store closed before 11 AM. \nHypothesis: The grocery store closed after 9 PM.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-c7ba2088e79b4637bb24918603709014",
+            "input": "Premise: At 08:00, the storm began. \nHypothesis: Before 08:00, the storm began.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-623f47842fd446b1850dfe8b46cb19c0",
+            "input": "Premise: I will graduate after 25th. \nHypothesis: I will graduate after 21st.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-a242493b65c444d0a7d686e6d58e9a79",
+            "input": "Premise: He will be sworn in as the Prime Minister at 22:00. \nHypothesis: He will be sworn in as the Prime Minister before 15:00.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-cd5efad348974c13aef13b6e3d1ab7b2",
+            "input": "Premise: After 23rd Jul 1974, Lindsey paid off her loans. \nHypothesis: Before 16th April 1930, Lindsey paid off her loans.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-e1d3ba3ebddd4230a8c85a0fc59b0ecf",
+            "input": "Premise: The storm began before 9 PM. \nHypothesis: The storm began after 11 PM.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5863280fc10144a8aafcb6a145f1543e",
+            "input": "Premise: On Friday, I will start my bachelors. \nHypothesis: Before Tuesday, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-d709d5faf3d84f119776d6ae2c2f2e95",
+            "input": "Premise: They became the top football team after Aug. \nHypothesis: They became the top football team before June.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-46d06cace22f47db8cdd4777a962146c",
+            "input": "Premise: Robin visited her parents before 9 AM. \nHypothesis: Robin visited her parents before 12 AM.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-c2a888ef915047929eb6180357956472",
+            "input": "Premise: Before Jan, their tour of Europe started. \nHypothesis: After March, their tour of Europe started.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-4794b8ed5c9849508da99e7e5ec1356a",
+            "input": "Premise: After 24th, they will become the top football team. \nHypothesis: After 22nd, they will become the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-757fc24b836a496eaaa9697199e9c73f",
+            "input": "Premise: After 4th Dec 1988, I graduated. \nHypothesis: Before 19th Jan 1934, I graduated.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-da84b23319214331909291fe41926b7d",
+            "input": "Premise: After 24th, the startup will receive funding. \nHypothesis: After 15th, the startup will receive funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-7b295b3e81714c5da9d2cc0d9d77f237",
+            "input": "Premise: I will start my bachelors in Jun 1982. \nHypothesis: I will start my bachelors before Dec 1924.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-464b7942bf7b44b3a4826d7b1c90ef72",
+            "input": "Premise: In Aug 1981, the government issued new labor policies. \nHypothesis: After Dec 1959, the government issued new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-17f04da6228f4ec490f07af3d322913e",
+            "input": "Premise: He will be sworn in as the Prime Minister in Jul. \nHypothesis: He will be sworn in as the Prime Minister before November.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-967a638edde94d268ef33766ecf2a8ba",
+            "input": "Premise: After 15th, I graduated. \nHypothesis: After 23rd, I graduated.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-a03c1fdbc0bb4a628f483810de37459c",
+            "input": "Premise: At 9 PM, he was sworn in as the Prime Minister. \nHypothesis: Before 12 PM, he was sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-7c8112a66944462bbbe9a1e49e91cd93",
+            "input": "Premise: On 6th Jun 1977, I graduated. \nHypothesis: Before 6th Feb 1965, I graduated.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-ad798f9834e14546bff4d0a51bee03dc",
+            "input": "Premise: On 9th, he will be sworn in as the Prime Minister. \nHypothesis: Before 3rd, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-853110fd1b9f4844acd8303800280a6a",
+            "input": "Premise: In Oct, I will start my bachelors. \nHypothesis: After Oct, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-c9d1d524888149238b651d84067d6d22",
+            "input": "Premise: They will become the top football team in May 1998. \nHypothesis: They will become the top football team after Oct 1904.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-1144a79f84d74ef096d999fc782ba0da",
+            "input": "Premise: He will be sworn in as the Prime Minister before 7 PM. \nHypothesis: He will be sworn in as the Prime Minister after 16:00.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-8f3f3f6debcb45e1b7b2ad1186a89f0c",
+            "input": "Premise: Lindsey paid off her loans on 25th Dec 1963. \nHypothesis: Lindsey paid off her loans before 21st Nov 1933.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-bae2b33adf2e4c749d8f8f75d40bff40",
+            "input": "Premise: Lindsey paid off her loans before January 1903. \nHypothesis: Lindsey paid off her loans before Dec 1986.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-1bfbd0cb08cc4633baaffab86111372d",
+            "input": "Premise: He was sworn in as the Prime Minister at 10 PM. \nHypothesis: He was sworn in as the Prime Minister before 5 PM.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-8ee8ffd56f2746fa86a02fc705f9d768",
+            "input": "Premise: In Jul, Robin will visit her parents. \nHypothesis: Before Jul, Robin will visit her parents.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-7def2f6d4be8408dbce9b378f2b7ed86",
+            "input": "Premise: After September 1961, they became the top football team. \nHypothesis: Before January 1926, they became the top football team.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-c84579c9ca6d4a42b1a10ab501893e8e",
+            "input": "Premise: In 1907, I will start my bachelors. \nHypothesis: After 1967, I will start my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-00a092bfa6ea49c2be5cf7dadf377f72",
+            "input": "Premise: The court case will begin before 3rd. \nHypothesis: The court case will begin after 8th.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-38223d2557f14a6b90611151976bf7b7",
+            "input": "Premise: In November 1910, I submitted my PhD dissertation. \nHypothesis: Before October 1979, I submitted my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b993ef78f651469591b6abc0b361bfbb",
+            "input": "Premise: After May, Lindsey will pay off her loans. \nHypothesis: After April, Lindsey will pay off her loans.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-7e5977150c2c46608d7cb8089b4f4ac4",
+            "input": "Premise: Before 3rd October 1966, they will become the top football team. \nHypothesis: After 20th July 1965, they will become the top football team.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-21a4808a16904d65ab8a11ffcb2fc01f",
+            "input": "Premise: After July 1923, Lindsey paid off her loans. \nHypothesis: Before December 1993, Lindsey paid off her loans.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-a86b96fe3bb343fe8217674c0563460c",
+            "input": "Premise: On Saturday, their tour of Europe will start. \nHypothesis: Before Friday, their tour of Europe will start.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-ad7db4d42ebd46018677fd3b0416262a",
+            "input": "Premise: At 10 AM, the train from Seattle depart. \nHypothesis: Before 6 PM, the train from Seattle depart.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-0c82740763f14b7bb88e5b3f8f95ec51",
+            "input": "Premise: At 06:00, Robin visited her parents. \nHypothesis: After 5 PM, Robin visited her parents.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-cce279ab5ec74104a98c6f812a407a06",
+            "input": "Premise: In Mar, they became the top football team. \nHypothesis: Before Sep, they became the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d977eeb8a4cc4f17a678d34081bd5f2e",
+            "input": "Premise: In Jan, Lindsey will pay off her loans. \nHypothesis: Before Mar, Lindsey will pay off her loans.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-fe46241006634443bba38a4f978c54db",
+            "input": "Premise: The court case will begin on 8th. \nHypothesis: The court case will begin after 5th.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2e415c78aebd463aa5c0f4d56a712814",
+            "input": "Premise: After February 1918, the startup will receive funding. \nHypothesis: After Jul 1971, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-885a4dd605954c51a671ae2a1309081c",
+            "input": "Premise: They will become the top football team after May 1904. \nHypothesis: They will become the top football team after April 1972.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-cdc21a37aa964eea8e897acd4529c7d7",
+            "input": "Premise: In September, I graduated. \nHypothesis: Before Jun, I graduated.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-6347aebdb1a0454985e302450d954419",
+            "input": "Premise: In December 1987, Lindsey paid off her loans. \nHypothesis: Before Mar 1928, Lindsey paid off her loans.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-500500ac80294de3b41daa5878e9e929",
+            "input": "Premise: In Apr, he was sworn in as the Prime Minister. \nHypothesis: Before Jul, he was sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-032c2a4c1d0a4d44bd3a2e525fca4798",
+            "input": "Premise: They will become the top football team in Feb. \nHypothesis: They will become the top football team after May.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-25c45c056f764b97928af27529c5fb8e",
+            "input": "Premise: He will be sworn in as the Prime Minister on Monday. \nHypothesis: He will be sworn in as the Prime Minister before Monday.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5be472b4b4704edcb97d47a05ada4f7a",
+            "input": "Premise: On 19th December 1927, the government will issue new labor policies. \nHypothesis: Before 11th August 1974, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-417382c2766c4f06af58d7603affd312",
+            "input": "Premise: After Thursday, the government will issue new labor policies. \nHypothesis: After Saturday, the government will issue new labor policies.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-6153be1f304a40c49651c5f69c49858d",
+            "input": "Premise: Lindsey will pay off her loans before July 1956. \nHypothesis: Lindsey will pay off her loans before Dec 1979.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-7e6b4fcbd3ca45f782712e1e07db69cd",
+            "input": "Premise: Before Wednesday, their tour of Europe started. \nHypothesis: Before Saturday, their tour of Europe started.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-5485c7559c6447e8b647dfb04767566c",
+            "input": "Premise: After 27th Jul 1961, I will start my bachelors. \nHypothesis: Before 2nd Jun 1968, I will start my bachelors.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-c69acc822da04f55a8afb614a9cb5455",
+            "input": "Premise: In August, I started my bachelors. \nHypothesis: After Jun, I started my bachelors.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-9322a5d60e3446d7aafe993742be93db",
+            "input": "Premise: The startup received funding at 10 PM. \nHypothesis: The startup received funding before 22:00.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-fa2fc0b3bf2248398832f43da6f1f5dd",
+            "input": "Premise: The startup received funding in September 1922. \nHypothesis: The startup received funding before Oct 1913.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-8841c6760d664d7f82db4e34c1d7a9bf",
+            "input": "Premise: After May, the government will issue new labor policies. \nHypothesis: After Aug, the government will issue new labor policies.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-94fe37ff65224eb2a66a7e686939826a",
+            "input": "Premise: After 23rd January 1932, the startup will receive funding. \nHypothesis: Before 3rd June 1998, the startup will receive funding.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-608ac7e50c1844f68044e8fc1e4a99c0",
+            "input": "Premise: Robin will visit her parents in July. \nHypothesis: Robin will visit her parents before August.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-06c9e90fc7994bf3b29e6d04c63cc3a4",
+            "input": "Premise: Lindsey paid off her loans after Dec 1960. \nHypothesis: Lindsey paid off her loans before Aug 1903.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-f9c7f56ad46a41b8ad02fbb6fca7a74b",
+            "input": "Premise: I graduated in Jun. \nHypothesis: I graduated before Jul.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-d6953ac5aa9f4a23ab7cb643b89a508f",
+            "input": "Premise: In 1902, Pixar will release an animated film. \nHypothesis: After 1907, Pixar will release an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-9c17165f6ca243d8a5acf2bd31297fd2",
+            "input": "Premise: Pixar will release an animated film before August 1972. \nHypothesis: Pixar will release an animated film after Feb 1921.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-6170d95f5e5947b1884a6059ce7b289e",
+            "input": "Premise: I will graduate in Aug. \nHypothesis: I will graduate before September.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-a74a66fcfcc14847ba1ce5b5dcc9179f",
+            "input": "Premise: After Oct, Pixar released an animated film. \nHypothesis: Before Aug, Pixar released an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-7c8290c4dca142cc843e378f7adaaf24",
+            "input": "Premise: Before Monday, I submitted my PhD dissertation. \nHypothesis: After Monday, I submitted my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-cd79737077f44336853751d0735226a6",
+            "input": "Premise: In May, the government will issue new labor policies. \nHypothesis: After Oct, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-7a89fb49e470460f8534f20024ab94a6",
+            "input": "Premise: After 11th December 1942, Lindsey will pay off her loans. \nHypothesis: Before 22nd August 1960, Lindsey will pay off her loans.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-6e386a9fa7944a6597ac101de327a2db",
+            "input": "Premise: In Jun 1904, Pixar will release an animated film. \nHypothesis: After May 1980, Pixar will release an animated film.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-33e295e8678142d3a836c6070359bc8f",
+            "input": "Premise: The startup will receive funding in Oct. \nHypothesis: The startup will receive funding after Jun.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-f36e531d7eb6415490a523e823c2ff6b",
+            "input": "Premise: In June, their tour of Europe will start. \nHypothesis: After September, their tour of Europe will start.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-1ed49f7cf990487caa2dfac64a1fd720",
+            "input": "Premise: After May, Lindsey paid off her loans. \nHypothesis: Before May, Lindsey paid off her loans.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-025d525ea64f4d7c8e9da05842d4496d",
+            "input": "Premise: At 18:00, Robin will visit her parents. \nHypothesis: After 8 PM, Robin will visit her parents.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-95d1b068528541abb9d9b0f2e7a0dcbc",
+            "input": "Premise: In September, Robin will visit her parents. \nHypothesis: After November, Robin will visit her parents.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-ddf7eba4e89346aa91ccf0653d688cbf",
+            "input": "Premise: I submitted my PhD dissertation on Friday. \nHypothesis: I submitted my PhD dissertation after Wednesday.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-1110f890876447f49c0769339245e3af",
+            "input": "Premise: Lindsey paid off her loans on 19th May 1977. \nHypothesis: Lindsey paid off her loans after 27th Jan 1993.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-ad752f07545448cdb2bd8e0bad03c7eb",
+            "input": "Premise: They became the top football team on 27th July 1967. \nHypothesis: They became the top football team after 9th December 1934.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-24418e515c594fd59851978a9d3e9663",
+            "input": "Premise: I will graduate in March 1902. \nHypothesis: I will graduate after Mar 1921.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-975b1d4b82ff454481ed134f49180c49",
+            "input": "Premise: On 22nd Nov 1978, he was sworn in as the Prime Minister. \nHypothesis: Before 2nd Jul 1986, he was sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-bd600066db9b49ec9ebb34f1faf035e1",
+            "input": "Premise: After 9 AM, the grocery store will close. \nHypothesis: After 08:00, the grocery store will close.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-617fd85b4db54307bd56047f6f153b57",
+            "input": "Premise: Lindsey will pay off her loans after July. \nHypothesis: Lindsey will pay off her loans before May.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-369beb901ff240de96a4c751e009a60b",
+            "input": "Premise: I graduated before June 1972. \nHypothesis: I graduated before February 1911.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-319c6d28efe9482999dcd594500852f2",
+            "input": "Premise: Pixar will release an animated film before Feb. \nHypothesis: Pixar will release an animated film after Apr.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-d11a3478b95343a8865cd6573f0cf59a",
+            "input": "Premise: In January 1913, I will graduate. \nHypothesis: Before July 1910, I will graduate.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-6105378de90a4e73bec908d526528448",
+            "input": "Premise: The grocery store closed at 11 AM. \nHypothesis: The grocery store closed before 7 AM.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-eb71225a4e154f5b833283b90e70eec3",
+            "input": "Premise: At 3 AM, the court case began. \nHypothesis: Before 8 AM, the court case began.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b522cc7fd2d3436f899b4331c82aea45",
+            "input": "Premise: In September, their tour of Europe started. \nHypothesis: After July, their tour of Europe started.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-4bcec351c59343dd808a3aa0379b8124",
+            "input": "Premise: They will become the top football team after 9th. \nHypothesis: They will become the top football team before 19th.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-149fdd8c9ac54448a8c9cdc4840216af",
+            "input": "Premise: After 13th January 1951, I started my bachelors. \nHypothesis: Before 17th Mar 1924, I started my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-5697ef7b14d44a939c6ae85e197e3590",
+            "input": "Premise: I started my bachelors on 7th January 1991. \nHypothesis: I started my bachelors before 6th January 1946.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-f44b6c57235449c4a4993472e5a44b1a",
+            "input": "Premise: Lindsey will pay off her loans after 1923. \nHypothesis: Lindsey will pay off her loans after 1950.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-cf375a4197a34924b7cc2f215b0e15b9",
+            "input": "Premise: Before 17:00, the court case began. \nHypothesis: Before 11:00, the court case began.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-c10ea3b0815441b0b10229ef4e1ff31a",
+            "input": "Premise: After 5 PM, I submitted my PhD dissertation. \nHypothesis: After 8 AM, I submitted my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-1ed4213af7bb4fd4b77f38c7a148ac6b",
+            "input": "Premise: At 22:00, I submitted my PhD dissertation. \nHypothesis: Before 22:00, I submitted my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-4b4ac2cd04624d18bfbdc95e7370a9a7",
+            "input": "Premise: After 02:00, the grocery store will close. \nHypothesis: After 09:00, the grocery store will close.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-92e5826549934b8195849cdb7dc89942",
+            "input": "Premise: I submitted my PhD dissertation after 23rd May 1921. \nHypothesis: I submitted my PhD dissertation before 6th October 1997.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-d7f328f5439d4e3c8b51e599414ef480",
+            "input": "Premise: I submitted my PhD dissertation in March. \nHypothesis: I submitted my PhD dissertation before Jan.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-de84129473de4293973d3c4b3bab438e",
+            "input": "Premise: Robin visited her parents after Sunday. \nHypothesis: Robin visited her parents before Wednesday.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-3babe8d7c5634377b3f945af3e06732d",
+            "input": "Premise: The government issued new labor policies after Jul 1923. \nHypothesis: The government issued new labor policies before Jun 1971.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-35f96c2e12494c22a8a10cfa2473294c",
+            "input": "Premise: The startup received funding before 3 PM. \nHypothesis: The startup received funding before 6 PM.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-2ed6f1fe04ef435499a6bc5fdca32fb1",
+            "input": "Premise: Pixar released an animated film after December. \nHypothesis: Pixar released an animated film after October.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-5e2e19eda9ad40d29db989c6e93428dc",
+            "input": "Premise: I graduated after May 1987. \nHypothesis: I graduated after Jun 1951.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-bab4aeb17fe346e8acf92417a458f145",
+            "input": "Premise: In Sep, I graduated. \nHypothesis: Before Aug, I graduated.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-2151f3da0d2243dc801447c45a33e4ec",
+            "input": "Premise: After 6th May 1940, I submitted my PhD dissertation. \nHypothesis: Before 2nd Jul 1932, I submitted my PhD dissertation.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-490681719e244db8a73fbf307b55b417",
+            "input": "Premise: Before Friday, Pixar released an animated film. \nHypothesis: After Tuesday, Pixar released an animated film.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-6b01b0c9b6fb469b9da1c631390d59e7",
+            "input": "Premise: At 12 AM, Robin will visit her parents. \nHypothesis: After 01:00, Robin will visit her parents.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-853e1375017d474d83fe71a117c8d1dd",
+            "input": "Premise: I will graduate on 11th November 1940. \nHypothesis: I will graduate after 9th Jun 1958.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-849d574a3e5d460a827d2e6fa0349a4a",
+            "input": "Premise: On 4th Mar 1994, I started my bachelors. \nHypothesis: Before 14th Oct 1906, I started my bachelors.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-712bf1c50c2f4591b3337b19a3386474",
+            "input": "Premise: In Oct 1960, Pixar released an animated film. \nHypothesis: After Feb 1908, Pixar released an animated film.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-a6cf1310b5a54f1d9550ce3bba69bdc3",
+            "input": "Premise: I submitted my PhD dissertation after October. \nHypothesis: I submitted my PhD dissertation before Dec.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-6289ad88814048a0aa39f9fc0a69a5c2",
+            "input": "Premise: I graduated in Dec. \nHypothesis: I graduated before June.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-8dce41417d58482dbc4b21698ba1d182",
+            "input": "Premise: After Mar 1969, Lindsey paid off her loans. \nHypothesis: After Jun 1951, Lindsey paid off her loans.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-b6f3053a745143deac1e2c4b0fe63773",
+            "input": "Premise: The startup will receive funding in Jun 1997. \nHypothesis: The startup will receive funding after February 1996.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-5e9c16c308c74b5fbdbd58ebb532dc65",
+            "input": "Premise: The startup will receive funding at 05:00. \nHypothesis: The startup will receive funding after 09:00.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-2e1c5584b42841ddb8ebd2d9e75754c6",
+            "input": "Premise: He will be sworn in as the Prime Minister before June. \nHypothesis: He will be sworn in as the Prime Minister after May.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-e2bbb834d8d544068a2802b04eb39c32",
+            "input": "Premise: Before 00:00, the startup received funding. \nHypothesis: After 08:00, the startup received funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-8114593e0d9b49979ece52364a3c2007",
+            "input": "Premise: After July, their tour of Europe will start. \nHypothesis: After March, their tour of Europe will start.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-ad279fe7a0244d828831d5352baaff88",
+            "input": "Premise: Before May 1933, Pixar released an animated film. \nHypothesis: After November 1913, Pixar released an animated film.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-9fb41d87f1604ef09689ae964f27bb40",
+            "input": "Premise: Before Jan 1905, I will graduate. \nHypothesis: After May 1950, I will graduate.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-c8ecebcfb028456caf3d423db63faddb",
+            "input": "Premise: They became the top football team on 28th. \nHypothesis: They became the top football team after 14th.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-3fd5002f94784ac4b66b24571428639d",
+            "input": "Premise: After 17th Nov 1979, they will become the top football team. \nHypothesis: After 21st December 1938, they will become the top football team.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-87ffeb81168f433b87696d3a44659060",
+            "input": "Premise: On Thursday, the startup will receive funding. \nHypothesis: Before Thursday, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-62a8e93b8a0a4fdca45c4268b299644b",
+            "input": "Premise: At 4 AM, the startup will receive funding. \nHypothesis: After 5 AM, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-15ecd040b1aa4882934255c3397f6a5b",
+            "input": "Premise: Lindsey paid off her loans after 1943. \nHypothesis: Lindsey paid off her loans after 1977.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-694f229ea8994db89c0942a6fb2d22cd",
+            "input": "Premise: At 00:00, the startup will receive funding. \nHypothesis: After 09:00, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-8482df0a823047a2a6fc3acc1903d7c2",
+            "input": "Premise: In July 1963, Lindsey paid off her loans. \nHypothesis: Before February 1943, Lindsey paid off her loans.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-f5b6bf6b307f4679b4d1e12a82891866",
+            "input": "Premise: After Nov, their tour of Europe will start. \nHypothesis: Before Jul, their tour of Europe will start.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-32ae0e364ec04d39b6349104ef3728ef",
+            "input": "Premise: Before Jan, the startup will receive funding. \nHypothesis: After May, the startup will receive funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-bbb0179b290a40cd8834fe9164b3580d",
+            "input": "Premise: Pixar will release an animated film on 13th Mar 1972. \nHypothesis: Pixar will release an animated film before 21st June 1908.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-e70ef908d55747739c0292251350336a",
+            "input": "Premise: They will become the top football team in Jun. \nHypothesis: They will become the top football team before April.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-0493da8af07847adb46399e204720c0e",
+            "input": "Premise: After Mar, I will graduate. \nHypothesis: Before Jul, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-c802d8bfa1164da580dd8a1739008d2b",
+            "input": "Premise: After 16:00, the startup will receive funding. \nHypothesis: After 08:00, the startup will receive funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-4ea68e73037e42d390ac3191e86aa0fa",
+            "input": "Premise: At 04:00, Robin visited her parents. \nHypothesis: Before 1 PM, Robin visited her parents.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-394d41ffc8074b2387bdf8a4ce586157",
+            "input": "Premise: The government will issue new labor policies before November 1930. \nHypothesis: The government will issue new labor policies before June 1940.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-e29579fda75b478eae3b9913da916ba5",
+            "input": "Premise: Before 27th November 1963, I will graduate. \nHypothesis: Before 10th Oct 1902, I will graduate.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-32fb40b812684f19b404e2b4d2fe3265",
+            "input": "Premise: After Oct 1942, the government will issue new labor policies. \nHypothesis: Before July 1942, the government will issue new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-13bcd9a772484734ae24282f44369cea",
+            "input": "Premise: I started my bachelors before 1951. \nHypothesis: I started my bachelors before 1948.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-b1778befc00b4e839463b20af5db2560",
+            "input": "Premise: Robin visited her parents in Feb. \nHypothesis: Robin visited her parents before Jun.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-ac4258ffaaa3497f8664edefa8fe8f31",
+            "input": "Premise: Pixar released an animated film in February. \nHypothesis: Pixar released an animated film after January.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-5a40fb2ba8a048fead98a8b43955401b",
+            "input": "Premise: Robin will visit her parents on Tuesday. \nHypothesis: Robin will visit her parents after Friday.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-4c5efbd65b9a4944b11c373b301cb90b",
+            "input": "Premise: The storm will begin at 1 PM. \nHypothesis: The storm will begin before 12 PM.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-b82587fb55304812be105c621166be96",
+            "input": "Premise: In May 1931, I submitted my PhD dissertation. \nHypothesis: After Feb 1920, I submitted my PhD dissertation.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-43283afcb8d540bbb4750134fa4008e5",
+            "input": "Premise: The court case will begin before 07:00. \nHypothesis: The court case will begin before 12 PM.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-6c4021271d3b4fc28dbbfe9ce2aa5e0c",
+            "input": "Premise: In July 1900, the government will issue new labor policies. \nHypothesis: Before August 1963, the government will issue new labor policies.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-5a0c6b5bee2e4764ba5214a963484f12",
+            "input": "Premise: Robin visited her parents after Jun. \nHypothesis: Robin visited her parents after Nov.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-0893b7ab54f04c5396c57ab97102ef4b",
+            "input": "Premise: Robin will visit her parents after Jun. \nHypothesis: Robin will visit her parents before July.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-7baaab44b49e45efafe3751180884ac4",
+            "input": "Premise: Lindsey paid off her loans after August 1939. \nHypothesis: Lindsey paid off her loans before November 1925.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-13c6e08bc74940599e17bc393755b955",
+            "input": "Premise: The train from Seattle departed after 9 AM. \nHypothesis: The train from Seattle departed before 10:00.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-a97c7d03ee54473fa20a8ffe0b6d5bba",
+            "input": "Premise: He was sworn in as the Prime Minister on 12th. \nHypothesis: He was sworn in as the Prime Minister after 17th.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-1a2a76a92abc4ce5b43df1cabdda263a",
+            "input": "Premise: In December, he will be sworn in as the Prime Minister. \nHypothesis: After Jul, he will be sworn in as the Prime Minister.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-7e2112172fdf48c0aefa83f459f66b60",
+            "input": "Premise: The court case will begin before 02:00. \nHypothesis: The court case will begin after 08:00.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-3cb6dea907e247e094df55ecf93d206e",
+            "input": "Premise: At 1 PM, the match between India and Australia began. \nHypothesis: After 02:00, the match between India and Australia began.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-4f27a13804104e99bf8aaf00e76584e9",
+            "input": "Premise: Before 18th January 1967, I will submit my PhD dissertation. \nHypothesis: Before 8th August 1940, I will submit my PhD dissertation.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-e9682303d31c4cb4bc5f1ffe9c9d2ee3",
+            "input": "Premise: In May 1954, I will graduate. \nHypothesis: Before December 1927, I will graduate.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-ce67ff21abc8495b9facf1e096afb4c3",
+            "input": "Premise: I submitted my PhD dissertation on 22nd. \nHypothesis: I submitted my PhD dissertation after 12th.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-ad469512d51c414cb85066311f05f25a",
+            "input": "Premise: At 10:00, the startup received funding. \nHypothesis: Before 4 AM, the startup received funding.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-ae8b6c5b1925443d8beea3e48f9b5acf",
+            "input": "Premise: After 12th Sep 1949, the government issued new labor policies. \nHypothesis: Before 22nd Jul 1911, the government issued new labor policies.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-a4cd7f48f2494d2e82e20c0288d2d944",
+            "input": "Premise: At 9 AM, the startup received funding. \nHypothesis: After 06:00, the startup received funding.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task015-1dfb1f2de4c7404b87b820510468247a",
+            "input": "Premise: Before May 1971, the government issued new labor policies. \nHypothesis: After May 1952, the government issued new labor policies.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-bededa3b364b42c6b6b9b711ba7e3bb0",
+            "input": "Premise: On 15th, I graduated. \nHypothesis: Before 11th, I graduated.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-1affa94babb948a3abb312e66014bc43",
+            "input": "Premise: Lindsey will pay off her loans on 19th July 1929. \nHypothesis: Lindsey will pay off her loans after 21st November 1949.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-e105d53c832945acaadbb64a5c2d564d",
+            "input": "Premise: The grocery store closed at 1 AM. \nHypothesis: The grocery store closed after 6 AM.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-4795aa074f614cafb62cf8315632417b",
+            "input": "Premise: I submitted my PhD dissertation before 9 PM. \nHypothesis: I submitted my PhD dissertation before 12 PM.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-b6bba52feded4429b8cb4b6cd932e275",
+            "input": "Premise: I submitted my PhD dissertation before 8th. \nHypothesis: I submitted my PhD dissertation after 5th.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-3c4e22edfcbb407488069a92aaf135cd",
+            "input": "Premise: The court case will begin at 18:00. \nHypothesis: The court case will begin before 6 PM.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-b71fea0870f1456fb45436bcce7432ab",
+            "input": "Premise: The government issued new labor policies in February 1932. \nHypothesis: The government issued new labor policies after May 1939.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task015-6ec0e5c5a8884cca817d664a48791195",
+            "input": "Premise: After 5th May 1947, Lindsey paid off her loans. \nHypothesis: Before 4th March 1988, Lindsey paid off her loans.",
+            "output": [
+                "Neutral"
+            ]
+        },
+        {
+            "id": "task015-e9058b57efb74d56a154160452b7d9f1",
+            "input": "Premise: Lindsey paid off her loans after July. \nHypothesis: Lindsey paid off her loans before May.",
+            "output": [
+                "Contradiction"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3558 @@
+{
+    "Contributors": [
+        "Het Patel"
+    ],
+    "Source": [
+        "TimeX-NLI"
+    ],
+    "URL": [
+        "https://github.com/zchuz/TimeBench/blob/main/TimeBench-subset-7553/TimeX-NLI/timexnli_cs2_timebench.jsonl"
+    ],
+    "Categories": [
+        "Question Answering"
+    ],
+    "Reasoning": [
+        "TimeX-NLI"
+    ],
+    "Definition": [
+        "In this task, you will be given with a premise and a hypothesis. Your goal is to determine whether the premise is consistant with the hypothesis or not. If the premise is consistent with the hypothesis then answer \"Entailment\" and if the premise is not consistent with the hypothesis then answer \"Contradiction\"."
+    ],
+    "Input_language": [
+        "English"
+    ],
+    "Output_language": [
+        "English"
+    ],
+    "Instruction_language": [
+        "English"
+    ],
+    "Domains": [
+        "Anonymous"
+    ],
+    "Positive Examples": [
+        {
+            "input": "Premise: I started my bachelors in Feb 1957 and graduated in Aug 1984. \nHypothesis: I pursued my bachelors degree for 330 months.",
+            "output": "Entailment",
+            "explanation": "This premise is consistant with the hypothesis because the difference between the start and end dates is 330 months."  
+        },
+        {
+            "input": "Premise: They toured parts of Europe from Aug to Mar. \nHypothesis: They toured parts of Europe for 70 months.",
+            "output": "Contradiction",
+            "explanation": "This premise is not consistant with the hypothesis because the difference between the start and end dates is not 70 months."
+        }
+    ],
+    "Negative Examples": [
+        {
+            "input": "Premise: They were the top football team from 1973 to 1996. \nHypothesis: They were the top football team for 230 years.",
+            "output": "Entailment",
+            "explanation": "The premise is not consistant with the hypothesis because the difference between the start and end dates is 230 years."
+        },
+        {
+            "input": "Premise: The storm began at 21:00 and lasted until 18:00. \nHypothesis: The storm lasted for 21 hours.",
+            "output": "Contradiction",
+            "explanation": "The premise is consistant with the hypothesis because the difference between the start and end dates is 21 hours."
+        }
+    ],
+    "Instances": [
+        {
+            "id": "task016-06c4b887adcf4ba694221bc53b149f32",
+            "input": "Premise: I started my bachelors in Feb 1957 and graduated in Aug 1984. \nHypothesis: I pursued my bachelors degree for 330 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d8ef822e2a1f422d8a99ff3323eb36d0",
+            "input": "Premise: They toured parts of Europe from Aug to Mar. \nHypothesis: They toured parts of Europe for 70 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-84c36d5619504df6884097c47ccdc69d",
+            "input": "Premise: Robin's visit to her parents' started on Monday and ended on Thursday. \nHypothesis: Robin visited her parents for 4 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-c0a5f8d28e5c483b80d6265076616ee8",
+            "input": "Premise: They were the top football team from 1973 to 1996. \nHypothesis: They were the top football team for 230 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-7fe0aa9ff6f24cd2995eff8a91873be2",
+            "input": "Premise: The storm began at 21:00 and lasted until 18:00. \nHypothesis: The storm lasted for 21 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-3834c0536ac042f9aee0e50c55e2a9c8",
+            "input": "Premise: The storm lasted from 6 AM to 7 PM. \nHypothesis: The storm lasted for less than 130 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-bdd81555c7bb4b139b06b93ec5a03887",
+            "input": "Premise: The court case started in April and ended in Feb. \nHypothesis: The court case lasted for less than 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-7afcae4cbba242238443f1b28ebe0ca1",
+            "input": "Premise: The court case lasted from February to October. \nHypothesis: The court case lasted for less than 80 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-8273041d8cd94ea2a2e7642f1173f094",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 02:00 to 10 PM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 20 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-45c29dcda0ab4b978a728eeb35285267",
+            "input": "Premise: The court case started in February and ended in October. \nHypothesis: The court case lasted for 9 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-63ece6d3ed7a48a791d3abba4197137d",
+            "input": "Premise: The train from Seattle started at 02:00 and reached Portland at 8 PM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 19 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-4f1a13b120c74e1880407986ac6cfef1",
+            "input": "Premise: The train from Seattle started at 5 PM and reached Portland at 07:00. \nHypothesis: The train journey from Seattle to Portland lasted for 14 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-da4d157c556b42f8aa44b12215ea69a4",
+            "input": "Premise: Their tour of Europe started in May and lasted until Jan. \nHypothesis: They toured parts of Europe for less than 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b0a07fd0c1054a8e8f3c4272cfcfa16c",
+            "input": "Premise: The storm began on Monday and lasted until Saturday. \nHypothesis: The storm lasted for 50 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e73f45f02e8c453f99433340c747fe18",
+            "input": "Premise: They became the top football team in July 1946 and remained so until Dec 1986. \nHypothesis: They were the top football team for less than 40 years 5 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e8983823cb034ff79df199a5723f90c2",
+            "input": "Premise: The storm lasted from 5 PM to 02:00. \nHypothesis: The storm lasted for less than 90 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-03af66381c2f4506aa0e6d1c8ab05b75",
+            "input": "Premise: They were the top football team from December 1929 to January 1992. \nHypothesis: They were the top football team for less than 745 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-ba6033b8c83c45c49b7f372ec147785c",
+            "input": "Premise: The storm lasted from 04:00 to 23:00. \nHypothesis: The storm lasted for less than 19 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-acb99ceeb38b43a3a88a02b0c5563887",
+            "input": "Premise: The court case started in June and ended in December. \nHypothesis: The court case lasted for 60 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d14613cb0cfe47a5b27f0b2e5f4246b3",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 3 AM to 8 PM. \nHypothesis: The train journey from Seattle to Portland lasted for 17 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-cb1999735b2449e7a616f164b8d3b5c9",
+            "input": "Premise: Their tour of Europe started in May and lasted until February. \nHypothesis: They toured parts of Europe for 9 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d90e6361c844496bb47536cfbd81e094",
+            "input": "Premise: The match between India and Australia began on 13th and ended on 28th. \nHypothesis: India played Australia for less than 16 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-92ebf59d017847e984fad4e5e2eac885",
+            "input": "Premise: Their tour of Europe started in Mar and lasted until November. \nHypothesis: They toured parts of Europe for 80 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-7b982ad8691646fbae92fae02df9638c",
+            "input": "Premise: I pursued my bachelors degree from June 1918 to June 1974. \nHypothesis: I pursued my bachelors degree for less than 560 years.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-0714c1f82f744d138b59da13982fd3ac",
+            "input": "Premise: I pursued my bachelors degree from Feb 1909 to December 1933. \nHypothesis: I pursued my bachelors degree for 248 years 4 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b870bf43b7e24e059a6c9318c2f379cf",
+            "input": "Premise: They toured parts of Europe from Saturday to Tuesday. \nHypothesis: They toured parts of Europe for less than 30 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b5d565557f224572a17331c4d0854d0c",
+            "input": "Premise: They toured parts of Europe from 6th to 17th. \nHypothesis: They toured parts of Europe for less than 12 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-0a1a6f316aa148d7b4a3191545fe18e5",
+            "input": "Premise: Their tour of Europe started in Nov and lasted until Sep. \nHypothesis: They toured parts of Europe for 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e87bbfe36e4d4cc893532bc3dccbc7ec",
+            "input": "Premise: They toured parts of Europe from Aug to Mar. \nHypothesis: They toured parts of Europe for less than 70 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-ab7d722da8fb4949898866ee46b4bfbd",
+            "input": "Premise: The storm lasted from 14th to 23rd. \nHypothesis: The storm lasted for less than 9 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-7867c0cec7d54016804e48b98f0b5e44",
+            "input": "Premise: They were the top football team from February to Nov. \nHypothesis: They were the top football team for 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-366a16c1fef645cda121e6342a0b555e",
+            "input": "Premise: The court case lasted from 3rd to 28th. \nHypothesis: The court case lasted for less than 25 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-db17797fd51b48d38bd510f6759e5d9e",
+            "input": "Premise: The court case started on Friday and ended on Wednesday. \nHypothesis: The court case lasted for less than 50 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-de3f81afb2904a3393759225a1e4abbd",
+            "input": "Premise: The court case started on 15th and ended on 22nd. \nHypothesis: The court case lasted for 70 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-665151bdada14ecbb841324dd020837d",
+            "input": "Premise: They became the top football team in Oct and remained so until Jun. \nHypothesis: They were the top football team for less than 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-7805ae93f32b4d15a89a3305cf16a00a",
+            "input": "Premise: I started my bachelors in July 1934 and graduated in August 1964. \nHypothesis: I pursued my bachelors degree for less than 3610 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-74ef82c084564ec1a18ebe256ae81fa3",
+            "input": "Premise: The court case lasted from July to Apr. \nHypothesis: The court case lasted for 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-87335202faf44f2291699f0d6d34c470",
+            "input": "Premise: Robin visited her parents from Wednesday to Monday. \nHypothesis: Robin visited her parents for less than 5 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-03afc6053c18416aba867170a4be427d",
+            "input": "Premise: I pursued my bachelors degree from May 1944 to Feb 1972. \nHypothesis: I pursued my bachelors degree for less than 27 years 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-c9f31601cad64f919e6d45f06bb7b396",
+            "input": "Premise: They were the top football team from January 1939 to December 1946. \nHypothesis: They were the top football team for 95 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-c223d55b4e8d4ffc80d0ac65a4ec1f41",
+            "input": "Premise: They toured parts of Europe from May to January. \nHypothesis: They toured parts of Europe for less than 9 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-2bd94680a0be47b49023be0e0e833052",
+            "input": "Premise: They toured parts of Europe from Thursday to Wednesday. \nHypothesis: They toured parts of Europe for less than 6 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b9a6d10f262e4eec8156d213d25556b5",
+            "input": "Premise: I pursued my bachelors degree from Feb 1923 to Apr 1946. \nHypothesis: I pursued my bachelors degree for 231 years 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-8831620edcb1485bac7d98825c467e57",
+            "input": "Premise: India played Australia from 8th to 19th. \nHypothesis: India played Australia for less than 11 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-59e267499e68455ba0c18319ce358259",
+            "input": "Premise: Robin visited her parents from 3rd to 10th. \nHypothesis: Robin visited her parents for 70 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-8aaf2f546b384d66b061bf1af110ac0d",
+            "input": "Premise: They were the top football team from Jun 1911 to Aug 1964. \nHypothesis: They were the top football team for 53 years 2 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e3ba9765465d48fd81acb4690e5a8f52",
+            "input": "Premise: The court case lasted from 3rd to 28th. \nHypothesis: The court case lasted for less than 26 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-83423cbdcec94e3c84742e6aa0cf04ce",
+            "input": "Premise: The court case started in July and ended in Feb. \nHypothesis: The court case lasted for 7 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-18381c013d76427d9a0cde1cf80dc22d",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 5 PM to 11 AM. \nHypothesis: The train journey from Seattle to Portland lasted for 18 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b28b0ff4f0934ae8a47012f671e1ce63",
+            "input": "Premise: I started my bachelors in September 1932 and graduated in Mar 1965. \nHypothesis: I pursued my bachelors degree for less than 32 years 6 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-3c2c4da4cc31472e931f4f49ee4738fd",
+            "input": "Premise: The train from Seattle started at 06:00 and reached Portland at 11:00. \nHypothesis: The train journey from Seattle to Portland lasted for 6 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-468c21cd7ac74c81be8c97751c72a2ae",
+            "input": "Premise: The court case lasted from Thursday to Wednesday. \nHypothesis: The court case lasted for less than 7 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-7aa9140b64934f2e8b18c38c02f7331c",
+            "input": "Premise: They became the top football team in Jul and remained so until Aug. \nHypothesis: They were the top football team for less than 1 month.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-a921b5f7c9974e52bc62883463d62145",
+            "input": "Premise: They toured parts of Europe from Oct to April. \nHypothesis: They toured parts of Europe for less than 7 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-5dcc8dc9c3cc497bbba0c65ec2901cd7",
+            "input": "Premise: The court case lasted from Tuesday to Thursday. \nHypothesis: The court case lasted for 3 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-14fd1041ea4e46a1a102febd02952895",
+            "input": "Premise: The storm began at 14:00 and lasted until 09:00. \nHypothesis: The storm lasted for 190 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-021a92c964fa4d48959b5f21ce34a9f6",
+            "input": "Premise: They became the top football team in June and remained so until Jan. \nHypothesis: They were the top football team for 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d35a113b63bd426c9d4277ea7c79ede3",
+            "input": "Premise: I pursued my bachelors degree from Mar 1928 to Sep 1952. \nHypothesis: I pursued my bachelors degree for less than 294 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-7b8b9c84de064617a6fb580091cdab0c",
+            "input": "Premise: They became the top football team in Feb 1922 and remained so until May 1939. \nHypothesis: They were the top football team for 17 years 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-6ebd81431b384a4f97688476a9de4400",
+            "input": "Premise: They toured parts of Europe from Aug to May. \nHypothesis: They toured parts of Europe for 90 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-089d4ff66b0e4eeb8a06c14b80823598",
+            "input": "Premise: The match between India and Australia began on 10th and ended on 15th. \nHypothesis: India played Australia for 5 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-eebfd141cfee4d9e8af5b79ff631de19",
+            "input": "Premise: The storm began on Friday and lasted until Saturday. \nHypothesis: The storm lasted for 1 day.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-05a626086bd546ccad951104746e423f",
+            "input": "Premise: Their tour of Europe started on Tuesday and lasted until Monday. \nHypothesis: They toured parts of Europe for less than 60 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-ac0ce69c597a49d49c9749e073c3efd4",
+            "input": "Premise: The court case lasted from Monday to Thursday. \nHypothesis: The court case lasted for 30 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2027a933a9c9436aba560457b72ddcf0",
+            "input": "Premise: The storm lasted from Sunday to Friday. \nHypothesis: The storm lasted for less than 6 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a68eede13d7d409996436d3e3112e811",
+            "input": "Premise: Their tour of Europe started in Mar and lasted until November. \nHypothesis: They toured parts of Europe for less than 80 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-7152d0719742479fbfd3e1af2615049a",
+            "input": "Premise: The court case started in Apr and ended in February. \nHypothesis: The court case lasted for 100 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b84adce57b804410b3490bf6be10407a",
+            "input": "Premise: The court case lasted from Tuesday to Saturday. \nHypothesis: The court case lasted for 5 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-6951548ed0df4c7e802f71dccd3cd630",
+            "input": "Premise: The match between India and Australia began on Saturday and ended on Monday. \nHypothesis: India played Australia for less than 3 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-3005b37ecd67450c82354e6056ccffe5",
+            "input": "Premise: Their tour of Europe started in Jan and lasted until July. \nHypothesis: They toured parts of Europe for 60 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-3b4004b6263b46b78e8c0fb55211f5bd",
+            "input": "Premise: Robin's visit to her parents' started on Saturday and ended on Tuesday. \nHypothesis: Robin visited her parents for 4 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-af008b7311a040cf941c9607c658ae49",
+            "input": "Premise: The storm lasted from Sunday to Monday. \nHypothesis: The storm lasted for 10 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2466b87507374b08875e6d2de9fa5971",
+            "input": "Premise: The storm began at 06:00 and lasted until 14:00. \nHypothesis: The storm lasted for less than 8 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-a13938de2738476e80d55cc07b77cd22",
+            "input": "Premise: The match between India and Australia began on Thursday and ended on Tuesday. \nHypothesis: India played Australia for less than 50 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-1dff470277994a659b373967c7d2dbc7",
+            "input": "Premise: They became the top football team in September 1904 and remained so until Apr 1923. \nHypothesis: They were the top football team for less than 223 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-152623d0d06345a5a391d7e36c18acb9",
+            "input": "Premise: Their tour of Europe started on 8th and lasted until 26th. \nHypothesis: They toured parts of Europe for less than 180 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-791cc4ed27ca4c67a8bd2000f411a57a",
+            "input": "Premise: They toured parts of Europe from Feb to Nov. \nHypothesis: They toured parts of Europe for 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-278c8fe92b164a5dbd401b9704a89954",
+            "input": "Premise: I started my bachelors in Dec 1981 and graduated in Mar 1998. \nHypothesis: I pursued my bachelors degree for 16 years 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e8f5ba0221954a7981586d79e0e599c6",
+            "input": "Premise: The storm lasted from 13:00 to 12 PM. \nHypothesis: The storm lasted for 23 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-4fd59efb3007443488ab24684c3e788a",
+            "input": "Premise: The storm began on 8th and lasted until 25th. \nHypothesis: The storm lasted for less than 170 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-428e8197ff034366ba6112b26d80f6cc",
+            "input": "Premise: I started my bachelors in 1912 and graduated in 1971. \nHypothesis: I pursued my bachelors degree for 590 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d7568e6f87ee4dc69367a9e218fcf39f",
+            "input": "Premise: The court case started in February and ended in Jan. \nHypothesis: The court case lasted for less than 11 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f91fa847dfd74421948e0299bf14b59c",
+            "input": "Premise: The storm lasted from 7 PM to 3 PM. \nHypothesis: The storm lasted for less than 21 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-80bec672ee0e4e88ad76b188d14a809f",
+            "input": "Premise: The storm lasted from 20:00 to 22:00. \nHypothesis: The storm lasted for 20 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f345985a2a444bf899d940492b190aa5",
+            "input": "Premise: The match between India and Australia began on 10th and ended on 23rd. \nHypothesis: India played Australia for 14 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-c33fbef8098c49c88bcdc1b10d1caf64",
+            "input": "Premise: The match between India and Australia began on Monday and ended on Saturday. \nHypothesis: India played Australia for 5 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-7958f3ba98ee451a8c91cb502f3ed821",
+            "input": "Premise: The court case lasted from Wednesday to Tuesday. \nHypothesis: The court case lasted for 60 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-17f6adcd50b44727bf220c74bfba1930",
+            "input": "Premise: The train from Seattle started at 5 AM and reached Portland at 9 AM. \nHypothesis: The train journey from Seattle to Portland lasted for 4 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-ee511231fa364e229fce5c97da96444b",
+            "input": "Premise: They toured parts of Europe from February to Mar. \nHypothesis: They toured parts of Europe for 1 month.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-34512ff24ae549c4aa897f73499c86ef",
+            "input": "Premise: I started my bachelors in Jul 1925 and graduated in Jan 1967. \nHypothesis: I pursued my bachelors degree for less than 498 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-6a8b838715794ae59a47c2512f4cca51",
+            "input": "Premise: The train from Seattle started at 8 PM and reached Portland at 9 PM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 2 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-9419734dab9f42338c50e0072a74ad8b",
+            "input": "Premise: The court case lasted from March to February. \nHypothesis: The court case lasted for less than 12 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-37e16038d3a24562b511a468e678ce6a",
+            "input": "Premise: They were the top football team from May to Oct. \nHypothesis: They were the top football team for 5 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-01873d7daded424389c20e6404904aca",
+            "input": "Premise: Their tour of Europe started in Mar and lasted until November. \nHypothesis: They toured parts of Europe for less than 9 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-26f90d87901a42b3b3c85d4f597438f8",
+            "input": "Premise: They were the top football team from November to October. \nHypothesis: They were the top football team for 110 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-291f45ca1c374c448de772def5686feb",
+            "input": "Premise: Robin's visit to her parents' started on Monday and ended on Thursday. \nHypothesis: Robin visited her parents for 30 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-41454be59e154da4bf0b8dbebc365c55",
+            "input": "Premise: They were the top football team from Dec 1900 to Dec 1918. \nHypothesis: They were the top football team for less than 217 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-f5ef2b6bb921487ab33a4143a89a0675",
+            "input": "Premise: The storm lasted from Saturday to Tuesday. \nHypothesis: The storm lasted for less than 4 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-12fbf2717cda4f259c5ebfe00a5d1e00",
+            "input": "Premise: The storm began at 03:00 and lasted until 8 AM. \nHypothesis: The storm lasted for less than 6 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-468558adeb34477c81b7036945ee3312",
+            "input": "Premise: I pursued my bachelors degree from Mar 1928 to Sep 1952. \nHypothesis: I pursued my bachelors degree for less than 295 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a081d58abb544c81ab3a30cf0e6a06a7",
+            "input": "Premise: They became the top football team in December 1924 and remained so until Aug 1997. \nHypothesis: They were the top football team for less than 72 years 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-fe86d8cfa5ef4cdc8dfb9029e86e35cb",
+            "input": "Premise: They were the top football team from Sep to Apr. \nHypothesis: They were the top football team for less than 70 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-c77b3ed6a9a44229a30b06c6291d3765",
+            "input": "Premise: The storm began at 06:00 and lasted until 10 AM. \nHypothesis: The storm lasted for less than 40 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-cde463118b3c43b58ab239e78fd0e13f",
+            "input": "Premise: I started my bachelors in September 1965 and graduated in March 1989. \nHypothesis: I pursued my bachelors degree for less than 283 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e38df9ed285c4ddfa7792cbb6bb68de5",
+            "input": "Premise: The train from Seattle started at 18:00 and reached Portland at 09:00. \nHypothesis: The train journey from Seattle to Portland lasted for less than 16 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-82dbe40b6a2244e592aa6079ee6488d4",
+            "input": "Premise: India played Australia from Sunday to Friday. \nHypothesis: India played Australia for less than 5 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-288cd0205ab9421ea2f8c9fec9eac7ec",
+            "input": "Premise: The court case started on 17th and ended on 18th. \nHypothesis: The court case lasted for 1 day.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-50464433aee54a16803634b9cf13e5b4",
+            "input": "Premise: The match between India and Australia began on 3rd and ended on 17th. \nHypothesis: India played Australia for less than 140 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a572cdbe14284ffeb15606083bc5b8c4",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 07:00 to 15:00. \nHypothesis: The train journey from Seattle to Portland lasted for 80 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2d7197770ea34155bff72628c8cdfaac",
+            "input": "Premise: The storm began on Monday and lasted until Sunday. \nHypothesis: The storm lasted for 60 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-9d52df52da6c474faa8899c532725aa6",
+            "input": "Premise: They became the top football team in August and remained so until February. \nHypothesis: They were the top football team for 60 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-336ee82726b44491b5b29f223a58e60e",
+            "input": "Premise: The storm lasted from Friday to Thursday. \nHypothesis: The storm lasted for 6 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-7b90357bf4934980b8daf2980a138b8b",
+            "input": "Premise: The train from Seattle started at 1 AM and reached Portland at 18:00. \nHypothesis: The train journey from Seattle to Portland lasted for 17 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-2e06e25801b743d684ca11d1b7fb2f57",
+            "input": "Premise: The storm lasted from 02:00 to 9 PM. \nHypothesis: The storm lasted for less than 190 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a46f493832cc4b0fa2523918885d9e9a",
+            "input": "Premise: They toured parts of Europe from 17th to 27th. \nHypothesis: They toured parts of Europe for 100 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-4e8533ad651f4a50a0e37af5d5072ae8",
+            "input": "Premise: They were the top football team from February 1912 to May 1999. \nHypothesis: They were the top football team for 87 years 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-0c5f54f60ecc434e904cb0b139bf40cf",
+            "input": "Premise: I started my bachelors in 1934 and graduated in 1937. \nHypothesis: I pursued my bachelors degree for 4 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2a83978e117e481486c8c7034e7fea34",
+            "input": "Premise: The storm lasted from 12 AM to 8 PM. \nHypothesis: The storm lasted for less than 20 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-5015bf50f0314bc58bea59dde8fb5b6c",
+            "input": "Premise: The train from Seattle started at 01:00 and reached Portland at 11 AM. \nHypothesis: The train journey from Seattle to Portland lasted for 10 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a0d9867f48374ca5b990210e94c4c08b",
+            "input": "Premise: Robin visited her parents from Tuesday to Friday. \nHypothesis: Robin visited her parents for less than 3 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-ec5122f4430c4ff6be40a3120f107c22",
+            "input": "Premise: India played Australia from Tuesday to Friday. \nHypothesis: India played Australia for 30 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-fcfdca6952784e87a633fd336d9d852d",
+            "input": "Premise: The court case lasted from Feb to Aug. \nHypothesis: The court case lasted for 6 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-fbbe0735c5904d04b3ee6a3decfb7e28",
+            "input": "Premise: The train from Seattle started at 02:00 and reached Portland at 23:00. \nHypothesis: The train journey from Seattle to Portland lasted for less than 210 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-3c74151d692d4315806f5a7d9680d7d5",
+            "input": "Premise: They became the top football team in Jan 1943 and remained so until March 1963. \nHypothesis: They were the top football team for 20 years 3 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-17cc766a70c24347848b449c69c6489d",
+            "input": "Premise: They became the top football team in Sep and remained so until Dec. \nHypothesis: They were the top football team for 30 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-608a4093de8146489d44c3ebbfa6d2f4",
+            "input": "Premise: Robin's visit to her parents' started on 8th and ended on 23rd. \nHypothesis: Robin visited her parents for less than 16 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-7f283de5e25f4345ae5f7342aaf2dd11",
+            "input": "Premise: I started my bachelors in September 1965 and graduated in March 1989. \nHypothesis: I pursued my bachelors degree for less than 282 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-0e3c449f6daf45f081d32263d88a111a",
+            "input": "Premise: The court case lasted from December to July. \nHypothesis: The court case lasted for less than 8 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-2bb9d31cf58a4b63ad471ae4454f3aec",
+            "input": "Premise: I started my bachelors in March 1918 and graduated in July 1936. \nHypothesis: I pursued my bachelors degree for less than 221 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-dfd1ded7019f4326af174bd403be56de",
+            "input": "Premise: The storm lasted from Wednesday to Saturday. \nHypothesis: The storm lasted for 30 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-a7b0e05dd0c64892807dc8bcef71a038",
+            "input": "Premise: India played Australia from Sunday to Friday. \nHypothesis: India played Australia for 50 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-38a60e62b58042428afcb404f0cb66ff",
+            "input": "Premise: They became the top football team in February and remained so until April. \nHypothesis: They were the top football team for 3 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-7bed2331f2d646bdad177806735fd029",
+            "input": "Premise: The court case lasted from December to July. \nHypothesis: The court case lasted for less than 70 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b079531871e444e6826143dae6ae60c5",
+            "input": "Premise: I started my bachelors in 1912 and graduated in 1971. \nHypothesis: I pursued my bachelors degree for less than 590 years.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-66002067aa2c4c90a1719ac6427da1ad",
+            "input": "Premise: India played Australia from Sunday to Monday. \nHypothesis: India played Australia for 10 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-19920ade1d984b44bc6d12d816f0d417",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 10 AM to 10 PM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 13 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d9230078cdf444eca4829e072246e176",
+            "input": "Premise: They toured parts of Europe from November to Jan. \nHypothesis: They toured parts of Europe for less than 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-8d4f82fd2fd14911a5fe4f7bbc73461b",
+            "input": "Premise: They toured parts of Europe from Wednesday to Saturday. \nHypothesis: They toured parts of Europe for less than 4 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-8f79612ceab6408c8abdcab7b5a0b83b",
+            "input": "Premise: The storm began at 06:00 and lasted until 18:00. \nHypothesis: The storm lasted for less than 13 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-05bcb44a87c04438a9fb1dfbbea62330",
+            "input": "Premise: Robin visited her parents from Wednesday to Sunday. \nHypothesis: Robin visited her parents for less than 40 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-42cf86837b194aab92b85280f44adb87",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 21:00 to 23:00. \nHypothesis: The train journey from Seattle to Portland lasted for less than 3 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-cbfdc5c500c248e5aac167877d15202a",
+            "input": "Premise: The match between India and Australia began on 10th and ended on 11th. \nHypothesis: India played Australia for less than 10 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d4b1b87312f74e5e97d678e5db3cb08e",
+            "input": "Premise: They were the top football team from March to July. \nHypothesis: They were the top football team for 40 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-6a475dcec7cc47438db0fbaa145701be",
+            "input": "Premise: The court case lasted from January to May. \nHypothesis: The court case lasted for 4 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-6197e6660ebc4b978ff0da3bce5c7f1b",
+            "input": "Premise: They became the top football team in January 1990 and remained so until Jun 1992. \nHypothesis: They were the top football team for less than 30 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-01d7055fc48248519cf58bc2e39f71ab",
+            "input": "Premise: They were the top football team from 1973 to 1996. \nHypothesis: They were the top football team for 23 years.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-fe4013ac5c3e4e07a32920659207cc41",
+            "input": "Premise: The storm lasted from 11 PM to 01:00. \nHypothesis: The storm lasted for 2 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-ea798a59a90d4fe8bda920791780231d",
+            "input": "Premise: They were the top football team from 1987 to 1988. \nHypothesis: They were the top football team for less than 2 years.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-4cdafc9103bc4881835115a34198fb33",
+            "input": "Premise: The storm lasted from 23:00 to 07:00. \nHypothesis: The storm lasted for 9 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-20f5a5324d3e46768b9d5461568ac668",
+            "input": "Premise: The storm lasted from 17:00 to 00:00. \nHypothesis: The storm lasted for 8 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f61fdae6eb8d4a09942bf4ad2ab14326",
+            "input": "Premise: The court case started in Feb and ended in Oct. \nHypothesis: The court case lasted for 8 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-3deebe03bac34bb18d5fd786d2500f55",
+            "input": "Premise: The storm lasted from 1 AM to 9 PM. \nHypothesis: The storm lasted for less than 21 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a898f8f56a4a42e0a334d2df3b0da467",
+            "input": "Premise: They were the top football team from Nov to Dec. \nHypothesis: They were the top football team for 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-3bbd5110d7e04eaea71d0547c4255b84",
+            "input": "Premise: I pursued my bachelors degree from November 1948 to March 1955. \nHypothesis: I pursued my bachelors degree for less than 6 years 4 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2392b201965c4c6cbf1c02b3e0ce055b",
+            "input": "Premise: The train from Seattle started at 6 PM and reached Portland at 4 PM. \nHypothesis: The train journey from Seattle to Portland lasted for 22 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-80d34afd7f7c4726bb047a31adb657cf",
+            "input": "Premise: The court case started on Wednesday and ended on Saturday. \nHypothesis: The court case lasted for less than 4 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e2888c9e05c74d6f97392c722f84ec73",
+            "input": "Premise: The court case started in April and ended in January. \nHypothesis: The court case lasted for less than 90 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-18485bdcfb8542cdb58ac79653a2fed2",
+            "input": "Premise: Their tour of Europe started on Sunday and lasted until Monday. \nHypothesis: They toured parts of Europe for 1 day.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-5e41abd4a461411fad37b2d0e9790657",
+            "input": "Premise: I pursued my bachelors degree from Oct 1974 to Aug 1990. \nHypothesis: I pursued my bachelors degree for less than 190 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-6b513100b5a04761ab05990a9d269970",
+            "input": "Premise: The train from Seattle started at 4 AM and reached Portland at 9 PM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 17 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f55a35ebae1f4f07b14bbf3add0e3345",
+            "input": "Premise: Their tour of Europe started in Jun and lasted until Sep. \nHypothesis: They toured parts of Europe for less than 3 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-a7ac04cadcda43b19557a7e96a8636cf",
+            "input": "Premise: The court case started in Nov and ended in Feb. \nHypothesis: The court case lasted for 30 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-5f312db8407d436ab27d2acc8ccf25ec",
+            "input": "Premise: The match between India and Australia began on 10th and ended on 11th. \nHypothesis: India played Australia for 1 day.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-67ffa54f32464ae29149ac1fcd507a77",
+            "input": "Premise: I pursued my bachelors degree from 1939 to 1998. \nHypothesis: I pursued my bachelors degree for 59 years.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-ec5a2d8db21f4b70805f78e447b50acd",
+            "input": "Premise: They toured parts of Europe from May to October. \nHypothesis: They toured parts of Europe for 6 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2dc7a3b0c4c24abbacb67a5151ce0cba",
+            "input": "Premise: The storm began on Saturday and lasted until Tuesday. \nHypothesis: The storm lasted for less than 4 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b3ca6e06d4e94502a6ebaa4f8058d1e1",
+            "input": "Premise: The court case started on 13th and ended on 24th. \nHypothesis: The court case lasted for 110 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-8c48ee2331d04bf8bb19bce8699805d9",
+            "input": "Premise: The storm began at 11 PM and lasted until 01:00. \nHypothesis: The storm lasted for 3 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-3ae9bb7be8ba41128afe20e15a20ee3f",
+            "input": "Premise: Robin's visit to her parents' started on Monday and ended on Thursday. \nHypothesis: Robin visited her parents for less than 4 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-1954bef2f0da465d939403e65c84a98f",
+            "input": "Premise: I pursued my bachelors degree from Sep 1941 to December 1998. \nHypothesis: I pursued my bachelors degree for less than 6870 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-24a3b9923d7a454d8213210fb7e17035",
+            "input": "Premise: The court case lasted from August to September. \nHypothesis: The court case lasted for 1 month.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d92ee3319f3a4539ab008386ccc1f161",
+            "input": "Premise: I pursued my bachelors degree from Feb 1912 to January 1994. \nHypothesis: I pursued my bachelors degree for 819 years 2 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e4e9816178a04644a1c8d6ccaf78d04c",
+            "input": "Premise: They toured parts of Europe from Friday to Sunday. \nHypothesis: They toured parts of Europe for 20 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-cfe8a3525bad457c901f5636b7d54a88",
+            "input": "Premise: They became the top football team in July and remained so until May. \nHypothesis: They were the top football team for 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-581586bb79fb477fab59316001b9ca07",
+            "input": "Premise: The court case started in April and ended in Feb. \nHypothesis: The court case lasted for 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-7615501b232b4e66ab1f4d850a98aa2c",
+            "input": "Premise: They were the top football team from Jun 1911 to Aug 1964. \nHypothesis: They were the top football team for 531 years 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-48bc424ab965447c971f3ca3f9c74a63",
+            "input": "Premise: They became the top football team in Sep and remained so until Dec. \nHypothesis: They were the top football team for less than 4 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-400a5111c0c642d6b5c128132534dac6",
+            "input": "Premise: The storm lasted from Monday to Tuesday. \nHypothesis: The storm lasted for less than 2 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-9d8f0b935b3a49ec9e9f2af091c8a830",
+            "input": "Premise: I started my bachelors in Sep 1942 and graduated in April 1996. \nHypothesis: I pursued my bachelors degree for 53 years 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-71108f059c5644bdabe40615780880ba",
+            "input": "Premise: I pursued my bachelors degree from June 1905 to Oct 1966. \nHypothesis: I pursued my bachelors degree for 7360 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-081be315594d4c589b7366abf0e4e7f3",
+            "input": "Premise: Their tour of Europe started in Oct and lasted until Jul. \nHypothesis: They toured parts of Europe for less than 90 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-2a2fe8e523d8439591de75428ad58378",
+            "input": "Premise: They were the top football team from May to March. \nHypothesis: They were the top football team for less than 100 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-ebf76204bdc340b7acddfc68a8d3df93",
+            "input": "Premise: The train from Seattle started at 10:00 and reached Portland at 3 PM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 50 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-4f24e3a6f3f04148b0fd193edab4a130",
+            "input": "Premise: The court case started in May and ended in August. \nHypothesis: The court case lasted for 4 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-927a9c048c8144cabeaff3133c2cc0ef",
+            "input": "Premise: They became the top football team in Jul and remained so until Oct. \nHypothesis: They were the top football team for less than 4 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e833a4be80894dddb8fb89c51ab03091",
+            "input": "Premise: The storm began on 6th and lasted until 16th. \nHypothesis: The storm lasted for 10 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d0914d291e4b40eea484a1b2d028a852",
+            "input": "Premise: India played Australia from Saturday to Sunday. \nHypothesis: India played Australia for 1 day.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b61358ef42f64e17b815ff52bc1d8f86",
+            "input": "Premise: They were the top football team from Jun to Apr. \nHypothesis: They were the top football team for 100 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d9d05d3704154e968272dbb718ae589d",
+            "input": "Premise: They toured parts of Europe from October to January. \nHypothesis: They toured parts of Europe for 30 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-61293e69647b44908d19ad7cb262f325",
+            "input": "Premise: I started my bachelors in 1901 and graduated in 1926. \nHypothesis: I pursued my bachelors degree for less than 26 years.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-53b80b5d958d4d5fb65a83113a29955e",
+            "input": "Premise: I started my bachelors in July 1934 and graduated in August 1964. \nHypothesis: I pursued my bachelors degree for less than 361 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-530655fec03a41a4a7e972467261d72e",
+            "input": "Premise: The storm began at 7 PM and lasted until 8 PM. \nHypothesis: The storm lasted for less than 1 hour.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-6a75091db2434ce4a6fa5a1c7fe79b91",
+            "input": "Premise: They became the top football team in May and remained so until November. \nHypothesis: They were the top football team for less than 60 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-05933a802bb1407d9ab57efda4c56b7a",
+            "input": "Premise: They became the top football team in August 1911 and remained so until January 1970. \nHypothesis: They were the top football team for less than 702 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-86ef557ed19f4b63ab3a733c3c67021e",
+            "input": "Premise: Their tour of Europe started in Sep and lasted until April. \nHypothesis: They toured parts of Europe for less than 8 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-9cdfc4e7b414461589ad4e9487ddeaae",
+            "input": "Premise: I pursued my bachelors degree from Nov 1946 to October 1957. \nHypothesis: I pursued my bachelors degree for less than 109 years 2 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-cc351e7f65c74821a0294e809420795b",
+            "input": "Premise: The match between India and Australia began on Tuesday and ended on Wednesday. \nHypothesis: India played Australia for less than 1 day.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d6ae22976da24e019ea10dc241ef41ef",
+            "input": "Premise: I started my bachelors in September 1928 and graduated in Nov 1968. \nHypothesis: I pursued my bachelors degree for 40 years 2 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-840e6e05a75e449f960f6a98bd8faf10",
+            "input": "Premise: The court case started in Feb and ended in Mar. \nHypothesis: The court case lasted for less than 1 month.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-4cfb8091d56b4d2387f827b7a696026a",
+            "input": "Premise: Their tour of Europe started in January and lasted until Feb. \nHypothesis: They toured parts of Europe for less than 1 month.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-64e29fb6159845adbb52e5e006930f96",
+            "input": "Premise: The train from Seattle started at 12 PM and reached Portland at 12 AM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 120 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b57c5bb4556a468bb8863f8cc91141b5",
+            "input": "Premise: They became the top football team in Dec and remained so until Aug. \nHypothesis: They were the top football team for less than 9 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-08fe99342d304b608e2113d9e869e687",
+            "input": "Premise: They became the top football team in Dec 1963 and remained so until Oct 1986. \nHypothesis: They were the top football team for 275 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-06946d9fae8c493c9d1f5c690313398c",
+            "input": "Premise: They were the top football team from April 1961 to June 1986. \nHypothesis: They were the top football team for 25 years 3 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-7e81fc5f1d3c443cb0733a4b58995fe0",
+            "input": "Premise: I started my bachelors in September 1928 and graduated in Nov 1968. \nHypothesis: I pursued my bachelors degree for less than 40 years 2 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-633e28ccbe6a40a08e693fbb71cdb5e5",
+            "input": "Premise: They toured parts of Europe from Friday to Sunday. \nHypothesis: They toured parts of Europe for 3 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-fca64e00650c4919ae03bc70c6a03490",
+            "input": "Premise: The court case lasted from October to February. \nHypothesis: The court case lasted for 40 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-782c031090cc423e872ad1c1c691db50",
+            "input": "Premise: Their tour of Europe started on Friday and lasted until Saturday. \nHypothesis: They toured parts of Europe for less than 10 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a6c3688eea2443c08393a5e65f7daef9",
+            "input": "Premise: Robin's visit to her parents' started on 2nd and ended on 22nd. \nHypothesis: Robin visited her parents for 20 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-afbee68b1b074867b67b85dd1bd167d3",
+            "input": "Premise: The storm lasted from 10 AM to 4 AM. \nHypothesis: The storm lasted for less than 19 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-dc89d1835bd14507bc183d46f6b5d73e",
+            "input": "Premise: The train from Seattle started at 7 PM and reached Portland at 08:00. \nHypothesis: The train journey from Seattle to Portland lasted for 14 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-0761440592db463b8ba754d6e664d1e0",
+            "input": "Premise: Their tour of Europe started in December and lasted until September. \nHypothesis: They toured parts of Europe for less than 90 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a532b69af26d44438827713b215d2b78",
+            "input": "Premise: Robin visited her parents from Friday to Tuesday. \nHypothesis: Robin visited her parents for 5 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-7c6961f768d94bf59f2390053ce1bd0e",
+            "input": "Premise: Robin's visit to her parents' started on 2nd and ended on 22nd. \nHypothesis: Robin visited her parents for less than 200 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-444b73873fab4380b7c10cee268adf59",
+            "input": "Premise: They were the top football team from November to Jan. \nHypothesis: They were the top football team for 20 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2da8d5c83a124b43a08ade6e085fe843",
+            "input": "Premise: Robin's visit to her parents' started on 3rd and ended on 20th. \nHypothesis: Robin visited her parents for less than 17 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f7ebbd7bde5d4ba190eff315e8c8432d",
+            "input": "Premise: Their tour of Europe started in Feb and lasted until Aug. \nHypothesis: They toured parts of Europe for less than 6 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f785acf322494629afecbe706807d7ef",
+            "input": "Premise: The train from Seattle started at 13:00 and reached Portland at 06:00. \nHypothesis: The train journey from Seattle to Portland lasted for less than 18 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-c96709dc84e44d29924a6f0137952ead",
+            "input": "Premise: The storm lasted from 12 AM to 8 PM. \nHypothesis: The storm lasted for 21 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-deb03ef969954c548d8c360a9ac3fc38",
+            "input": "Premise: The court case lasted from Thursday to Wednesday. \nHypothesis: The court case lasted for 60 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-fd922093bacf4c0ba690201fde0f544a",
+            "input": "Premise: The storm began at 10 AM and lasted until 9 PM. \nHypothesis: The storm lasted for less than 110 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-71c70ba9c67b4c3ca1ce3d7ecbea0c94",
+            "input": "Premise: They became the top football team in May 1901 and remained so until Sep 1969. \nHypothesis: They were the top football team for less than 821 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-bda9028e17b048e68b46a65f720b3946",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 14:00 to 09:00. \nHypothesis: The train journey from Seattle to Portland lasted for less than 20 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-7797f7a36ed746dc903181549b502ab7",
+            "input": "Premise: The storm lasted from 2 AM to 07:00. \nHypothesis: The storm lasted for less than 6 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-c6984eb6ad81407980212a2f53ee82cc",
+            "input": "Premise: The train from Seattle started at 12 PM and reached Portland at 12 AM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 13 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-15993a12f8144172b3c319567e3b211e",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 02:00 to 10 PM. \nHypothesis: The train journey from Seattle to Portland lasted for 20 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d028677aeae24418a6c5d805f679cfa5",
+            "input": "Premise: They became the top football team in 1993 and remained so until 1994. \nHypothesis: They were the top football team for 2 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-483dbd67d2734f7e94a3031efa444cd4",
+            "input": "Premise: Robin visited her parents from Tuesday to Friday. \nHypothesis: Robin visited her parents for 3 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-bb6a3a22b75241b788d4b5e8ac55f497",
+            "input": "Premise: The storm began on Sunday and lasted until Wednesday. \nHypothesis: The storm lasted for 4 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-8fccae5c31bd4a1aa135517712e0aaba",
+            "input": "Premise: The train from Seattle started at 02:00 and reached Portland at 23:00. \nHypothesis: The train journey from Seattle to Portland lasted for less than 22 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-3ce9d8b9fa4e4223900b74304e124c6f",
+            "input": "Premise: They toured parts of Europe from June to July. \nHypothesis: They toured parts of Europe for less than 2 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-7cba9f2e855d4e8f893f5bf0653919ee",
+            "input": "Premise: They toured parts of Europe from 11th to 16th. \nHypothesis: They toured parts of Europe for 6 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-723e7201766d4298b4b094e80706cbb9",
+            "input": "Premise: They became the top football team in July 1946 and remained so until Dec 1986. \nHypothesis: They were the top football team for 40 years 6 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-c9fba60ae75245a6b3ac9e54a7b47a3e",
+            "input": "Premise: They became the top football team in Feb 1922 and remained so until May 1939. \nHypothesis: They were the top football team for 172 years 6 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-50c7b82e044f4a09aae496af6f8262a0",
+            "input": "Premise: The court case started on Monday and ended on Wednesday. \nHypothesis: The court case lasted for less than 2 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-bdb3398c93e6465da1962516aeaeb048",
+            "input": "Premise: The storm lasted from 05:00 to 3 AM. \nHypothesis: The storm lasted for less than 220 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-bb2c40efd0eb4832a5d8300df398f336",
+            "input": "Premise: India played Australia from Tuesday to Friday. \nHypothesis: India played Australia for 3 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-242c2da7011a4ed5a552f3465cc815b4",
+            "input": "Premise: They toured parts of Europe from Jul to Sep. \nHypothesis: They toured parts of Europe for 2 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-026d51ca60b04102b730aea777ac49bc",
+            "input": "Premise: They were the top football team from Apr 1911 to Dec 1990. \nHypothesis: They were the top football team for less than 796 years 8 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-8dbafb4586e745ebb1caa8995ef17456",
+            "input": "Premise: The storm began at 15:00 and lasted until 20:00. \nHypothesis: The storm lasted for 6 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2785ee92e44249f5880c035508b20775",
+            "input": "Premise: I pursued my bachelors degree from Mar 1928 to Sep 1952. \nHypothesis: I pursued my bachelors degree for less than 2940 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-50985e57b1814e649c16329485989f02",
+            "input": "Premise: I started my bachelors in Aug 1904 and graduated in February 1932. \nHypothesis: I pursued my bachelors degree for 330 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d87af95e791d480f83f43dfc35fa75af",
+            "input": "Premise: I started my bachelors in Aug 1940 and graduated in May 1975. \nHypothesis: I pursued my bachelors degree for less than 417 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-67a5e8f0cc79493f810f7fab8259288a",
+            "input": "Premise: They became the top football team in Sep and remained so until Aug. \nHypothesis: They were the top football team for less than 12 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-1eb6a2781ecb47458d7e0ac4eff13568",
+            "input": "Premise: They were the top football team from May to March. \nHypothesis: They were the top football team for 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-600241b5d46d43939631f68d0ec6c7a1",
+            "input": "Premise: The storm lasted from Saturday to Tuesday. \nHypothesis: The storm lasted for 4 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-50d4f7ad80fc41a4a87e0852482e86bf",
+            "input": "Premise: I started my bachelors in 1901 and graduated in 1926. \nHypothesis: I pursued my bachelors degree for 250 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d7683831ec144ef8b83669178956e52f",
+            "input": "Premise: They were the top football team from May to Oct. \nHypothesis: They were the top football team for less than 5 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-cd37c02630434492969e9dc505456404",
+            "input": "Premise: The storm lasted from 10 AM to 9 AM. \nHypothesis: The storm lasted for less than 23 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-48829539959f484db524a3c8bfc1e3f4",
+            "input": "Premise: The court case started in December and ended in April. \nHypothesis: The court case lasted for less than 5 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-380167aa4f9e4460a0658fe06355d510",
+            "input": "Premise: They became the top football team in Feb and remained so until Oct. \nHypothesis: They were the top football team for less than 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-98ffc4b144064b8ca9fd85c4232b5c8a",
+            "input": "Premise: Their tour of Europe started on 8th and lasted until 26th. \nHypothesis: They toured parts of Europe for 19 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-58427af62e9044e6a209ab5145661fe3",
+            "input": "Premise: The storm lasted from 23:00 to 07:00. \nHypothesis: The storm lasted for 80 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-fa60398672da442b9cb79fec8af67094",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 4 PM to 3 AM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 110 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-da13f50f2f5d438fa5c2a31786d752df",
+            "input": "Premise: They were the top football team from May to March. \nHypothesis: They were the top football team for 11 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-dd0717d26eaf491c83056e9f6a8e5232",
+            "input": "Premise: The storm lasted from 14th to 23rd. \nHypothesis: The storm lasted for 90 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-98ec66459f7f43589c13841d7e01266b",
+            "input": "Premise: The storm began at 1 PM and lasted until 5 AM. \nHypothesis: The storm lasted for less than 17 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-f1eafe52273c49adabe46ef8b718f172",
+            "input": "Premise: I started my bachelors in Aug 1904 and graduated in February 1932. \nHypothesis: I pursued my bachelors degree for less than 331 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-737a40cab32b45599e7750918a5f75fa",
+            "input": "Premise: They were the top football team from January to December. \nHypothesis: They were the top football team for less than 12 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-da28c48d700c4218a436ff29701ecfd7",
+            "input": "Premise: They toured parts of Europe from Sunday to Thursday. \nHypothesis: They toured parts of Europe for less than 40 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-5730b1028421489c98e3fc159e641835",
+            "input": "Premise: Robin visited her parents from Monday to Thursday. \nHypothesis: Robin visited her parents for 3 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b2cc87ffe78d4a2db2597e76c9bfc7de",
+            "input": "Premise: The train from Seattle started at 8 PM and reached Portland at 5 AM. \nHypothesis: The train journey from Seattle to Portland lasted for 10 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-8b5f3b09fbbe4737856d334f03480b34",
+            "input": "Premise: They were the top football team from May 1917 to October 1983. \nHypothesis: They were the top football team for 664 years 2 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e71592e9f2494f798eba713f99f27a4b",
+            "input": "Premise: Their tour of Europe started in Sep and lasted until Jun. \nHypothesis: They toured parts of Europe for 9 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a52ac9072cdb4ebbb88d5f9b9cc060b5",
+            "input": "Premise: They became the top football team in Jan 1943 and remained so until March 1963. \nHypothesis: They were the top football team for 201 years 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e98d02ca88794728975a2d20bd1945c5",
+            "input": "Premise: The court case started in Mar and ended in April. \nHypothesis: The court case lasted for 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-5ba98f906068418e85e1428d1a1bdbe7",
+            "input": "Premise: The storm began at 2 PM and lasted until 10 PM. \nHypothesis: The storm lasted for less than 9 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-df9f4775aa4d40eb9ac257935fd1a682",
+            "input": "Premise: They were the top football team from December to April. \nHypothesis: They were the top football team for less than 40 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-f14300776d07424096da580a20f42c56",
+            "input": "Premise: They toured parts of Europe from Sunday to Saturday. \nHypothesis: They toured parts of Europe for less than 60 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-5716f3a698be4e08b2199ef698cc16ff",
+            "input": "Premise: They toured parts of Europe from 17th to 27th. \nHypothesis: They toured parts of Europe for 10 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-21579b196a8d4a2092d1ad212d09174d",
+            "input": "Premise: Robin's visit to her parents' started on Wednesday and ended on Thursday. \nHypothesis: Robin visited her parents for less than 10 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e93af2dc15cf4caa83b8a6ab212ddd18",
+            "input": "Premise: The storm began on 6th and lasted until 16th. \nHypothesis: The storm lasted for less than 10 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d47b89ec0ba6483797a38300d05bb631",
+            "input": "Premise: The storm began on Monday and lasted until Sunday. \nHypothesis: The storm lasted for 6 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e8e8d1c0902a46e7a4cb6a3c45611e4c",
+            "input": "Premise: They became the top football team in Aug 1907 and remained so until Dec 1936. \nHypothesis: They were the top football team for 352 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-cbdf0137bb864ecca0fd0a44b2120b5d",
+            "input": "Premise: The court case started on Monday and ended on Saturday. \nHypothesis: The court case lasted for 5 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d7e3434d69e441609309a31cf8ac37c0",
+            "input": "Premise: The court case started in August and ended in November. \nHypothesis: The court case lasted for less than 30 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-cb0fe022ba8045c58e3ce6e56f54f0a3",
+            "input": "Premise: The court case lasted from June to Aug. \nHypothesis: The court case lasted for less than 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-297c5f39abc847f2906a01b14b920bd4",
+            "input": "Premise: The storm lasted from 8 AM to 18:00. \nHypothesis: The storm lasted for less than 100 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-3dedf8335888426680257c93c9fafd0e",
+            "input": "Premise: Their tour of Europe started in Nov and lasted until Sep. \nHypothesis: They toured parts of Europe for less than 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-0c08914fc39544189a47bb73ac02e7c5",
+            "input": "Premise: They became the top football team in August and remained so until February. \nHypothesis: They were the top football team for 6 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-fca868c6aacf4817959214d6cf1c87ea",
+            "input": "Premise: They toured parts of Europe from Oct to Jan. \nHypothesis: They toured parts of Europe for less than 3 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-a996e80c39a149e8b9cb9959eb36886c",
+            "input": "Premise: I pursued my bachelors degree from June 1905 to Oct 1966. \nHypothesis: I pursued my bachelors degree for 736 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-19010fb8725948e5adc14a59ba49d90b",
+            "input": "Premise: The court case started on Monday and ended on Wednesday. \nHypothesis: The court case lasted for less than 20 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-fdb713e4b6ac424dafc6a160de7e8015",
+            "input": "Premise: The match between India and Australia began on Monday and ended on Friday. \nHypothesis: India played Australia for 5 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-cc37058b3aec40b499b9ab7522ac831d",
+            "input": "Premise: The train from Seattle started at 23:00 and reached Portland at 4 AM. \nHypothesis: The train journey from Seattle to Portland lasted for 5 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-3d606cd219434b719ac3a38731d50f8f",
+            "input": "Premise: They were the top football team from Aug 1902 to February 1973. \nHypothesis: They were the top football team for 8460 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-20c259b5f2074aca80c167407557de90",
+            "input": "Premise: The train from Seattle started at 02:00 and reached Portland at 21:00. \nHypothesis: The train journey from Seattle to Portland lasted for 19 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-676ee4c775fe4aa695e4fe30a047217d",
+            "input": "Premise: I pursued my bachelors degree from Aug 1918 to July 1941. \nHypothesis: I pursued my bachelors degree for less than 276 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-9098de95c7d747c19853d68f2ac08553",
+            "input": "Premise: The court case started in Jan and ended in Apr. \nHypothesis: The court case lasted for 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-6410893af471420ba4c0aeabbb6021e6",
+            "input": "Premise: They were the top football team from January to December. \nHypothesis: They were the top football team for less than 110 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-8d45c35739ec46278b6fc3fdb80daa4a",
+            "input": "Premise: They were the top football team from Jan to Jul. \nHypothesis: They were the top football team for less than 6 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-07889ff1857a4006823a1ec9a80175b3",
+            "input": "Premise: The court case lasted from March to December. \nHypothesis: The court case lasted for less than 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-4e54fead2fe24fbc9e80edfe2940937c",
+            "input": "Premise: The court case lasted from May to March. \nHypothesis: The court case lasted for 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b78834fe514b494f8dc96a901a138172",
+            "input": "Premise: They were the top football team from 1907 to 1977. \nHypothesis: They were the top football team for 700 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-61396a2f1d3049448caa1b059be1bb6f",
+            "input": "Premise: They were the top football team from Oct 1917 to December 1920. \nHypothesis: They were the top football team for less than 380 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b5e4452f63624000b7d977d656c03a9c",
+            "input": "Premise: Robin visited her parents from 13th to 17th. \nHypothesis: Robin visited her parents for 4 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-7485f04ee4d24ec9a6af31d507a820e2",
+            "input": "Premise: They became the top football team in September 1904 and remained so until Apr 1923. \nHypothesis: They were the top football team for less than 2230 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-5a3031eff3f84927a47d9bc35f32e0f9",
+            "input": "Premise: The court case lasted from Tuesday to Thursday. \nHypothesis: The court case lasted for less than 3 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-4291b9d219cf4a49ac88c7f6aef9a2f1",
+            "input": "Premise: The court case started in July and ended in Feb. \nHypothesis: The court case lasted for less than 8 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-0549eb2717584535a279061ee13765f8",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 10:00 to 5 AM. \nHypothesis: The train journey from Seattle to Portland lasted for 20 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-42e7ad02791748d88a024ffa585af3a3",
+            "input": "Premise: The court case started on Friday and ended on Wednesday. \nHypothesis: The court case lasted for 5 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-373cdc12bcb64b39bf9bc66dc3a70a6f",
+            "input": "Premise: The storm began at 07:00 and lasted until 14:00. \nHypothesis: The storm lasted for 8 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-8fd3076f33dc48deaffcb52c0e2748dc",
+            "input": "Premise: They were the top football team from April 1961 to June 1986. \nHypothesis: They were the top football team for 251 years 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-0f771c5ee3ed48fe8492fbda4c80ea2d",
+            "input": "Premise: The court case lasted from May to Jul. \nHypothesis: The court case lasted for less than 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-224443d9a00446329496a90a59bc0ab9",
+            "input": "Premise: They became the top football team in June and remained so until Jan. \nHypothesis: They were the top football team for less than 70 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-527a85c5090f4950a785a77882b1254c",
+            "input": "Premise: They were the top football team from November to Jan. \nHypothesis: They were the top football team for less than 2 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d7463361a44d439fbc500392cfc827c7",
+            "input": "Premise: They became the top football team in September and remained so until June. \nHypothesis: They were the top football team for 9 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-9c1405708cd24fa7a2109c9e08ad0434",
+            "input": "Premise: I started my bachelors in 1934 and graduated in 1937. \nHypothesis: I pursued my bachelors degree for 30 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-dcdec7780273436ab1cc122335fd90a2",
+            "input": "Premise: The match between India and Australia began on Tuesday and ended on Wednesday. \nHypothesis: India played Australia for 2 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e0c31e9f51d54d50aa4cf34fb458a753",
+            "input": "Premise: The train from Seattle started at 09:00 and reached Portland at 21:00. \nHypothesis: The train journey from Seattle to Portland lasted for 12 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-888bbf02bd854a25acd88556f17f8aed",
+            "input": "Premise: The storm began on Friday and lasted until Saturday. \nHypothesis: The storm lasted for less than 10 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-8e743e313c3343efb82940366a9500bb",
+            "input": "Premise: Their tour of Europe started on Wednesday and lasted until Friday. \nHypothesis: They toured parts of Europe for less than 3 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-36ac973c13614b8890a692913ef0a35d",
+            "input": "Premise: Their tour of Europe started in Nov and lasted until Sep. \nHypothesis: They toured parts of Europe for less than 11 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-c94f049825a34b14b47073b37735a40c",
+            "input": "Premise: They became the top football team in May 1936 and remained so until August 1992. \nHypothesis: They were the top football team for less than 56 years 4 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-c63771bb72004b46a00a334cc84ff4a2",
+            "input": "Premise: The storm began on Saturday and lasted until Tuesday. \nHypothesis: The storm lasted for 3 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-9fa741a298f547a28da966f235aa57ba",
+            "input": "Premise: The court case lasted from Thursday to Wednesday. \nHypothesis: The court case lasted for 7 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-49d59675e2bb4af4ab63cbafd74d330d",
+            "input": "Premise: They toured parts of Europe from October to March. \nHypothesis: They toured parts of Europe for less than 6 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-ab7d0691caec4a05957474e473dcc9cc",
+            "input": "Premise: The train from Seattle started at 06:00 and reached Portland at 11:00. \nHypothesis: The train journey from Seattle to Portland lasted for 5 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-829ac0ec156b444b88c8b445fedaf79b",
+            "input": "Premise: The storm lasted from 11 PM to 01:00. \nHypothesis: The storm lasted for less than 2 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-13154c9374cf40da875abc9fd4bcea5f",
+            "input": "Premise: They became the top football team in Dec and remained so until August. \nHypothesis: They were the top football team for 9 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-dbc0775539c648f68f258ee46f56b4b3",
+            "input": "Premise: India played Australia from Tuesday to Monday. \nHypothesis: India played Australia for less than 7 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a75b309ddaef4d7db6e14418b89b79b9",
+            "input": "Premise: Their tour of Europe started on Sunday and lasted until Wednesday. \nHypothesis: They toured parts of Europe for less than 30 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-1399cd7ee1474f499dad31089af1d5fa",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 8 PM to 2 AM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 6 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-eda1aba684f448a4b81deb97eaa2d5b1",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 20:00 to 1 AM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 50 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-020dfc2bcb1740e7916abc7750d7f982",
+            "input": "Premise: The storm began at 9 PM and lasted until 16:00. \nHypothesis: The storm lasted for less than 20 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d8f660056e264e58b92428b42e14f889",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 2 PM to 9 PM. \nHypothesis: The train journey from Seattle to Portland lasted for 8 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-941d16253c0546708ef602b2d00d7286",
+            "input": "Premise: They toured parts of Europe from Oct to Jul. \nHypothesis: They toured parts of Europe for less than 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-29e662e920134fdabc05da15c6ac2e0c",
+            "input": "Premise: Their tour of Europe started in November and lasted until Jan. \nHypothesis: They toured parts of Europe for 20 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-0913e58d6a024ec0960697a09e88c89c",
+            "input": "Premise: The storm lasted from 12 AM to 8 PM. \nHypothesis: The storm lasted for less than 21 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-2e42f2158a2c4ee58dcc09538e0b0242",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 14:00 to 09:00. \nHypothesis: The train journey from Seattle to Portland lasted for 20 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e49c1528a6944affa55c4e90d52cac77",
+            "input": "Premise: Their tour of Europe started in November and lasted until May. \nHypothesis: They toured parts of Europe for 6 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-dac73fb68d1547e08693b0b926da3ca6",
+            "input": "Premise: They became the top football team in May 1901 and remained so until Sep 1969. \nHypothesis: They were the top football team for 820 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b62575187ad649c7ab14a93a846946ae",
+            "input": "Premise: The storm lasted from 5 AM to 11 PM. \nHypothesis: The storm lasted for less than 180 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d9a6d88c095c45b1895100ece792c869",
+            "input": "Premise: The court case lasted from Jan to November. \nHypothesis: The court case lasted for less than 100 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-deb22163ba374292b2056ca327f0e919",
+            "input": "Premise: I started my bachelors in May 1932 and graduated in December 1961. \nHypothesis: I pursued my bachelors degree for 29 years 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f384b3de43eb4414aa2122d805b2f6a7",
+            "input": "Premise: Robin visited her parents from Wednesday to Monday. \nHypothesis: Robin visited her parents for 6 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-502ecfd2f55c49d9b520c2624fa585eb",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 09:00 to 19:00. \nHypothesis: The train journey from Seattle to Portland lasted for less than 100 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e2a0195d29e84827bc08189e0b8e0549",
+            "input": "Premise: The court case started on Saturday and ended on Sunday. \nHypothesis: The court case lasted for less than 2 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-cf752deb803340b3929adf6e3a6b08d7",
+            "input": "Premise: India played Australia from 7th to 17th. \nHypothesis: India played Australia for less than 10 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-85c857c0fefe4adcb8a99657a1183bb3",
+            "input": "Premise: I started my bachelors in March 1918 and graduated in July 1936. \nHypothesis: I pursued my bachelors degree for 220 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-2e89018e9428416ea2f81eb6c0d98df2",
+            "input": "Premise: The train from Seattle started at 02:00 and reached Portland at 21:00. \nHypothesis: The train journey from Seattle to Portland lasted for less than 190 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b32f81435cad4c8aaa4c3d3f69c5d13b",
+            "input": "Premise: The storm lasted from 8 AM to 3 PM. \nHypothesis: The storm lasted for 8 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d15385ce4e614679889ec5a50e72e557",
+            "input": "Premise: The storm lasted from Sunday to Friday. \nHypothesis: The storm lasted for 5 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-02a681ff1305463cbb05a24d568d897a",
+            "input": "Premise: The storm began on 11th and lasted until 16th. \nHypothesis: The storm lasted for less than 6 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-2b9c30c65d444280af3fc012bba3f223",
+            "input": "Premise: They became the top football team in Oct and remained so until Jun. \nHypothesis: They were the top football team for 80 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d4db97fd7cd141dbae147c8f74a934ec",
+            "input": "Premise: The storm lasted from 05:00 to 3 AM. \nHypothesis: The storm lasted for 22 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-313516031f0f48eaa64f7efbe2ee2ce6",
+            "input": "Premise: Robin's visit to her parents' started on 2nd and ended on 22nd. \nHypothesis: Robin visited her parents for less than 21 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-80c95ad1ab4e4a289c25fadb87ad251d",
+            "input": "Premise: Their tour of Europe started on 2nd and lasted until 26th. \nHypothesis: They toured parts of Europe for less than 25 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a906d56c332043b0aac0b9c3754dfdbd",
+            "input": "Premise: I pursued my bachelors degree from Oct 1953 to Feb 1991. \nHypothesis: I pursued my bachelors degree for less than 37 years 5 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-bd34cb4e82de41c8b7b9b2e42e6d9133",
+            "input": "Premise: The storm began on Sunday and lasted until Monday. \nHypothesis: The storm lasted for 2 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-31acccdceba346eb837ad122dae591cf",
+            "input": "Premise: Robin visited her parents from 8th to 9th. \nHypothesis: Robin visited her parents for 2 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-446411207bf342c2860e3a4f2d94fc8a",
+            "input": "Premise: I pursued my bachelors degree from June 1905 to Oct 1966. \nHypothesis: I pursued my bachelors degree for less than 737 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-9976a7c27a9d4cfd82de87fb4d90cfb4",
+            "input": "Premise: Their tour of Europe started in June and lasted until October. \nHypothesis: They toured parts of Europe for 5 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2c445af9c7f7476da6b0bcef9f614198",
+            "input": "Premise: The court case lasted from February to October. \nHypothesis: The court case lasted for 9 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-26b199431f6f418d99bec536964f4d58",
+            "input": "Premise: They toured parts of Europe from Friday to Sunday. \nHypothesis: They toured parts of Europe for less than 3 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-c772836e02fb487c9a4b18db356445b2",
+            "input": "Premise: I started my bachelors in Oct 1920 and graduated in Aug 1933. \nHypothesis: I pursued my bachelors degree for 154 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b726a8f831e441ab9e0a2858b6ae487e",
+            "input": "Premise: The court case started on Monday and ended on Saturday. \nHypothesis: The court case lasted for 6 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-17b92ca0b02e4fba9b94009abca40a26",
+            "input": "Premise: Their tour of Europe started in November and lasted until Jan. \nHypothesis: They toured parts of Europe for less than 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-aaf305ce3729479688b6050b903ef0a9",
+            "input": "Premise: They became the top football team in March and remained so until August. \nHypothesis: They were the top football team for 50 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-8ec7c40c33744455b5320ae587c0cb6d",
+            "input": "Premise: The storm lasted from 16th to 27th. \nHypothesis: The storm lasted for 12 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-0aa1d1fb920c4305a2462453063ddaa4",
+            "input": "Premise: The storm lasted from 20th to 23rd. \nHypothesis: The storm lasted for 30 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-530f653232884d47b06e75198f2ae173",
+            "input": "Premise: They became the top football team in October and remained so until November. \nHypothesis: They were the top football team for less than 1 month.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-bb11985d642240e39fcecf82a49db6d4",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 8 PM to 2 AM. \nHypothesis: The train journey from Seattle to Portland lasted for 7 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-a8db4055a8834c9db532093127d908b5",
+            "input": "Premise: They were the top football team from 1907 to 1977. \nHypothesis: They were the top football team for 71 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e3319d8b92f24f08b1358196f6445598",
+            "input": "Premise: The train from Seattle started at 18:00 and reached Portland at 09:00. \nHypothesis: The train journey from Seattle to Portland lasted for 15 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-b5179ff991fb4f9b80bc4c1750100a2a",
+            "input": "Premise: I pursued my bachelors degree from November 1916 to September 1965. \nHypothesis: I pursued my bachelors degree for less than 587 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-858073df0bc24f3197703fd12b7fed08",
+            "input": "Premise: They were the top football team from Jun to Apr. \nHypothesis: They were the top football team for 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-af6379e1b307423885a26b52aae51a84",
+            "input": "Premise: The match between India and Australia began on 10th and ended on 15th. \nHypothesis: India played Australia for 50 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-af98af6edac244ed92bd5b21227f76dc",
+            "input": "Premise: The storm lasted from 8 AM to 20:00. \nHypothesis: The storm lasted for less than 12 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-c269e8b885ae40a19ccae6c8f5904610",
+            "input": "Premise: I pursued my bachelors degree from October 1905 to April 1997. \nHypothesis: I pursued my bachelors degree for 1099 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-9c9b8af2640f403da81d4a93ca39e5d1",
+            "input": "Premise: The court case started in Jan and ended in Apr. \nHypothesis: The court case lasted for less than 3 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d4da11667fd142408510c8cb23eace22",
+            "input": "Premise: They were the top football team from Nov to Apr. \nHypothesis: They were the top football team for less than 5 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-83a0845130d649a6accc9855744cfa0d",
+            "input": "Premise: Robin visited her parents from Friday to Tuesday. \nHypothesis: Robin visited her parents for 40 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-495f1151caed4d02bd82269c7ecc4a47",
+            "input": "Premise: The court case lasted from Apr to Jun. \nHypothesis: The court case lasted for less than 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-f264e9aff95649af9b711b7e654b385b",
+            "input": "Premise: The storm lasted from Sunday to Monday. \nHypothesis: The storm lasted for 2 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-16bf124a2f2a4424b782a0a0e4bc9161",
+            "input": "Premise: The storm began at 06:00 and lasted until 10 AM. \nHypothesis: The storm lasted for less than 4 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e4af34af5b3a48b0a77eb4d73d9fb309",
+            "input": "Premise: They became the top football team in February and remained so until Mar. \nHypothesis: They were the top football team for 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-57cf0049e7364637b9f9a2ebbc674387",
+            "input": "Premise: The court case started in Jan and ended in Apr. \nHypothesis: The court case lasted for 4 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b054ff09dc40437db7d021af7cb5a1c9",
+            "input": "Premise: They were the top football team from Nov to Apr. \nHypothesis: They were the top football team for less than 6 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-f4d589612e764005a381c3cbdcf413fb",
+            "input": "Premise: The train from Seattle started at 4 AM and reached Portland at 9 PM. \nHypothesis: The train journey from Seattle to Portland lasted for 170 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f637713836394f8f90af1b372fe320f2",
+            "input": "Premise: The storm began at 20:00 and lasted until 08:00. \nHypothesis: The storm lasted for less than 120 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d6cbb152bee74d8699ca75e625f8d6e6",
+            "input": "Premise: The court case lasted from January to Aug. \nHypothesis: The court case lasted for 70 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-1d13533814704e7891e9ca79964649d8",
+            "input": "Premise: Their tour of Europe started in November and lasted until January. \nHypothesis: They toured parts of Europe for 3 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-66b3bac6ee6b470090fbe0c51c173d05",
+            "input": "Premise: The train from Seattle started at 11 AM and reached Portland at 4 PM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 5 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b5afcca6c93544f9ad751a2eb9e38ad9",
+            "input": "Premise: The storm began at 06:00 and lasted until 18:00. \nHypothesis: The storm lasted for 13 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-bd662fe264f748dc8eb31f285ca5ac22",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 22:00 to 1 AM. \nHypothesis: The train journey from Seattle to Portland lasted for 4 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-95b190a878284bd0aaf2a1c69f225995",
+            "input": "Premise: They were the top football team from May 1917 to October 1983. \nHypothesis: They were the top football team for less than 664 years 2 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-8ea5fb2c5fd948998243c4955dd62e44",
+            "input": "Premise: Their tour of Europe started in July and lasted until October. \nHypothesis: They toured parts of Europe for less than 3 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-1ac6136073b04bec94cf9cf65797d5ea",
+            "input": "Premise: They were the top football team from June 1939 to September 1974. \nHypothesis: They were the top football team for 35 years 4 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-00a60fbc879245108115ae7dcd51ecb3",
+            "input": "Premise: They were the top football team from May 1950 to Jul 1986. \nHypothesis: They were the top football team for less than 36 years 3 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e0eaef5a435a4d30a38b08e7ad320416",
+            "input": "Premise: They were the top football team from May to Feb. \nHypothesis: They were the top football team for 90 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-70a0e092010a43419f010db4dd6b2516",
+            "input": "Premise: The storm began at 05:00 and lasted until 01:00. \nHypothesis: The storm lasted for 21 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d3e6052a22ac4803b9d9083226d2b6d1",
+            "input": "Premise: They toured parts of Europe from Dec to Oct. \nHypothesis: They toured parts of Europe for 11 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-cf5f4da9f4fa4ee988476ba4eb7213f4",
+            "input": "Premise: The court case lasted from July to Apr. \nHypothesis: The court case lasted for less than 9 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-da4a334421844ad488b669e065aa383e",
+            "input": "Premise: The storm began at 8 PM and lasted until 6 AM. \nHypothesis: The storm lasted for less than 11 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-83391d9612b1484fbbf1856b3ff22821",
+            "input": "Premise: They became the top football team in March 1948 and remained so until January 1995. \nHypothesis: They were the top football team for less than 562 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-8f55f4f8d6e34f39ae535547cb470954",
+            "input": "Premise: The court case started in July and ended in Feb. \nHypothesis: The court case lasted for 70 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-58a45e19e65e41dda50b3cb4ab83211c",
+            "input": "Premise: I pursued my bachelors degree from Apr 1904 to Jun 1960. \nHypothesis: I pursued my bachelors degree for less than 561 years 8 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a881dfd2626d4c23ab5e89f1b75ab713",
+            "input": "Premise: They were the top football team from 1962 to 1985. \nHypothesis: They were the top football team for less than 230 years.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-a330273c0eb249aea24c4a3967fcf912",
+            "input": "Premise: The storm began at 10 AM and lasted until 9 PM. \nHypothesis: The storm lasted for 12 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-c111884742cb4e3abb8b566b7f98b294",
+            "input": "Premise: They toured parts of Europe from December to February. \nHypothesis: They toured parts of Europe for less than 20 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d7699d32a9ef4b0c98f75734f5847a3b",
+            "input": "Premise: Robin visited her parents from Saturday to Friday. \nHypothesis: Robin visited her parents for less than 7 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-fa642bcf36b5452eadd73fa95bd90e48",
+            "input": "Premise: The train from Seattle started at 18:00 and reached Portland at 09:00. \nHypothesis: The train journey from Seattle to Portland lasted for 150 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b7e4b1a4d4e440ef90a2c63e3085756f",
+            "input": "Premise: They were the top football team from 1973 to 1996. \nHypothesis: They were the top football team for less than 23 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-0443791903244a8686e72c641afb74ed",
+            "input": "Premise: They were the top football team from Oct 1915 to Nov 1976. \nHypothesis: They were the top football team for less than 7330 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-9d5ce5f049a340e5a83f060decacf742",
+            "input": "Premise: Their tour of Europe started in November and lasted until May. \nHypothesis: They toured parts of Europe for 7 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-9f8aacbdac254631bb88b373fdbb0567",
+            "input": "Premise: The storm began at 3 PM and lasted until 02:00. \nHypothesis: The storm lasted for 11 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-798d97ae02a7471198900fcb751f5789",
+            "input": "Premise: The court case started in May and ended in August. \nHypothesis: The court case lasted for less than 3 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-fd21a73a7a3f4168b1c625bde67ba00e",
+            "input": "Premise: I started my bachelors in Jan 1929 and graduated in Feb 1934. \nHypothesis: I pursued my bachelors degree for 50 years 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e0043c16c60448bfb1ecaeec7ef9c8c7",
+            "input": "Premise: The storm lasted from 12:00 to 19:00. \nHypothesis: The storm lasted for 8 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-bfb1b16ef53b4cd59a0fd5bcd4644bbb",
+            "input": "Premise: The storm began on Saturday and lasted until Tuesday. \nHypothesis: The storm lasted for less than 3 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-489e7e11a82845fca6d20486891d2dbd",
+            "input": "Premise: I pursued my bachelors degree from November 1965 to Apr 1979. \nHypothesis: I pursued my bachelors degree for less than 161 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-9e704e38f53b4ffebfd4cbf0672c379f",
+            "input": "Premise: I pursued my bachelors degree from January 1959 to November 1999. \nHypothesis: I pursued my bachelors degree for 40 years 10 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-58b1bda424e44517a1072b733a4afc46",
+            "input": "Premise: I started my bachelors in Aug 1907 and graduated in Jan 1964. \nHypothesis: I pursued my bachelors degree for less than 6770 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-ea7284b0567e4f7e820a05d64e54362b",
+            "input": "Premise: Their tour of Europe started on 17th and lasted until 27th. \nHypothesis: They toured parts of Europe for 10 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-0cad5ccd2386401d99e32989a3f71de3",
+            "input": "Premise: The storm began at 8 PM and lasted until 6 AM. \nHypothesis: The storm lasted for 10 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-92029e48b020498299c63b23361c4d6d",
+            "input": "Premise: They became the top football team in April and remained so until August. \nHypothesis: They were the top football team for less than 5 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-de65f17d3209425ea1c58467748401cf",
+            "input": "Premise: The storm lasted from 04:00 to 23:00. \nHypothesis: The storm lasted for less than 190 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-2a96a118b6484546a9b0f9e88f87ac1b",
+            "input": "Premise: The storm began at 2 PM and lasted until 10 PM. \nHypothesis: The storm lasted for 9 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-7612ec7710fd487ca3c241ee60e15638",
+            "input": "Premise: I started my bachelors in July 1920 and graduated in Jul 1926. \nHypothesis: I pursued my bachelors degree for 72 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-aa254f7f41b445709230813fde5e85d7",
+            "input": "Premise: I pursued my bachelors degree from 1901 to 1951. \nHypothesis: I pursued my bachelors degree for less than 50 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2a172a22ae234a3f8b25674b1ba46e6b",
+            "input": "Premise: They were the top football team from December 1929 to January 1992. \nHypothesis: They were the top football team for 745 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-47227ec0e5174e1f963f374c002c33f9",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 3 PM to 5 PM. \nHypothesis: The train journey from Seattle to Portland lasted for 2 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d95e5429e0df4f409f8f9ed86db47985",
+            "input": "Premise: The storm lasted from 05:00 to 03:00. \nHypothesis: The storm lasted for less than 220 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-0547d4e90f914a41b24ed53526e765a8",
+            "input": "Premise: The storm began at 03:00 and lasted until 8 AM. \nHypothesis: The storm lasted for 50 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-3b5f71bda16841f3b4fbc28f1a1b64bd",
+            "input": "Premise: The storm lasted from 9 PM to 15:00. \nHypothesis: The storm lasted for less than 19 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-fb43065534e1490db5935b6760467f46",
+            "input": "Premise: Their tour of Europe started in May and lasted until Feb. \nHypothesis: They toured parts of Europe for less than 90 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e2af928711814c6cbc8bb53211e84190",
+            "input": "Premise: Robin visited her parents from Sunday to Monday. \nHypothesis: Robin visited her parents for 2 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-04f3d088659547f8853561701386299a",
+            "input": "Premise: The court case lasted from Nov to March. \nHypothesis: The court case lasted for 5 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b7ab64b2e5484f19be72e656f569ac11",
+            "input": "Premise: The court case started on Monday and ended on Tuesday. \nHypothesis: The court case lasted for less than 1 day.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-930675c93825465ea0f755c37f565a20",
+            "input": "Premise: They toured parts of Europe from April to June. \nHypothesis: They toured parts of Europe for less than 2 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-1e9b9ddac60d4a47811397b4735ae0ea",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 10:00 to 5 AM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 190 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-918bb284bd054c1ca54db1bda6519f6e",
+            "input": "Premise: India played Australia from Saturday to Monday. \nHypothesis: India played Australia for less than 20 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-be65fee881634e69a3da84c23ea77fd5",
+            "input": "Premise: The storm began on Thursday and lasted until Wednesday. \nHypothesis: The storm lasted for 7 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-883dd9a90dc6416aabfd5b5783fafc87",
+            "input": "Premise: I pursued my bachelors degree from 1928 to 1944. \nHypothesis: I pursued my bachelors degree for less than 17 years.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-74f8c6eeebca43cdb3d8c5a1fe7d88de",
+            "input": "Premise: I started my bachelors in Feb 1944 and graduated in March 1973. \nHypothesis: I pursued my bachelors degree for 349 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-4599795f3fe943c2b7222cf906ca75b5",
+            "input": "Premise: They became the top football team in December 1966 and remained so until December 1978. \nHypothesis: They were the top football team for 144 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-0f43516f0194450f86039ed40830f05c",
+            "input": "Premise: The court case lasted from January to Aug. \nHypothesis: The court case lasted for 7 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-48225f4f1fc34fc88814c8faa3f30c39",
+            "input": "Premise: Robin visited her parents from Tuesday to Thursday. \nHypothesis: Robin visited her parents for less than 2 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-12746bb5537d43078967e6dcfe93f611",
+            "input": "Premise: India played Australia from Wednesday to Monday. \nHypothesis: India played Australia for less than 6 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-9ee23af515c54acdb959e729efd4a33d",
+            "input": "Premise: They became the top football team in Oct 1950 and remained so until Feb 1968. \nHypothesis: They were the top football team for less than 17 years 4 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f705ca680fd34e92b9ccffcd1066f295",
+            "input": "Premise: They became the top football team in 1961 and remained so until 1962. \nHypothesis: They were the top football team for 2 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-29c8c3563a404890b69c3a7d5a697867",
+            "input": "Premise: They were the top football team from August 1908 to May 1944. \nHypothesis: They were the top football team for less than 429 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-71b6ee85d8b040c18540639978dfce44",
+            "input": "Premise: Their tour of Europe started in September and lasted until Mar. \nHypothesis: They toured parts of Europe for less than 7 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-dbdbe18f6b40434dbe841625a713c7a3",
+            "input": "Premise: The court case started in September and ended in March. \nHypothesis: The court case lasted for 60 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-9ddb79e3e2474fcba98f765f0526c039",
+            "input": "Premise: The storm began at 1 PM and lasted until 03:00. \nHypothesis: The storm lasted for less than 140 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-4ff40436b4ad42198021ffbf74379c92",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 22:00 to 11:00. \nHypothesis: The train journey from Seattle to Portland lasted for less than 14 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-927af0723dc34d7f87151d792c7d8059",
+            "input": "Premise: India played Australia from Thursday to Saturday. \nHypothesis: India played Australia for 3 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-6e9b74c28cc34ad48a7aa5d54fba0cee",
+            "input": "Premise: They were the top football team from Mar 1946 to February 1986. \nHypothesis: They were the top football team for less than 4790 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-1095f3aedd304e49a66cdc3df207a914",
+            "input": "Premise: They became the top football team in July and remained so until Dec. \nHypothesis: They were the top football team for 50 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-017d3935ced24fe4885678ccd5052187",
+            "input": "Premise: They toured parts of Europe from March to May. \nHypothesis: They toured parts of Europe for less than 20 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-961639bb29d445dc8c8d72f24d357edf",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 17:00 to 09:00. \nHypothesis: The train journey from Seattle to Portland lasted for less than 17 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-93719081670244e28aba47a1aa2e2264",
+            "input": "Premise: The court case started on Saturday and ended on Sunday. \nHypothesis: The court case lasted for 2 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-705eb231de5e40ebabd32c32a5689c03",
+            "input": "Premise: The court case started in Oct and ended in Jul. \nHypothesis: The court case lasted for 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b2b98ce71e224df5834b0d9fcc2b0890",
+            "input": "Premise: I started my bachelors in April 1943 and graduated in August 1973. \nHypothesis: I pursued my bachelors degree for 30 years 5 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f732f7cf19c14a7fa11da2b01ceb7553",
+            "input": "Premise: Their tour of Europe started on Saturday and lasted until Monday. \nHypothesis: They toured parts of Europe for 3 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-c3ce13c093cd4a78bb93e8b9b2a75cb4",
+            "input": "Premise: I pursued my bachelors degree from 1923 to 1950. \nHypothesis: I pursued my bachelors degree for 270 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-debff4b03d6a4a46a9f3bab66e6d3bb2",
+            "input": "Premise: They became the top football team in Feb and remained so until Oct. \nHypothesis: They were the top football team for 80 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-170e8d70cf5d4f6ab8c161de7b59a5c9",
+            "input": "Premise: The train from Seattle started at 6 PM and reached Portland at 4 PM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 23 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-f7d0b35df9ea46759d095f5f5b90484e",
+            "input": "Premise: I pursued my bachelors degree from April 1918 to March 1956. \nHypothesis: I pursued my bachelors degree for less than 456 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-93cb74695dc34f7ca4df07b419086d3a",
+            "input": "Premise: They were the top football team from Nov to Apr. \nHypothesis: They were the top football team for 6 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-1faa61d85b614c14a7f2d386133bc981",
+            "input": "Premise: They were the top football team from December 1907 to Jan 1966. \nHypothesis: They were the top football team for 698 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-d9fac95559bd44aa8621f9ac60a6e7d5",
+            "input": "Premise: They became the top football team in Apr 1937 and remained so until October 1999. \nHypothesis: They were the top football team for 7500 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-add4f04951be425bbb199ef2394d83c1",
+            "input": "Premise: Their tour of Europe started on 2nd and lasted until 26th. \nHypothesis: They toured parts of Europe for less than 240 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-eec08846772348ca8ff780dcdb74d72c",
+            "input": "Premise: The storm lasted from 8 AM to 18:00. \nHypothesis: The storm lasted for 10 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-72661527fbf049aca3eb6a040c2440bd",
+            "input": "Premise: The train from Seattle started at 11 AM and reached Portland at 9 PM. \nHypothesis: The train journey from Seattle to Portland lasted for 10 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-43280be1c1f545d398d286c3fe00f91b",
+            "input": "Premise: The train from Seattle started at 10:00 and reached Portland at 3 PM. \nHypothesis: The train journey from Seattle to Portland lasted for less than 6 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-aa2ca0da54e540b4b11ca4e42f7cbe28",
+            "input": "Premise: The court case started in Feb and ended in Oct. \nHypothesis: The court case lasted for 80 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-07f9c42dba934ac193b8746f56a36cfe",
+            "input": "Premise: They toured parts of Europe from Aug to May. \nHypothesis: They toured parts of Europe for 10 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b1e288d3bbb14c4f9099910556d3e627",
+            "input": "Premise: They were the top football team from December to May. \nHypothesis: They were the top football team for less than 50 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-859f81caee204657b0e2e288c79f9a4b",
+            "input": "Premise: They became the top football team in October 1967 and remained so until August 1988. \nHypothesis: They were the top football team for less than 2500 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-7f0466cc64e04841af9531a2d5c6b450",
+            "input": "Premise: I started my bachelors in May 1916 and graduated in March 1984. \nHypothesis: I pursued my bachelors degree for 8140 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-35b4dc6ce1194834a4ddf0161e3b52cf",
+            "input": "Premise: Robin visited her parents from Wednesday to Sunday. \nHypothesis: Robin visited her parents for 40 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-bcbbec7759194f96bf84420c46719f66",
+            "input": "Premise: The court case started on Monday and ended on Friday. \nHypothesis: The court case lasted for less than 4 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-6cd108713a5d4bcdb976ac0596aa617a",
+            "input": "Premise: Robin visited her parents from 3rd to 10th. \nHypothesis: Robin visited her parents for less than 8 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-eb09898cc75143dea30d1003aa70ecda",
+            "input": "Premise: They toured parts of Europe from October to March. \nHypothesis: They toured parts of Europe for 6 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-345701298480445c8ebd93bcc05c83bf",
+            "input": "Premise: The train journey from Seattle to Portland lasted from 22:00 to 2 PM. \nHypothesis: The train journey from Seattle to Portland lasted for 17 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-f5ab75d9ba704d1da92f251c11bee000",
+            "input": "Premise: I pursued my bachelors degree from May 1911 to Oct 1928. \nHypothesis: I pursued my bachelors degree for less than 2090 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d44a10aa503b485cb8bb4a7be8d1a6d1",
+            "input": "Premise: The storm lasted from 8 AM to 3 PM. \nHypothesis: The storm lasted for 70 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-86bb05b5c30143faa14da4d5d62601f4",
+            "input": "Premise: The court case started in Mar and ended in April. \nHypothesis: The court case lasted for less than 2 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-d7786e755af741509ee9811ea21da653",
+            "input": "Premise: The train from Seattle started at 07:00 and reached Portland at 3 AM. \nHypothesis: The train journey from Seattle to Portland lasted for 20 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-e5b513fd8a054c3bbe0afb2c35102891",
+            "input": "Premise: They became the top football team in January 1931 and remained so until Sep 1998. \nHypothesis: They were the top football team for less than 812 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-51d91ca52961471abbbfb616cc2380cc",
+            "input": "Premise: I pursued my bachelors degree from August 1933 to May 1947. \nHypothesis: I pursued my bachelors degree for less than 13 years 9 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-4d4ad53c56f84812b13e8e27e8e22591",
+            "input": "Premise: I started my bachelors in August 1905 and graduated in June 1914. \nHypothesis: I pursued my bachelors degree for 8 years 11 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-af4dfdae46454e90ba4cf7ef5f04ea3e",
+            "input": "Premise: They toured parts of Europe from Feb to September. \nHypothesis: They toured parts of Europe for 8 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e512450830bd4d9e9f9538ab3eb6103d",
+            "input": "Premise: They became the top football team in 1901 and remained so until 1973. \nHypothesis: They were the top football team for less than 72 years.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-a9376a0bd2704d3f90cb00a67c852a4a",
+            "input": "Premise: They became the top football team in Feb 1922 and remained so until May 1939. \nHypothesis: They were the top football team for less than 172 years 6 months.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-1ca3319bab244c32a95352af15968d00",
+            "input": "Premise: Robin visited her parents from Tuesday to Friday. \nHypothesis: Robin visited her parents for 4 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-fea8063e5b964350b55583af48b64331",
+            "input": "Premise: They toured parts of Europe from Sunday to Saturday. \nHypothesis: They toured parts of Europe for 60 days.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-c477f914702244938459c13c3b9c5af3",
+            "input": "Premise: The storm lasted from Wednesday to Saturday. \nHypothesis: The storm lasted for less than 30 days.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-9ab1e9352f214fa291f42e44861eda89",
+            "input": "Premise: The storm lasted from 5 AM to 11 PM. \nHypothesis: The storm lasted for less than 18 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-172a2c6e712542038716f9274818f42d",
+            "input": "Premise: The storm began at 06:00 and lasted until 14:00. \nHypothesis: The storm lasted for 8 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-3f53a560e450448182ffb0d3b537f812",
+            "input": "Premise: The storm began at 8 AM and lasted until 1 PM. \nHypothesis: The storm lasted for 50 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-e3de03e9d4574f74b1d5dbaac15cb26f",
+            "input": "Premise: The storm lasted from 23:00 to 07:00. \nHypothesis: The storm lasted for less than 80 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-713bbd3d16f24e809d03a1ee026eb3d1",
+            "input": "Premise: The train from Seattle started at 6 AM and reached Portland at 12 AM. \nHypothesis: The train journey from Seattle to Portland lasted for 180 hours.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-2e4c5aa7b2884b938e2012c2c9a3a3e0",
+            "input": "Premise: The storm lasted from 05:00 to 3 AM. \nHypothesis: The storm lasted for less than 23 hours.",
+            "output": [
+                "Entailment"
+            ]
+        },
+        {
+            "id": "task016-36c107fcdb78467daba6a1e1598bca21",
+            "input": "Premise: They were the top football team from February 1906 to November 1976. \nHypothesis: They were the top football team for 850 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-40c892d4b0d64de9962bb3d793c7e883",
+            "input": "Premise: They were the top football team from Jun to September. \nHypothesis: They were the top football team for 30 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-b514f388d8e64aef959df824fa0169b1",
+            "input": "Premise: Their tour of Europe started in May and lasted until Jan. \nHypothesis: They toured parts of Europe for 9 months.",
+            "output": [
+                "Contradiction"
+            ]
+        },
+        {
+            "id": "task016-545d3116a4f7402aa0654947eb7abb0e",
+            "input": "Premise: The storm lasted from Saturday to Sunday. \nHypothesis: The storm lasted for less than 2 days.",
+            "output": [
+                "Entailment"
+            ]
+        }
+    ]
+}
